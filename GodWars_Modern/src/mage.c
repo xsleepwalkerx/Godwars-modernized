@@ -1,3 +1,26 @@
+/*
+ * mage.c - World of Darkness (WoD) Mage class implementation.
+ *
+ * Mages use a sphere-based magic system with nine spheres of power.
+ * Each sphere has levels 1-5; higher levels require greater Arete.
+ * Casting spells builds Paradox, which can cause a Backlash when it
+ * accumulates above a threshold or exceeds a per-cast limit.
+ * Quintessence (primal energy) can be spent to enhance spell effects.
+ *
+ * Nine Spheres:
+ *   Correspondence - space and relationships (targeting range)
+ *   Life           - living creatures (healing, body modification)
+ *   Prime          - quintessence and aggravated damage weapons
+ *   Entropy        - luck, fate, chaos (debuffs and random effects)
+ *   Mind           - mental powers (heighten, scry, shield, invis)
+ *   Spirit         - umbral travel and spirit interaction
+ *   Forces         - natural elements (fire, lightning, friction)
+ *   Matter         - non-living structures (walls, weights)
+ *   Time           - speed, precognition, contingency
+ *
+ * Sphere level costs: 20 primal * desired level (paid via 'sphere learn').
+ * Equipment costs:    400 QP + 100 primal via 'magearmor'.
+ */
 #include <stdio.h>
 #include <string.h>
 #include <sys/types.h>
@@ -19,16 +42,16 @@ const char * sphere_name [9] =
     "Time"
 };
 
-/*Powers in other files:
-Forces 1: Nightsight: clan.c
-Life 1: Life scan: clan.c
-Mind 1: Heighten: clan.c
-Mind 2: Scry: clan.c
-Mind 3: Shield: clan.c
-Matter 1: Analyze: warlock.c
-*/
+/* Powers implemented in other files (cross-reference):
+ *   Forces 1: Nightsight         - clan.c
+ *   Life 1:   Life scan          - clan.c
+ *   Mind 1:   Heighten           - clan.c
+ *   Mind 2:   Scry               - clan.c
+ *   Mind 3:   Shield             - clan.c
+ *   Matter 1: Analyze (identify) - warlock.c
+ */
 
-//mana costs
+/* Mana costs for each mage spell (used in spell functions below). */
 
 #define MANA_ENCHANT		5000
 #define MANA_HOLY_SMOTE		4000

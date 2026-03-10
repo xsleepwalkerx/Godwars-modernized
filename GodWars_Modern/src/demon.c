@@ -484,8 +484,13 @@ void do_demonarmour( CHAR_DATA *ch, char *argument )
     }
     obj = create_object(pObjIndex, 50);
     obj_to_char(obj, ch);
+
+    /* Deduct base power cost (both physical and spiritual power pools). */
     ch->pcdata->power[0] -= 5000;
     ch->pcdata->power[1] -= 5000;
+
+    /* Deduct QP based on chosen colour tier and record points for item value.
+     * Colour tiers (demon): Purple=100 QP, Red=250 QP, Black=750 QP, Midnight=1500 QP. */
     if (!str_cmp(arg1,"purple"))
     {obj->specpower = ARM_PURPLE;ch->pcdata->quest -= 100;obj->points += 100;}
     if (!str_cmp(arg1,"red"))
@@ -622,8 +627,13 @@ void do_angelarmour( CHAR_DATA *ch, char *argument )
     }
     obj = create_object(pObjIndex, 50);
     obj_to_char(obj, ch);
+
+    /* Deduct base power cost (both physical and spiritual power pools). */
     ch->pcdata->power[0] -= 5000;
     ch->pcdata->power[1] -= 5000;
+
+    /* Deduct QP based on chosen colour tier and record points for item value.
+     * Colour tiers (angel): Blue=100 QP, Ivory=250 QP, White=750 QP, Silver=1500 QP. */
     if (!str_cmp(arg1,"blue"))
     {obj->specpower = ARM_BLUE;ch->pcdata->quest -= 100;obj->points += 100;}
     if (!str_cmp(arg1,"ivory"))

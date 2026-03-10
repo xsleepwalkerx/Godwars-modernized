@@ -623,6 +623,24 @@ void do_improve( CHAR_DATA *ch, char *argument )
     return;
 }
 
+/*
+ * do_quest: Player-facing Quest Point (QP) item customization system.
+ *
+ * Syntax: quest                             - show cost list
+ *         quest create <type>               - create a new protoplasm item (10-50 QP)
+ *         quest <obj> name/short/long <...> - rename the item (1 QP)
+ *         quest <obj> affect <stat> <val>   - add a stat affect (cost varies by stat)
+ *         quest <obj> spell <spellname>     - add a spell weapon or affect (50 QP)
+ *         quest <obj> wear <location>       - change wear location (20 QP)
+ *         quest <obj> extra add/remove <f>  - add/remove extra flags (1 QP)
+ *         quest <obj> weapon <type> <val>   - modify weapon damage/hit/type
+ *         quest <obj> weight                - make item weightless (10 QP)
+ *         quest <obj> level <val>           - set item level (1 QP per level)
+ *         quest <obj> teleporter/portal     - create teleporter device (50 QP)
+ *
+ * Quest points are stored in ch->pcdata->quest and deducted at each operation.
+ * Items are flagged with QUEST_* bits and carry questmaker/questowner names.
+ */
 void do_quest( CHAR_DATA *ch, char *argument )
 {
     char arg1 [MAX_STRING_LENGTH];

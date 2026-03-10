@@ -298,6 +298,19 @@ void do_horns( CHAR_DATA *ch, char *argument )
     return;
 }
 
+/*
+ * do_dragonskill: Dragon class progression command.
+ *
+ * Usage: dragonskills age        - advance to the next age tier (costs DP + QP)
+ *        dragonskills <ability>  - purchase an unlocked ability (costs DP only)
+ *
+ * Age tiers (in order): Hatchling -> Very Young -> Young -> Juvenile ->
+ *   Young Adult -> Adult -> Mature Adult -> Old -> Very Old -> Ancient ->
+ *   Wyrm -> Ancient Wyrm (leader position).
+ *
+ * DP costs to advance age and QP costs begin at Young Adult (see help dragonskills).
+ * Ability costs are 1000 DP * (12 - required_age_tier).
+ */
 void do_dragonskill( CHAR_DATA *ch, char *argument )
 {
     char arg[MIL];
@@ -344,19 +357,22 @@ void do_dragonskill( CHAR_DATA *ch, char *argument )
     else if (!str_cmp(arg, "shield"))		{age = AGE_ANCIENT; skill = DRAG_SHIELD;}
     else if (!str_cmp(arg, "age"))
     {
+	/* DP and QP cost to advance to the NEXT age tier.
+	 * QP costs begin at Young Adult tier and increase by 500 per tier.
+	 * AGE values decrease as dragons grow older (lower = older). */
 	switch(ch->vampgen)
 	{
 	    default: stc("You have attained the highest possible age.\n\r", ch); return;
-	    case AGE_HATCHLING:	cost = 2500; break;
-	    case AGE_VYOUNG:	cost = 5000; break;
-	    case AGE_YOUNG:	cost = 7500; break;
-	    case AGE_JUVENILE:	cost = 10000; break;
-	    case AGE_YADULT:	cost = 15000; qpcost = 500; break;
-	    case AGE_ADULT:	cost = 25000; qpcost = 1000; break;
-	    case AGE_MATURE:	cost = 35000; qpcost = 1500; break;
-	    case AGE_OLD:	cost = 50000; qpcost = 2000; break;
-	    case AGE_VOLD:	cost = 70000; qpcost = 2500; break;
-	    case AGE_ANCIENT:	cost = 100000; qpcost = 3000; break;
+	    case AGE_HATCHLING:  cost = 2500;   break;               /* -> Very Young   */
+	    case AGE_VYOUNG:     cost = 5000;   break;               /* -> Young        */
+	    case AGE_YOUNG:      cost = 7500;   break;               /* -> Juvenile     */
+	    case AGE_JUVENILE:   cost = 10000;  break;               /* -> Young Adult  */
+	    case AGE_YADULT:     cost = 15000;  qpcost = 500;  break; /* -> Adult        */
+	    case AGE_ADULT:      cost = 25000;  qpcost = 1000; break; /* -> Mature Adult */
+	    case AGE_MATURE:     cost = 35000;  qpcost = 1500; break; /* -> Old          */
+	    case AGE_OLD:        cost = 50000;  qpcost = 2000; break; /* -> Very Old     */
+	    case AGE_VOLD:       cost = 70000;  qpcost = 2500; break; /* -> Ancient      */
+	    case AGE_ANCIENT:    cost = 100000; qpcost = 3000; break; /* -> Wyrm         */
 	}
 
 	if (ch->pcdata->classpoints[CP_CURRENT] < cost || ch->pcdata->quest < qpcost)

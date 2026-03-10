@@ -2,9 +2,9 @@
 
 0 Classes~
 There are 10 available classes.  For more information on an individual class,
-refer to the help file(help dragon, help drow, etc...).  If you need to know
-anything not listed in these files, ask an experienced player or an imm.
-To be classes, simply type autoclass.
+refer to the help file (help dragon, help drow, etc.).  If you need to know
+anything not listed in these files, ask an experienced player or an immortal.
+To become classed, simply type autoclass once you meet the stat requirements.
 
 Dragon       - Mythical beasts who soar through the sky.
 #PDrow#n         - Cruel masters of the underdark.
@@ -102,12 +102,12 @@ Related Helps: Leaders, and Clan.
 
 
 0 Dragons~
-The fierce and lethal dracos.  Strong and proud reptillian creatures, their mere
+The fierce and lethal dracos.  Strong and proud reptilian creatures, their mere
 presence can induce fear into the brave hearts of many. Breathtaking to behold,
 glorious in the kill, be they good or evil, impressive to the highest extreme.
 As with most creatures, they are split between good - the metallic dragons, and
-evil - the chromatic.  Capable of growing up to sixty feet, these monsterous
-beings stand high on the heirarchy of power.  Growing stronger as their age
+evil - the chromatic.  Capable of growing up to sixty feet, these monstrous
+beings stand high on the hierarchy of power.  Growing stronger as their age
 grows, they can become one of the strongest beings to ever tread the earth.
 
 Dragon Abilities
@@ -121,10 +121,10 @@ Related Helps: Dragonskills, and Class.
 ~
 
 0 Dragonskills~
-Dragon grow older through the use of the 'dragonskills' command.  As they gain
-older, they become able to purchase other abilities through the 'dragonskills'
-command, as listed below.  Dragon abilities cost 1000 per required age beyond
-Hatchling.
+Dragons grow older through the use of the 'dragonskills' command.  As they
+grow older, they become able to purchase other abilities through the
+'dragonskills' command, as listed below.  Dragon abilities cost 1000 DP per
+required age tier beyond Hatchling.
 
 Age           DP Cost  QP Cost  MR  Abilities
 ---           -------  -------  --  ---------
@@ -132,13 +132,13 @@ Hatchling     Starting Age      0   None
 Very Young    2500     0        0   Fangs <fangs>, Nightsight <nightsight>
 Young         5000     0        0   Horns <horns>, Claws <claws>
 Juvenile      7500     0        0   Wings <wings>, Breath <breath>
-Young Adult   10000    500      0   Tail <stail>
-Adult         15000    1000     0   Truesight <heighten>
-Mature Adult  25000    1500     10  Dust <dust>
-Old           35000    2000     20  Scry <scry>, Magic (lowers casting time)
-Very Old      50000    2500     30  Readaura <readaura>
-Ancient       70000    3000     40  Shield <shield>
-Wyrm          100000   5000     50  None
+Young Adult   10000    0        0   Tail <tail>
+Adult         15000    500      0   Truesight <heighten>
+Mature Adult  25000    1000     10  Dust <dust>
+Old           35000    1500     20  Scry <scry>, Magic (lowers casting time)
+Very Old      50000    2000     30  Readaura <readaura>
+Ancient       70000    2500     40  Shield <shield>
+Wyrm          100000   3000     50  None
 Ancient Wyrm  Leader Position   50  None
 
 Related Helps: Dragon.
@@ -310,8 +310,8 @@ Related Helps: Highlanders.
 
 
 0 Mages~
-True WoD Mages.  They bend reality too their will, but as the result of a world
-of nonbelivers the world bends back.  Mages cast powerful spells which are
+True WoD Mages.  They bend reality to their will, but as the result of a world
+of non-believers the world bends back.  Mages cast powerful spells which are
 divided into spheres, but gain paradox which strikes back at them as they cast
 their more powerful spells.
 
@@ -334,7 +334,7 @@ Related Helps: Spheres, Quintessence, Backlash, Mageclans, 'help <sphere name>
 #pAkashic Brotherhood:#n Simplistic martial artists.#p Focus: Mind
 #pCelestial Chorus:#n Wielders of divine magic. #pFocus: Prime
 #pCult of Esctasy:#n A free will group who strives to reach beyond their normal limitations. #pFocus: Time#n
-#pDreamspeakers:#n A group with deep commentions to the land and their native ways. #pFocus: Spirit#n
+#pDreamspeakers:#n A group with deep connections to the land and their native ways. #pFocus: Spirit#n
 #pEuthanatos:#n Death is not THE end, it is AN end. All things cycle. #pFocus: Entropy#n
 #pOrder of Hermes:#n A complex organization that seeks perfection. #pFocus: Forces#n
 #pSons of Ether:#n Tinkers who create things that simply shouldn't be possible. #pFocus: Matter#n
@@ -364,10 +364,10 @@ Related Helps: Mage, and 'help <sphere name>sphere'(ie. help timesphere).
 ~
 
 0 Quintessence~
-Quintessnece is the fundimental building block of the universe. As mage's increase
-their power(Arete) they become able to store more quintessence in their bodies. This
-quintessence can be used to power almost any of their spells to an even greater than
-normal result.
+Quintessence is the fundamental building block of the universe. As mages increase
+their power (Arete) they become able to store more quintessence in their bodies.
+This quintessence can be used to power almost any of their spells to an even
+greater than normal result.
 
 Related Helps: Mage, and Backlash.
 ~
@@ -375,20 +375,20 @@ Related Helps: Mage, and Backlash.
 0 Backlash~
 Whenever a mage casts a spell the will of the world works against it. When casting
 minor spells this has almost no effect, but with powerful spells it can be quite
-devastating. Depending on the conditions and power of the spell mage's build up
-paradox. Once they have built up enough paradox or they gain enough from one single spell,
-it causes a backlash. In a backlash the forces of paradox the mage has been accumulating
-relase all at once dealing potenially devistating damage.
+devastating. Depending on the conditions and power of the spell, mages build up
+paradox. Once they have built up enough paradox, or gain enough from a single spell,
+it causes a backlash. In a backlash the forces of paradox the mage has been
+accumulating release all at once, dealing potentially devastating damage.
 
 Related Helps: Mage, and Quintessence.
 ~
 
 0 Correspondencesphere~
 Level 1: Allows spells to target the caster.
-Level 2: Allows spels to target others in the same room.
+Level 2: Allows spells to target others in the same room.
 Level 4: Rift: A travel power which creates a portal that has a duration based on the amount of quintessence used.
 	Syntax: rift (target) (quintessence)
-Level 5: Alows spells to target other in the same area.
+Level 5: Allows spells to target others in the same area.
 
 Related Helps: Mages, and Spheres.
 ~
@@ -399,7 +399,7 @@ Level 2: Beginner's Luck: Allows the caster to hit automaticly the first attacks
 	Syntax: beginnersluck (quintessence)
 Level 4: Brittle Bones: Cuts through the opponents soak for a number of attacks.
 	Syntax: brittlebones (target) (quintessence)
-Level 5: Mutate Ephemera: Paralized the opponent, and twists fate to send their attacks back against them.
+Level 5: Mutate Ephemera: Paralyzes the opponent, and twists fate to send their attacks back against them.
 	Syntax: mutateephemera (target) (quintessence)
 
 Related Helps: Mages, and Spheres.
@@ -471,7 +471,7 @@ Related Helps: Mages, and Spheres.
 ~
 
 0 Spiritsphere~
-Level 1: Spirit Sence: Allows you to see into the umbra.
+Level 1: Spirit Sense: Allows you to see into the umbra.
 	Syntax: spiritsence
 Level 2: Spirit Caress: Allows you to reach into the umbra and make one attack.
 	Syntax: spiritcaress
@@ -488,7 +488,7 @@ Level 1: Time Sense: Lowers Speed (auto)
 Level 2: Future Sense: Raises Avoid (auto)
 Level 4: Contingency: Prepares a spell to be cast when you enter combat.
 	contingency (spell)
-Level 5: Doublecast: Allows you to cast anouther mage spell twice.
+Level 5: Doublecast: Allows you to cast another mage spell twice.
 	doublecast (the spell exactly as you would cast it normally, including targets and quintessence)
 
 Related Helps: Mages, and Spheres.
@@ -498,7 +498,7 @@ Related Helps: Mages, and Spheres.
 0 Monks~
 Monks are a breed of holy warriors well known for their training.  They have
 mastered the use of their body in combat over mere weapons.  By harnessing the
-divine powers of the realm in conjuction with their elite fighting skills, Monks
+divine powers of the realm in conjunction with their elite fighting skills, Monks
 are a force to be reckoned with.
 
 Commands:
@@ -597,9 +597,9 @@ rather than taught at a later age, and they enjoy complete flexibility with
 their spells.  In addition to being able to write their own spells, Sorcerers
 have a few extra "basic" spells, and can cast spells faster than normal as
 their colors improve.
-** This is a "Book Mage" type class, HOWEVER, it is EXTREMELY MODIFIED.  Do
-    NOT expect Mage Primers or old spells to work.  Work with what's listed
-    in these helpfiles and nothing else.
+** This is a "Book Mage" type class, but it is heavily modified.  Do NOT
+    expect standard Mage Primer spells to work.  Refer to these helpfiles
+    for current mechanics.
 
 Commands:
 Colors     - Trains a color.

@@ -1,9 +1,9 @@
 #HELPS
 
 -1 SUMMARY~
-To access any files on this list, type 'help <name>'.  If you know of any 
-helpfiles we have that aren't linked or in need of updating, or wish to make 
-suggestions, leave a note on the personal board to Akuma or imms, as appropriate.
+To access any files on this list, type 'help <name>'.  If you know of any
+helpfiles that are missing or in need of updating, leave a note on the
+personal board to an immortal, as appropriate.
 
  License Files -	Diku, Merc, Godwars, Godwars-history, Godwars-info.
  Important Files -	Newbie, Rules, Disclaimer ...
@@ -13,22 +13,20 @@ suggestions, leave a note on the personal board to Akuma or imms, as appropriate
 ~
 
 -1 NEWBIE~
-#7#b#uREAD THIS.  IF YOU DONT YOUR IGNORANCE WILL GET YOU A SLAY.#n
-Welcome to the world of Genesis, a modified Godwars Deluxe codebase based off of
-Ethereal Mists.  A few things for newbies to note.
+#7#b#uPlease read this before playing.#n
+Welcome to Godwars, a modified Godwars Deluxe codebase.  A few things for
+new players to note.
 
 * Read #Rhelp rules#n.  Ignorance is not an excuse.
 * Take a look at #Ghelp class#n and #Ghelp clan#n.
-* Read the #Cnote boards#n you will find useful information there.  If nothing else, 
- read the #Cannounce board#n, or you will miss very important information.
+* Read the #Cnote boards#n — you will find useful information there.  In
+ particular, check the #Cannounce board#n for important announcements.
 * Please read #Lhelp reqs#n for classing requirements.
-* There are monthly wipes of inactive characters.  Log at least once a month to
- avoid deletion
-* Many things changed since we were last up.  Most importantly, stats.  Refer
- to #Phelp stats#n for information on them.
-* You may want to look into #yhelp dirs#n to find directions to good exp areas.
+* Characters inactive for extended periods may be subject to deletion.
+* Refer to #Phelp stats#n for information on your character's attributes.
+* You may want to look into #yhelp dirs#n for directions to good exp areas.
 
-#7#b#u* No we are not looking for more imms and yes there are requirements.#n
+#7#b#u* Immortal positions are not freely available and have requirements.#n
 ~
  
 -1 DIKU~
@@ -176,16 +174,22 @@ For more information, check out the GODWARS-INFO help file.
 
 -1 WIZLIST~
 #L-------------------------------------------------------------------#n
-                            #7G #0E #7N #0E #7S #0I #7S#n
+                         #7G O D W A R S#n
+               #0Modernized Codebase — Staff & Credits#n
 #L-------------------------------------------------------------------#n
-Story Tellers:
-#r Akuma#n: #rWrapped#n around Chaos' little #rfinger#n.
-#7 Chaos#n: Akuma's #7One#n and #7Only#n.
-#C Dude#n: Oldest of the #CCoder-Bitches#n.  fire...
 
-Implementors:
-#R Shane#n: That's Shane #RSlater#n.
-#0 Corruption#n: .........#0meh#n.
+#7Codebase Credits:#n
+  #CGodwars#n was created by #CRichard Woolcock#n (aka #CKaVir#n).
+  #CEthereal Mists#n codebase by #CXentoth#n, #CMistif#n, #CTantric#n,
+    #CAristoi#n, and #CMaizoon#n.
+  #CBonus System#n by #CAzarius#n of #CCrimson Nightmares#n.
+  Original #CDiku Mud#n by Katja Nyboe, Tom Madsen, Hans Henrik
+    Staerfeldt, Michael Seifert, and Sebastian Hammer.
+  #CMerc 2.1#n by Furey, Hatchet, and Kahn.
+
+#7Staff:#n
+  (See an immortal in-game for current staff listing.)
+
 #L-------------------------------------------------------------------#n
 ~
 
@@ -193,38 +197,29 @@ Implementors:
 .
                                    Welcome to
 
-                                #rGodwars#n: #7G#0e#7n#0e#7s#0i#7s#n
+                               #rGodwars Modernized#n
 
                 Based on Merc 2.1 code by Furey, Hatchet and Kahn
-          Diku Mud was created by Hans Henrick Staerfeldt, Kataja Nyboe,
+          Diku Mud was created by Hans Henrik Staerfeldt, Katja Nyboe,
                 Tom Madsen, Michael Seifert, and Sebastian Hammer
                           God Wars was created by KaVir
 
                            Based on the Ethereal Mists
              coded by Xentoth, Mistif, Tantric, Aristoi, and Maizoon
 
-                       GW: Genesis owned and coded by #rAkuma#n
-                        Admin E-mail: asmodeus666@cox.net
-
 What do you wish carved upon your tombstone: ~
 
 -1 MOTD~
-#7 Welcome to GW: Genesis.  Be sure to read #Rhelp rules#7 and #Rhelp newbie#7, or
-there'll be hell to pay.  To everyone who can't handle PK and can't conduct
-themselves maturely, leave now, you'll save us the time of booting you.#n
-   #rAkuma#n
+#7 Welcome to Godwars Modernized.  Be sure to read #Rhelp rules#7 and
+#Rhelp newbie#7 before playing.  PK is a core part of this mud; please
+conduct yourself maturely and respect the rules.#n
 
-#0Important Changes#n:
+#0Key Features#n:
   #0Styles#n: Combat styles are in.  For information, read help styles.
-  #0Umbra#n: Can now be reached by anyone at Temple using the Umbra command.
-  #0Stances#n: Stances have been updated and made better.  Read help stances.
-  #0Classing#n: Autoclass now works, just type autoclass.
-  #0Travel#n: Is a new travel command for everyone.  It is rather limited.  It's
-   primary use is questing.
-
-If you like the mud, and enjoy giving away money, you can donate 
-money directly to our server costs(more than $10 is too much) at
-http://www.dune.net/customers/?donate+azmokuma
+  #0Umbra#n: Can be reached by anyone at Temple using the Umbra command.
+  #0Stances#n: Stances have been updated and improved.  Read help stances.
+  #0Classing#n: Autoclass is available once you meet stat requirements.
+  #0Travel#n: The travel command allows limited fast-travel for questing.
 ~
 
 -1 RULES~
@@ -256,7 +251,7 @@ By these acknowledgments you hereby save and accept Genesis and its
 Administrators from any and all liability that may arise during gameplay.
 
 You also agree that failure to abide by Immortal decisions may result in the 
-complete termination of your playing priveledges.
+complete termination of your playing privileges.
 
 By continuing to play here,  you also imply that you are 18 years of age or 
 older, Or have parental consent to play here.
@@ -272,12 +267,12 @@ will still be dealt with accordingly.
 -1 Multiplaying~
 Multiplay is the act of using one of your characters to in any way
 benefit another one of your characters.  Dropping link to give eq/qp,
-using other people to transfer eq/qp, andusing one character to "avenge"
+using other people to transfer eq/qp, and using one character to "avenge"
 the death of another one of your characters are all examples of multiplay.
 On the basic level, any interaction between characters controlled by the
 same player is multiplay.  Also defined under multiplay is the sharing
 of characters, and having two people logged in from the same IP.
-You character is your own, you may not sell it, let a friend use it, or
+Your character is your own, you may not sell it, let a friend use it, or
 give it away, such acts are sharing of characters.  Two logged players
 with the same IP, even should they be different people, is also multiplay.
 ~
@@ -491,10 +486,16 @@ the ownership of your own items by use of the 'gift' command.
 
 
 0 Decapitate~
-Do this to another avatar when they are mortally wounded, and you will 
-suck out some of their lifeforce (represented by 1000exp), making them 
-mortal again.  You may also loot their corpse, of course, and if you are 
-hungry you can even eat their head ;)
+When an opponent is mortally wounded, you can decapitate them to finish
+the kill.  Decapitating a player steals Quest Points from them — the
+amount stolen is based on the victim's race value (race * 30 QP).  There
+is also a 20% chance of an "Uber Decapitation" which awards an additional
+50-75 bonus QP.  The victim is reduced to mortal status and you may also
+loot their corpse.
+
+Requires a slashing or slicing weapon.  You must be an Immortal+ to
+decapitate other Immortal+ players.  Decapping outside your status range
+results in a paradox penalty (see help paradox).
 ~
 
 

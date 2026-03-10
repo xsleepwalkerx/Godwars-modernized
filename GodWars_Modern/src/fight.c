@@ -5329,15 +5329,22 @@ void do_decapitate( CHAR_DATA *ch, char *argument )
     ch->fight_timer += 15;
     behead( victim, ch );
     do_beastlike(ch,"");
+
+    /* QP theft on decapitation: steal (victim->race * 30) QP from victim.
+     * victim->race holds the player's status tier (0-30+).
+     * If victim has less QP than the steal amount, drain to 0. */
     statuskill = victim->race * 30;
     if (victim->pcdata->quest <= statuskill)
        victim->pcdata->quest = 0;
     if (victim->pcdata->quest >= statuskill)
        victim->pcdata->quest -= statuskill;
     ch->pcdata->quest += statuskill;
+
     ch->pkill = ch->pkill + 1;
     victim->pdeath = victim->pdeath + 1;
     victim->pcdata->wolf = 0;
+
+        /* 20% chance of an "Uber Decapitation" bonus (50-75 extra QP). */
         if (rchance(20))
         {
           qpr = number_range(50,75);
