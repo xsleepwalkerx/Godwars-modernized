@@ -1,0 +1,356 @@
+#AREADATA
+Name        Ishamael    Malkavian Hq~
+Builders    Mystaria~
+VNUMs       16450 16499
+Security    1
+End
+
+
+
+#MOBILES
+#16450
+Malkav~
+Malkav~
+A man wrapped in a tight straight jacket
+~
+Before you a dark visage stands, glaring down at you.  His straightjacket is 
+tight, constricting most of his movements, making it natural that he never
+leaves this spot. His random chanting seems to soothe your soul and heal your wounds...
+~
+2|64 8|32|512 0 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#16451
+Caitie~
+Caitie~
+A regal woman stands before you, garbed in a fine black silk gown.
+~
+Standing before you is a pale woman with glittering red eyes..they shine with 
+a deadly, ancient intelligence and evil..and a strange madness..
+~
+64|8192 2|8|32|128|512 0 S
+1000 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#0
+
+
+#OBJECTS
+#16450
+Ring of Spite~
+Ring of Spite~
+A ring gleaming with pure spite lays here.~
+~
+9 32 1|2
+0 0 0 0 
+5 0 0
+A
+18 5
+A
+19 5
+A
+17 -10
+#16451
+Ring of Sorrow~
+Ring of Sorrow~
+A ring crafted from sorrow and woe is here.~
+~
+9 32 1|2
+0 0 0 0 
+5 0 0
+A
+17 -10
+A
+18 5
+A
+19 5
+#16452
+Necklace of Grief~
+Necklace of Grief~
+A blackened necklace lays here, forgotten by time...~
+~
+9 32 1|4
+0 0 0 0 
+5 0 0
+A
+19 5
+A
+18 5
+A
+17 -10
+#16453
+Choker of Woe~
+Choker of Woe~
+A choker blackened and charred is here..~
+~
+9 32 1|4
+0 0 0 0 
+5 0 0
+A
+17 -10
+A
+18 5
+A
+19 5
+#16454
+Black tunic of guile~
+Black tunic of guile~
+A strange black silk tunic lays here..~
+~
+9 32 1|8
+0 0 0 0 
+5 0 0
+A
+17 -10
+A
+18 5
+A
+19 5
+#16455
+Black hood of shadows~
+Black hood of shadows~
+A black silk hood lays here..~
+~
+9 32 1|16
+0 0 0 0 
+5 0 0
+A
+17 -10
+A
+18 5
+A
+19 5
+#16456
+Black leg plates of despite~
+Black leg plates of despite~
+Pitch black leg plates rest here, radiating an aura of evil.~
+~
+9 32 1|32
+0 0 0 0 
+5 0 0
+A
+17 -10
+A
+18 5
+A
+19 5
+#16457
+Gauntlets of repression~
+Gauntlets of repression~
+Gauntlets shimmering with hatred lay here.~
+~
+9 32 1|128
+0 0 0 0 
+5 0 0
+A
+17 -10
+A
+18 5
+A
+19 5
+#16458
+Malkav's mark~
+Malkav's mark~
+A powerful burning brand is here..~
+~
+9 32 1|256
+0 0 0 0 
+5 0 0
+A
+17 -10
+A
+18 5
+A
+19 0
+#16459
+Aura of Insanity~
+Aura of Insanity.~
+An strange maddening presence is felt..~
+~
+9 32 1|1024
+0 0 0 0 
+5 0 0
+A
+17 -10
+A
+18 5
+A
+19 5
+#16460
+Sash of Malkavian~
+Sash of Malkavian~
+A long violet sash lays here..~
+~
+9 32 1|2048
+0 0 0 0 
+5 0 0
+A
+17 -10
+A
+18 5
+A
+19 5
+#16461
+Manacles of Imprisonment~
+Manacles of Imprisonment~
+Thick black steel manacles lay here..~
+~
+9 32 1|4096
+0 0 0 0 
+5 0 0
+A
+17 -10
+A
+18 5
+A
+19 5
+#16462
+A deadly smirk~
+A deadly smirk~
+The smirk of malkav..~
+~
+9 32 1|32768
+0 0 0 0 
+5 0 0
+A
+17 -10
+A
+18 5
+A
+19 5
+#0
+
+
+#ROOMS
+#16450
+Hall of Broken Mirrors.~
+Shattered dreams lay to rest here, as you appear
+within a bizzarre, gothic hallway. Upon the walls are
+very dim torches, and broken mirrors laying between
+them.  A long violet satin carpet extends to a very
+ornate, yet slightly tarnished throne. Sitting atop it
+is a raven statue, and it watches you very curiously,
+its onyx eyes shimmering and gleaming. 
+If you walk up the stairs you will find yourself in
+Midgaard, or down towards the Great Spirit of Malkav
+himself.
+~
+0 1|8 0
+D5
+~
+~
+0 -1 16451
+S
+#16451
+The Path of Madness.~
+In the center of this room, a large pentagram
+rests, a dark figure standing in its midst, babbling
+mindlessly. As the rest of this dark tower, there are
+no windows, barely any doors. Just your own eyesight
+and instincts to guide you. This entire realm seems to
+reflect Ishamael's own heart and soul, if he were to
+hold these anymore. The hall has a very romantic and
+tragic feel and look, long violet draparies, and
+paintings of Ishamael's long dead family, the
+Forsaken. They all seem cadaverous as Ishamael, but a
+bit older and more deadly seeming. If you walk further
+down the hall you see the paintings in more detail, as
+they lead into other portions of the realm.
+~
+0 1|8|1024|16384 0
+D0
+~
+~
+0 -1 16452
+D4
+~
+~
+0 -1 16450
+S
+#16452
+The Forsaken Paintings.~
+A simple end to the Path of Shadows, you see the
+paintings of the Forsaken surrounding you. You feel
+that these are not just ordinary paintings, but
+portals into the unknown. A pedestal lies in the midst
+of this room, a dark forboding mist surrounding it.
+Looking in it you see the destinations that lie ahead,
+If you but focus upon them, and speak the names.
+     The Book of Nod rests atop a large black marble pedestal, within it containing vast tomes of Kindred
+knowledge..
+~
+0 1|8 0
+D2
+~
+~
+0 -1 16451
+E
+book of nod~
+Temple, Sphinx, Draconia, Hightower, Staff, Ultima~
+T
+temple~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 3001 0
+T
+staff~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 25008 0
+T
+sphinx~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 2646 0
+T
+hightower~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 1312 0
+T
+draconia~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 2201 0
+T
+ultima~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 2549 0
+S
+#0
+
+
+#RESETS
+M 1 16450 1 16451			healer to safe
+M 1 16451 1 16450			guardian to recall
+E 1 16450 1 1
+E 1 16451 1 2
+E 1 16452 1 3
+E 1 16453 1 4
+E 1 16454 1 5
+E 1 16455 1 6
+E 1 16456 1 7
+E 1 16457 1 9
+E 1 16458 1 10
+E 1 16459 1 12
+E 1 16460 1 13
+E 1 16461 1 14
+E 1 16462 1 18
+S
+
+
+#SPECIALS
+M  16450 spec_cast_adept			Malkav
+M 16451 spec_clan_malkavian			Caitie
+S
+
+
+#$

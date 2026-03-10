@@ -1,0 +1,474 @@
+#AREADATA
+Name        Mage Halls~
+Builders    Mortimer~
+VNUMs       18250 18266
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMS
+#18250
+Elysium of the Traditions~
+You are standing in a vast gathering hall, fine draperies and carpeting
+cover this place.  It has the look of a library, as there are massive
+shelves with countless books here.  You can make out various theorums of the
+various traditions, everything from the Virtual Adepts 'The Digital Web,
+version 2.  5' to the Euthanatos and their Philosphies of Death and Life.
+Torchlight drapes this place in a peaceful aura, and you as continue to look
+about, you find that in one corner of this place, the light does not touch.
+Instead a flickering green light is here, where the Nephandus go.  All walks
+of Magi are Welcome here, including the Technocratic Union.  This is the
+Elysium of the Magi, where all may walk in peace.
+~
+0 0 0
+D0
+~
+~
+0 0 18255
+D1
+~
+~
+0 0 18253
+D2
+~
+~
+0 0 18254
+D3
+~
+~
+0 0 18257
+S
+#18251
+The Horizon Realm of the Enlightened~
+Colours swirl in all fashions here, the floor, the ceiling, everything is
+made of hues of violet, blue, and pink, a thousand other shades of colors
+that mankind will never know.  You have stepped onto one of the many facets
+of the Horizon realms, where no man will ever step foot.  This place is
+where the more Enlightened magi call home, to share discoveries and other
+things that they would.
+~
+0 0 0
+D5
+~
+~
+0 0 18250
+S
+#18252
+Library of the Ascended~
+This place appears to be the most serene place you would ever find on
+earth, or anywhere.  It has the warm feeling that heaven would bring, to a
+man who was saved and went into the light.  Those Magi who truly Ascended,
+and have escaped the daily chores that are life and apprenticeship rest
+here, to contemplate higher philosphies and notions, to increase the
+knowledge of their students and themselves.  But strange about this place is
+the pillars of this room have veins.  Strange green pulsating veins, and a
+strange, beating sound fills your eardrums, like the heart of a unawakened
+God...
+~
+0 0 0
+D5
+~
+~
+0 0 18251
+S
+#18253
+The Steps of Time~
+You have now stepped into a small room that appears to grow in size as
+you walk deeper in.  It is lit by only one torch, but you see large pillars,
+vast columns of light towards the end.  Within the depths of your mind you
+hear a voice echo 'You have stepped into the Hall of Twinkle, the Oracle of
+Time.  I will take you where you wish to go, young one, you have but only to
+step up on the pillar that matches your desire.  '
+~
+0 0 0
+D3
+~
+~
+0 0 18250
+T
+temple~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 3001 0
+T
+staff~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 25008 0
+T
+sphinx~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 2646 0
+T
+hightower~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 1312 0
+T
+draconia~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 2201 0
+S
+#18254
+The Oracle of Life~
+You have reached what appears to be a very plain, white room.  Standing
+in the middle is a wisened old man in white robes, who is chanting softly to
+himself.  This room has an aura of tranquility to it the likes you have
+never felt before.  He smiles at you and nods, beckoning you in so that he
+may tend to your wounds.
+~
+0 17408 0
+D0
+~
+~
+0 0 18250
+S
+#18255
+The Elysium of the Conventions~
+You pass through a set of double doors, and find that you are no longer
+surrounded by the Mage Traditions.  All is calm and smooth here, very
+collected.  It has the look to it of a science lab, as it is very deprived
+of color and emotion.  Men in black suits walk about here, whispering,
+fixing their mirrorshades, and look rather disinterested in you.  There are
+also men and women in labcoats here, tinkering with strange devices and
+machines that stagger the mind.
+~
+0 0 0
+D2
+~
+~
+0 0 18250
+D5
+~
+~
+0 0 18266
+S
+#18257
+The Hall~
+This hallway is very elegant and calm, soothing music is played from
+nowhere.  Doors extend from various places here, leading to parts unknown.
+~
+0 0 0
+D0
+~
+~
+0 0 18258
+D1
+~
+~
+0 0 18250
+D2
+~
+~
+0 0 18259
+D3
+~
+~
+0 0 18260
+S
+#18258
+The Dojo of the Akashic Brotherhood~
+Men wearing martial arts gi's and hakama line this hall, all working hard
+at their physical training.  This is a place that you may relax and fight at
+your leisure to better train yourself mentally and physically.
+~
+0 0 0
+D2
+~
+~
+0 0 18257
+S
+#18259
+Hall of the Oracle of Prime~
+The Orac e of the most basic element of a mages life, Prime stands here,
+directing you.  He waves his hand and a small man appears, a Formori,
+twisted and broken, waiting for you to test your powers on him.  The Oracle
+before you nods, and the slimy twisted man steps a few steps forward,
+waiting.
+~
+0 0 0
+D0
+~
+~
+0 0 18257
+S
+#18260
+The Hallway~
+The hall continues on, and along the halls you see portraits of various
+Archmagi and Technocrats of the past, from Siervua and her children, to a
+portrait of Comptroller Mortimer Temporis and Phil Kinestr shaking hands,
+and the violent Marauder Eladriel standing atop of bodies, cackling
+maniacally.  There are a final set of doors at the end of this hall, one
+leading south, one north.
+~
+0 0 0
+D0
+~
+~
+0 0 18261
+D1
+~
+~
+0 0 18257
+D2
+~
+~
+0 0 18262
+S
+#18261
+A classroom~
+This room is filled with desks and shelves lined with books on Mage
+Combat.  On a chalkboard you see the following written.  "Greetings,
+students.  I am your Professor, Mortimer Temporis.  You may thumb through
+the following books in here to gain some insight on your beginning works.
+'Bomb', 'AreaBomb' 'Heal'.  By typing 'look bomb', you will see an example
+of one so that you will know what to do.  Do not forget to 'cast major rune
+mastery', beforehand, then 'cast copy rune page' Before preparing any spell
+to be written.  This is very important, or else it will not work.  Please
+read all of these books before moving on to the next class room"
+~
+0 0 0
+E
+bomb~
+#CThe Basics of a Bomb:#n
+
+The maximum normal damage attainable on a bomb is 4500 damage.
+The following is an example of something you could use on one page.
+Keep in mind to experiment for better damage ratios for low mana.
+
+write page title #0Dual Lazer Cannons#n(local)
+wr start.damage.spell
+wr victim.target
+wr min.damage: 500
+wr max.damage: 1000
+wr message.1: #0Dual-lazer Cannons#n
+wr message.2: #0From nowhere, a pair of #Ggreen-hued#0 shots are fired, detonating violently#n
+wr message.3: #0From nowhere, a pair of #Ggreen-hued#0 shots are fired, detonating violently#n
+wr next.page
+wr end.spell
+
+Keep in mind that if you do not add 'global.target' under victim.target, you cannot target things
+outside of your room.  The 'wr' is just an alias for 'write page line',
+which is the key command to write things onto a page
+You may now move on to your next lesson.
+~
+E
+heal~
+#CThe Basics of  Heal#n
+
+write page title #0Healing of the Lichtouch#n
+wr start.damage.spell
+wr victim.target
+wr reversed
+wr min.damage: 300
+wr max.damage: 300
+wr message.1: #0Lichtouch#n
+wr message.2: #0$N#n begins mumbling to herself, and a stale black dust falls ...
+wr message.3: #0$N#n begins mumbling to herself, and a stale black dust falls ...
+wr end.spell
+Okay, also keep in mind it must have 'global.target' beneath 'victim.target'
+to work at all.  It also needs a 'next.page' above 'end.spell' in order to
+be chained with other pages.  This like any other goes to 15. You may
+proceed.
+~
+E
+areabomb~
+#CBasics of an Area Bomb#n
+
+write page title #0 Coincidentallightning#n (Pk area)
+wr Start.damage.spell
+wr area.affect
+wr not.caster
+wr min.damage: 202
+wr max.damage: 202
+wr message.1:  #0Coincidental Lightning#n
+wr message.2:  The ground sizzles as #0thunder#n and #0lightning#n strike in a chaotic fashion
+wr message.3:  The ground sizzles as #0thunder#n and #0lightning#n strike in a chaotic fashion
+wr next.page
+wr end.spell
+
+Okay, a word on Area bombs. Below 'not.caster' can be 'no.players'. If you do this, it will
+become an exp bomb.   Removing this line makes it a PK bomb, and will hit
+everything.  in the room, whether you know it is there or not.  This
+includes everything, including kakusu, obfuscate, the works.   Do keep
+this in mind and use discretion when possible.
+~
+D2
+~
+~
+0 0 18260
+S
+#18262
+Another Classroom~
+You walk into a class room much like the other you were in.  Upon the
+chalkboard, the following is written: "Welcome, my students.  I am Philesty
+Kinestr, the Professor of this workshop on Training, Blessing, and various
+affects.  If you type 'Look bless', 'look train', 'look desanct', and 'look
+move', I believe you will find these very useful in your quest for
+knowledge.  Please, by all means procede"
+~
+0 0 0
+E
+move~
+#C How to Move#n
+
+write page title #0Going to mobs#n
+wr start.action.spell
+wr victim.target
+wr global.target
+wr move
+wr message.1:   You step into a rift of energy.
+wr message.2: $n steps into a rift of energy.
+wr message.3: $n steps out of a rift of energy.
+wr end.spell
+
+Okay, alot can be done with these.   You can make it to
+objects by making it object.target, and you can  add a reversed
+line to summon mobs/objects. These, like anything else, can be chained,
+so you can chain summon if you learn about 'parameters'. You
+can also use 'action' spells to create mobs and objects, but they
+But the objects cannot be used on quests.  These are advanced lessons
+that I urge you to find someone of wisdom to teach.  Mortimer is
+skilled at these and has a Tome with many for you to peruse.
+~
+E
+bless~
+#CBasics of a Bless#n
+
+
+write page title #0Bless#n
+wr start.affect.spell
+wr victim.target
+wr global.target
+wr apply: hp
+wr apply: mana
+wr apply: move
+wr apply: hit
+wr apply: dam
+wr apply: ac
+wr apply: save
+wr bonus: 100
+wr duration: 55
+wr message.1: You have blessed $N.
+wr message.2: You have been blessed.
+wr message.3: You have been blessed.
+wr next.page
+wr end.spell
+
+Now, it's time to explain a few things. apply: adds things like stats.
+If you want, you can add str, dex, con, etc, but that is solely up
+to you. Bonus is how much it adds to the chosen applied stats, and
+duration is how many mud hours it lasts. Max Duration is 60,
+max bonus is 100.
+~
+E
+train~
+#CBasics of a Train#n
+
+
+write page title #0Train#n
+wr start.affect.spell
+wr victim.target
+wr global.target
+wr reversed
+wr apply: hp
+wr apply: mana
+wr apply: move
+wr bonus: 100
+wr duration: 55
+wr message.1: You have trained $N.
+wr message.2: You have been trained.
+wr message.3: You have been trained.
+wr next.page
+wr end.spell
+
+Okay, Blesses and trains can all have the same things on them.
+But, trains lower stats as opposed to raised.  This is performed
+by the 'reversed' line in the spell.  Keep in mind, that should you
+want to experiment with 'Combat trains', you can add hit, dam, ac,
+and maybe even affects. These are in the next lesson. Proceed, please.
+~
+E
+desanct~
+#CDesanct#n
+
+
+write page title #0Desanct#n
+wr start.affect.spell
+wr victim.target
+wr global.target
+wr affect: sanct
+wr affect: protection
+wr message.1: You lower your defences.
+wr message.2: You lower your defences.
+wr message.3: You lower your defences.
+wr end.spell
+
+Now, notice a few things. There are no duration/bonus, as you
+don't want them. As soon as this page wears off the target,
+they lose the affects that are on this bomb.  So naturally,
+they'll lose sanct and protection.  Use this to your advantage.
+You don't want them to know you're doing it, so make the message
+discreet, if not non-existant.  You can use these types of pages
+in your bombs, on the end, the 15th page.  Instead of sanct/protect,
+make affect: for flaming, curse, web, poison, and faerie.fire.
+These will prove useful to you.  Next lesson, please.
+~
+D0
+~
+~
+0 0 18260
+S
+#18266
+Prison of the Technocratic Union~
+You follow the steps that lead down and find yourself in a sterile
+environment.  There is but one man standing here, wrapped in a straight
+jacket.  His eyes are old as the very stars above, and his skin is gnarled
+as the roots of the trees.  You find yourself in a room with Myrrdin the
+Mage, caught by the Union working his magick.
+~
+0 0 0
+D4
+~
+~
+0 0 18255
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$
+
+

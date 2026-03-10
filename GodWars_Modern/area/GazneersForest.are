@@ -1,0 +1,1718 @@
+
+#AREA Gazneer's Forest~
+
+
+#MOBILES
+#719
+Scardin~
+Scardin~
+Scardin is here, glancing seductively at you over her shoulder.
+~
+Dark eyes smouldering, her lips purse slightly and you feel a chill encompass
+your soul.
+~
+98 552 -1000 S
+2000 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#720
+Wolf Werewolf Portis~
+Portis~
+Portis, the Werewolf leader, stands here
+~
+Portis is foaming at the mouth.
+~
+98 552 0 S
+1100 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#721
+Gazneer~
+Gazneer~
+Gazneer is here.
+~
+Gazneer stares back at you .. he dares you to touch him.
+~
+98 1960 0 S
+2100 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#722
+Guardian~
+Guardian~
+The Guardian is raging.
+~
+This monster can't be described.
+~
+98 552 0 S
+700 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#723
+Brentious Guard~
+Brentious~
+Brentious is here, eating.
+~
+He ignores your curious look and continues with his meal.
+~
+98 552 0 S
+800 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#724
+Guard Gazneer~
+Gazneer's Guard~
+Gazneer's guard is here, guarding something
+~
+The guard walks around looking for trouble.
+~
+96 552 0 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#725
+wolf werewolf~
+the Werewolf~
+The werewolf looks for blood.
+~
+This beast is covered in blood from head to...paw?
+~
+96 552 0 S
+550 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#726
+Sprite Water WaterSprite~
+the Water Sprite~
+The water sprite flies by you.
+~
+This sprite looks EVIL!
+~
+96 572 0 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#727
+Air Sprite AirSprite~
+the Air Sprite~
+The air Sprite flies by you.
+~
+This Sprite looks EVIL!
+~
+96 572 0 S
+550 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#728
+Fire Sprite FireSprite~
+the Fire Sprite~
+The fire sprite flies by you.
+~
+This Sprite looks EVIL!
+~
+96 828 0 S
+550 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#729
+Tree Evil EvilTree~
+the Evil Tree~
+The evil tree is here doing Gazneer's biding.
+~
+The evil tree stares back at you as if to say, "BACK OFF!"
+~
+96 552 0 S
+350 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#0
+
+
+#OBJECTS
+#700
+faerie dust~
+faerie dust~
+A small silvered pouch lies here in the dust.~
+~
+26 65 1
+50 82 20 34
+1 1000 0
+A
+22 10
+#0
+
+
+#ROOMS
+#719
+Gazneer's Dark Forest~
+This is the Boundary of the Dark Lord Gazneer. His evil has enslaved the creatures of this forest for centuries. He rules with an Iron fist. Only the bravest of the brave dare enter his home.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 720
+S
+#720
+Along the Path Through the Dark~
+Wandering deeper into the woods owls can be heard, as well as a strange noise
+that seems to come from nowhere. Are these woods infested with Werewolves?
+~
+7 1 3
+D0
+
+~
+~
+0 -1 721
+D2
+
+~
+~
+0 -1 719
+S
+#721
+An Intersection in the Path~
+The trees seem to breathe as the path moves farther into the woods. This forest
+seems to have life...life tainted with a hint of evil.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 722
+D1
+
+~
+~
+0 -1 723
+D2
+
+~
+~
+0 -1 720
+D3
+
+~
+~
+0 -1 724
+D5
+
+~
+~
+0 -1 725
+S
+#722
+Along the Path in the Darkness~
+Rotting leaves litter the path. Dead bodies line the path under the trees. Gazneer's evil gets stronger the closer the path gets to him.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 726
+D2
+
+~
+~
+0 -1 721
+S
+#723
+the Outpost~
+Dark sentinels watch as you cross their boundaries, their eyes flashing
+maliciously as wanderers pass into darkness.
+~
+7 1 3
+D3
+
+~
+~
+0 -1 721
+S
+#724
+The Outpost~
+Gazneer's sentinels line this path, watching all that pass with dark eyes.
+~
+7 1 3
+D1
+
+~
+~
+0 -1 721
+S
+#725
+Pit of Darkness~
+The stench of death, or something rotten, begins to overwhelm. Upon
+observation, the horrid smell seems to emanate from a solitary living being
+amongst the dead.
+~
+7 1 3
+D4
+
+~
+~
+0 -1 721
+S
+#726
+The Path Through the Woods~
+Screams of the dead and dying echo through the trees. Thoughts of leaving this
+foul place begin to cross your mind.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 727
+D2
+
+~
+~
+0 -1 722
+S
+#727
+A Path in Gazneer's Forest~
+From here the tree Gazneer makes his home in can be seen. The black bark and
+glowing green leaves emanate a feeling of darkness and and evil.
+~
+7 1 3
+D2
+
+~
+~
+0 -1 726
+D3
+
+~
+~
+0 -1 728
+S
+#728
+A Crossroads in the Woods~
+Here lies the crossroads. To the north lies the evil that is Gazneer's Tree.
+To the south lies the lair of the sprites. To the west, a circle of
+trees. Rumor has it sacrifices take place in the darkness that lies there.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 729
+D1
+
+~
+~
+0 -1 727
+D2
+
+~
+~
+0 -1 731
+D3
+
+~
+~
+0 -1 730
+S
+#729
+The Path to Gazneer's Tree~
+Stones litter this dark and winding path leading to Gazneer's Tree. Caution
+would be advised walking here.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 761
+D2
+
+~
+~
+0 -1 728
+S
+#730
+The Path to the Circle of Trees~
+You are on a path leading towards a circle of trees. Leaves and brances form a
+dark canopy above, yet still a faint light filters through.
+~
+7 1 3
+D1
+
+~
+~
+0 -1 728
+D3
+
+~
+~
+0 -1 745
+S
+#731
+A hole in the ground~
+Those who dare enter the cave of the sprites may not return. For in this cave lies the evil that is Scardin. The leader of the sprites takes no prisoners and leaves nothing for a family to burry.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 728
+D5
+
+~
+~
+0 -1 732
+S
+#732
+The Cave of the Sprites~
+Why is there no light down here? All that can be heard is the flapping of millions of tiny wings.
+~
+7 1 3
+D3
+
+~
+~
+0 -1 733
+D4
+
+~
+~
+0 -1 731
+S
+#733
+The Cave of the Sprites~
+Why is there no light down here? All that can be heard is the flapping of millions of tiny wings.
+~
+7 1 3
+D1
+
+~
+~
+0 -1 732
+D2
+
+~
+~
+0 -1 734
+D3
+
+~
+~
+0 -1 737
+S
+#734
+The Cave of the Sprites~
+Why is there no light down here? All that can be heard is the flapping of millions of tiny wings.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 733
+D2
+
+~
+~
+0 -1 735
+D3
+
+~
+~
+0 -1 738
+S
+#735
+The Cave of the Sprites~
+Why is there no light down here? All that can be heard is the flapping of millions of tiny wings.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 734
+D2
+
+~
+~
+0 -1 736
+D3
+
+~
+~
+0 -1 739
+S
+#736
+The Cave of the Sprites~
+Why is there no light down here? All that can be heard is the flapping of millions of tiny wings.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 735
+D3
+
+~
+~
+0 -1 740
+S
+#737
+The Cave of the Sprites~
+Why is there no light down here? All that can be heard is the flapping of millions of tiny wings.
+~
+7 1 3
+D1
+
+~
+~
+0 -1 733
+D2
+
+~
+~
+0 -1 738
+D3
+
+~
+~
+0 -1 744
+S
+#738
+The Cave of the Sprites~
+Why is there no light down here? All that can be heard is the flapping of millions of tiny wings.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 737
+D1
+
+~
+~
+0 -1 734
+D2
+
+~
+~
+0 -1 739
+D3
+
+~
+~
+0 -1 743
+S
+#739
+The Cave of the Sprites~
+Why is there no light down here? All that can be heard is the flapping of millions of tiny wings.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 738
+D1
+
+~
+~
+0 -1 735
+D2
+
+~
+~
+0 -1 740
+D3
+
+~
+~
+0 -1 742
+S
+#740
+The Cave of the Sprites~
+Why is there no light down here? All that can be heard is the flapping of millions of tiny wings.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 739
+D1
+
+~
+~
+0 -1 736
+D3
+
+~
+~
+0 -1 741
+S
+#741
+The Cave of the Sprites~
+Why is there no light down here? All that can be heard is the flapping of millions of tiny wings.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 742
+D1
+
+~
+~
+0 -1 740
+S
+#742
+The Cave of the Sprites~
+Why is there no light down here? All that can be heard is the flapping of millions of tiny wings.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 743
+D1
+
+~
+~
+0 -1 739
+D2
+
+~
+~
+0 -1 741
+S
+#743
+The Cave of the Sprites~
+Why is there no light down here? All that can be heard is the flapping of millions of tiny wings.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 744
+D1
+
+~
+~
+0 -1 738
+D2
+
+~
+~
+0 -1 742
+S
+#744
+The Cave of the Sprites~
+Why is there no light down here? All that can be heard is the flapping of millions of tiny wings.
+~
+7 1 3
+D1
+
+~
+~
+0 -1 737
+D2
+
+~
+~
+0 -1 743
+S
+#745
+Through the Woods to the Circle of Trees~
+Streams of blood flow from the distance. What is the source of the horrific sight?
+~
+7 1 3
+D1
+
+~
+~
+0 -1 730
+D3
+
+~
+~
+0 -1 746
+S
+#746
+A Path in the Woods~
+Continuing along the path.
+~
+7 1 3
+D1
+
+~
+~
+0 -1 745
+D3
+
+~
+~
+0 -1 747
+S
+#747
+Along the Path~
+The howls heard before continue here. Screams soon follow. Surely these aren't human?
+~
+7 1 3
+D0
+
+~
+~
+0 -1 748
+D1
+
+~
+~
+0 -1 746
+S
+#748
+A Path in the Woods~
+The path continues.
+~
+7 1 3
+D1
+
+~
+~
+0 -1 750
+D2
+
+~
+~
+0 -1 747
+D5
+
+~
+~
+0 -1 749
+S
+#749
+A Dark Pit~
+Everything is black in this pit...what lies in the shadows?
+~
+7 1 3
+D4
+
+~
+~
+0 -1 748
+S
+#750
+The Path to the Cricle~
+The circle is now visible. The stream of blood now flows like a river and the
+screams are now deafening.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 751
+D3
+
+~
+~
+0 -1 748
+S
+#751
+Outside the Circle of Trees~
+The path has led you to the outside ring of a circle of trees. Leaves and
+branches so thick obscure the view beyond.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 752
+D2
+
+~
+~
+0 -1 750
+S
+#752
+The Circle of Trees~
+In the circle of trees.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 757
+D1
+
+~
+~
+0 -1 753
+D2
+
+~
+~
+0 -1 751
+D3
+
+~
+~
+0 -1 758
+S
+#753
+The Circle of Trees~
+In the circle of trees.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 754
+D3
+
+~
+~
+0 -1 752
+S
+#754
+The Circle of Trees~
+In the circle of trees.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 755
+D2
+
+~
+~
+0 -1 753
+D3
+
+~
+~
+0 -1 757
+S
+#755
+The Circle of Trees~
+In the circle of trees.
+~
+7 1 3
+D2
+
+~
+~
+0 -1 754
+D3
+
+~
+~
+0 -1 756
+S
+#756
+The Circle of Trees~
+In the circle of trees.
+~
+7 1 3
+D1
+
+~
+~
+0 -1 755
+D2
+
+~
+~
+0 -1 757
+D3
+
+~
+~
+0 -1 760
+S
+#757
+The Center of the Circle~
+Here lies the center of the circle.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 756
+D1
+
+~
+~
+0 -1 754
+D2
+
+~
+~
+0 -1 752
+D3
+
+~
+~
+0 -1 759
+S
+#758
+The Circle of Trees~
+In the circle of trees.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 759
+D1
+
+~
+~
+0 -1 752
+S
+#759
+The Circle of Trees~
+In the circle of trees.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 760
+D1
+
+~
+~
+0 -1 757
+D2
+
+~
+~
+0 -1 758
+S
+#760
+The Circle of Trees~
+In the circle of trees.
+~
+7 1 3
+D1
+
+~
+~
+0 -1 756
+D2
+
+~
+~
+0 -1 759
+S
+#761
+A Path to Evil~
+Gazneer's tree stands high in the background.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 762
+D2
+
+~
+~
+0 -1 729
+S
+#762
+The Path in the Woods~
+The evil grows stronger as the tree grows nearer. What power must Gazneer
+posses to control this all?
+~
+7 1 3
+D0
+
+~
+~
+0 -1 763
+D2
+
+~
+~
+0 -1 761
+S
+#763
+The Path~
+Armor piled up by the hundereds lie here. Many have tried defeating Gazneer, this is their fate.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 764
+D2
+
+~
+~
+0 -1 762
+S
+#764
+A turn in the Path~
+The path turns toward Gazneer's tree here.
+~
+7 1 3
+D1
+
+~
+~
+0 -1 765
+D2
+
+~
+~
+0 -1 763
+S
+#765
+A Path~
+The woods seem to smirk as the path continues. Maybe they know the fate of warriors beyond this point.
+~
+7 1 3
+D1
+
+~
+~
+0 -1 766
+D3
+
+~
+~
+0 -1 764
+S
+#766
+The Path~
+Continuing along the path.
+~
+7 1 3
+D1
+
+~
+~
+0 -1 767
+D3
+
+~
+~
+0 -1 765
+S
+#767
+A Fork in the Path~
+A fork in the path breaks south and north. To the north lies Gazneer's Tree.
+To the south lies the headquaters of the guards.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 772
+D2
+
+~
+~
+0 -1 768
+D3
+
+~
+~
+0 -1 766
+S
+#768
+In the Bushes~
+In these bushes is where the guards come to meet, talk and eat...man flesh!
+~
+7 1 3
+D0
+
+~
+~
+0 -1 767
+D2
+
+~
+~
+0 -1 769
+S
+#769
+In the Bushes~
+In the Bushes.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 768
+D1
+
+~
+~
+0 -1 770
+S
+#770
+In the Bushes~
+In the Bushes.
+~
+7 1 3
+D1
+
+~
+~
+0 -1 771
+D3
+
+~
+~
+0 -1 769
+S
+#771
+In the Bushes~
+In the Bushes.
+~
+7 1 3
+D3
+
+~
+~
+0 -1 770
+S
+#772
+The Path to the Tree~
+Gazneer's tree is towering over the land. Casting shadows down the path on top of you.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 773
+D2
+
+~
+~
+0 -1 767
+S
+#773
+The Base of the Tree~
+Standing at the base of the tree and looking up would shock anyone. It appears to have been dead for ages. Piece of falling bark crash to the ground with a thump.
+~
+7 1 3
+D2
+
+~
+~
+0 -1 772
+D4
+
+~
+~
+0 -1 774
+S
+#774
+Inside the Tree~
+Walking up the inside of this trunk is tiring. Maybe a rest is a good idea.
+~
+7 1 3
+D4
+
+~
+~
+0 -1 775
+D5
+
+~
+~
+0 -1 773
+S
+#775
+Inside the Tree~
+Walking up the inside of this trunk is tiring. Maybe a rest is a good idea.
+~
+7 1 3
+D4
+
+~
+~
+0 -1 776
+D5
+
+~
+~
+0 -1 774
+S
+#776
+Inside the Tree~
+Walking up the inside of this trunk is tiring. Maybe a rest is a good idea.
+~
+7 1 3
+D4
+
+~
+~
+0 -1 777
+D5
+
+~
+~
+0 -1 775
+S
+#777
+Along the branches~
+Standing along the branches you notice huge limbs to the north, east, and west.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 784
+D1
+
+~
+~
+0 -1 778
+D3
+
+~
+~
+0 -1 790
+D5
+
+~
+~
+0 -1 776
+S
+#778
+Along the branches~
+Don't fall off the branch!
+~
+7 1 3
+D1
+
+~
+~
+0 -1 779
+D3
+
+~
+~
+0 -1 777
+S
+#779
+Along the branches~
+Evil seems to call you from farther down the branch.
+~
+7 1 3
+D1
+
+~
+~
+0 -1 780
+D3
+
+~
+~
+0 -1 778
+S
+#780
+A Throne Room~
+If Gazneer isn't here, where could he be?
+~
+7 1 3
+D0
+
+~
+~
+0 -1 782
+D1
+
+~
+~
+0 -1 781
+D2
+
+~
+~
+0 -1 783
+D3
+
+~
+~
+0 -1 779
+S
+#781
+In the Leaves~
+The overwhelming smell of rot assails your senses.
+~
+7 1 3
+D3
+
+~
+~
+0 -1 780
+S
+#782
+In the Leaves~
+Dead leaves flutter and fall to the ground. The stench of death is
+overwhelming.
+~
+7 1 3
+D2
+
+~
+~
+0 -1 780
+S
+#783
+In the Leaves~
+The leaves smell of this branch smell as if something has died among them.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 780
+S
+#784
+Along the Branches~
+Walking on these branches is HARD WORK!
+~
+7 1 3
+D0
+
+~
+~
+0 -1 785
+D2
+
+~
+~
+0 -1 777
+S
+#785
+Along the Branches~
+Will Gazneer be on this branch? Only time can tell.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 786
+D2
+
+~
+~
+0 -1 784
+S
+#786
+A Throne Room~
+The throne room of the dark and mighty Gazneer. Tapestries blend and fade into
+the darkness at the corners of the room, as an overwhelming uneasiness begins
+to rise.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 787
+D1
+
+~
+~
+0 -1 788
+D2
+
+~
+~
+0 -1 785
+D3
+
+~
+~
+0 -1 789
+S
+#787
+In the Leaves~
+Leaves flicker and fall as you pass amongst them.
+~
+7 1 3
+D2
+
+~
+~
+0 -1 786
+S
+#788
+In the Leaves~
+The leaves flutter and fall together, seeming to form a tapestry or design of
+some sort.
+~
+7 1 3
+D3
+
+~
+~
+0 -1 786
+S
+#789
+In the Leaves~
+Rot and decay overwhelm your senses as you hurry to leave this branch.
+~
+7 1 3
+D1
+
+~
+~
+0 -1 786
+S
+#790
+Along the Branches~
+Don't trip over that bark!
+~
+7 1 3
+D1
+
+~
+~
+0 -1 777
+D3
+
+~
+~
+0 -1 791
+S
+#791
+Along the Branches~
+Continuing down the branch.
+~
+7 1 3
+D1
+
+~
+~
+0 -1 790
+D3
+
+~
+~
+0 -1 792
+S
+#792
+A Throne Room~
+A second throne room. The tapestries formed by leaves are nowhere less
+elaborate, yet still, the room is empty.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 794
+D1
+
+~
+~
+0 -1 791
+D2
+
+~
+~
+0 -1 795
+D3
+
+~
+~
+0 -1 793
+S
+#793
+In the Leaves~
+Silence and the sense of evil assault the senses.
+~
+7 1 3
+D1
+
+~
+~
+0 -1 792
+S
+#794
+In the Leaves~
+Dark and quiet, the leaves have mostly long since fallen.
+~
+7 1 3
+D2
+
+~
+~
+0 -1 792
+S
+#795
+In the Leaves~
+The leaves smell like dead bodies in your face.
+~
+7 1 3
+D0
+
+~
+~
+0 -1 792
+S
+#0
+
+
+#RESETS
+M 0 721 1 786  * Gazneer -> A Throne Room
+M 0 724 1 786  * Gazneer's Guard -> A Throne Room
+M 0 724 1 786  * Gazneer's Guard -> A Throne Room
+M 0 724 1 786  * Gazneer's Guard -> A Throne Room
+M 0 725 1 786  * the Werewolf -> A Throne Room
+M 0 723 1 771  * Brentious -> In the Bushes
+M 0 722 1 725  * Guardian -> Pit of Darkness
+M 0 722 1 749  * Guardian -> A Dark Pit
+M 0 719 1 738  * Scardin -> The Cave of the Sprites
+M 0 720 1 757  * Portis -> The Center of the Circle
+M 0 722 1 780  * Guardian -> A Throne Room
+M 0 722 1 792  * Guardian -> A Throne Room
+M 0 724 1 719  * Gazneer's Guard -> Gazneer's Dark Forest
+M 0 725 1 719  * the Werewolf -> Gazneer's Dark Forest
+M 0 726 1 719  * the Water Sprite -> Gazneer's Dark Forest
+G 0 700 1  * faerie dust
+M 0 727 1 719  * the Air Sprite -> Gazneer's Dark Forest
+G 0 700 1  * faerie dust
+M 0 728 1 719  * the Fire Sprite -> Gazneer's Dark Forest
+G 0 700 1  * faerie dust
+M 0 729 1 719  * the Evil Tree -> Gazneer's Dark Forest
+M 0 724 1 720  * Gazneer's Guard -> Along the Path Through the Dark
+M 0 725 1 720  * the Werewolf -> Along the Path Through the Dark
+M 0 726 1 720  * the Water Sprite -> Along the Path Through the Dark
+G 0 700 1  * faerie dust
+M 0 727 1 720  * the Air Sprite -> Along the Path Through the Dark
+G 0 700 1  * faerie dust
+M 0 728 1 720  * the Fire Sprite -> Along the Path Through the Dark
+G 0 700 1  * faerie dust
+M 0 729 1 720  * the Evil Tree -> Along the Path Through the Dark
+M 0 724 1 722  * Gazneer's Guard -> Along the Path in the Darkness
+M 0 725 1 722  * the Werewolf -> Along the Path in the Darkness
+M 0 726 1 722  * the Water Sprite -> Along the Path in the Darkness
+G 0 700 1  * faerie dust
+M 0 727 1 722  * the Air Sprite -> Along the Path in the Darkness
+G 0 700 1  * faerie dust
+M 0 728 1 722  * the Fire Sprite -> Along the Path in the Darkness
+G 0 700 1  * faerie dust
+M 0 729 1 722  * the Evil Tree -> Along the Path in the Darkness
+M 0 724 1 723  * Gazneer's Guard -> the Outpost
+M 0 724 1 724  * Gazneer's Guard -> The Outpost
+M 0 724 1 726  * Gazneer's Guard -> The Path Through the Woods
+M 0 725 1 726  * the Werewolf -> The Path Through the Woods
+M 0 726 1 726  * the Water Sprite -> The Path Through the Woods
+G 0 700 1  * faerie dust
+M 0 727 1 726  * the Air Sprite -> The Path Through the Woods
+G 0 700 1  * faerie dust
+M 0 728 1 726  * the Fire Sprite -> The Path Through the Woods
+G 0 700 1  * faerie dust
+M 0 729 1 726  * the Evil Tree -> The Path Through the Woods
+M 0 724 1 727  * Gazneer's Guard -> A Path in Gazneer's Forest
+M 0 729 1 727  * the Evil Tree -> A Path in Gazneer's Forest
+M 0 724 1 728  * Gazneer's Guard -> A Crossroads in the Woods
+M 0 724 1 729  * Gazneer's Guard -> The Path to Gazneer's Tree
+M 0 724 1 729  * Gazneer's Guard -> The Path to Gazneer's Tree
+M 0 724 1 730  * Gazneer's Guard -> The Path to the Circle of Trees
+M 0 724 1 730  * Gazneer's Guard -> The Path to the Circle of Trees
+M 0 726 1 731  * the Water Sprite -> A hole in the ground
+G 0 700 1  * faerie dust
+M 0 727 1 731  * the Air Sprite -> A hole in the ground
+G 0 700 1  * faerie dust
+M 0 728 1 731  * the Fire Sprite -> A hole in the ground
+G 0 700 1  * faerie dust
+M 0 729 1 731  * the Evil Tree -> A hole in the ground
+M 0 726 1 732  * the Water Sprite -> The Cave of the Sprites
+G 0 700 1  * faerie dust
+M 0 727 1 732  * the Air Sprite -> The Cave of the Sprites
+G 0 700 1  * faerie dust
+M 0 728 1 732  * the Fire Sprite -> The Cave of the Sprites
+G 0 700 1  * faerie dust
+M 0 729 1 732  * the Evil Tree -> The Cave of the Sprites
+M 0 726 1 733  * the Water Sprite -> The Cave of the Sprites
+G 0 700 1  * faerie dust
+M 0 727 1 733  * the Air Sprite -> The Cave of the Sprites
+G 0 700 1  * faerie dust
+M 0 728 1 733  * the Fire Sprite -> The Cave of the Sprites
+G 0 700 1  * faerie dust
+M 0 726 1 734  * the Water Sprite -> The Cave of the Sprites
+G 0 700 1  * faerie dust
+M 0 727 1 734  * the Air Sprite -> The Cave of the Sprites
+G 0 700 1  * faerie dust
+M 0 728 1 734  * the Fire Sprite -> The Cave of the Sprites
+G 0 700 1  * faerie dust
+M 0 728 1 735  * the Fire Sprite -> The Cave of the Sprites
+M 0 727 1 735  * the Air Sprite -> The Cave of the Sprites
+M 0 726 1 735  * the Water Sprite -> The Cave of the Sprites
+M 0 726 1 736  * the Water Sprite -> The Cave of the Sprites
+M 0 727 1 736  * the Air Sprite -> The Cave of the Sprites
+M 0 728 1 736  * the Fire Sprite -> The Cave of the Sprites
+M 0 728 1 737  * the Fire Sprite -> The Cave of the Sprites
+M 0 727 1 737  * the Air Sprite -> The Cave of the Sprites
+M 0 726 1 737  * the Water Sprite -> The Cave of the Sprites
+M 0 727 1 739  * the Air Sprite -> The Cave of the Sprites
+M 0 726 1 739  * the Water Sprite -> The Cave of the Sprites
+M 0 728 1 739  * the Fire Sprite -> The Cave of the Sprites
+M 0 726 1 740  * the Water Sprite -> The Cave of the Sprites
+M 0 727 1 740  * the Air Sprite -> The Cave of the Sprites
+M 0 728 1 740  * the Fire Sprite -> The Cave of the Sprites
+M 0 726 1 741  * the Water Sprite -> The Cave of the Sprites
+M 0 727 1 741  * the Air Sprite -> The Cave of the Sprites
+M 0 728 1 741  * the Fire Sprite -> The Cave of the Sprites
+M 0 726 1 742  * the Water Sprite -> The Cave of the Sprites
+G 0 700 1  * faerie dust
+M 0 727 1 742  * the Air Sprite -> The Cave of the Sprites
+G 0 700 1  * faerie dust
+M 0 728 1 742  * the Fire Sprite -> The Cave of the Sprites
+G 0 700 1  * faerie dust
+M 0 726 1 743  * the Water Sprite -> The Cave of the Sprites
+M 0 727 1 743  * the Air Sprite -> The Cave of the Sprites
+M 0 728 1 743  * the Fire Sprite -> The Cave of the Sprites
+M 0 726 1 744  * the Water Sprite -> The Cave of the Sprites
+M 0 727 1 744  * the Air Sprite -> The Cave of the Sprites
+M 0 728 1 744  * the Fire Sprite -> The Cave of the Sprites
+M 0 725 1 745  * the Werewolf -> Through the Woods to the Circle of Trees
+M 0 724 1 745  * Gazneer's Guard -> Through the Woods to the Circle of Trees
+M 0 725 1 746  * the Werewolf -> A Path in the Woods
+M 0 724 1 746  * Gazneer's Guard -> A Path in the Woods
+M 0 725 1 747  * the Werewolf -> Along the Path
+M 0 725 1 747  * the Werewolf -> Along the Path
+M 0 724 1 747  * Gazneer's Guard -> Along the Path
+M 0 724 1 748  * Gazneer's Guard -> A Path in the Woods
+M 0 724 1 750  * Gazneer's Guard -> The Path to the Cricle
+M 0 725 1 750  * the Werewolf -> The Path to the Cricle
+M 0 729 1 750  * the Evil Tree -> The Path to the Cricle
+M 0 725 1 751  * the Werewolf -> Outside the Circle of Trees
+M 0 724 1 751  * Gazneer's Guard -> Outside the Circle of Trees
+M 0 729 1 751  * the Evil Tree -> Outside the Circle of Trees
+M 0 725 1 752  * the Werewolf -> The Circle of Trees
+M 0 729 1 752  * the Evil Tree -> The Circle of Trees
+M 0 724 1 752  * Gazneer's Guard -> The Circle of Trees
+M 0 724 1 753  * Gazneer's Guard -> The Circle of Trees
+M 0 725 1 753  * the Werewolf -> The Circle of Trees
+M 0 729 1 753  * the Evil Tree -> The Circle of Trees
+M 0 724 1 754  * Gazneer's Guard -> The Circle of Trees
+M 0 725 1 754  * the Werewolf -> The Circle of Trees
+M 0 729 1 754  * the Evil Tree -> The Circle of Trees
+M 0 724 1 755  * Gazneer's Guard -> The Circle of Trees
+M 0 725 1 755  * the Werewolf -> The Circle of Trees
+M 0 729 1 755  * the Evil Tree -> The Circle of Trees
+M 0 729 1 756  * the Evil Tree -> The Circle of Trees
+M 0 725 1 756  * the Werewolf -> The Circle of Trees
+M 0 724 1 756  * Gazneer's Guard -> The Circle of Trees
+M 0 729 1 758  * the Evil Tree -> The Circle of Trees
+M 0 725 1 758  * the Werewolf -> The Circle of Trees
+M 0 724 1 758  * Gazneer's Guard -> The Circle of Trees
+M 0 724 1 759  * Gazneer's Guard -> The Circle of Trees
+M 0 725 1 759  * the Werewolf -> The Circle of Trees
+M 0 729 1 759  * the Evil Tree -> The Circle of Trees
+M 0 724 1 760  * Gazneer's Guard -> The Circle of Trees
+M 0 725 1 760  * the Werewolf -> The Circle of Trees
+M 0 729 1 760  * the Evil Tree -> The Circle of Trees
+M 0 724 1 761  * Gazneer's Guard -> A Path to Evil
+M 0 725 1 761  * the Werewolf -> A Path to Evil
+M 0 725 1 761  * the Werewolf -> A Path to Evil
+M 0 729 1 761  * the Evil Tree -> A Path to Evil
+M 0 729 1 761  * the Evil Tree -> A Path to Evil
+M 0 728 1 761  * the Fire Sprite -> A Path to Evil
+M 0 724 1 762  * Gazneer's Guard -> The Path in the Woods
+M 0 726 1 762  * the Water Sprite -> The Path in the Woods
+M 0 729 1 762  * the Evil Tree -> The Path in the Woods
+M 0 726 1 763  * the Water Sprite -> The Path
+G 0 700 1  * faerie dust
+M 0 727 1 763  * the Air Sprite -> The Path
+G 0 700 1  * faerie dust
+M 0 728 1 763  * the Fire Sprite -> The Path
+G 0 700 1  * faerie dust
+M 0 729 1 764  * the Evil Tree -> A turn in the Path
+M 0 724 1 767  * Gazneer's Guard -> A Fork in the Path
+M 0 724 1 767  * Gazneer's Guard -> A Fork in the Path
+M 0 724 1 767  * Gazneer's Guard -> A Fork in the Path
+M 0 724 1 768  * Gazneer's Guard -> In the Bushes
+M 0 724 1 769  * Gazneer's Guard -> In the Bushes
+M 0 724 1 770  * Gazneer's Guard -> In the Bushes
+M 0 725 1 772  * the Werewolf -> The Path to the Tree
+M 0 729 1 773  * the Evil Tree -> The Base of the Tree
+M 0 725 1 774  * the Werewolf -> Inside the Tree
+M 0 724 1 774  * Gazneer's Guard -> Inside the Tree
+M 0 726 1 774  * the Water Sprite -> Inside the Tree
+M 0 727 1 774  * the Air Sprite -> Inside the Tree
+M 0 728 1 774  * the Fire Sprite -> Inside the Tree
+M 0 729 1 774  * the Evil Tree -> Inside the Tree
+M 0 729 1 775  * the Evil Tree -> Inside the Tree
+M 0 728 1 775  * the Fire Sprite -> Inside the Tree
+M 0 727 1 775  * the Air Sprite -> Inside the Tree
+M 0 726 1 775  * the Water Sprite -> Inside the Tree
+M 0 724 1 776  * Gazneer's Guard -> Inside the Tree
+M 0 722 1 777  * Guardian -> Along the branches
+M 0 729 1 778  * the Evil Tree -> Along the branches
+M 0 729 1 779  * the Evil Tree -> Along the branches
+M 0 725 1 779  * the Werewolf -> Along the branches
+M 0 724 1 779  * Gazneer's Guard -> Along the branches
+M 0 725 1 781  * the Werewolf -> In the Leaves
+M 0 725 1 782  * the Werewolf -> In the Leaves
+M 0 725 1 783  * the Werewolf -> In the Leaves
+M 0 729 1 784  * the Evil Tree -> Along the Branches
+M 0 729 1 785  * the Evil Tree -> Along the Branches
+M 0 729 1 787  * the Evil Tree -> In the Leaves
+M 0 726 1 787  * the Water Sprite -> In the Leaves
+M 0 729 1 788  * the Evil Tree -> In the Leaves
+M 0 729 1 789  * the Evil Tree -> In the Leaves
+M 0 729 1 790  * the Evil Tree -> Along the Branches
+M 0 725 1 791  * the Werewolf -> Along the Branches
+M 0 729 1 791  * the Evil Tree -> Along the Branches
+M 0 729 1 793  * the Evil Tree -> In the Leaves
+M 0 728 1 793  * the Fire Sprite -> In the Leaves
+M 0 724 1 793  * Gazneer's Guard -> In the Leaves
+M 0 729 1 794  * the Evil Tree -> In the Leaves
+M 0 729 1 794  * the Evil Tree -> In the Leaves
+M 0 729 1 794  * the Evil Tree -> In the Leaves
+M 0 729 1 795  * the Evil Tree -> In the Leaves
+M 0 724 1 795  * Gazneer's Guard -> In the Leaves
+S
+
+
+#SHOPS
+0
+
+
+#SPECIALS
+M 719 spec_breath_any  * Scardin
+M 721 spec_breath_fire  * Gazneer
+M 727 spec_breath_frost  * the Air Sprite
+M 728 spec_breath_fire  * the Fire Sprite
+S
+
+#$
+

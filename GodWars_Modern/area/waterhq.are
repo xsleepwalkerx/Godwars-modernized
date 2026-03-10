@@ -1,0 +1,221 @@
+#AREADATA
+Name        Raganoth   Water HQ~
+Builders    Mistif~
+VNUMs       16161 16168
+Security    1
+End
+
+
+
+#MOBILES
+#16161
+Orion~
+Orion~
+Orion the Hunter
+~
+Orion the Hunter, Son of Poseidon.~
+65 552 0 S
+1500 0 0 0d0+0 0d0+0
+0 0
+0 0 1
+#16162
+Triton~
+Triton~
+Triton
+~
+Triton, Son of Poseidon~
+67 8872 1000 S
+500 0 0 0d0+0 0d0+0
+0 0
+0 0 1
+#16163
+Theseus~
+Theseus~
+Theseus.~
+Theseus the Minotaur-Slayer, King of Athens, Son of Poseidon
+~
+67 8 0 S
+499 0 0 0d0+0 0d0+0
+0 0
+0 0 1
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMS
+#16161
+The Artium~
+You stand at the bottom of the ocean floor, in a room created with
+powerful magic. The water here is held back to create a pocket of air.
+The room is well-lit with glowing orbs. There are doors leading in all
+three directions with a staircase leading to a platform high above you.
+~
+0 8 0
+D0
+~
+~
+0 -1 16163
+D2
+~
+~
+0 -1 16168
+D3
+~
+~
+0 -1 16164
+D4
+~
+~
+0 -1 16162
+S
+#16162
+The Swirling Whirlpools~
+You stand on a platform near the ceiling of the Atrium. On the ceiling are whirlpools
+connected to powerful underwater currents. The currents travel to places all over
+the world. Speak your destination, and you will be taken there.
+~
+0 8 0
+E
+whirlpool~
+When you look at the water closer, you can see many distant lands,
+including: temple, hightower, sphinx, draconia, and staff.
+~
+D5
+~
+~
+0 -1 16161
+T
+draconia~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2201 0
+T
+hightower~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 1312 0
+T
+sphinx~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2646 0
+T
+staff~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 25008 0
+T
+temple~
+$n slowly fades out of existance.~
+Your surroundigs blur and change.~
+all~
+16384 3001 0
+S
+#16163
+The Sauna~
+You enter the room and are surrounded by warm vapors. There are pools and baths,
+benches for relaxing and even tables for receiving messages. Servants serve snacks
+for those who wish for something to eat. You're starting to feel relaxed already...
+~
+0 17416 0
+D2
+~
+~
+0 -1 16161
+S
+#16164
+Library of the Ages~
+You enter a room much like the Atrium, but amazingly large. The room is
+extremely long with books covering the walls from floor to ceiling. It has
+been said that almost every bit of recorded knowledge can be found
+somewhere on these shelves.
+~
+0 8 0
+D1
+~
+~
+0 -1 16161
+S
+#16165
+Chamber of Mystick Might~
+You're in a room like the Atrium, only smaller. There are various training
+weapons and apparatus located about the room. Here is the place for one
+to strengthen their body, so as to remain alert at all times. The body must
+be strong to support the will of the mind.
+~
+0 12 0
+S
+#16166
+The Archmage's Sanctum~
+You can see below you the Atrium and those busy below. There are
+desks, chairs, and couches here. There are also various magical
+impelements for scrying and the casting of powerful magicks.
+The room almost seems to pulsate with power.
+~
+0 8 0
+D5
+~
+~
+0 -1 16161
+S
+#16167
+Piccolo's Hideout~
+You are in a small, non-descript room, which houses only a
+desk and a small chair ... wonder who lives here? There's a
+sign on the wall.
+~
+0 8 0
+E
+sign~
+Sign on the wall says 'If you are in here, GET OUT!!!'
+~
+D5
+~
+~
+0 -1 16161
+S
+#16168
+The Water Tunnel~
+You walk down a short hallway and can see whirlpools
+opening into it from all sides.
+~
+0 8 0
+D0
+~
+~
+0 -1 16161
+S
+#0
+
+
+
+#SPECIALS
+M 16161 spec_clan_water Load to: Orion
+M 16162 spec_cast_adept Load to: Triton
+S
+
+
+
+#RESETS
+M 0 16161 1 16161
+M 0 16162 1 16163
+M 0 16163 1 16165
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

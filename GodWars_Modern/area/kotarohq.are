@@ -1,0 +1,235 @@
+#AREADATA
+Name        Tass    Kotaro HQ~
+Builders    None~
+VNUMs       16700 16704
+Security    1
+End
+
+
+#MOBILES
+#16700
+Kahvi~
+Kahvi~
+A dark cloaked form.
+~
+This is the healer of the clan. Though undeniably
+skilled in the arts of the ninja, he is one of the few
+that are also trained in the healing arts.
+~
+2|64 8|32|128|512|8192 1000 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#16701
+Bokusatsu~
+Bokusatsu~
+A shadow drifts in the darkness.
+~
+This is a small, lean man. Though simple in
+appearance, you feel deep down that you would not want
+to mess with this man. He appears to have no hands, just a
+pickaxe and the head of a hammer skillfully fitted
+onto his wrists. Silver in color, they shimmer in the
+light. You suspect magic.
+~
+64|8192 8|32|512 0 S
+1500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#16702
+Ousatsu~
+Ousatsu~
+A very dark skinned elf is here.
+~
+The elf appears to be a drow, a dark elf. Undeniably
+skilled in the art of concealing, silence, and skilled
+with the two scimitars he carries, he would be a bad
+person to mess with.
+~
+64|8192 8|32|512 0 S
+1500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#16703
+Noushi~
+Noushi~
+An unconcealed human.
+~
+This man looks out of place. By all appearances, he
+is a ranger. Wielding a sword, and shield, he does not
+look very threatening.
+~
+64|8192 8|32|512 0 S
+1500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#16700
+scimitar~
+a long curving scimitar~
+A scimitar awaits its next user~
+~
+5 0 1|8192
+0 1 6 1 
+5 0 0
+#16701
+silvery longsword sword~
+a silvery longsword~
+A silvery longsword lies here.~
+~
+5 0 1|8192
+0 1 6 3 
+5 0 0
+#16702
+silvery shield~
+a silvery shield with an owl engraved on the front~
+A silvery shield with an owl engraved on the front lies here.~
+~
+9 0 1|512
+0 1 6 11 
+5 0 0
+#16703
+pickaxe~
+a silver pickaxe~
+A silver pickaxe is fitted to Bokusatsu's wrist.~
+~
+5 64 1|8192
+0 1 6 1 
+5 0 0
+#16704
+silver hammer~
+a large silver hammer~
+A large silver hammer is fitted for Bokusatsu's wrist.~
+~
+5 64 1|8192
+0 1 6 8 
+5 0 0
+#0
+
+
+#ROOMS
+#16700
+The Center of Kotaro~
+You have come to a large room with torches which
+provide little illumination, leaving it in shadows.
+The silence is almost overwhelming, except to those
+trained in the arts of the shadows.
+~
+0 8 0
+D0
+~
+~
+0 -1 16701
+D1
+~
+~
+0 -1 16703
+D5
+~
+~
+0 -1 16702
+S
+#16701
+The Shrine of Kotaro~
+This is where those followers of Kotaro rest and
+regain their energies. This room, too, is dark, but
+not as much as the Center.
+~
+0 8|1024|16384 0
+D2
+~
+~
+0 -1 16700
+S
+#16702
+Circle of Mirrors~
+Here, the ninjas may travel to where they please by
+simply stepping into a darkened mirror. Choose your
+path carefully, and hunt well.
+~
+0 8 0
+D4
+~
+~
+0 -1 16700
+E
+mirror~
+When you look at the mirrors closer, you can see many distant lands,
+including: temple, hitower, sphinx, draconia, and staff.
+~
+T
+temple~
+$n slowly fades out of existance.~
+Your surroundigs blur and change.~
+all~
+16384 3001 0
+T
+staff~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 25008 0
+T
+sphinx~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2646 0
+T
+hightower~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 1312 0
+T
+draconia~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2201 0
+S
+#16703
+Practice room~
+This is the practice room of the Kotaro. This is
+where they come, and fight, testing their various
+skills in the arts against one another.
+~
+0 8 0
+D3
+~
+~
+0 -1 16700
+S
+#0
+
+
+#RESETS
+*
+M 1 16700 1 16701			healer to shrine
+*
+M 1 16701 1 16700			guardian1 to center
+E 1 16703 1 16
+E 1 16704 1 17
+*
+M 1 16702 1 16702			guardian2 to circle
+E 1 16700 100 16
+E 1 16700 100 17
+*
+M 1 16703 1 16703			guardian3 to practice
+E 1 16702 100 11
+E 1 16701 100 16
+S
+
+
+#SPECIALS
+M  16700 spec_cast_adept			Kahvi
+M  16701 spec_clan_kotaro			Bokusatsu
+M  16702 spec_clan_kotaro2			Ousatsu
+M  16703 spec_clan_kotaro3			Noushi 
+S
+
+
+#$

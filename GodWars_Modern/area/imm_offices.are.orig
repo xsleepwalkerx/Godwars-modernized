@@ -1,0 +1,335 @@
+#AREADATA
+Name        Mystaria Imm offices~
+Builders    None~
+VNUMs       29000 29009
+Security    1
+End
+
+
+
+#MOBILES
+#29000
+black mist~
+A Black Mist~
+A black mist hovers here.
+~
+The mist seems to be frothing and turbulant.  Now and then you think you
+see what seem to be eyes, but then dissapear.
+~
+7 1606184 -1000 S
+2500 0 0 0d0+0 0d0+0
+0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#29002
+tv television~
+a T.V.~
+A television sits in the corner, playing Xena Warrior Princess.~
+~
+12 1 0
+0 1 6 11
+5 0 0
+#29003
+calendar~
+a calender~
+A calendar of nude Xena pics is tacked to the wall here.~
+~
+8 0 1
+0 1 6 11
+5 0 0
+E
+pic~
+WOW!!!
+Xena looks really hot this month!
+(and last month, and next month, and
+the month after that...)~
+#29004
+comfy couch~
+a very comfortable couch~
+A very comfortable couch rests here.~
+~
+12 0 0
+1 5000 1168 0
+500 0 0
+#29005
+love seat couch~
+a black velvet love seat~
+A black velvet love seat faces the window.~
+~
+44 0 0
+1 5000 1168 0
+500 0 0
+#29006
+fridge frig refrigerator ref refer~
+a refrigerator~
+A Refrigerator sits in the corner.~
+~
+15 4099 0
+100 5 0 0
+1 0 0
+E
+fridge frig refrigerator ref refer~
+Join the party, grab a beer, or anything else Mistif's got stocked.~
+#29007
+angel fish couch~
+an angelfish shaped couch~
+An ocean blue couch, shaped of an angelfish sets in the center of the room.~
+~
+45 4096 0
+0 0 0 0
+500 0 0
+#29008
+fish tank aquarium~
+a large fishtank~
+A large tank loaded with fish entertains the room.~
+~
+17 4099 0
+100 100 14 1
+1000 0 0
+E
+fish tank~
+As you look into the tank, you see many different types of fish.  
+There are eels, angelfish, colorfull tropical fish and an octopuss 
+among others swimming round and round.~
+#29009
+computer comp~
+a computer terminal~
+A computer sits atop a desk displaying video feeds.~
+~
+12 4099 0
+2 1000 8 0
+500 0 0
+E
+comp computer terminal~
+The screen is cycling through different views in this world, monitoring
+the activities of the playerbase.~
+#29010
+red rose~
+a red rose~
+A red rose hovers in the air, it glows with a faint blue light.  
+There is a small gold card attached to it.~
+~
+13 1 16385
+0 0 0 0
+1000 0 0
+E
+card rose~
+To my sexy smeghead,
+Just a reminder of how much I care for you.
+
+Forever your dragon in the night.
+
+Love,
+Mike
+~
+#0
+
+
+
+#ROOMS
+#29000
+The Public Library~
+This is the largest Library you have ever seen!!!  It seems to extend for
+miles with rows upon rows of books. In the center of the library, there 
+are several strange drawings on the floor. On one wall, you notice that
+jars instead of books line the shelves.
+~
+0 16392 0
+E
+jar jars~
+These jars not only look wierd, but some of them smell aweful too!  A closer look reveals.......
+
+A pair of eyes looking back at you!!!  ~
+E
+drawings floor~
+You bend down to see if you recognize any of the drawings, but they all seem
+strange to you. One of the runes is glowing slightly.~
+E
+rune~
+OUCH!!!!!!
+The rune sends a spark of energy flying at you when you get too close.
+You're better off avoiding it.~
+D1
+~
+~
+0 -1 29001
+S
+#29001
+The hallway of the immortals~
+This grand hallway connects all the immortal offices. The door to the West 
+has the name 'Mystaria' engraved on it. 
+The door to the East bears the name 'Apocalypse'
+~
+0 16392 0
+D0
+~
+~
+0 -1 29006
+D1
+~
+~
+0 -1 29002
+D2
+~
+~
+0 -1 29003
+D3
+~
+~
+0 -1 29000
+S
+#29002
+The Private Library of Apocalypse.~
+You have entered one of the nicest Libraries you've ever seen!
+Ancient tomes and Grimoires lie everywhere, as well as some
+lighter reading.  There are several soft couches to sit on.
+Make yourself at home.
+~
+0 18952 0
+D3
+~
+~
+0 -1 29001
+S
+#29003
+The hallway of the immortals~
+This grand hallway connects all the immortal offices. To the West is a
+door with the name Mistif burned into the face of it,and to the East is
+the office of Aristoi.
+~
+0 16392 0
+D0
+~
+~
+0 -1 29001
+D1
+~
+~
+0 -1 29005
+D3
+~
+~
+0 -1 29004
+S
+#29004
+Mistif's Office~
+BEHOLD! The office of the dark and mysterious Mistif.
+As you enter the room you get the feeling that someone is watching you.
+   To your left is a computer. And to your right is a bookshelf filled 
+with volume after volume of books from programming to fantasy adventure. 
+   Directly accross the room is a large picture window overlooking
+the steep cliffs this office was build into. Dark blue draperies border 
+the window. There is a lavish love seat setting in front of it. 
+~
+0 16392 0
+D1
+~
+~
+0 -1 29003
+S
+#29005
+Aristoi's Little Love Nest~
+This is the perfect little love nest for #oAristoi#n and #PChaos#n.
+A union made between two entities in former lives, and that
+has lasted through multiple lives, through multiple planes
+of existance, and through multiple realms.
+
+It is a Union which is sure to grow even stronger.
+
+
+~
+0 16392 0
+D3
+~
+~
+0 -1 29003
+S
+#29006
+The hallway of the immortals~
+This grand hallway connects all the immortal offices.  The Office of the
+magnificent High Judge Haif is to the West, and the Enforcer Ayreon is to
+the East.
+~
+0 16392 0
+D1
+~
+~
+0 -1 29009
+D2
+~
+~
+0 -1 29001
+D3
+~
+~
+0 -1 29007
+S
+#29007
+Haif's Office~
+You have entered the Office of the High Judge Haif.
+ The room is covered in swordfish wallpaper. There is a fireplace
+accross the room with a Great Blue Whales head mounted above it. On the 
+wall to the right, there is a window overlooking the rough mountainside, 
+and to the left is an extremely large aquarium. In the center of the room,
+facing the window, is a couch shaped of an Angel Fish and is as blue as the ocean.
+~
+0 2568 0
+S
+#29008
+Mystaria's Private Office~
+This is where Mysty goes to be alone... to rest her eyes and ears from the daily
+stresses of life... Anyone that comes in uninvited... better get the hell out NOW!
+~
+0 18952 0
+D5
+~
+~
+0 -1 29000
+S
+#29009
+Aryeon's Office~
+You find yourself in a small, cozy study, belonging to the great enforcer Ayreon.
+~
+0 18952 0
+D3
+~
+~
+0 -1 29006
+S
+#0
+
+
+
+#SPECIALS
+M 29000 spec_poison Load to: A Black Mist
+S
+
+
+
+#RESETS
+O 0 29004 0 29002
+O 0 29005 0 29004
+O 0 29006 0 29004
+O 0 29009 0 29004
+O 0 29007 0 29007
+O 0 29008 0 29007
+O 0 29010 0 29008
+M 0 29000 1 29004
+P 0 3002 0 29006
+P 0 3003 0 29006
+P 0 303 0 29006
+P 0 15103 0 29006
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

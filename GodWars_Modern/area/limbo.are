@@ -1,0 +1,499 @@
+#AREADATA
+Name        Diku    Limbo~
+Builders    None~
+VNUMs       1 23
+Security    1
+End
+
+
+
+#MOBILES
+#1
+Puff~
+Puff~
+Puff the Fractal Dragon is here, contemplating a higher reality.
+~
+~
+1 0 1000 S
+25 1 -1 5d10+550 4d6+3
+10000 0
+0 0 2
+#0
+
+
+
+#OBJECTS
+#2
+coin gold~
+a gold coin~
+One miserable gold coin.~
+~
+20 0 1
+1 0 0 0
+1 0 0
+#3
+coins gold~
+%d gold coins~
+A pile of gold coins.~
+~
+20 0 1
+0 0 0 0
+1 0 0
+#4
+token 100~
+a 100 point quest token~
+a 100 point quest token lies here.~
+~
+33 0 1
+100 0 0 0
+0 0 0
+#5
+token 50~
+a 50 point quest token~
+a 50 point quest token lies here.~
+~
+33 0 1
+50 0 0 0
+0 0 0
+#6
+token 30~
+a 30 point quest token~
+a 30 point quest token lies here.~
+~
+33 0 1
+30 0 0 0
+0 0 0
+#7
+token 15~
+a 15 point quest token~
+a 15 point quest token lies here.~
+~
+33 0 1
+15 0 0 0
+0 0 0
+#8
+note~
+a hand-written note~
+a hand-written note lies here.~
+~
+7 0 16385
+0 0  0 0
+1 0 0
+#10
+corpse~
+the corpse of %s~
+The corpse of %s is lying here.~
+~
+23 0 1
+0 0 0 1
+100 0 0
+#11
+corpse~
+the corpse of %s~
+The corpse of %s is lying here.~
+~
+24 0 0
+0 0 0 1
+100 0 0
+#12
+head %s~
+the severed head of %s~
+The severed head of %s is lying here.~
+~
+13 0 16385
+10 0 12 0
+5 0 0
+#13
+heart %s~
+the torn-out heart of %s~
+The torn-out heart of %s is lying here.~
+~
+19 0 16385
+16 0 13 0
+2 0 0
+#14
+arm %s~
+the sliced-off arm of %s~
+The sliced-off arm of %s is lying here.~
+~
+19 0 16385
+20 0 14 0
+5 0 0
+#15
+leg %s~
+the sliced-off leg of %s~
+The sliced-off leg of %s is lying here.~
+~
+19 0 16385
+20 0 15 0
+5 0 0
+#16
+turd~
+the steaming turds of %s~
+The steaming turds of %s assail your nostrils.~
+~
+13 0 0
+5 0 0 1
+1 0 0
+#20
+mushroom~
+a Magic Mushroom~
+A delicious magic mushroom is here.
+~
+~
+19 0 1
+5 0 0 0
+1 10 0
+#21
+ball light~
+a bright ball of light~
+A bright ball of light shimmers in the air.~
+~
+1 0 1
+0 0 -1 0
+1 0 0
+#22
+spring~
+a magical spring~
+A magical spring flows from the ground here.~
+~
+25 64 0
+100000 100000 0 0
+5000 10 0
+#23
+spring blood~
+a blood spring~
+A spring of dark red liquid flows from the ground here.~
+~
+25 64 0
+100000 100000 13 0
+5000 10 0
+#24
+letter A~
+the letter A~
+the letter A lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#25
+letter B~
+the letter B~
+the letter B lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#26
+letter C~
+the letter C~
+the letter C lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#27
+letter D~
+the letter D~
+the letter D lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#28
+letter E~
+the letter E~
+the letter E lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#29
+letter F~
+the letter F~
+the letter F lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#30
+letter G~
+the letter G~
+the letter G lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#31
+letter H~
+the letter H~
+the letter H lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#32
+letter I~
+the letter I~
+the letter I lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#33
+letter J~
+the letter J~
+the letter J lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#34
+letter K~
+the letter K~
+the letter K lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#35
+letter L~
+the letter L~
+the letter L lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#36
+letter M~
+the letter M~
+the letter M lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#37
+letter N~
+the letter N~
+the letter N lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#38
+letter O~
+the letter O~
+the letter O lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#39
+letter P~
+the letter P~
+the letter P lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#40
+letter Q~
+the letter Q~
+the letter Q lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#41
+letter R~
+the letter R~
+the letter R lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#42
+letter S~
+the letter S~
+the letter S lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#43
+letter T~
+the letter T~
+the letter T lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#44
+letter U~
+the letter U~
+the letter U lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#45
+letter V~
+the letter V~
+the letter V lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#46
+letter W~
+the letter W~
+the letter W lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#47
+letter X~
+the letter X~
+the letter X lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#48
+letter Y~
+the letter Y~
+the letter Y lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#49
+letter Z~
+the letter Z~
+the letter Z lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#50
+number 0~
+the number 0~
+the number 0 lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#51
+number 1~
+the number 1~
+the number 1 lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#52
+number 2~
+the number 2~
+the number 2 lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#53
+number 3~
+the number 3~
+the number 3 lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#54
+number 4~
+the number 4~
+the number 4 lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#55
+number 5~
+the number 5~
+the number 5 lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#56
+number 6~
+the number 6~
+the number 6 lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#57
+number 7~
+the number 7~
+the number 7 lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#58
+number 8~
+the number 8~
+the number 8 lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#59
+number 9~
+the number 9~
+the number 9 lies here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#0
+
+
+
+#ROOMS
+#1
+The Void~
+You are floating in nothing.
+~
+0 12 1
+S
+#2
+Limbo~
+You are floating in a formless void, detached from all sensation of physical
+matter, surrounded by swirling glowing light, which fades into the relative
+darkness around you without any trace of edges or shadow.
+   There is a "No Tipping" notice pinned to the darkness.
+~
+0 12|1024 1
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS
+M 0 1 1 2
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

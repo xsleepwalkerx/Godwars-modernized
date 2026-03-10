@@ -1,0 +1,166 @@
+#AREADATA
+Name        Selena    Selena's Hq~
+Builders    Mystaria~
+VNUMs       16650 16699
+Security    1
+End
+
+
+#MOBILES
+#16650
+Spirit Balance~
+a mist of glowing energy~
+A mist of energy drifts over the shrine and fills the room with healing peace.
+~
+A glowing mist of the same energy upon the altar floats in the air with a presence 
+of healing power.
+~
+2|64 8 0 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#0
+
+
+#ROOMS
+#16650
+Chaos' Harem~
+This room is a chaotic mass of large pillows, giant bean bags, long almost transparent 
+gowns, and filled with piles of giant feathers, paddles, whips, soft leather straps, 
+gags, blindfolds, leashes and collars, and many other things. To the north lies the 
+shrine to the Goddess Chaos, owner and mistress of all who wear her collar.
+~
+0 8 0
+D0
+~
+~
+0 -1 16651
+D5
+~
+~
+0 -1 16652
+E
+pillows~
+Several large piles of giant pillows of every colour rest scattered about. Some are 
+embroidered, and all show signs of having been rested on.~
+E
+bean bags beanbags 'bean bags'~
+A pair of giant bean bags sit against the wall, body impressions visible.~
+S
+#16651
+Shrine of Chaos~
+This chamber has a giant altar to the goddess Chaos, mistress of the harem, Lady of 
+the Balance of Order and Chaos, Queen of Angels and Demons. Hanging on the walls are 
+leashes, one for each of the members of her Harem, the finest of the land. Beside many 
+are portraits, angels, demons, humans, every race and skill conceivable.
+~
+0 8 0
+D2
+~
+~
+0 -1 16650
+E
+altar alter~
+This giant altar crafted of stone is perfect obsidion, with a flame leaping on the center.~
+S
+#16652
+The pathways~
+ This chamber is a swirling mist of energy, order and chaos, magic. Figures and gateways 
+dance and open at the whim of the imagination, whilst a globe of the world shows the 
+path being forged.
+~
+0 8 0
+D4
+~
+~
+0 -1 16650
+E
+globe~
+When you look into the globe, you can see a few words etched in fire.  "Temple, Staff, 
+Sphinx, Draconia, hightower"~
+T
+temple~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 3001 0
+T
+staff~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 25008 0
+T
+sphinx~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2646 0
+T
+hightower~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 1312 0
+T
+draconia~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2201 0
+S
+#16653
+The Mists of Balance~
+The swirling mists of energy, order and chaos, good and evil, light and dark, 
+shadows and sunbeams, war and peace, even life and death, collide and dance in the 
+paradox of angelic fires and shadowy magic. The birthplace of angels.
+~
+0 8 0
+D1
+~
+~
+0 -1 16652
+D3
+~
+~
+0 -1 16654
+S
+#16654
+Shrine of Balance~
+This simple shrine features a cushion before an altar holding a mist of energy.. 
+woven of all colours and shades, even of such intangibles as good and evil. There 
+is an aura of safety and danger both, but the balance of it is such that the shrine 
+seems.. quiet and healing. South broaches on the forests.
+~
+0 1024|16384 0
+D2
+~
+~
+0 -1 16655
+S
+#16655
+Forest of Balance~
+This forest is gentle and calm, filled with tall oaks that stretch out to the world, 
+scattering. The crisp air is refreshing, wonderful, with the sounds of birds chirping. 
+To the north, the forest borders on the ocean, lending the soft music of crashing 
+waves on the beach to the melodies. A small bird swoops and dives, creating tiny 
+loops in the air.
+~
+0 0 3
+D0
+~
+~
+0 -1 16654
+S
+#0
+
+#RESETS
+M 1 16650 1 16654				healer to shrine of balance
+S
+
+#SPECIALS
+M  16650 spec_cast_adept			a mist of glowing energy
+S
+
+
+#$

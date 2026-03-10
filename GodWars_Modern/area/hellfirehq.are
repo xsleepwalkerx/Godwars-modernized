@@ -1,0 +1,178 @@
+#AREADATA
+Name        Typhon    Demon HQ~
+Builders    None~
+VNUMs       16600 16603
+Security    1
+End
+
+
+
+#MOBILES
+#16600
+demonic priest~
+The Demonic Priest~
+A Demonic Priest floats here, healing those wounded Demons.
+~
+You are looking at what appears to be a Demon in heavy, black robes. 
+Though slim, you have no doubt he is as strong as his bretheren. As 
+one of the few that dabble in the Arts, he has been appointed Healer 
+to those Demons whose will has been weakened. Just a moment with him 
+will make any Demonic Wyrm's thirst for destruction strong once more.
+~
+67 552 -1000 S
+500 0 0 0d0+0 0d0+0
+0 0
+0 0 1
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMS
+#16600
+Lower Regions of Hell~
+These are the Lower Regions of Hell, where all the Demons gather in 
+all their horrid splendor. It seems to be darker, and much warmer 
+than hell itself...Above is Hell, whence all the Demons came. No clan 
+can hold superiority in these halls. All gather for the greater evil 
+of the whole, as was passed down.
+Below are the famed, Gates of Hell, where any Demon can travel instantly 
+to the world to spread their havoc.
+~
+0 8 0
+D1
+~
+~
+0 -1 16603
+D4
+~
+~
+0 -1 30000
+D5
+~
+~
+0 -1 16601
+S
+#16601
+Gates of Hell~
+You are stand before the Gates of Hell. Surrounding you are seperate 
+Gates, each of which bring you to a different part of the world of life. 
+A step in any direction can lead you to the glory of harvesting souls. 
+Let none stand in your way, Brave Demon. Choose your Path, and remember 
+always you are Wyrm.
+~
+0 0 0
+E
+gates~
+You recognize a few of the places as they flash in the gateway.  You see a Temple,
+the Sphinx, a member of Staff, the HighTower, Draconia, Galaxy, Mahntor, Olympus, 
+Drow, and Megacity.l
+~
+D4
+~
+~
+0 -1 16600
+T
+megacity~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 8001 0
+T
+drow~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 5100 0
+T
+olympus~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 904 0
+T
+mahntor~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2362 0
+T
+galaxy~
+$n slowly fades out of existance.~
+Your surroundigs blur and change.~
+all~
+16384 9301 0
+T
+draconia~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2201 0
+T
+hightower~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 1312 0
+T
+sphinx~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2646 0
+T
+staff~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 25008 0
+T
+temple~
+$n slowly fades out of existance.~
+Your surroundigs blur and change.~
+all~
+16384 3001 0
+S
+#16603
+The Satanic Altar~
+This is where the Demons come to rest and regain their fighting spirit. 
+Against one wall is a Demon portrayed in the act of killing a Gaia. This 
+place is extremely dark and comforting to those fighters of the Wyrm.
+Rest. Rest and heal Wyrm, so that you may rise once more to bring destruction.
+~
+0 1032 0
+D2
+~
+~
+0 -1 30000
+D3
+~
+~
+0 -1 16600
+S
+#0
+
+
+
+#SPECIALS
+M 16600 spec_cast_adept Load to: The Demonic Priest
+S
+
+
+
+#RESETS
+M 0 16600 1 16603
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

@@ -1,0 +1,61 @@
+#AREADATA
+Name        Mistif's stuff~
+Builders    Mistif~
+VNUMs       9600 9699
+Security    1
+End
+
+#MOBILES
+#9600
+Arab Terrorist~
+Arab Terrorist ~
+The arab terrorist looks for the next target.
+~
+The arab looks at you with distain.
+~
+32|64|128 0 -1000 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#9601
+Osama bin Laden benladen binladen~
+Osama bin Laden~
+Osama bin Laden hides here like a coward.
+~
+This dirty looking discrace to the human race stands here plotting to kill more americans.
+KILL HIM NOW!!!!!!!!
+~
+32|64|128 32768|65536 -1000 S
+1500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#9600
+c4 explosive~
+explosive backpack~
+A backpack of c4 is strapped to the back.~
+~
+9 1|2|16|16384 1|1024
+0 0 0 0
+50 0 0
+A
+17 50
+A
+5 -10
+#0
+
+
+#RESETS
+*
+S
+
+
+#SPECIALS
+M  9600 spec_poison			Arab Terrorist 
+S
+
+
+#$

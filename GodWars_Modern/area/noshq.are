@@ -1,0 +1,212 @@
+#AREADATA
+Name        Minnick    Ravnos hq~
+Builders    Mystaria~
+VNUMs       16200 16220
+Security    1
+End
+
+
+
+#MOBILES
+#16200
+Enkil~
+Ancient Healer~
+Enkil is here, bringing salve to your wounds. 
+~
+Although he is helping you, common sense says not to approach any closer to him.
+His skin is luminescent, his jet black hair falling to his shoulders in
+perfectly oiled waves.  On the floor at his feet is a stain, could that be blood? 
+Mayhap the blood of someone who dared get too close?
+~
+2|64 8|32|512 0 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#16201
+Mathoub~
+Mathoub, Ananasi guardian of the Ravnos~
+A giant black spider with razor-sharp fangs descends from a huge web.
+~
+A giant black Ananasi with emerald and ruby patterns on his abdomen is
+here protecting the clan Ravnos, weaving intricate webs to capture
+intruders, venom dripping from his fangs. ~
+64|8192 8|32|128|512|32768 0 S
+1500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#16201
+Gloves of healing~
+gloves of Healing~
+A set of linen gloves lie here ~
+~
+9 32|1024 1|128
+25 1 6 54 
+1 0 0
+A
+13 500
+A
+9 -10
+A
+17 -25
+#16202
+Linen Robes~
+linen Robes~
+Robes made of Linen lay here ~
+~
+9 0 1|1024
+0 1 6 11 
+1 0 0
+#16203
+Plate~
+Emerald and ruby patterns~
+A Plate with emerald and ruby patterns protects the wearer in combat~
+~
+9 0 1|8
+0 0 0 0 
+5 0 0
+A
+18 5
+A
+19 5
+A
+14 25
+A
+17 -25
+#0
+
+
+#ROOMS
+#16200
+Central Room~
+The largest intersection of the Sewer Tunnels. The stench is overwhelming to
+mortals, but is like the sweetest perfume to the Ravnos.  This seems to be the
+main meeting room of the Ravnos, as there is a massive Oak table, its wood
+the beautiful color that can only come with hundreds of years of care,
+commanding the center of the room, with chairs of equal splendor surrounding it.
+Lining the walls are shelves filled with tomes and scrolls of untold age and
+knowledge.  Atop the shelves are hundreds of skulls, trophies taken by the
+Ravnos after defeating a particularly worthy foe. Everything is positioned so
+that the water of the sewer never touches them.  On a sideboard which matches the
+table is an exquisitely cut carafe of Blood Wine which never empties, no matter
+the amount poured from it, as well as goblets cut by the same masterful hands as 
+the carafe.  There are candelabra on the table and sideboard filled with black 
+tapers, as well as sconces along the walls, should the need for light arise.
+~
+0 1|8 0
+D0
+~
+~
+0 -1 16201
+D1
+~
+~
+0 -1 16202
+S
+#16201
+Temple of the Ravnos~
+This section of tunnel is the Temple of the Ravnos, where the weary can come
+and be restored.  Enkil is here, bringing salve to your wounds.  Although he is
+helping you, common sense says not to approach any closer to him.  His skin is
+luminescent, his jet black hair falling to his shoulders in perfectly oiled
+waves.  On the floor at his feet is a stain, could that be blood?  Mayhap the
+blood of someone who dared get too close?  At the Northern end of the tunnel, 
+a steel grate blocks passage out, and a huge stone altar stands before it.  
+Candelabra filled with black tapers adorning both ends of the altar burn with 
+an eternal flame, and in the candle light, one can make out dark stains on the 
+altar, that upon closer inspection appear to be blood!  Hopefully, the practice 
+of human sacrifice has become a thing of the past for the Ravnos.  The waters 
+of the sewers pass through here, as well, filling the room with the sweet odor 
+of the sewers. There are paintings adorning the walls of this tunnel, though how 
+old they are is difficult to ascertain, as they are covered with some sort of 
+slime that seems as old as the tunnels.
+~
+0 1|1024|16384 0
+D2
+~
+~
+0 -1 16200
+E
+painting~
+Upon inspection, one can see that they tell stories, one of the time before the
+corruption of the Wyrm, when the children of Gaia were respected and not feared,
+and lived in harmony with the other creatures of the world.  Another tells of
+the corruption of the world by the Wyrm, with the victories going to the Garou.
+Yet another shows the final battle between the Garou and the slaves of the
+Wyrm.  The Garou, being vastly outnumbered, made a tactical withdrawal
+in order to regroup.  One tribe remained fighting to protect the others, and was
+destroyed in the process.  Those surviving were captured by the Wyrm
+slaves, and were tortured and transformed into abominations.~
+S
+#16202
+Portal Room~
+This is the smallest of the sewer tunnels, the exit to the East blocked by
+a steel grate. Water flows through here as well, and it is all one can do not to
+step in it.  Looking at the walls, which are covered in slime,  you see what seem
+to be petroglyphs, each one depicting a different area. As you continue to gaze
+at these depictions, you realize that each one is a destination, and one need
+only speak the name, and they are magically transported there. So that's
+how the Ravnos can travel great distances so quickly!
+~
+0 1|8 0
+D3
+~
+~
+0 -1 16200
+E
+petroglyph depiction~
+You see several locations; Midgaard, Staff, Draconia, Hightower, and the Sphinx.
+~
+T
+temple~
+$n slowly fades out of existance.~
+Your surroundigs blur and change.~
+all~
+16384 3001 0
+T
+staff~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 25008 0
+T
+sphinx~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2646 0
+T
+hightower~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 1312 0
+T
+draconia~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2201 0
+S
+#0
+
+
+#RESETS
+M 1 16200 1 16201			healer to temple
+E 1 16201 100 9
+E 1 16202 100 12
+M 1 16201 1 16201 		Guard to Temple
+E 1 16203 1 5
+S
+
+
+#SPECIALS
+M  16200 spec_cast_adept			Ancient Healer
+M  16201 spec_clan_ravnos 			Clan Guardain
+S
+
+
+#$

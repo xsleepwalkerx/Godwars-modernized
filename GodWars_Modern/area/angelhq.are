@@ -1,0 +1,284 @@
+#AREADATA
+Name        Angel Hq~
+Builders    Chiana~
+VNUMs       18200 18149
+Security    1
+End
+
+
+#MOBILES
+#18200
+healer~
+the healer~
+The healer stands here incanting some spells.
+~
+The healer looks at you.
+~
+2|64 8|32 0 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#18201
+Guardian1~
+Guardian 1~
+The Guardian stands here, ready to attack.
+~
+The Guardian slaps you for your stupidity!
+~
+2|64|8192 2|8|32|128|512|8192|32768|65536|1048576 0 S
+6000 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#18202
+Guardian2~
+Guardian 2~
+The Guardian stands here, ready to attack.
+~
+The Guardian glares at you.  Better step back!
+~
+2|64|8192 2|8|32|128|512|8192|32768|65536|1048576|64 0 S
+6000 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#18203
+guardian3~
+Guardian 3~
+The Guardian stands here, ready to attack.
+~
+The Guardian smacks you across the room!
+~
+2|64|8192 2|8|32|128|512|8192|32768|65536|1048576|16384 0 S
+6000 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#0
+
+
+#ROOMS
+#18200
+Angel Lord's Room~
+This room is under construction
+~
+0 0 2
+D5
+~
+~
+0 -1 18201
+S
+#18201
+Angel Prince's Room~
+This room is under construction
+~
+0 0 2
+D5
+~
+~
+0 -1 18202
+S
+#18202
+Main meeting room~
+This room is under construction.
+If you wish for this and other rooms to have real descriptions, 
+EMAIL (not note) chiana@playful.com with your ideas. You may NOT have your 
+own room. You MAY have any mobs, objects, or other little cool things 
+you want, within reason.
+~
+0 0 2
+D0
+~
+~
+0 -1 18203
+D1
+~
+~
+0 -1 18205
+D2
+~
+~
+0 -1 18204
+D3
+~
+~
+0 -1 18206
+D5
+~
+~
+0 -1 18212
+S
+#18203
+Main Meeting Room~
+This room is under construction
+If one were to fly above, perhaps one should look for somethinginteresting?
+~
+0 0 2
+D2
+~
+~
+0 -1 18202
+D4
+~
+~
+0 -1 19528
+D5
+~
+~
+0 -1 19626
+S
+#18204
+Healer's room~
+This room is under construction.
+~
+0 1024|16384 2
+D0
+~
+~
+0 -1 18202
+S
+#18205
+Porters~
+This room is under construction.
+~
+0 0 2
+D3
+~
+~
+0 -1 18202
+T
+temple~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 3001 0
+T
+staff~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 25008 0
+T
+sphinx~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 2646 0
+T
+hightower~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 1312 0
+T
+draconia~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 2201 0
+S
+#18206
+Hall~
+This room is under construction
+~
+0 0 2
+D0
+~
+~
+0 -1 18207
+D1
+~
+~
+0 -1 18202
+D2
+~
+~
+0 -1 18208
+D3
+~
+~
+0 -1 18209
+S
+#18207
+Advanced Combat Room~
+This room is under construction.
+~
+0 0 2
+D2
+~
+~
+0 -1 18206
+S
+#18208
+Inpart training room~
+This room is under construction.
+~
+0 0 2
+D0
+~
+~
+0 -1 18206
+S
+#18209
+Hall~
+This room is under construction.
+~
+0 0 2
+D0
+~
+~
+0 -1 18210
+D1
+~
+~
+0 -1 18206
+D2
+~
+~
+0 -1 18211
+S
+#18210
+Stance training room.~
+This room is under construction.
+~
+0 0 2
+D2
+~
+~
+0 -1 18209
+S
+#18211
+Weapon Training room~
+This room is under construction.
+~
+0 0 2
+D0
+~
+~
+0 -1 18209
+S
+#18212
+The Guardians Chamber~
+This room is under construction.
+~
+0 1|8192 2
+S
+#0
+
+
+#RESETS
+*
+M 1 18200 1 18204			the healer to Healer's room
+*
+M 1 18201 1 18212			Guardian 1 to The Guardians Chamber
+*
+M 1 18202 1 18212			Guardian2 to The Guardians Chamber
+*
+M 1 18203 1 18212			Guardian 3 to The Guardians Chamber
+S
+
+#SPECIALS
+M  18200 spec_cast_adept                        the healer
+M  18201 spec_class_angel                       Guard1
+M  18202 spec_class_angel                       Guard2
+M  18203 spec_class_angel                       Guard3
+S
+
+#$

@@ -1,0 +1,83 @@
+#AREADATA
+Name        Xentoth    Crib~
+Builders    None~
+VNUMs       26001 26015
+Security    1
+End
+
+
+
+#MOBILES
+#26002
+barney purple dinosaur~
+Barney the Purple Dinosaur~
+Barney the Purple Dinosaur is here shaking his finger at you.
+~
+Barney looks at you and begins to sing:
+"I love you!
+You love me!
+We're a happy family"
+~
+67 8192 0 S
+850 0 0 0d0+0 0d0+0
+0 0
+0 0 1
+#0
+
+
+
+#OBJECTS
+#26001
+small barney pacifier~
+a Barney pacifier~
+A small BARNEY pacifier sits here waiting for you to suck on it.~
+~
+8 0 16385
+0 1 6 11
+5 0 0
+#0
+
+
+
+#ROOMS
+#26015
+The Whining Player Play Pen~
+You find yourself seated in a Large Play pen.  Around you the 
+Steel Bars are larger than your arms.  The bottom of the bed 
+is covered in Barney sheets, and and to the side you see a Barney Pillow.
+You look down at yourself, and find that you are wearing a Diaper!?!? 
+
+You must have been a bad player to have to be put in here for a "time-out."
+~
+0 28172 0
+T
+>ENTER<~
+Barney the Purple Dinosaur says 'Welcome to the Play Pen, $n!'
+Barney the Purple Dinosaur says 'I've been so Lonely!!'~
+copy~
+all~
+1048576 0 26015
+S
+#0
+
+
+
+#SPECIALS
+M 26002 spec_crib		Barney the playfull dinosaur 
+S
+
+
+
+#RESETS
+O 0 26001 0 26015
+M 0 26002 1 26015
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

@@ -1,0 +1,249 @@
+#AREADATA
+Name        Orimaahsu    Fire Mage Hq~
+Builders    Mystaria~
+VNUMs       16000 16049
+Security    1
+End
+
+
+
+#MOBILES
+#16000
+Zeelod healer mother mage~
+Zeelod~
+A wizened old man puts some salve on your burns.
+~
+When you look close, you see a fire in his eyes that can't be extinguished.
+~
+67 552 0 S
+501 0 0 0d0+0 0d0+0
+0 0
+0 0 1
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMS
+#16000
+The Elemental Plane of Fire~
+The flames dance all about jumping from place to place. The heat is 
+almost overwhelming and will sure burn anyone not enchanted to survive in the 
+plane of fire. Everything here is made out of fire, the ground you're walking 
+on, the air you're breathing, and the dancing flames your trying to walk 
+through.
+~
+0 8 2
+D0
+~
+~
+0 -1 16001
+D1
+~
+~
+0 -1 16004
+D2
+~
+~
+0 -1 16003
+D3
+~
+~
+0 -1 16002
+D4
+~
+~
+0 -1 16005
+S
+#16001
+The Elemental Plane of Fire~
+The flames dance all about jumping from place to place. The heat is 
+almost overwhelming and will sure burn anyone not enchanted to survive in the 
+plane of fire. Everything here is made out of fire, the ground you're walking 
+on, the air you're breathing, and the dancing flames your trying to walk 
+through.
+~
+0 8 2
+D1
+~
+~
+0 -1 16004
+D3
+~
+~
+0 -1 16002
+S
+#16002
+The Elemental Plane of Fire~
+The flames dance all about jumping from place to place. The heat is 
+almost overwhelming and will sure burn anyone not enchanted to survive in the 
+plane of fire. Everything here is made out of fire, the ground you're walking 
+on, the air you're breathing, and the dancing flames your trying to walk 
+through.
+~
+0 8 2
+D0
+~
+~
+0 -1 16001
+D2
+~
+~
+0 -1 16003
+S
+#16003
+The Elemental Plane of Fire~
+The flames dance all about jumping from place to place. The heat is 
+almost overwhelming and will sure burn anyone not enchanted to survive in the 
+plane of fire. Everything here is made out of fire, the ground you're walking 
+on, the air you're breathing, and the dancing flames your trying to walk 
+through.
+~
+0 8 2
+D1
+~
+~
+0 -1 16004
+D3
+~
+~
+0 -1 16002
+S
+#16004
+The Elemental Plane of Fire~
+The flames dance all about jumping from place to place. The heat is 
+almost overwhelming and will sure burn anyone not enchanted to survive in the 
+plane of fire. Everything here is made out of fire, the ground you're walking 
+on, the air you're breathing, and the dancing flames your trying to walk 
+through.
+~
+0 8 2
+D0
+~
+~
+0 -1 16001
+D2
+~
+~
+0 -1 16003
+S
+#16005
+An Extradimentional Mansion~
+Through a small opening down below you can see the entrance back to the 
+plane of fire. Doorways lead out to other parts of the mansion. To the 
+west is the meeting room, to the north is the room of healing, and east is 
+the room of gateways.
+~
+0 8 0
+D0
+~
+~
+0 -1 16007
+D1
+~
+~
+0 -1 16008
+D2
+~
+~
+0 -1 16000
+D3
+~
+~
+0 -1 16006
+S
+#16006
+Meeting Room~
+A large wooden table of dark oak occupies the main bulk of this room. 
+Surrounding the table are chairs made of solid fire that are cool to 
+the touch. Here the fire mages can discuss their important matters 
+including the specifics of spells, policies towards allies, and what to
+do about enemies.
+~
+0 8 0
+D1
+~
+~
+0 -1 16005
+S
+#16007
+Healing Room~
+This is a room where the fire mage recover from their injuries and can 
+rest safe from harm. There seem to be abundant treatments for burns.
+~
+0 17416 0
+D2
+~
+~
+0 -1 16005
+S
+#16008
+Room of Gateways~
+Permanent magical gateways have been enchanted here to lead to many 
+places throughout the realm.
+~
+0 8 0
+E
+gateway gateways~
+The gateways lead to temple, staff, hightower, sphinx, and draconia.~
+D3
+~
+~
+0 -1 16005
+T
+draconia~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 2201 0
+T
+hightower~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 1312 0
+T
+sphinx~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 2646 0
+T
+staff~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 25008 0
+T
+temple~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 3001 0
+S
+#0
+
+
+
+#SPECIALS
+M 16000 spec_cast_adept Load to: Zeelod
+S
+
+
+
+#RESETS
+M 0 16000 1 16007
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

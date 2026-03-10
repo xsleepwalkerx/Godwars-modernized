@@ -1,0 +1,121 @@
+#AREADATA
+Name        Xentoth  Zargoza~
+Builders    None~
+VNUMs       20100 20100
+Security    1
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#20100
+throne~
+a Throne of Blood~
+A large Throne made of liquid blood sits here.~
+~
+12 1 0
+1 999 16 30
+9999 0 0
+#20101
+portal of blood~
+a portal of blood~
+A portal of blood hangs in the air.~
+~
+27 0 0
+3001 1 0 0
+0 0 0
+#20102
+portal of blood~
+a portal of blood~
+A portal of blood hangs in the air.~
+~
+27 0 0
+1312 1 0 0
+0 0 0
+#20103
+portal of blood~
+a portal of blood~
+A portal of blood hangs in the air.~
+~
+27 0 0
+8001 1 0 0
+0 0 0
+#20104
+portal of blood~
+a portal of blood~
+A portal of blood hangs in the air.~
+~
+27 0 0
+9201 1 0 0
+0 0 0
+#20105
+portal of blood~
+a portal of blood~
+A portal of blood hangs in the air.~
+~
+27 0 0
+25008 1 0 0
+0 0 0
+#20106
+portal of blood~
+a portal of blood~
+A portal of blood hangs in the air.~
+~
+27 0 0
+2362 1 0 0
+0 0 0
+#0
+
+
+
+#ROOMS
+#20100
+Xentoth's Throne Room~
+You stand within the heart of Zargoza.  The room is crafted of pure black marble. 
+Pillars run the length of the east and west walls.  As your vision follows them 
+up, you notice that the ceiling is open. 
+The four massive sections that form the pinnacle of the castle, stand open.
+There, dark shapes tower towards the star filled night sky.  Massive winged 
+shapes fly about overhead, blocking out the star light as they pass. 
+To the north sits a huge throne, that as far as you can tell is made of liquid 
+blood.  It pulses and flows, yet is sturdy enough to support the weight of 
+the person sitting atop it.  Two large dragon skulls flank the throne.  
+Eerie points of red light stare at you from deep within the empty eye sockets.  
+A fine mist hangs around the base of the throne and skulls.
+The air has grown distinctively cooler, a shudder runs down your spine. You have  
+the feeling that a great power is watching you.
+~
+0 16396 0
+T
+temple~
+a portal of blood appears.~
+copy~
+all~
+4194336 20101 0
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS
+O 0 20100 0 20100
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

@@ -1,0 +1,149 @@
+#AREADATA
+Name        Sarik    Assimite HQ~
+Builders    None~
+VNUMs       16250 16252
+Security    1
+End
+
+
+
+#MOBILES
+#16250
+Xaldur~
+The Priest~
+The Priest stands here, putting salve on your wounds.
+~
+The Priest stands here, putting salve on your wounds.
+~
+2|64 8|32|128|512|8192 0 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#16251
+Xalos~
+Xalos the Guardian~
+A large brute of a man roams around watching for intruders.
+~
+You glance at this beast of a man withdrawing your eyes quickly before he
+can glare back at you. You can hear a growl coming from somewhere within him. 
+Robed in black he hardly makes a sound as he passes you by on his endless patrol 
+of the halls.
+~
+64|8192 4|8|32|128|512|32768|65536|1048576 0 S
+1500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#16252
+Xamber~
+Xamber~
+A beautiful young maiden is here dripping blood from her chin.
+~
+She looks like she's ready for her next victim, maybe its you?
+~
+2|64 128|512 0 S
+1500 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#0
+
+
+#ROOMS
+#16250
+Main Temple~
+You stand in a large room surrounded by hanging tapestries, each showing a scene
+of a Vampire biting a victim. The center tapestry catches your eye bearing a scene
+of a powerful Vampire holding aloft the sliced off head of an enemy in front of
+him, while giving praise to Xentoth, the creator. You also notice a pentagram
+painted in blood on the floor under the center tapestry. In the middle is a small
+altar dedicated to evil. There is a stairwell leading down into darkness and
+a corridor leading east.
+~
+0 8|1024|16384 0
+D1
+~
+~
+0 -1 16252
+D5
+~
+~
+0 -1 16251
+S
+#16251
+Sleeping Chambers~
+Coffins line this very large underground room. It was once a natural cave but has 
+been turned into a place for the clan to hide from the sun. Torches lit with a 
+magical flame send a pale illumination into the room, showing that the only exit is up.
+~
+0 1|8 0
+D4
+~
+~
+0 -1 16250
+S
+#16252
+Teleporter room~
+Mirrors line the walls showing destinations, each casting no reflection
+into the room. When you touch them ripples sweep across the surface. Simply say 
+where you want to go and your are there. A red
+light seeps from the floor revealing a large stone in the middle of the room, and
+an exit to the west. Simply say where you want to go and your are there.
+~
+0 8 0
+D3
+~
+~
+0 -1 16250
+E
+mirror stone~
+Engraved in the stone is a list of places. Temple, Staff, Sphinx, Draconia
+and Hightower.~
+T
+temple~
+$n slowly fades out of existance.~
+Your surroundigs blur and change.~
+all~
+16384 3001 0
+T
+staff~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 25008 0
+T
+sphinx~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2646 0
+T
+hightower~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 1312 0
+T
+draconia~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2201 0
+S
+#0
+
+
+#RESETS
+*
+M 1 16250 1 16250			priest to temple
+M 1 16251 1 16251 		Guardian to Temple
+M 1 16252 1 16252			Guardian to tele room
+S
+
+
+#SPECIALS
+M  16250 spec_cast_adept			The Priest
+M  16251 spec_clan_assimite 		Guardian
+M  16252 spec_clan_assimite2		Xamber
+S
+
+
+#$

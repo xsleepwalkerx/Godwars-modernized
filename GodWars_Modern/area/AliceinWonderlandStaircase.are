@@ -1,0 +1,1049 @@
+#AREA	Gortoris AliceinWonderlandStaircase.are~
+
+
+#MOBILES
+#15060
+Card Playingcard~
+a Playing Card~
+A Playing Card hurries by you to paint the roses.
+~
+A Playing Card Hurries by you saying, "Painting the roses red, a bitter tear we shed, because we know they'll seize to grow, in fact they'll soon be dead. Noooo! And yet we go ahead, painting the roses red..."
+~
+4|32|64 128 0 S
+135 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#15061
+Card Playingcard~
+a Playing Card~
+A Playing Card hurries by you to paint the roses.
+~
+A Playing Card Hurries by you saying, "Painting the roses red, a bitter tear we shed, because we know they'll seize to grow, in fact they'll soon be dead. Noooo! And yet we go ahead, painting the roses red..."
+~
+4|32|64 128 0 S
+135 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#15062
+Card Playingcard~
+a Playing Card~
+A Playing Card hurries by you to paint the roses.
+~
+A Playing Card Hurries by you saying, "Painting the roses red, a bitter tear we shed, because we know they'll seize to grow, in fact they'll soon be dead. Noooo! And yet we go ahead, painting the roses red..."
+~
+4|32|64 128 0 S
+135 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#15063
+Card Playingcard~
+a Playingcard~
+A Playing Card hurries by you to paint the roses.
+~
+A Playing Card Hurries by you saying, "Painting the roses red, a bitter tear we shed, because we know they'll seize to grow, in fact they'll soon be dead. Noooo! And yet we go ahead, painting the roses red..."
+~
+4|32|64 128 0 S
+135 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#15064
+Card Playingcard~
+a Playingcard~
+A Playing Card hurries by you to paint the roses.
+~
+A Playing Card Hurries by you saying, "Painting the roses red, a bitter tear we shed, because we know they'll seize to grow, in fact they'll soon be dead. Noooo! And yet we go ahead, painting the roses red..."
+~
+4|32|64 128 0 S
+135 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#15065
+Oyster MotherOyster~
+Mother Oyster~
+Mother Oyster sits here thinking about the sea.
+~
+Mother Oyster sits here mumbling to her self, "The sea is nice, take my advice, and stay right here."
+~
+4|64 0 0 S
+140 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#15066
+Rabbit WhiteRabbit~
+The White Rabbit~
+The White Rabbit scurries by counting the time.
+~
+The White Rabbit is here yelling, "No, no, no, no, no, no, no, I'm overdue. I'm really in a stew. No time to say goodbye, hello! I'm late, I'm late, I'm late! "
+~
+4|64 0 0 S
+145 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#15067
+Queen QueenHearts~
+the Queen of Hearts~
+The Queen of hearts is here looking confused.
+~
+The Queen is here saying, 
+"I warn you child, if I loose my temper, you loose your head, understand?"
+~
+4|64 128 0 S
+147 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#15068
+March MarchHare~
+March Hare~
+March Hare is here...thinking.
+~
+March Hare screams, 
+"Ah, but that's the point! If you don't think, you shouldn't talk!"
+~
+4|64 0 0 S
+139 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#15069
+Mad MadHatter~
+the Mad Hatter~
+The Mad Hatter stands here drinking tea.
+~
+The Mad Hatter says with a frown, "Oh. Oh, my goodness! Those are the things that upset me!"
+~
+2|4|64 128 0 S
+200 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#15070
+Dor DorMouse~
+the DorMouse~
+The DorMouse sits here looking around.
+~
+The DorMouse sings, "Twinkle, twinkle, little bat, how I wonder what you're at! Up above the world you fly, like a tea-tray in the sky! "
+~
+4|64 0 0 S
+125 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#15071
+Door DoorKnob~
+the Door Knob~
+The Door Knob is here waiting for you to turn it!
+~
+The Door Knob utters..."Read the directions, and directly you'll be directed in the right direction. He he he!"
+~
+4|64 0 0 S
+129 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#15072
+Dodo~
+Dodo~
+Dodo stands here singing.
+~
+Dodo sings, "Oh, the sailor's life is the life for me, how I love to sail on the bounding sea, and I never never ever do a thing about the weather for the weather never ever does a thing for me."
+~
+4|64 0 0 S
+140 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#15073
+Cat CheshireCat~
+the Cheshire Cat~
+The Cheshire cat is here...fading in...and fading out.
+~
+The Cheshire Cat giggles out, "Almost everyone is mad here. Ha... ha ha ha ha ha! You may have noticed that I'm not all there myself...."
+~
+4|64 0 0 S
+135 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#15074
+Alice~
+Alice~
+Alice is here....LOST!
+~
+Alice expalins, "That's it, Dinah! If I had a world of my own, everything would be nonsense. Nothing would be what it is, because everything would be what it isn't. And contrariwise, what it is, it wouldn't be, and what it wouldn't be, it would. You see? "
+~
+4|64 0 0 S
+150 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#0
+
+
+#ROOMS
+#15060
+The Top of the Staricase.~
+This area was made with the Saturday night gaming group. Goratrix, this is 
+for you, from the staff of EM and with love from Heidi, Shaun and Dan.
+~
+0 8 0
+D5
+~
+~
+0 -1 15061
+D4
+~
+~
+0 -1 3001
+S
+#15061
+Down the Staircase.~
+This staircase is unlike any that ever was. Colors spring from everywhere. Every blink brings forth a new picture among the colors. To go any farther is to travel into madness.
+~
+0 8 0
+D2
+~
+~
+0 -1 15062
+D4
+~
+~
+0 -1 15060
+S
+#15062
+Farther Down the Staircase.~
+The colors ooze and blend like paintings soaked in water. It's tempting to touch and tempting to stop, but what lies further down the stairs?
+~
+0 8 0
+D0
+~
+~
+0 -1 15061
+D5
+~
+~
+0 -1 15063
+S
+#15063
+Down the Staircase.~
+Colors now splash forth from the walls and seem to become part of whatever they touch. Is this a bad trip?
+~
+0 8 0
+D3
+~
+~
+0 -1 15064
+D4
+~
+~
+0 -1 15062
+S
+#15064
+Down the Staircase.~
+The colors are but one in the minds of those who have made it this far. Shall they continue? Shall they stop to figure out the madness?
+~
+0 8 0
+D1
+~
+~
+0 -1 15063
+D5
+~
+~
+0 -1 15065
+S
+#15065
+Down the Staircase.~
+The walls in this portion of the staircase are all #yYellow#n. Is this a 
+sign?
+~
+0 8 0
+D0
+~
+~
+0 -1 15066
+D4
+~
+~
+0 -1 15064
+S
+#15066
+Down the Staircase.~
+The walls in this portion of the staircase are all #yyellow#n. Is this a 
+sign?
+~
+0 8 0
+D2
+~
+~
+0 -1 15065
+D5
+~
+~
+0 -1 15067
+S
+#15067
+Down the Staircase.~
+The walls in this portion of the staircase are all #yyellow#n. Is this a 
+sign?
+~
+0 8 0
+D1
+~
+~
+0 -1 15068
+D4
+~
+~
+0 -1 15066
+S
+#15068
+Down the Staircase.~
+The walls in this portion of the staircase are all #yyellow#n. Is this a 
+sign?
+~
+0 8 0
+D3
+~
+~
+0 -1 15067
+D5
+~
+~
+0 -1 15069
+S
+#15069
+Down the Staircase.~
+The walls in this portion of the staircase are all #yyellow#n. Is this a 
+sign?
+~
+0 8 0
+D2
+~
+~
+0 -1 15070
+D4
+~
+~
+0 -1 15068
+S
+#15070
+Down the Staircase.~
+The walls in this portion of the staircase are all #yyellow#n. Is this a 
+sign?
+~
+0 8 0
+D0
+~
+~
+0 -1 15069
+D5
+~
+~
+0 -1 15071
+S
+#15071
+Down the Staircase.~
+A change...finally. The walls now bleed or seem to bleed with the color 
+#Rred#n.
+~
+0 8 0
+D3
+~
+~
+0 -1 15072
+D4
+~
+~
+0 -1 15070
+S
+#15072
+Down the Staircase.~
+The walls now bleed or seem to bleed with the color #Rred#n. Was someone 
+slaughtered here?
+~
+0 8 0
+D1
+~
+~
+0 -1 15071
+D5
+~
+~
+0 -1 15073
+S
+#15073
+Down the Staircase.~
+The walls now bleed or seem to bleed with the color #Rred#n. Was someone 
+slaughtered here?
+~
+0 8 0
+D0
+~
+~
+0 -1 15074
+D4
+~
+~
+0 -1 15072
+S
+#15074
+Down the Staircase.~
+The walls now bleed or seem to bleed with the color #Rred#n. Was someone 
+slaughtered here?
+~
+0 8 0
+D2
+~
+~
+0 -1 15073
+D5
+~
+~
+0 -1 15075
+S
+#15075
+Down the Staircase.~
+The walls now bleed or seem to bleed with the color #Rred#n. Was someone 
+slaughtered here?
+~
+0 8 0
+D1
+~
+~
+0 -1 15076
+D4
+~
+~
+0 -1 15074
+S
+#15076
+Down the Staircase.~
+The walls now bleed or seem to bleed with the color #Rred#n. Was someone 
+slaughtered here?
+~
+0 8 0
+D3
+~
+~
+0 -1 15075
+D5
+~
+~
+0 -1 15077
+S
+#15077
+Down the Staircase.~
+The walls now bleed or seem to bleed with the color #Rred#n. Was someone 
+slaughtered here?
+~
+0 8 0
+D2
+~
+~
+0 -1 15078
+D4
+~
+~
+0 -1 15076
+S
+#15078
+Down the Staircase.~
+The walls now bleed or seem to bleed with the color #Rred#n. Was someone 
+slaughtered here?
+~
+0 8 0
+D0
+~
+~
+0 -1 15077
+D5
+~
+~
+0 -1 15079
+S
+#15079
+Down the Staircase.~
+The walls now bleed or seem to bleed with the color #Rred#n. Was someone 
+slaughtered here?
+~
+0 8 0
+D3
+~
+~
+0 -1 15080
+D4
+~
+~
+0 -1 15078
+S
+#15080
+Down the Staircase.~
+The walls now bleed or seem to bleed with the color #Rred#n. Was someone 
+slaughtered here?
+~
+0 8 0
+D1
+~
+~
+0 -1 15079
+D5
+~
+~
+0 -1 15081
+S
+#15081
+Down the Staircase.~
+The walls now bleed or seem to bleed with the color #Rred#n. Was someone 
+slaughtered here?
+~
+0 8 0
+D0
+~
+~
+0 -1 15082
+D4
+~
+~
+0 -1 15080
+S
+#15082
+Down the Staircase.~
+The walls now bleed or seem to bleed with the color #Rred#n. Was someone 
+slaughtered here?
+~
+0 8 0
+D2
+~
+~
+0 -1 15081
+D5
+~
+~
+0 -1 15083
+S
+#15083
+Down the Staircase.~
+The walls now bleed or seem to bleed with the color #Rred#n. Was someone 
+slaughtered here?
+~
+0 8 0
+D1
+~
+~
+0 -1 15084
+D4
+~
+~
+0 -1 15082
+S
+#15084
+Down the Staircase.~
+Here a picture of the souls consumed by the Staircase repeats itself along the wall. Will warriors see their reflection in the picture?....Or is it too late?
+~
+0 8 0
+D3
+~
+~
+0 -1 15083
+D5
+~
+~
+0 -1 15085
+S
+#15085
+Down the Staircase.~
+Souls scream from the walls on both sides of the staircase.
+~
+0 8 0
+D2
+~
+~
+0 -1 15086
+D4
+~
+~
+0 -1 15084
+S
+#15086
+Down the Staircase.~
+Souls scream from the walls on both sides of the staircase.
+~
+0 8 0
+D0
+~
+~
+0 -1 15085
+D5
+~
+~
+0 -1 15087
+S
+#15087
+Down the Staircase.~
+Souls scream from the walls on both sides of the staircase.
+~
+0 8 0
+D3
+~
+~
+0 -1 15088
+D4
+~
+~
+0 -1 15086
+S
+#15088
+Down the Staircase.~
+Souls scream from the walls on both sides of the staircase.
+~
+0 8 0
+D1
+~
+~
+0 -1 15087
+D5
+~
+~
+0 -1 15089
+S
+#15089
+Down the Staircase.~
+Souls scream from the walls on both sides of the staircase.
+~
+0 8 0
+D0
+~
+~
+0 -1 15090
+D4
+~
+~
+0 -1 15088
+S
+#15090
+Down the Staircase.~
+Souls scream from the walls on both sides of the staircase.
+~
+0 8 0
+D2
+~
+~
+0 -1 15089
+D5
+~
+~
+0 -1 15091
+S
+#15091
+Down the Staircase.~
+Souls scream from the walls on both sides of the staircase.
+~
+0 8 0
+D1
+~
+~
+0 -1 15092
+D4
+~
+~
+0 -1 15090
+S
+#15092
+Down the Staircase.~
+Souls scream from the walls on both sides of the staircase.
+~
+0 8 0
+D3
+~
+~
+0 -1 15091
+D5
+~
+~
+0 -1 15093
+S
+#15093
+Down the Staircase.~
+Souls scream from the walls on both sides of the staircase.
+~
+0 8 0
+D2
+~
+~
+0 -1 15094
+D4
+~
+~
+0 -1 15092
+S
+#15094
+Down the Staircase.~
+The picture slowly fades away in this section, leaving the walls bright White. First colors, then solids, then pictures, and now white. What does it mean?
+~
+0 8 0
+D0
+~
+~
+0 -1 15093
+D5
+~
+~
+0 -1 15095
+S
+#15095
+Down the Staircase.~
+The White walls sicken any brave soul with their sight. What devil of a man had this erected, what evil.
+~
+0 8 0
+D3
+~
+~
+0 -1 15096
+D4
+~
+~
+0 -1 15094
+S
+#15096
+Down the Staircase.~
+A sign here states, "I am MAD. I also wear a hat...WHO AM I?". Maybe the answer is farther down the straicase?
+~
+0 8 0
+D1
+~
+~
+0 -1 15095
+D5
+~
+~
+0 -1 15097
+S
+#15097
+Down the Staircase.~
+The colors have all returned. A sight not seen by many eyes. The further down the staircase the brighter they get.
+~
+0 8 0
+D0
+~
+~
+0 -1 15098
+D4
+~
+~
+0 -1 15096
+S
+#15098
+Down the Staircase.~
+The colors are so bright now eyes look away for comfort.
+~
+0 8 0
+D2
+~
+~
+0 -1 15097
+D5
+~
+~
+0 -1 15099
+S
+#15099
+The Bottom of the Staircase.~
+Here sits the Mad Hatter. Perhaps he made the awful place? With a grin like that, I'd be surprised if he didn't!
+~
+0 8 0
+D4
+~
+~
+0 -1 15098
+S
+#0
+
+
+#RESETS
+*
+M 1 15060 5 15061			a Playing Card to Down the Staircase.
+*
+*
+*
+*
+*
+M 1 15061 2 15093			a Playing Card to A room
+*
+M 1 15060 4 15096			a Playing Card to A room
+*
+M 1 15060 3 15085			a Playing Card to A room
+*
+M 1 15061 4 15082			a Playing Card to A room
+*
+M 1 15069 1 15099			the Mad Hatter to The Bottom of the Staircase.
+*
+M 1 15066 1 15098			The White Rabbit to Down the Staircase.
+*
+M 1 15060 1 15097			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15095			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15094			a Playing Card to Down the Staircase.
+*
+M 1 15067 1 15093			the Queen of Hearts to Down the Staircase.
+*
+M 1 15068 1 15091			March Hare to Down the Staircase.
+*
+M 1 15074 1 15089			Alice to Down the Staircase.
+*
+M 1 15072 1 15087			Dodo to Down the Staircase.
+*
+M 1 15060 5 15084			a Playing Card to Down the Staircase.
+*
+M 1 15071 1 15082			the Door Knob to Down the Staircase.
+*
+M 1 15068 1 15081			March Hare to Down the Staircase.
+*
+M 1 15065 1 15079			Mother Oyster to Down the Staircase.
+*
+M 1 15073 1 15077			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 3 15076			the Cheshire Cat to Down the Staircase.
+*
+M 1 15060 4 15075			a Playing Card to Down the Staircase.
+*
+M 1 15070 3 15074			the DorMouse to Down the Staircase.
+*
+M 1 15063 2 15068			a Playingcard to Down the Staircase.
+*
+M 1 15073 3 15070			the Cheshire Cat to Down the Staircase.
+*
+M 1 15063 3 15064			a Playingcard to Down the Staircase.
+*
+M 1 15060 1 15098			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15098			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15098			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15098			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15096			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15096			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15096			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15096			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15096			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15096			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15096			a Playing Card to Down the Staircase.
+*
+M 1 15074 1 15091			Alice to Down the Staircase.
+*
+M 1 15070 1 15091			the DorMouse to Down the Staircase.
+*
+M 1 15070 1 15091			the DorMouse to Down the Staircase.
+*
+M 1 15070 1 15091			the DorMouse to Down the Staircase.
+*
+M 1 15065 1 15089			Mother Oyster to Down the Staircase.
+*
+M 1 15070 1 15089			the DorMouse to Down the Staircase.
+*
+M 1 15070 1 15089			the DorMouse to Down the Staircase.
+*
+M 1 15070 1 15089			the DorMouse to Down the Staircase.
+*
+M 1 15071 1 15089			the Door Knob to Down the Staircase.
+*
+M 1 15073 1 15087			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15087			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15087			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15087			the Cheshire Cat to Down the Staircase.
+*
+M 1 15064 1 15075			a Playingcard to Down the Staircase.
+*
+M 1 15060 1 15075			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15075			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15075			a Playing Card to Down the Staircase.
+*
+M 1 15066 1 15075			The White Rabbit to Down the Staircase.
+*
+M 1 15073 1 15074			the Cheshire Cat to Down the Staircase.
+*
+M 1 15060 1 15074			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15074			a Playing Card to Down the Staircase.
+*
+M 1 15061 1 15071			a Playing Card to Down the Staircase.
+*
+M 1 15071 1 15071			the Door Knob to Down the Staircase.
+*
+M 1 15073 1 15071			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15071			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15071			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15071			the Cheshire Cat to Down the Staircase.
+*
+M 1 15060 1 15068			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15068			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15068			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15068			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15068			a Playing Card to Down the Staircase.
+*
+M 1 15073 1 15067			the Cheshire Cat to Down the Staircase.
+*
+M 1 15068 1 15067			March Hare to Down the Staircase.
+*
+M 1 15066 1 15067			The White Rabbit to Down the Staircase.
+*
+M 1 15065 1 15067			Mother Oyster to Down the Staircase.
+*
+M 1 15060 1 15065			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15065			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15065			a Playing Card to Down the Staircase.
+*
+M 1 15061 1 15065			a Playing Card to Down the Staircase.
+*
+M 1 15062 1 15065			a Playing Card to Down the Staircase.
+*
+M 1 15072 1 15063			Dodo to Down the Staircase.
+*
+M 1 15072 1 15063			Dodo to Down the Staircase.
+*
+M 1 15067 1 15063			the Queen of Hearts to Down the Staircase.
+*
+M 1 15070 1 15063			the DorMouse to Down the Staircase.
+*
+M 1 15060 1 15063			a Playing Card to Down the Staircase.
+*
+M 1 15073 1 15063			the Cheshire Cat to Down the Staircase.
+*
+M 1 15060 1 15060			a Playing Card to The Top of the Staricase.
+*
+M 1 15062 1 15060			a Playing Card to The Top of the Staricase.
+*
+M 1 15060 1 15060			a Playing Card to The Top of the Staricase.
+*
+M 1 15060 1 15060			a Playing Card to The Top of the Staricase.
+*
+M 1 15060 1 15060			a Playing Card to The Top of the Staricase.
+*
+M 1 15060 1 15060			a Playing Card to The Top of the Staricase.
+*
+M 1 15060 1 15060			a Playing Card to The Top of the Staricase.
+*
+M 1 15060 1 15082			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15082			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15082			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15082			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15082			a Playing Card to Down the Staircase.
+*
+M 1 15073 1 15080			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15080			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15080			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15080			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15080			the Cheshire Cat to Down the Staircase.
+*
+M 1 15067 1 15084			the Queen of Hearts to Down the Staircase.
+*
+M 1 15071 1 15084			the Door Knob to Down the Staircase.
+*
+M 1 15060 1 15094			a Playing Card to Down the Staircase.
+*
+M 1 15061 1 15094			a Playing Card to Down the Staircase.
+*
+M 1 15061 1 15094			a Playing Card to Down the Staircase.
+*
+M 1 15062 1 15094			a Playing Card to Down the Staircase.
+*
+M 1 15062 1 15094			a Playing Card to Down the Staircase.
+*
+M 1 15062 1 15094			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15094			a Playing Card to Down the Staircase.
+*
+M 1 15062 1 15094			a Playing Card to Down the Staircase.
+*
+M 1 15068 1 15094			March Hare to Down the Staircase.
+*
+M 1 15067 1 15094			the Queen of Hearts to Down the Staircase.
+*
+M 1 15060 1 15092			a Playing Card to Down the Staircase.
+*
+M 1 15073 1 15090			the Cheshire Cat to Down the Staircase.
+*
+M 1 15060 1 15090			a Playing Card to Down the Staircase.
+*
+M 1 15073 1 15090			the Cheshire Cat to Down the Staircase.
+*
+M 1 15062 1 15090			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15088			a Playing Card to Down the Staircase.
+*
+M 1 15073 1 15084			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15084			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15084			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15084			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15084			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15084			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15084			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15084			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15084			the Cheshire Cat to Down the Staircase.
+*
+M 1 15073 1 15084			the Cheshire Cat to Down the Staircase.
+*
+M 1 15071 1 15084			the Door Knob to Down the Staircase.
+*
+M 1 15060 1 15078			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15078			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15078			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15078			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15078			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15078			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15078			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15078			a Playing Card to Down the Staircase.
+*
+M 1 15060 1 15078			a Playing Card to Down the Staircase.
+*
+M 1 15070 1 15073			the DorMouse to Down the Staircase.
+*
+M 1 15070 1 15073			the DorMouse to Down the Staircase.
+*
+M 1 15074 1 15073			Alice to Down the Staircase.
+*
+M 1 15072 1 15073			Dodo to Down the Staircase.
+*
+M 1 15068 1 15073			March Hare to Down the Staircase.
+S
+
+
+#$

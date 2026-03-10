@@ -1,0 +1,394 @@
+#AREADATA
+Name        Mistif    The Dark Temple~
+Builders    None~
+VNUMs       1800 1813
+Security    1
+End
+
+
+#MOBILES
+#1800
+skeleton drow~
+Drow Skeleton~
+Bones are all that is left of this sacrificed drow.
+~
+A drow skeleton stands here looking for its revenge.
+~
+32|64 0 -1000 S
+600 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#1801
+High Priest~
+High Priest~
+The high priest sees you and starts chanting from a black leather book.
+~
+The high priest stands here angered by your distirbance.
+~
+2|32|64 2|8|32|512|524288 -1000 S
+950 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#1802
+rat~
+A black rat~
+A rabbid rat is looking franticaly for something to eat.
+~
+A rat scurries around the floor.  It seems to be glowing with an evil aura.
+~
+2|4|32 8|32|512|32768|1048576 -1000 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#1803
+Lurker~
+A Lurker~
+A lurker hangs from the ceiling waiting....
+~
+The lurker resembles a large manta ray; its grayish belly is textured like stone. 
+It blends in with the surrounding rocks too well to even detect.
+~
+2|4|64 2|8|32|512|32768|65536|524288 0 S
+800 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#1804
+fly~
+A very large fly~
+An extremely large fly buzzes about.
+~
+This fly is of abnormal size.  Its wings span at least four inches and its eyes glow 
+bright red.
+~
+4|32|64 8|32|512|65536|524288|1048576 -1000 S
+300 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#0
+
+
+#OBJECTS
+#1800
+bone~
+a sharp pointed bone~
+A blood stained bone lies here~
+~
+5 0 1|128|8192
+0 1 6 11 
+5 0 0
+A
+39 0
+#1801
+dagger~
+a sacrificial dagger~
+A dagger used in sacrifices lies here.~
+~
+5 1|2|16|128|4096 1|128|8192
+0 1 12 11 
+5 0 0
+A
+39 0
+#1802
+tentacle~
+a short tenticle~
+A short grayish looking tenticle~
+~
+5 0 1|8192
+0 10 15 12 
+5 0 0
+#0
+
+
+#ROOMS
+#1800
+Dark Temple~
+You are standing in what seems to be a corridore like entrance to a temple.  
+To the north you see an archway leading into a dark room.
+~
+0 8 0
+D0
+~
+~
+0 -1 1801
+D2
+~
+~
+0 -1 1811
+S
+#1801
+Sacrificial Altar~
+You cautiously enter the darkness.  The room is dimmly lit by an odd looking 
+opening from above.  From the bones and blood stained walls, you get the idea that those 
+who worshipped here dabbled in the black arts. There is a door leading north.
+~
+0 8 0
+D0
+~
+door~
+1 -1 1805
+D2
+~
+~
+0 -1 1800
+D5
+~
+altar~
+1 -1 1802
+S
+#1802
+Small Room~
+You are in a small room beneath the altar. There is a door leading to the
+west.
+~
+0 1|4|8|8192 0
+D3
+~
+~
+1 -1 1803
+D4
+~
+trapdoor~
+1 -1 1801
+S
+#1803
+High Priest's quarters.~
+You are standing in the quarters of the High Priest.  You get the notion that he wouldn't 
+want you here.  Around you, you see a bed and a table littered with scrolls and blank 
+parchment.  There is a doorway leading to the west and east.
+~
+0 8 0
+D1
+~
+~
+1 -1 1802
+D3
+~
+~
+1 -1 1804
+S
+#1804
+Study~
+This room is unmistakenly the study of the priest.  There are shelves
+scattered with books and scrolls.  There is a bookshelf on the wall with hundreds of 
+scrolls in it.  The only exit is back east.
+~
+0 8|8192 0
+D1
+~
+~
+1 -1 1803
+S
+#1805
+Dark Hallway~
+You are in a dark hallway leading further north.  The walls seem to emit a strange energy.  
+You get the feeling you're not going to like what is on the other side.
+~
+0 1|8|8192 0
+D0
+~
+~
+1 -1 1806
+D2
+~
+door~
+1 -1 1801
+S
+#1806
+Prison Area~
+You are standing in what seems to be a holding area.  This is where the poor
+souls to be sacrificed were held before they met their destiny.  
+There is a prison like cell to the north.
+~
+0 1|8|8192 0
+D0
+~
+~
+0 -1 1807
+D2
+~
+~
+1 -1 1805
+S
+#1807
+A cell~
+You are standing in an empty cell.  There are chains against the back wall.  In the corner 
+you see a mound of dirt that looks like someone was trying to dig a tunnel out of this hell 
+forsaken place.
+~
+0 1|8|8192 0
+D2
+~
+~
+0 -1 1806
+D5
+~
+~
+0 -1 1808
+S
+#1808
+Tunnel~
+You are in a tunnel that looks like it has been carved.  The tunnel leads 
+downward to the east.
+~
+0 1|8|8192 5
+D1
+~
+~
+0 -1 1809
+D4
+~
+~
+0 -1 1807
+S
+#1809
+Tunnel~
+You are in a dark tunnel leading farther to the east.
+~
+0 1|8|8192 0
+D1
+~
+~
+0 -1 1810
+D3
+~
+~
+0 -1 1808
+S
+#1810
+Cavern~
+The cave opens up into a cavern.  There is a light source almost comeing from 
+within the walls.  There is a stream running through the far wall.  It's
+hard to believe something so beutifull is so close to something so evil.  On the eastern 
+wall you see what looks like a rippling effect in the wall itself.  You think you see an 
+image comeing from within it.  You get the urge to walk towards it.
+~
+0 8|8192 0
+D1
+The wall seems to shimmer and fade as you look at it.  It looks like a portal to somewhere 
+else.  Where, you can not quite make out.
+~
+~
+0 -1 5111
+D3
+~
+~
+0 -1 1809
+S
+#1811
+The cave widens~
+You have reached some sort of cavern.  There is a trail leading north lit ever so often with 
+faerie fire.  To the north you can just make out a large stone structure that is set into the 
+wall.
+~
+0 8 5
+D0
+~
+~
+0 -1 1800
+D2
+~
+~
+0 -1 1812
+S
+#1812
+Dark Cave~
+The cave angles to the north and continues in an uphill-downhill pattern.  As you look ahead 
+you notice the slight shimmer of firelight to the north.
+~
+0 1|8 5
+D0
+~
+~
+0 -1 1811
+D3
+~
+~
+0 -1 1813
+S
+#1813
+A branch of the cave~
+As you follow the eastern branch of the cave, you notice that it hasn't been used in quite 
+some time.  The walls are covered with webs and soot, and the smell of death asphixiates 
+you with each breath.
+~
+0 1|8 5
+D1
+~
+~
+0 -1 1812
+D3
+Too dark to tell.
+~
+~
+0 -1 8134
+S
+#0
+
+
+#RESETS
+*
+M 1 1800 4 1801			Drow Skeleton to Sacrificial Altar
+E 1 1800 100 9
+*
+M 1 1800 2 1801			Drow Skeleton to Sacrificial Altar
+E 1 1800 100 9
+D 1 1802 4 1			; Small Room Close Up
+D 1 1801 0 1			; Sacrificial Altar Close North
+D 1 1805 2 2			; Dark Hallway Lock South
+D 1 1801 5 1			; Sacrificial Altar Close Down
+*
+M 1 1801 1 1804			High Priest to Study
+E 1 1801 100 9
+*
+M 1 1804 10 1806			A very large fly to Prison Area
+*
+M 1 1802 2 1808			A black rat to Tunnel
+*
+M 1 1802 2 1809			A black rat to Tunnel
+*
+M 1 1804 10 1806			A very large fly to Prison Area
+*
+M 1 1804 10 1806			A very large fly to Prison Area
+*
+M 1 1804 10 1806			A very large fly to Prison Area
+*
+M 1 1804 10 1806			A very large fly to Prison Area
+*
+M 1 1804 10 1806			A very large fly to Prison Area
+*
+M 1 1804 10 1806			A very large fly to Prison Area
+*
+M 1 1804 10 1806			A very large fly to Prison Area
+*
+M 1 1804 10 1806			A very large fly to Prison Area
+*
+M 1 1804 10 1806			A very large fly to Prison Area
+*
+M 1 1802 2 1808			A black rat to Tunnel
+*
+M 1 1803 5 1810			A Lurker to Cavern
+*
+M 1 1803 5 1810			A Lurker to Cavern
+E 1 1802 100 16
+*
+M 1 1803 5 1810			A Lurker to Cavern
+E 1 1802 100 16
+*
+M 1 1803 5 1810			A Lurker to Cavern
+E 1 1802 100 16
+*
+M 1 1803 5 1810			A Lurker to Cavern
+E 1 1802 100 16
+S
+
+
+#SPECIALS
+M  1800 spec_breath_any			Drow Skeleton
+M  1801 spec_cast_cleric			High Priest
+M  1802 spec_poison			A black rat
+M  1803 spec_breath_gas			 A Lurker
+M  1804 spec_breath_acid			A very large fly
+S
+
+
+#$

@@ -1,0 +1,200 @@
+Crash at Mon Jun 11 17:55:09 2001
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Jade in room[3054]: inv. <BUGGED>
+
+
+Crash at Mon Jun 11 21:37:30 2001
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Creed in room[9518]: kick. <BUGGED>
+
+
+Crash at Sat Aug 11 14:13:49 2001
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Regan in room[16406]: cast mana. <BUGGED>
+
+
+Crash at Sun Aug 19 22:27:41 2001
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Mordeth in room[3050]: u. <BUGGED>
+
+
+Crash at Sat Sep  1 23:53:39 2001
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Damian in room[3014]: scry. <BUGGED>
+
+
+Crash at Fri Oct 12 09:29:16 2001
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY>  <BUGGED>
+
+
+Crash at Fri Oct 12 23:50:19 2001
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Bion in room[16406]: chant. <BUGGED>
+
+
+Crash at Mon Nov 12 00:38:07 2001
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Dodgers in room[3004]: kick. <BUGGED>
+
+
+Crash at Wed Nov 14 12:06:16 2001
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Mie in room[3472]: chant toy. <BUGGED>
+
+
+Crash at Wed Nov 21 14:56:22 2001
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Keyok in room[3054]: ca carve wand fix. <BUGGED>
+
+
+Crash at Thu Nov 29 16:16:15 2001
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Shibo in room[9519]: cir #n. <BUGGED>
+
+
+Crash at Wed Dec  5 17:18:29 2001
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Denkou in room[16409]: chant dog. <BUGGED>
+
+
+Crash at Tue Dec 11 15:54:54 2001
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Saxgod in room[16405]: c heal. <BUGGED>
+
+
+Crash at Wed Dec 26 17:25:33 2001
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> RoXy in room[9721]: flee. <BUGGED>
+
+
+Crash at Tue Jan  1 23:02:07 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Jarin in room[3054]: i. <BUGGED>
+
+
+Crash at Wed Jan 23 19:57:48 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Caster in room[5011]: fangs. <BUGGED>
+
+
+Crash at Fri Jan 25 09:59:27 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Shogun in room[9421]: miz cityguard. <BUGGED>
+
+
+Crash at Thu Feb  7 09:16:03 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> frog in room[16053]: nod. <BUGGED>
+
+
+Crash at Fri Feb  8 12:26:39 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Wampeer in room[16053]: wear all. <BUGGED>
+
+
+Crash at Wed Apr 10 19:25:23 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Wampeer in room[1403]: reply meet at healer. <BUGGED>
+
+
+Crash at Fri Apr 19 09:50:23 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Wampeer in room[3449]: step mindf. <BUGGED>
+
+
+Crash at Tue Apr 23 11:30:23 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Xentoth in room[20100]: who. <BUGGED>
+
+
+Crash at Wed Apr 24 10:09:12 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Shinja in room[17510]: u. <BUGGED>
+
+
+Crash at Fri May 10 12:51:53 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Thymeless in room[1499]: gif wris rog. <BUGGED>
+
+
+Crash at Tue May 14 10:43:06 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Darkcloud in room[18002]: cv #L-=#0Dark#L=- #rone sec #L-=#0Lord#L=-. <BUGGED>
+
+
+Crash at Wed Sep  4 17:20:28 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Forneus in room[3005]: armn. <BUGGED>
+
+
+Crash at Wed Sep  4 17:43:52 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY>  <BUGGED>
+
+
+Crash at Sun Sep 29 08:34:19 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Taki in room[17516]: cir #. <BUGGED>
+
+
+Crash at Sun Oct 20 10:27:54 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Mistif in room[3054]: echo #7 You have 5 seconds. <BUGGED>
+
+
+Crash at Thu Oct 31 10:18:18 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Mistif in room[29004]: l. <BUGGED>
+
+
+Crash at Thu Oct 31 10:24:16 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY>  <BUGGED>
+
+
+Crash at Thu Oct 31 10:31:10 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY>  <BUGGED>
+
+
+Crash at Thu Oct 31 10:42:16 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY>  <BUGGED>
+
+
+Crash at Wed Nov 27 20:18:01 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Tassadar in room[9501]: who. <BUGGED>
+
+
+Crash at Tue Dec  3 15:19:11 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Erin in room[18001]: quit. <BUGGED>
+
+
+Crash at Mon Dec  9 09:28:47 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Traith in room[17571]: chant. <BUGGED>
+
+
+Crash at Mon Dec  9 09:39:44 2002
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Traith in room[17588]: chant. <BUGGED>
+
+
+Crash at Fri Feb  7 14:48:03 2003
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY> Sefanis in room[3726]: save. <BUGGED>
+
+
+Crash at Fri Feb 21 21:28:10 2003
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY>  <BUGGED>
+
+
+Crash at Fri Feb 21 21:28:39 2003
+Last pfile was: (null)..BUGGED
+Last command: (null) <BY>  <BUGGED>
+
+

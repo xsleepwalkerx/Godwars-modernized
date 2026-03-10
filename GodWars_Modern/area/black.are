@@ -1,0 +1,4280 @@
+#AREADATA
+Name        Land of Nightmares~
+Builders    Chiana~
+VNUMs       19500 19650
+Security    1
+End
+
+
+#MOBILES
+#19500
+self~
+someone~
+
+~
+It is pitch black....
+~
+32|8192 2|8|32|128|512|8192|32768|65536|524288|1048576 0 S
+5000 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#19501
+self~
+someone~
+
+~
+It is pitch black....
+~
+32|8192 2|8|32|128|512|8192|32768|65536|524288|1048576 0 S
+5000 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#19502
+self~
+someone~
+
+~
+It is pitch black....
+~
+32|8192 2|8|32|128|512|8192|32768|65536|524288|1048576 0 S
+5000 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#19503
+self~
+someone~
+
+~
+It is pitch black....
+~
+32|8192 2|8|32|128|512|8192|32768|65536|524288|1048576 0 S
+5000 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#19504
+self~
+someone~
+
+~
+It is pitch black....
+~
+32|8192 2|8|32|128|512|8192|32768|65536|524288|1048576 0 S
+5000 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#19505
+self~
+someone~
+
+~
+It is pitch black....
+~
+32|8192 2|8|32|128|512|8192|32768|65536|524288|1048576 0 S
+5000 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#19506
+!nightmare~
+someone~
+
+~
+It is pitch black....
+~
+32|8192 2|8|32|128|512|8192|32768|65536|524288|1048576 0 S
+5000 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#19507
+self~
+someone~
+
+~
+It is pitch black....
+~
+32|8192 2|8|32|128|512|8192|32768|65536|524288|1048576 0 S
+5000 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#0
+
+
+#ROOMS
+#19500
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19505
+D1
+~
+~
+0 -1 19501
+D2
+~
+~
+0 -1 19520
+D3
+~
+~
+0 -1 19504
+D4
+~
+~
+0 -1 19525
+D5
+~
+~
+0 -1 19620
+S
+#19501
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19506
+D1
+~
+~
+0 -1 19502
+D2
+~
+~
+0 -1 19521
+D3
+~
+~
+0 -1 19500
+D4
+~
+~
+0 -1 19526
+D5
+~
+~
+0 -1 19621
+S
+#19502
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19507
+D1
+~
+~
+0 -1 19503
+D2
+~
+~
+0 -1 19522
+D3
+~
+~
+0 -1 19501
+D4
+~
+~
+0 -1 19527
+D5
+~
+~
+0 -1 19622
+S
+#19503
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19508
+D1
+~
+~
+0 -1 19504
+D2
+~
+~
+0 -1 19523
+D3
+~
+~
+0 -1 19502
+D4
+~
+~
+0 -1 19528
+D5
+~
+~
+0 -1 19623
+S
+#19504
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19509
+D1
+~
+~
+0 -1 19500
+D2
+~
+~
+0 -1 19524
+D3
+~
+~
+0 -1 19503
+D4
+~
+~
+0 -1 19529
+D5
+~
+~
+0 -1 19624
+S
+#19505
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19510
+D1
+~
+~
+0 -1 19506
+D2
+~
+~
+0 -1 19500
+D3
+~
+~
+0 -1 19509
+D4
+~
+~
+0 -1 19530
+D5
+~
+~
+0 -1 19600
+S
+#19506
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19511
+D1
+~
+~
+0 -1 19507
+D2
+~
+~
+0 -1 19501
+D3
+~
+~
+0 -1 19505
+D4
+~
+~
+0 -1 19531
+D5
+~
+~
+0 -1 19601
+S
+#19507
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19512
+D1
+~
+~
+0 -1 19508
+D2
+~
+~
+0 -1 19502
+D3
+~
+~
+0 -1 19506
+D4
+~
+~
+0 -1 19532
+D5
+~
+~
+0 -1 19602
+S
+#19508
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19513
+D1
+~
+~
+0 -1 19509
+D2
+~
+~
+0 -1 19503
+D3
+~
+~
+0 -1 19507
+D4
+~
+~
+0 -1 19533
+D5
+~
+~
+0 -1 19603
+S
+#19509
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19514
+D1
+~
+~
+0 -1 19505
+D2
+~
+~
+0 -1 19504
+D3
+~
+~
+0 -1 19508
+D4
+~
+~
+0 -1 19534
+D5
+~
+~
+0 -1 19604
+S
+#19510
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19515
+D1
+~
+~
+0 -1 19511
+D2
+~
+~
+0 -1 19505
+D3
+~
+~
+0 -1 19514
+D4
+~
+~
+0 -1 19535
+D5
+~
+~
+0 -1 19605
+S
+#19511
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19516
+D1
+~
+~
+0 -1 19512
+D2
+~
+~
+0 -1 19506
+D3
+~
+~
+0 -1 19510
+D4
+~
+~
+0 -1 19536
+D5
+~
+~
+0 -1 19606
+S
+#19512
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19517
+D1
+~
+~
+0 -1 19513
+D2
+~
+~
+0 -1 19507
+D3
+~
+~
+0 -1 19511
+D4
+~
+~
+0 -1 19537
+D5
+~
+~
+0 -1 19607
+S
+#19513
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19518
+D1
+~
+~
+0 -1 19514
+D2
+~
+~
+0 -1 19508
+D3
+~
+~
+0 -1 19512
+D4
+~
+~
+0 -1 19538
+D5
+~
+~
+0 -1 19608
+S
+#19514
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19519
+D1
+~
+~
+0 -1 19510
+D2
+~
+~
+0 -1 19509
+D3
+~
+~
+0 -1 19513
+D4
+~
+~
+0 -1 19539
+D5
+~
+~
+0 -1 19609
+S
+#19515
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19520
+D1
+~
+~
+0 -1 19516
+D2
+~
+~
+0 -1 19510
+D3
+~
+~
+0 -1 19519
+D4
+~
+~
+0 -1 19540
+D5
+~
+~
+0 -1 19610
+S
+#19516
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19521
+D1
+~
+~
+0 -1 19517
+D2
+~
+~
+0 -1 19511
+D3
+~
+~
+0 -1 19515
+D4
+~
+~
+0 -1 19541
+D5
+~
+~
+0 -1 19611
+S
+#19517
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19522
+D1
+~
+~
+0 -1 19518
+D2
+~
+~
+0 -1 19512
+D3
+~
+~
+0 -1 19516
+D4
+~
+~
+0 -1 19542
+D5
+~
+~
+0 -1 19612
+S
+#19518
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19523
+D1
+~
+~
+0 -1 19519
+D2
+~
+~
+0 -1 19513
+D3
+~
+~
+0 -1 19517
+D4
+~
+~
+0 -1 19543
+D5
+~
+~
+0 -1 19613
+S
+#19519
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19524
+D1
+~
+~
+0 -1 19515
+D2
+~
+~
+0 -1 19514
+D3
+~
+~
+0 -1 19518
+D4
+~
+~
+0 -1 19544
+D5
+~
+~
+0 -1 19614
+S
+#19520
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19500
+D1
+~
+~
+0 -1 19521
+D2
+~
+~
+0 -1 19515
+D3
+~
+~
+0 -1 19524
+D4
+~
+~
+0 -1 19545
+D5
+~
+~
+0 -1 19615
+S
+#19521
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19501
+D1
+~
+~
+0 -1 19522
+D2
+~
+~
+0 -1 19516
+D3
+~
+~
+0 -1 19520
+D4
+~
+~
+0 -1 19546
+D5
+~
+~
+0 -1 19616
+S
+#19522
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19502
+D1
+~
+~
+0 -1 19523
+D2
+~
+~
+0 -1 19517
+D3
+~
+~
+0 -1 19521
+D4
+~
+~
+0 -1 19547
+D5
+~
+~
+0 -1 19617
+S
+#19523
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19503
+D1
+~
+~
+0 -1 19524
+D2
+~
+~
+0 -1 19518
+D3
+~
+~
+0 -1 19522
+D4
+~
+~
+0 -1 19548
+D5
+~
+~
+0 -1 19618
+S
+#19524
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19504
+D1
+~
+~
+0 -1 19520
+D2
+~
+~
+0 -1 19519
+D3
+~
+~
+0 -1 19523
+D4
+~
+~
+0 -1 19549
+D5
+~
+~
+0 -1 19619
+S
+#19525
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19530
+D1
+~
+~
+0 -1 19526
+D2
+~
+~
+0 -1 19545
+D3
+~
+~
+0 -1 19529
+D4
+~
+~
+0 -1 19550
+D5
+~
+~
+0 -1 19500
+S
+#19526
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19531
+D1
+~
+~
+0 -1 19527
+D2
+~
+~
+0 -1 19546
+D3
+~
+~
+0 -1 19525
+D4
+~
+~
+0 -1 19551
+D5
+~
+~
+0 -1 19501
+S
+#19527
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19532
+D1
+~
+~
+0 -1 19528
+D2
+~
+~
+0 -1 19547
+D3
+~
+~
+0 -1 19526
+D4
+~
+~
+0 -1 19552
+D5
+~
+~
+0 -1 19502
+S
+#19528
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19533
+D1
+~
+~
+0 -1 19529
+D2
+~
+~
+0 -1 19548
+D3
+~
+~
+0 -1 19527
+D4
+~
+~
+0 -1 19553
+D5
+~
+~
+0 -1 19503
+S
+#19529
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19534
+D1
+~
+~
+0 -1 19525
+D2
+~
+~
+0 -1 19549
+D3
+~
+~
+0 -1 19528
+D4
+~
+~
+0 -1 19554
+D5
+~
+~
+0 -1 19504
+S
+#19530
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19535
+D1
+~
+~
+0 -1 19531
+D2
+~
+~
+0 -1 19525
+D3
+~
+~
+0 -1 19534
+D4
+~
+~
+0 -1 19555
+D5
+~
+~
+0 -1 19505
+S
+#19531
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19536
+D1
+~
+~
+0 -1 19532
+D2
+~
+~
+0 -1 19526
+D3
+~
+~
+0 -1 19530
+D4
+~
+~
+0 -1 19556
+D5
+~
+~
+0 -1 19506
+S
+#19532
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19537
+D1
+~
+~
+0 -1 19533
+D2
+~
+~
+0 -1 19527
+D3
+~
+~
+0 -1 19531
+D4
+~
+~
+0 -1 19557
+D5
+~
+~
+0 -1 19507
+S
+#19533
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19538
+D1
+~
+~
+0 -1 19534
+D2
+~
+~
+0 -1 19528
+D3
+~
+~
+0 -1 19532
+D4
+~
+~
+0 -1 19558
+D5
+~
+~
+0 -1 19508
+S
+#19534
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19539
+D1
+~
+~
+0 -1 19530
+D2
+~
+~
+0 -1 19529
+D3
+~
+~
+0 -1 19533
+D4
+~
+~
+0 -1 19559
+D5
+~
+~
+0 -1 19509
+S
+#19535
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19540
+D1
+~
+~
+0 -1 19536
+D2
+~
+~
+0 -1 19530
+D3
+~
+~
+0 -1 19539
+D4
+~
+~
+0 -1 19560
+D5
+~
+~
+0 -1 19510
+S
+#19536
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19541
+D1
+~
+~
+0 -1 19537
+D2
+~
+~
+0 -1 19531
+D3
+~
+~
+0 -1 19535
+D4
+~
+~
+0 -1 19561
+D5
+~
+~
+0 -1 19511
+S
+#19537
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19542
+D1
+~
+~
+0 -1 19538
+D2
+~
+~
+0 -1 19532
+D3
+~
+~
+0 -1 19536
+D4
+~
+~
+0 -1 19562
+D5
+~
+~
+0 -1 19512
+S
+#19538
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19543
+D1
+~
+~
+0 -1 19539
+D2
+~
+~
+0 -1 19533
+D3
+~
+~
+0 -1 19537
+D4
+~
+~
+0 -1 19563
+D5
+~
+~
+0 -1 19513
+S
+#19539
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19544
+D1
+~
+~
+0 -1 19535
+D2
+~
+~
+0 -1 19534
+D3
+~
+~
+0 -1 19538
+D4
+~
+~
+0 -1 19564
+D5
+~
+~
+0 -1 19514
+S
+#19540
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19545
+D1
+~
+~
+0 -1 19541
+D2
+~
+~
+0 -1 19535
+D3
+~
+~
+0 -1 19544
+D4
+~
+~
+0 -1 19565
+D5
+~
+~
+0 -1 19515
+S
+#19541
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19546
+D1
+~
+~
+0 -1 19542
+D2
+~
+~
+0 -1 19536
+D3
+~
+~
+0 -1 19540
+D4
+~
+~
+0 -1 19566
+D5
+~
+~
+0 -1 19516
+S
+#19542
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19547
+D1
+~
+~
+0 -1 19543
+D2
+~
+~
+0 -1 19537
+D3
+~
+~
+0 -1 19541
+D4
+~
+~
+0 -1 19567
+D5
+~
+~
+0 -1 19517
+S
+#19543
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19548
+D1
+~
+~
+0 -1 19544
+D2
+~
+~
+0 -1 19538
+D3
+~
+~
+0 -1 19542
+D4
+~
+~
+0 -1 19568
+D5
+~
+~
+0 -1 19518
+S
+#19544
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19549
+D1
+~
+~
+0 -1 19540
+D2
+~
+~
+0 -1 19539
+D3
+~
+~
+0 -1 19543
+D4
+~
+~
+0 -1 19569
+D5
+~
+~
+0 -1 19519
+S
+#19545
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19525
+D1
+~
+~
+0 -1 19546
+D2
+~
+~
+0 -1 19540
+D3
+~
+~
+0 -1 19549
+D4
+~
+~
+0 -1 19570
+D5
+~
+~
+0 -1 19520
+S
+#19546
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19526
+D1
+~
+~
+0 -1 19547
+D2
+~
+~
+0 -1 19541
+D3
+~
+~
+0 -1 19545
+D4
+~
+~
+0 -1 19571
+D5
+~
+~
+0 -1 19521
+S
+#19547
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19527
+D1
+~
+~
+0 -1 19548
+D2
+~
+~
+0 -1 19542
+D3
+~
+~
+0 -1 19546
+D4
+~
+~
+0 -1 19572
+D5
+~
+~
+0 -1 19522
+S
+#19548
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19528
+D1
+~
+~
+0 -1 19549
+D2
+~
+~
+0 -1 19543
+D3
+~
+~
+0 -1 19547
+D4
+~
+~
+0 -1 19573
+D5
+~
+~
+0 -1 19523
+S
+#19549
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19529
+D1
+~
+~
+0 -1 19545
+D2
+~
+~
+0 -1 19544
+D3
+~
+~
+0 -1 19548
+D4
+~
+~
+0 -1 19574
+D5
+~
+~
+0 -1 19524
+S
+#19550
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19555
+D1
+~
+~
+0 -1 19551
+D2
+~
+~
+0 -1 19570
+D3
+~
+~
+0 -1 19554
+D4
+~
+~
+0 -1 19575
+D5
+~
+~
+0 -1 19525
+S
+#19551
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19556
+D1
+~
+~
+0 -1 19552
+D2
+~
+~
+0 -1 19571
+D3
+~
+~
+0 -1 19550
+D4
+~
+~
+0 -1 19576
+D5
+~
+~
+0 -1 19526
+S
+#19552
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19557
+D1
+~
+~
+0 -1 19553
+D2
+~
+~
+0 -1 19572
+D3
+~
+~
+0 -1 19551
+D4
+~
+~
+0 -1 19577
+D5
+~
+~
+0 -1 19527
+S
+#19553
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19558
+D1
+~
+~
+0 -1 19554
+D2
+~
+~
+0 -1 19573
+D3
+~
+~
+0 -1 19552
+D4
+~
+~
+0 -1 19578
+D5
+~
+~
+0 -1 19528
+S
+#19554
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19559
+D1
+~
+~
+0 -1 19550
+D2
+~
+~
+0 -1 19574
+D3
+~
+~
+0 -1 19553
+D4
+~
+~
+0 -1 19579
+D5
+~
+~
+0 -1 19529
+S
+#19555
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19560
+D1
+~
+~
+0 -1 19556
+D2
+~
+~
+0 -1 19550
+D3
+~
+~
+0 -1 19559
+D4
+~
+~
+0 -1 19580
+D5
+~
+~
+0 -1 19530
+S
+#19556
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19561
+D1
+~
+~
+0 -1 19557
+D2
+~
+~
+0 -1 19551
+D3
+~
+~
+0 -1 19555
+D4
+~
+~
+0 -1 19581
+D5
+~
+~
+0 -1 19531
+S
+#19557
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19562
+D1
+~
+~
+0 -1 19558
+D2
+~
+~
+0 -1 19552
+D3
+~
+~
+0 -1 19556
+D4
+~
+~
+0 -1 19582
+D5
+~
+~
+0 -1 19532
+S
+#19558
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19563
+D1
+~
+~
+0 -1 19559
+D2
+~
+~
+0 -1 19553
+D3
+~
+~
+0 -1 19557
+D4
+~
+~
+0 -1 19583
+D5
+~
+~
+0 -1 19533
+S
+#19559
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19564
+D1
+~
+~
+0 -1 19555
+D2
+~
+~
+0 -1 19554
+D3
+~
+~
+0 -1 19558
+D4
+~
+~
+0 -1 19584
+D5
+~
+~
+0 -1 19534
+S
+#19560
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19565
+D1
+~
+~
+0 -1 19561
+D2
+~
+~
+0 -1 19555
+D3
+~
+~
+0 -1 19564
+D4
+~
+~
+0 -1 19585
+D5
+~
+~
+0 -1 19535
+S
+#19561
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19566
+D1
+~
+~
+0 -1 19562
+D2
+~
+~
+0 -1 19556
+D3
+~
+~
+0 -1 19560
+D4
+~
+~
+0 -1 19586
+D5
+~
+~
+0 -1 19536
+S
+#19562
+It is pitch black.... ~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19567
+D1
+~
+~
+0 -1 19563
+D2
+~
+~
+0 -1 19557
+D3
+~
+~
+0 -1 19561
+D4
+~
+~
+0 -1 19587
+D5
+~
+~
+0 -1 19537
+T
+somethinginteresting?~
+$n suddenly dissapears!~
+You are #0hurled#n from the room!~
+all~
+16384 19625 0
+E
+something~
+This room seems different somehow... It feels like something is watching you...  Listening to your every word...  Perhaps you should say something interesting?~
+S
+#19563
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19568
+D1
+~
+~
+0 -1 19564
+D2
+~
+~
+0 -1 19558
+D3
+~
+~
+0 -1 19562
+D4
+~
+~
+0 -1 19588
+D5
+~
+~
+0 -1 19538
+S
+#19564
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19569
+D1
+~
+~
+0 -1 19560
+D2
+~
+~
+0 -1 19559
+D3
+~
+~
+0 -1 19563
+D4
+~
+~
+0 -1 19589
+D5
+~
+~
+0 -1 19539
+S
+#19565
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19570
+D1
+~
+~
+0 -1 19566
+D2
+~
+~
+0 -1 19560
+D3
+~
+~
+0 -1 19569
+D4
+~
+~
+0 -1 19590
+D5
+~
+~
+0 -1 19540
+S
+#19566
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19571
+D1
+~
+~
+0 -1 19567
+D2
+~
+~
+0 -1 19561
+D3
+~
+~
+0 -1 19565
+D4
+~
+~
+0 -1 19591
+D5
+~
+~
+0 -1 19541
+S
+#19567
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19572
+D1
+~
+~
+0 -1 19568
+D2
+~
+~
+0 -1 19562
+D3
+~
+~
+0 -1 19566
+D4
+~
+~
+0 -1 19592
+D5
+~
+~
+0 -1 19542
+S
+#19568
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19573
+D1
+~
+~
+0 -1 19569
+D2
+~
+~
+0 -1 19563
+D3
+~
+~
+0 -1 19567
+D4
+~
+~
+0 -1 19593
+D5
+~
+~
+0 -1 19543
+S
+#19569
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19574
+D1
+~
+~
+0 -1 19565
+D2
+~
+~
+0 -1 19564
+D3
+~
+~
+0 -1 19568
+D4
+~
+~
+0 -1 19594
+D5
+~
+~
+0 -1 19544
+S
+#19570
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19550
+D1
+~
+~
+0 -1 19571
+D2
+~
+~
+0 -1 19565
+D3
+~
+~
+0 -1 19574
+D4
+~
+~
+0 -1 19595
+D5
+~
+~
+0 -1 19545
+S
+#19571
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19551
+D1
+~
+~
+0 -1 19572
+D2
+~
+~
+0 -1 19566
+D3
+~
+~
+0 -1 19570
+D4
+~
+~
+0 -1 19596
+D5
+~
+~
+0 -1 19546
+S
+#19572
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19552
+D1
+~
+~
+0 -1 19573
+D2
+~
+~
+0 -1 19567
+D3
+~
+~
+0 -1 19571
+D4
+~
+~
+0 -1 19597
+D5
+~
+~
+0 -1 19547
+S
+#19573
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19553
+D1
+~
+~
+0 -1 19574
+D2
+~
+~
+0 -1 19568
+D3
+~
+~
+0 -1 19572
+D4
+~
+~
+0 -1 19598
+D5
+~
+~
+0 -1 19548
+S
+#19574
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19554
+D1
+~
+~
+0 -1 19570
+D2
+~
+~
+0 -1 19569
+D3
+~
+~
+0 -1 19573
+D4
+~
+~
+0 -1 19599
+D5
+~
+~
+0 -1 19549
+S
+#19575
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19580
+D1
+~
+~
+0 -1 19576
+D2
+~
+~
+0 -1 19595
+D3
+~
+~
+0 -1 19579
+D4
+~
+~
+0 -1 19600
+D5
+~
+~
+0 -1 19550
+S
+#19576
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19581
+D1
+~
+~
+0 -1 19577
+D2
+~
+~
+0 -1 19596
+D3
+~
+~
+0 -1 19575
+D4
+~
+~
+0 -1 19601
+D5
+~
+~
+0 -1 19551
+S
+#19577
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19582
+D1
+~
+~
+0 -1 19578
+D2
+~
+~
+0 -1 19597
+D3
+~
+~
+0 -1 19576
+D4
+~
+~
+0 -1 19602
+D5
+~
+~
+0 -1 19552
+S
+#19578
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19583
+D1
+~
+~
+0 -1 19579
+D2
+~
+~
+0 -1 19598
+D3
+~
+~
+0 -1 19577
+D4
+~
+~
+0 -1 19603
+D5
+~
+~
+0 -1 19553
+S
+#19579
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19584
+D1
+~
+~
+0 -1 19575
+D2
+~
+~
+0 -1 19599
+D3
+~
+~
+0 -1 19578
+D4
+~
+~
+0 -1 19604
+D5
+~
+~
+0 -1 19554
+S
+#19580
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19585
+D1
+~
+~
+0 -1 19581
+D2
+~
+~
+0 -1 19575
+D3
+~
+~
+0 -1 19584
+D4
+~
+~
+0 -1 19605
+D5
+~
+~
+0 -1 19555
+S
+#19581
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19586
+D1
+~
+~
+0 -1 19582
+D2
+~
+~
+0 -1 19576
+D3
+~
+~
+0 -1 19580
+D4
+~
+~
+0 -1 19606
+D5
+~
+~
+0 -1 19556
+S
+#19582
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19587
+D1
+~
+~
+0 -1 19583
+D2
+~
+~
+0 -1 19577
+D3
+~
+~
+0 -1 19581
+D4
+~
+~
+0 -1 19607
+D5
+~
+~
+0 -1 19557
+S
+#19583
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19588
+D1
+~
+~
+0 -1 19584
+D2
+~
+~
+0 -1 19578
+D3
+~
+~
+0 -1 19582
+D4
+~
+~
+0 -1 19608
+D5
+~
+~
+0 -1 19558
+S
+#19584
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19589
+D1
+~
+~
+0 -1 19580
+D2
+~
+~
+0 -1 19579
+D3
+~
+~
+0 -1 19583
+D4
+~
+~
+0 -1 19609
+D5
+~
+~
+0 -1 19559
+S
+#19585
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19590
+D1
+~
+~
+0 -1 19586
+D2
+~
+~
+0 -1 19580
+D3
+~
+~
+0 -1 19589
+D4
+~
+~
+0 -1 19610
+D5
+~
+~
+0 -1 19560
+S
+#19586
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19591
+D1
+~
+~
+0 -1 19587
+D2
+~
+~
+0 -1 19581
+D3
+~
+~
+0 -1 19585
+D4
+~
+~
+0 -1 19611
+D5
+~
+~
+0 -1 19561
+S
+#19587
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19592
+D1
+~
+~
+0 -1 19588
+D2
+~
+~
+0 -1 19582
+D3
+~
+~
+0 -1 19586
+D4
+~
+~
+0 -1 19612
+D5
+~
+~
+0 -1 19562
+S
+#19588
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19593
+D1
+~
+~
+0 -1 19589
+D2
+~
+~
+0 -1 19583
+D3
+~
+~
+0 -1 19587
+D4
+~
+~
+0 -1 19613
+D5
+~
+~
+0 -1 19563
+S
+#19589
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19594
+D1
+~
+~
+0 -1 19585
+D2
+~
+~
+0 -1 19584
+D3
+~
+~
+0 -1 19588
+D4
+~
+~
+0 -1 19614
+D5
+~
+~
+0 -1 19564
+S
+#19590
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19595
+D1
+~
+~
+0 -1 19591
+D2
+~
+~
+0 -1 19585
+D3
+~
+~
+0 -1 19594
+D4
+~
+~
+0 -1 19615
+D5
+~
+~
+0 -1 19565
+S
+#19591
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19596
+D1
+~
+~
+0 -1 19592
+D2
+~
+~
+0 -1 19586
+D3
+~
+~
+0 -1 19590
+D4
+~
+~
+0 -1 19616
+D5
+~
+~
+0 -1 19566
+S
+#19592
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19597
+D1
+~
+~
+0 -1 19593
+D2
+~
+~
+0 -1 19587
+D3
+~
+~
+0 -1 19591
+D4
+~
+~
+0 -1 19617
+D5
+~
+~
+0 -1 19567
+S
+#19593
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19598
+D1
+~
+~
+0 -1 19594
+D2
+~
+~
+0 -1 19588
+D3
+~
+~
+0 -1 19592
+D4
+~
+~
+0 -1 19618
+D5
+~
+~
+0 -1 19568
+S
+#19594
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19599
+D1
+~
+~
+0 -1 19590
+D2
+~
+~
+0 -1 19589
+D3
+~
+~
+0 -1 19593
+D4
+~
+~
+0 -1 19619
+D5
+~
+~
+0 -1 19569
+S
+#19595
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19575
+D1
+~
+~
+0 -1 19596
+D2
+~
+~
+0 -1 19590
+D3
+~
+~
+0 -1 19599
+D4
+~
+~
+0 -1 19620
+D5
+~
+~
+0 -1 19570
+S
+#19596
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19576
+D1
+~
+~
+0 -1 19597
+D2
+~
+~
+0 -1 19591
+D3
+~
+~
+0 -1 19595
+D4
+~
+~
+0 -1 19621
+D5
+~
+~
+0 -1 19571
+S
+#19597
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19577
+D1
+~
+~
+0 -1 19598
+D2
+~
+~
+0 -1 19592
+D3
+~
+~
+0 -1 19596
+D4
+~
+~
+0 -1 19622
+D5
+~
+~
+0 -1 19572
+S
+#19598
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19578
+D1
+~
+~
+0 -1 19599
+D2
+~
+~
+0 -1 19593
+D3
+~
+~
+0 -1 19597
+D4
+~
+~
+0 -1 19623
+D5
+~
+~
+0 -1 19573
+S
+#19599
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19579
+D1
+~
+~
+0 -1 19595
+D2
+~
+~
+0 -1 19594
+D3
+~
+~
+0 -1 19598
+D4
+~
+~
+0 -1 19624
+D5
+~
+~
+0 -1 19574
+S
+#19600
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19605
+D1
+~
+~
+0 -1 19601
+D2
+~
+~
+0 -1 19620
+D3
+~
+~
+0 -1 19604
+D4
+~
+~
+0 -1 19505
+D5
+~
+~
+0 -1 19575
+S
+#19601
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19606
+D1
+~
+~
+0 -1 19602
+D2
+~
+~
+0 -1 19621
+D3
+~
+~
+0 -1 19600
+D4
+~
+~
+0 -1 19506
+D5
+~
+~
+0 -1 19576
+S
+#19602
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19607
+D1
+~
+~
+0 -1 19603
+D2
+~
+~
+0 -1 19622
+D3
+~
+~
+0 -1 19601
+D4
+~
+~
+0 -1 19507
+D5
+~
+~
+0 -1 19577
+S
+#19603
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19608
+D1
+~
+~
+0 -1 19604
+D2
+~
+~
+0 -1 19623
+D3
+~
+~
+0 -1 19602
+D4
+~
+~
+0 -1 19508
+D5
+~
+~
+0 -1 19578
+S
+#19604
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19609
+D1
+~
+~
+0 -1 19600
+D2
+~
+~
+0 -1 19624
+D3
+~
+~
+0 -1 19603
+D4
+~
+~
+0 -1 19509
+D5
+~
+~
+0 -1 19579
+S
+#19605
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19610
+D1
+~
+~
+0 -1 19606
+D2
+~
+~
+0 -1 19600
+D3
+~
+~
+0 -1 19609
+D4
+~
+~
+0 -1 19510
+D5
+~
+~
+0 -1 19580
+S
+#19606
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19611
+D1
+~
+~
+0 -1 19607
+D2
+~
+~
+0 -1 19601
+D3
+~
+~
+0 -1 19605
+D4
+~
+~
+0 -1 19511
+D5
+~
+~
+0 -1 19581
+S
+#19607
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19612
+D1
+~
+~
+0 -1 19608
+D2
+~
+~
+0 -1 19602
+D3
+~
+~
+0 -1 19606
+D4
+~
+~
+0 -1 19512
+D5
+~
+~
+0 -1 19582
+S
+#19608
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19613
+D1
+~
+~
+0 -1 19609
+D2
+~
+~
+0 -1 19603
+D3
+~
+~
+0 -1 19607
+D4
+~
+~
+0 -1 19513
+D5
+~
+~
+0 -1 19583
+S
+#19609
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19614
+D1
+~
+~
+0 -1 19605
+D2
+~
+~
+0 -1 19604
+D3
+~
+~
+0 -1 19608
+D4
+~
+~
+0 -1 19514
+D5
+~
+~
+0 -1 19584
+S
+#19610
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19615
+D1
+~
+~
+0 -1 19611
+D2
+~
+~
+0 -1 19605
+D3
+~
+~
+0 -1 19614
+D4
+~
+~
+0 -1 19515
+D5
+~
+~
+0 -1 19585
+S
+#19611
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19616
+D1
+~
+~
+0 -1 19612
+D2
+~
+~
+0 -1 19606
+D3
+~
+~
+0 -1 19610
+D4
+~
+~
+0 -1 19516
+D5
+~
+~
+0 -1 19586
+S
+#19612
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19617
+D1
+~
+~
+0 -1 19613
+D2
+~
+~
+0 -1 19607
+D3
+~
+~
+0 -1 19611
+D4
+~
+~
+0 -1 19517
+D5
+~
+~
+0 -1 19587
+S
+#19613
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19618
+D1
+~
+~
+0 -1 19614
+D2
+~
+~
+0 -1 19608
+D3
+~
+~
+0 -1 19612
+D4
+~
+~
+0 -1 19518
+D5
+~
+~
+0 -1 19588
+S
+#19614
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19619
+D1
+~
+~
+0 -1 19610
+D2
+~
+~
+0 -1 19609
+D3
+~
+~
+0 -1 19613
+D4
+~
+~
+0 -1 19519
+D5
+~
+~
+0 -1 19589
+S
+#19615
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19620
+D1
+~
+~
+0 -1 19616
+D2
+~
+~
+0 -1 19610
+D3
+~
+~
+0 -1 19619
+D4
+~
+~
+0 -1 19520
+D5
+~
+~
+0 -1 19590
+S
+#19616
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19621
+D1
+~
+~
+0 -1 19617
+D2
+~
+~
+0 -1 19611
+D3
+~
+~
+0 -1 19615
+D4
+~
+~
+0 -1 19521
+D5
+~
+~
+0 -1 19591
+S
+#19617
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19622
+D1
+~
+~
+0 -1 19618
+D2
+~
+~
+0 -1 19612
+D3
+~
+~
+0 -1 19616
+D4
+~
+~
+0 -1 19522
+D5
+~
+~
+0 -1 19592
+S
+#19618
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19623
+D1
+~
+~
+0 -1 19619
+D2
+~
+~
+0 -1 19613
+D3
+~
+~
+0 -1 19617
+D4
+~
+~
+0 -1 19523
+D5
+~
+~
+0 -1 19593
+S
+#19619
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19624
+D1
+~
+~
+0 -1 19615
+D2
+~
+~
+0 -1 19614
+D3
+~
+~
+0 -1 19618
+D4
+~
+~
+0 -1 19524
+D5
+~
+~
+0 -1 19594
+S
+#19620
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19600
+D1
+~
+~
+0 -1 19621
+D2
+~
+~
+0 -1 19615
+D3
+~
+~
+0 -1 19624
+D4
+~
+~
+0 -1 19500
+D5
+~
+~
+0 -1 19595
+S
+#19621
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19601
+D1
+~
+~
+0 -1 19622
+D2
+~
+~
+0 -1 19616
+D3
+~
+~
+0 -1 19620
+D4
+~
+~
+0 -1 19501
+D5
+~
+~
+0 -1 19596
+S
+#19622
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19602
+D1
+~
+~
+0 -1 19623
+D2
+~
+~
+0 -1 19617
+D3
+~
+~
+0 -1 19621
+D4
+~
+~
+0 -1 19502
+D5
+~
+~
+0 -1 19597
+S
+#19623
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19603
+D1
+~
+~
+0 -1 19624
+D2
+~
+~
+0 -1 19618
+D3
+~
+~
+0 -1 19622
+D4
+~
+~
+0 -1 19503
+D5
+~
+~
+0 -1 19598
+S
+#19624
+#nIt is pitch black ...~
+
+~
+0 1|8192 3
+D0
+~
+~
+0 -1 19604
+D1
+~
+~
+0 -1 19620
+D2
+~
+~
+0 -1 19619
+D3
+~
+~
+0 -1 19623
+D4
+~
+~
+0 -1 19504
+D5
+~
+~
+0 -1 19599
+S
+#19625
+It is pitch black....   ~
+There is a small sign in the corner.
+~
+0 1|4|8|512|1024|2048|8192|16384 0
+E
+sign~
+Make a wish...  It just may come true.~
+E
+wish~
+Type area for a list of possible destinations...  You never know where you may end up!~
+T
+midgetribe~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 101 0
+T
+plains~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 300 0
+T
+newofcol~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 601 0
+T
+olympus~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 901 0
+T
+intheair~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 1017 0
+T
+shire~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 1100 0
+T
+hightower~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 1312 0
+T
+gnomevillage~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 1501 0
+T
+wyvernstower~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 1701 0
+T
+dwarvencatacombs~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 2001 0
+T
+dangerousneighborhood~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 2171 0
+T
+draconia~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 2201 0
+T
+mahntor~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 2300 0
+T
+trollden~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 2801 0
+T
+firenewts~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 2900 0
+T
+norshenpier~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 3001 0
+T
+chapelcatacombs~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 3405 0
+T
+midennir~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 3503 0
+T
+graveyard~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 3600 0
+T
+mudschool~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 3700 0
+T
+moria~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 4000 0
+T
+juargan~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 4774 0
+T
+greateasterndesert~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 5001 0
+T
+drow~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 5100 0
+T
+thalos~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 5200 0
+T
+oldthalos~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 5300 0
+T
+ofcol~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 5550 0
+T
+haondor~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 6000 0
+T
+arachnos~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 6200 0
+T
+dwarvenkingdom~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 6500 0
+T
+gnomecastle~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 6601 0
+T
+sewer~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 7030 0
+T
+valleyoftheelves~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 7800 0
+T
+redferne~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 7914 0
+T
+giantcolony~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 8001 0
+T
+marsh~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 8301 0
+T
+void~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 8604 0
+T
+holygrove~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 8901 0
+T
+dylansarea~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 9101 0
+T
+canyon~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 9201 0
+T
+galaxy~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 101 0
+T
+mobfactory~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 9400 0
+T
+questmachine~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 30001 0
+T
+vallandarstomb~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 30300 0
+T
+learningcenter~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 25000 0
+T
+ultima~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 2400 0
+T
+greatpyramid~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 2601 0
+T
+magetower~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 28000 0
+T
+abode~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 29100 0
+T
+innofthereddragon~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 15100 0
+T
+town~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 9900 0
+T
+weed~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 30232 0
+T
+tropicalisland~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 15000 0
+T
+doom~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 11000 0
+T
+atlantis~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 8114 0
+T
+elementalcaves~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 9500 0
+T
+newbietower~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 13027 0
+T
+demontemple~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 9700 0
+T
+gardenofvalrin~
+A portal of blood appears and $n steps through.~
+A portal of blood appears before you, and you are sucked in!~
+all~
+16384 17510 0
+S
+#19626
+The Great Hall~
+Herein lies the massive chamber where all may gather to discuss terms of war, peace,
+and any other matters of importance.
+~
+0 1|8192 3
+S
+#0
+
+
+#RESETS
+*
+M 1 19500 1 19500			breath any
+*
+M 1 19501 1 19543			cast cleric
+*
+M 1 19502 1 19555			cast judge
+*
+M 1 19503 1 19583			cast mage
+*
+M 1 19504 1 19605			cast undead
+*
+M 1 19505 1 19527			none
+*
+M 1 19506 1 19558			poison
+*
+M 1 19507 1 19569			theif
+*
+M 1 19500 2 19513			breath any
+*
+M 1 19501 2 19513			cast cleric
+*
+M 1 19502 3 19564			cast judge
+*
+M 1 19504 2 19533			cast undead
+*
+M 1 19506 2 19621			poison
+*
+M 1 19507 5 19524			thief
+S
+
+
+#SPECIALS
+M  19500 spec_breath_any			the nightmare
+M  19501 spec_cast_cleric			the nightmare
+M  19502 spec_cast_judge			the nightmare
+M  19503 spec_cast_mage			the nightmare
+M  19504 spec_cast_undead			the nightmare
+M  19506 spec_poison			the nightmare
+M  19507 spec_thief			the nightmare
+S
+
+
+#$
