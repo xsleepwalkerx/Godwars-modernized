@@ -473,6 +473,21 @@ int char_damroll( CHAR_DATA *ch )
 	else if (IS_POLYAFF(ch, POLY_ZULO)) dr += 200;
     }
 
+    /*
+     * Status damroll bonus: 1% per point for status 1-10,
+     * then 0.5% per point above 10.  Only applies to player characters.
+     * Example: status 10 = +10%, status 15 = +12.5%, status 25 = +17.5%.
+     * Applied before the HP/move injury penalty so high-status players still
+     * start from a stronger baseline even when hurt.
+     */
+    if (!IS_NPC(ch) && ch->race > 0)
+    {
+        float sbpct = (ch->race <= 10)
+            ? ch->race * 0.01f
+            : 0.10f + (ch->race - 10) * 0.005f;
+        dr += (int)(dr * sbpct);
+    }
+
     if (!IS_NPC(ch) && ch->pcdata->wolf > 0) return dr;
 
     if (!IS_NPC(ch) && ch->pcdata->exercise[EXE_RECOVER] > 0) dr *= 0.75;
