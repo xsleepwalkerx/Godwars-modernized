@@ -1524,7 +1524,7 @@ void do_falling( CHAR_DATA *ch, char *argument )
     sprintf(buf, "$n touches you, sending you sprawling! [#r%li#n]",damage);
     act(buf, ch, NULL, victim, TO_VICT);
 
-    hurt_person(ch, victim, damage);
+    hurt_person(ch, victim, damage, FALSE);
     WAIT_STATE(ch, 24);
     WAIT_STATE(victim, 12);
     return;
@@ -1961,11 +1961,11 @@ void do_invoke( CHAR_DATA *ch, char *argument )
 	act("$n calls a bolt of lightning down on $N", ch, NULL, victim, TO_NOTVICT);
 	act("$n calls a bolt of lightning down on you.", ch, NULL, victim, TO_VICT);
 	dam = number_range(1000, 2000) + (100 * ch->pcdata->rank);
-	damage(ch, victim, dam, TYPE_HIT, "lightning blast");
+	damage(ch, victim, dam, TYPE_HIT);
 	dam = number_range(1000, 2000) + (100 * ch->pcdata->rank);
-	damage(ch, victim, dam, TYPE_HIT, "lightning blast");
+	damage(ch, victim, dam, TYPE_HIT);
 	dam = number_range(1000, 2000) + (100 * ch->pcdata->rank);
-	damage(ch, victim, dam, TYPE_HIT, "lightning blast");
+	damage(ch, victim, dam, TYPE_HIT);
 	ch->pcdata->weather = 10;
     }
     else stc("Syntax: invoke <fog/rain/lightning>\n\r", ch);

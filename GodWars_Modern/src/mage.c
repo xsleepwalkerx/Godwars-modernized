@@ -959,7 +959,7 @@ void do_alterweight( CHAR_DATA *ch, char * argument)
     act( buf3, ch, NULL, victim, TO_VICT );
 
 
-    hurt_person(ch, victim, dam);
+    hurt_person(ch, victim, dam, FALSE);
     WAIT_STATE(ch, 8);
 
     if ((sn = skill_lookup("Alter Weight")) < 0)
@@ -1221,7 +1221,7 @@ void do_step_sideways(CHAR_DATA* ch, char * argument)
     }
     sprintf(buf, "As you step sideways the gauntlet batters you harshly. [#r%li#n]\n\r", dam);
     send_to_char(buf, ch);
-    hurt_person(ch, ch, dam);
+    hurt_person(ch, ch, dam, FALSE);
     update_pos(ch);
     return;
 }
@@ -1314,7 +1314,7 @@ void do_break_dreamshell(CHAR_DATA* ch, char * argument)
     }
     sprintf(buf, "As you break through the dreamshell you are battered you harshly. [#r%li#n]\n\r", dam);
     send_to_char(buf, ch);
-    hurt_person(ch, ch, dam);
+    hurt_person(ch, ch, dam, FALSE);
     update_pos(ch);
     return;
 }
@@ -1348,7 +1348,7 @@ void hearts_blood(CHAR_DATA *ch, long quint)
   
     sprintf(buf, "You channel your lifeforce into your spell using heart's blood. [#r%li#n]\n\r", dam);
     stc(buf, ch);
-    hurt_person(ch, ch, dam);
+    hurt_person(ch, ch, dam, FALSE);
 
     return;
 }
@@ -1659,7 +1659,7 @@ void backlash(CHAR_DATA *ch)
     stc(buf, ch);
     act("$n has been burned by the spirits of paradox!" , ch, ch, NULL, TO_NOTVICT);
 
-    hurt_person(ch, ch, dam);
+    hurt_person(ch, ch, dam, FALSE);
 
     update_pos(ch);
 
@@ -2473,7 +2473,7 @@ void do_electrical_chaos( CHAR_DATA *ch, char *argument)
     act( buf2, ch, NULL, victim, TO_CHAR );
     act( buf3, ch, NULL, victim, TO_VICT );
 
-    hurt_person(ch, victim, dam);
+    hurt_person(ch, victim, dam, FALSE);
 
     WAIT_STATE(ch, 8);    
 }
@@ -2591,7 +2591,7 @@ void do_inferno( CHAR_DATA *ch, char *argument)
   	    act( buf2, ch, NULL, victim, TO_CHAR );
 	    act( buf3, ch, NULL, victim, TO_VICT );
 
-  	    hurt_person(ch, victim, dam);
+  	    hurt_person(ch, victim, dam, FALSE);
 
 
 	    if (IS_NPC(victim)) dam /= 2; //so the damage doesn't keep multiplying...

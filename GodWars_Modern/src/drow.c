@@ -787,7 +787,7 @@ void do_shoot( CHAR_DATA *ch, char *argument )
 	damage = number_range(10 * char_damroll(ch), 20 * char_damroll(ch));
 	if (!IS_NPC(victim)) damage /= 10;
 
-	hurt_person(ch, victim, damage);
+	hurt_person(ch, victim, damage, FALSE);
 	if (victim == NULL) return;
 
 	if (IS_DROW(victim) && get_drow(victim, DROW_PIMM))

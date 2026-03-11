@@ -880,7 +880,7 @@ void do_localquake( CHAR_DATA *ch, char *argument ) {
 		act(buf, ch,NULL, victim, TO_VICT);
 		act("$n's local quake rips up the ground underneath $N!!", ch,NULL, victim, TO_NOTVICT);
 	   }
-	   hurt_person(ch, victim, dam);
+	   hurt_person(ch, victim, dam, FALSE);
 	   if((number_range(1,40)<(earthlevel+1))/*||(earthlevel == 10)*/)
 	   {
 		stc("The quake knocks you off your feet!\n\r",victim);
@@ -1217,7 +1217,7 @@ void do_ultimawave( CHAR_DATA *ch, char *argument ) {
 	    act(buf,victim, NULL, NULL, TO_ROOM);
 	    sprintf(buf, "You are bruised and battered by the blast of mental energy! [#r%i#n]", damage);
 	    act(buf,ch,NULL,victim, TO_VICT);
-	    hurt_person(ch, victim, damage);
+	    hurt_person(ch, victim, damage, FALSE);
     	}
     	WAIT_STATE( ch, 30 );
     	return;  
@@ -1827,7 +1827,7 @@ void do_nightblade( CHAR_DATA *ch, char *argument)
 		act(buf, ch, NULL, victim, TO_VICT);
 		act("$n's night blade strikes $N *REALLY* hard.", ch, NULL, victim, TO_NOTVICT);
 	   }
- 	   hurt_person(ch, victim, dam);
+ 	   hurt_person(ch, victim, dam, FALSE);
 	   hitpoints = (dam*ch->pcdata->powers[ELEM_MOON]*(number_range(1,5)+15))/1000;
 	   ch->hit += hitpoints;
 	   if (ch->hit> ch->max_hit) ch->hit = ch->max_hit;

@@ -444,7 +444,7 @@ void do_elemental( CHAR_DATA *ch, char *argument )
 	act("The raging inferno that is the elemental spirit of fire engulfs $n.",victim,NULL,NULL,TO_ROOM);
 	stc("Your flesh is seared off as the elemental spirit of fire engulfs you!\n\r",victim);
 	dam = number_range(1000, 1500);
-	damage(ch, victim, dam, TYPE_HIT, "fire blast");
+	damage(ch, victim, dam, TYPE_HIT);
 	WAIT_STATE(ch, 12);
     }
     else if (!str_cmp(arg1, "water"))
@@ -453,7 +453,7 @@ void do_elemental( CHAR_DATA *ch, char *argument )
         act("The churning ocean that is the elemental spirit of water drowns $n.",victim,NULL,NULL,TO_ROOM);
 	stc("You gag as you breath in the very essence of the elemental spirit of water!\n\r",victim);
 	dam = number_range(1000, 1500);
-        damage(ch, victim, dam, TYPE_HIT, "tidal wave");
+        damage(ch, victim, dam, TYPE_HIT);
         WAIT_STATE(ch, 6);
     }
     else if (!str_cmp(arg1, "earth"))
@@ -462,13 +462,13 @@ void do_elemental( CHAR_DATA *ch, char *argument )
         act("Boulders pile atop $n as the elemental spirit of earth flexes his might.",victim,NULL,NULL,TO_ROOM);
         stc("You are smashed into a bloody pulp by the elemental spirit of earth!\n\r", victim);
         dam = number_range(250, 500);
-        damage(ch, victim, dam, TYPE_HIT, "boulder rain");
-        dam = number_range(250, 500);  
-        damage(ch, victim, dam, TYPE_HIT, "boulder rain");
-        dam = number_range(250, 500);  
-        damage(ch, victim, dam, TYPE_HIT, "boulder rain");
-        dam = number_range(250, 500);  
-        damage(ch, victim, dam, TYPE_HIT, "boulder rain");
+        damage(ch, victim, dam, TYPE_HIT);
+        dam = number_range(250, 500);
+        damage(ch, victim, dam, TYPE_HIT);
+        dam = number_range(250, 500);
+        damage(ch, victim, dam, TYPE_HIT);
+        dam = number_range(250, 500);
+        damage(ch, victim, dam, TYPE_HIT);
         WAIT_STATE(ch, 12);
     }
     else if (!str_cmp(arg1, "air"))
@@ -477,7 +477,7 @@ void do_elemental( CHAR_DATA *ch, char *argument )
         act("A rampaging hurricane that is the elemental spirit of air swallows $n.",victim,NULL,NULL,TO_ROOM);
 	stc("You are cut to the bone by the razor sharp winds of the elemental spirit of air!\n\r",victim);
         dam = number_range(2000, 3000);
-        damage(ch, victim, dam, TYPE_HIT, "wind slash");
+        damage(ch, victim, dam, TYPE_HIT);
         WAIT_STATE(ch, 12);
     }
     else stc("The elemental forces ignore you!\n\r",ch);

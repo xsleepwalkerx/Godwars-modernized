@@ -1200,7 +1200,7 @@ void damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
         }
 	/* RESTORED: KOE Corpseskin 20% damage reduction re-enabled.
 	 * Was commented out for unknown reasons; restored as part of balance pass. */
-	if (IS_KOE(victim) && IS_SET(victim->KOE_CURRENT, KOE_CORPSESKIN))
+	if (IS_KOE(victim) && !IS_NPC(victim) && IS_SET(victim->pcdata->powers[KOE_CURRENT], KOE_CORPSESKIN))
 	    dam -= dam * .2;
 	if ( IS_AFFECTED(victim, AFF_PROTECT) && !IS_SET(victim->affected_by2, AF2_GARGOYLE) &&IS_EVIL(ch) && dam > 1  )
 	    dam -= dam * 0.25;
