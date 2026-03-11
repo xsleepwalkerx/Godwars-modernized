@@ -5276,7 +5276,8 @@ void do_decapitate( CHAR_DATA *ch, char *argument )
 		victim->race--;
 	if (IS_SET(ch->more, MORE_MARAUDER))
 	{
-	    ch->race = number_range(1,30);
+	    ch->race += number_range(-2, 5);
+	    if (ch->race < 0) ch->race = 0;
 	    if (victim->race > 0)
 		victim->race--;
 	}
