@@ -1066,16 +1066,18 @@ void update_damcap( CHAR_DATA *ch, CHAR_DATA *victim )
     if (max_dam < 1000) max_dam = 1000;
 
     /*
-     * Status damcap bonus: 1% per point for status 1-10,
-     * then 0.5% per point above 10.  Only applies to player characters.
+     * Status damcap bonus: 0.5% per point for status 1-10,
+     * then 0.25% per point above 10.  Only applies to player characters.
      * Applied after the 1000 floor so the minimum itself scales with status.
-     * Example: status 10 = +10%, status 15 = +12.5%, status 25 = +17.5%.
+     * Example: status 10 = +5%, status 20 = +7.5%, status 30 = +10%.
+     * BALANCE FIX: Halved from original rates (was 1%/pt and 0.5%/pt above 10)
+     * to reduce snowballing advantage for veteran players.
      */
     if (!IS_NPC(ch) && ch->race > 0)
     {
         float sbpct = (ch->race <= 10)
-            ? ch->race * 0.01f
-            : 0.10f + (ch->race - 10) * 0.005f;
+            ? ch->race * 0.005f
+            : 0.05f + (ch->race - 10) * 0.0025f;
         max_dam += (int)(max_dam * sbpct);
     }
 
@@ -1215,16 +1217,18 @@ void damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
         }
 
 	/*
-	 * Status damage resistance: 1% per point for status 1-10,
-	 * then 0.5% per point above 10.  Only applies to player characters.
-	 * Example: status 10 = -10%, status 15 = -12.5%, status 25 = -17.5%.
+	 * Status damage resistance: 0.5% per point for status 1-10,
+	 * then 0.25% per point above 10.  Only applies to player characters.
+	 * Example: status 10 = -5%, status 20 = -7.5%, status 30 = -10%.
+	 * BALANCE FIX: Halved from original rates (was 1%/pt and 0.5%/pt above 10)
+	 * to reduce snowballing advantage for veteran players.
 	 * Applied last so it stacks cleanly on top of all other reductions.
 	 */
 	if (!IS_NPC(victim) && victim->race > 0 && dam > 1)
 	{
 	    float sbpct = (victim->race <= 10)
-	        ? victim->race * 0.01f
-	        : 0.10f + (victim->race - 10) * 0.005f;
+	        ? victim->race * 0.005f
+	        : 0.05f + (victim->race - 10) * 0.0025f;
 	    dam -= (int)(dam * sbpct);
 	}
 
