@@ -2725,7 +2725,11 @@ void werewolf_regen( CHAR_DATA *ch )
 	}
 	else if (ch->max_hit > 0)
 	{
-	    regen_hp = ch->max_hit * 0.05;
+	    /* BALANCE FIX: HP regen reduced from 5% to 3% per tick.
+	     * Applies to all classes using werewolf_regen() including Vampires, Werewolves,
+	     * and hybrids (Abomination, Lich, Baali, Skindancer, Nephandi).
+	     * Original value: ch->max_hit * 0.05 */
+	    regen_hp = ch->max_hit * 0.03;
 	    if (IS_MAGE(ch) && ch->agg > 0)
 		{
 		ch->mana += ch->max_mana * 0.10;
@@ -2759,10 +2763,10 @@ void werewolf_regen( CHAR_DATA *ch )
 		    ch->agg -= 10;
 		    if (ch->agg < 0) ch->agg = 0;
 		    if (ch->agg >= 100) ch->hit = 1;
-		    else 
+		    else
 		    {
 			regen_max = ch->max_hit * ((100 - ch->agg) * 0.01);
-			regen_hp = ch->max_hit * 0.05;
+			regen_hp = ch->max_hit * 0.03; /* BALANCE FIX: was 0.05 */
 			if (regen_hp > regen_max) regen_hp = regen_max;
 			ch->hit += regen_hp;
 		    }
@@ -2779,16 +2783,16 @@ void werewolf_regen( CHAR_DATA *ch )
 		    ch->agg -= 10;
 		    if (ch->agg < 0) ch->agg = 0;
 		    if (ch->agg >= 100) ch->hit = 1;
-		    else 
+		    else
 		    {
 			regen_max = ch->max_hit * ((100 - ch->agg) * 0.01);
-			regen_hp = ch->max_hit * 0.05;
+			regen_hp = ch->max_hit * 0.03; /* BALANCE FIX: was 0.05 */
 			if (regen_hp > regen_max) regen_hp = regen_max;
 			ch->hit += regen_hp;
 		    }
 		}
 	    }
-	    else ch->hit += ch->max_hit * 0.05;
+	    else ch->hit += ch->max_hit * 0.03; /* BALANCE FIX: was 0.05 */
 	}
 	ch->move = UMIN(ch->move + (ch->max_move * 0.05), ch->max_move);
 

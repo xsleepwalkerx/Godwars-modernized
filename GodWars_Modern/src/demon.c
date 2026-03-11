@@ -1463,9 +1463,12 @@ void do_inferno( CHAR_DATA *ch, char *argument )
     {
 	vch_next = vch->next_in_room;
 	if (ch == vch || is_safe(ch,vch)) continue;
-	damage(ch,vch,ch->max_hit,sn);
+	/* BALANCE FIX: Damage capped at 10,000.
+	 * Original formula used ch->max_hit (entire HP pool) as damage -- a reliable one-shot.
+	 * Cooldown raised from 24 to 50 beats (was ~2.4s, now ~5s) to reduce spam potential. */
+	damage(ch,vch,10000,sn);
     }
-    WAIT_STATE(ch,24);
+    WAIT_STATE(ch,50);
     return;
 }
 

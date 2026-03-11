@@ -350,11 +350,14 @@ int char_hitroll( CHAR_DATA *ch )
 	    hr += ch->pcdata->wolf;
 	if (IS_DEMON(ch) && ch->pcdata->demonic > 0)
 	{
-	    /* Pure demons get double the bonus */
+	    /* BALANCE FIX: Converted from quadratic to linear scaling to match Potence/Celerity (+20/pt).
+	     * Original formula: pure = (demonic^2 * 2), hybrid = demonic^2
+	     * At demonic=5: pure was +50, hybrid was +25; now pure=+200, hybrid=+100 (linear, predictable).
+	     * Pure demons (CLASS_DEMON/CLASS_ANGEL) retain 2x advantage over hybrids. */
 	    if ( ch->class == CLASS_DEMON || ch->class == CLASS_ANGEL )
-		hr += ((ch->pcdata->demonic * ch->pcdata->demonic)<<1);
+		hr += (ch->pcdata->demonic * 40);
 	    else
-		hr += (ch->pcdata->demonic * ch->pcdata->demonic);
+		hr += (ch->pcdata->demonic * 20);
 	}
 	if (IS_HIGHLANDER(ch) && IS_ITEMAFF(ch, ITEMA_HIGHLANDER))
 	{
@@ -445,11 +448,14 @@ int char_damroll( CHAR_DATA *ch )
 	    dr += ch->pcdata->wolf;
 	if (IS_DEMON(ch) && ch->pcdata->demonic > 0)
 	{
-	    /* Pure demons get double the bonus */
+	    /* BALANCE FIX: Converted from quadratic to linear scaling to match Potence/Celerity (+20/pt).
+	     * Original formula: pure = (demonic^2 * 2), hybrid = demonic^2
+	     * At demonic=5: pure was +50, hybrid was +25; now pure=+200, hybrid=+100 (linear, predictable).
+	     * Pure demons (CLASS_DEMON/CLASS_ANGEL) retain 2x advantage over hybrids. */
 	    if ( ch->class == CLASS_DEMON || ch->class == CLASS_ANGEL )
-		dr += ((ch->pcdata->demonic * ch->pcdata->demonic)<<1);
+		dr += (ch->pcdata->demonic * 40);
 	    else
-		dr += (ch->pcdata->demonic * ch->pcdata->demonic);
+		dr += (ch->pcdata->demonic * 20);
 	}
 	if (IS_HIGHLANDER(ch) && IS_ITEMAFF(ch, ITEMA_HIGHLANDER))
 	{

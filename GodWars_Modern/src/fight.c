@@ -1196,10 +1196,10 @@ void damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
            if (get_disc(victim, DISC_VISCERATIKA) == 4) dam *= .6;
            if (get_disc(victim, DISC_VISCERATIKA) == 5) dam *= .5;
         }
-	/*
+	/* RESTORED: KOE Corpseskin 20% damage reduction re-enabled.
+	 * Was commented out for unknown reasons; restored as part of balance pass. */
 	if (IS_KOE(victim) && IS_SET(victim->KOE_CURRENT, KOE_CORPSESKIN))
 	    dam -= dam * .2;
-	*/
 	if ( IS_AFFECTED(victim, AFF_PROTECT) && !IS_SET(victim->affected_by2, AF2_GARGOYLE) &&IS_EVIL(ch) && dam > 1  )
 	    dam -= dam * 0.25;
 
