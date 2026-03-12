@@ -2456,6 +2456,24 @@ struct l_board
     int32_t score_1;
     int32_t score_2;
     int32_t score_3;
+
+    /* Extended leaderboard categories */
+    char   *pk_name;
+    int32_t pk_number;
+    char   *pd_name;
+    int32_t pd_number;
+    char   *mk_name;
+    int32_t mk_number;
+    char   *md_name;
+    int32_t md_number;
+    char   *tt_name;
+    int32_t tt_number;
+    char   *qc_name;
+    int32_t qc_number;
+    char   *bestpk_name;
+    int32_t bestpk_number;
+    char   *worstpk_name;
+    int32_t worstpk_number;
 };
 
 /*
@@ -2476,6 +2494,7 @@ typedef struct map_type
 {
     int32_t  vnum;
     int32_t  depth;
+    char     tegn;
 } MAP_TYPE;
 
 /*
@@ -2676,6 +2695,9 @@ struct char_data
     int32_t             paradox_ward;
 };
 
+/* Compatibility alias: stance.c uses ch->weapon[] while the field is wpn[] */
+#define weapon wpn
+
 
 /*
  * =========================================================================
@@ -2775,6 +2797,7 @@ struct pc_data
     int32_t         notes;
     int32_t         followers;
     int32_t         dragcol;            /* Genesis dragon colour */
+    int32_t         dragskills;         /* Genesis dragon ability bits */
     int32_t         weather;            /* Genesis weather control */
 
     /* Array fields */

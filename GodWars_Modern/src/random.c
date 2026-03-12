@@ -10,6 +10,14 @@
 #include "merc.h"
 #include <unistd.h>
 
+#ifndef EXP_RANDOM
+#define EXP_RANDOM  1
+#define EXP_DEGRADE 2
+#endif
+
+/* Local exp modifier state */
+static struct { int32_t bit; int32_t exp; int32_t time; } exp_info = {0, 0, 0};
+
 void do_expmod( CHAR_DATA *ch, char *argument )
 {
     char buf[MSL];

@@ -21,6 +21,37 @@
 #include <unistd.h> /* unlink() */
 #include "merc.h"
 
+/* Global bonus state variables */
+bool global_exp    = FALSE;
+bool global_dam    = FALSE;
+bool global_qp     = FALSE;
+bool global_sspeed = FALSE;
+bool global_spellgain   = FALSE;
+bool global_stancegain  = FALSE;
+bool global_weapongain  = FALSE;
+bool global_halfexp    = FALSE;
+bool global_halfdam    = FALSE;
+bool global_halfqp     = FALSE;
+bool global_halfsspeed = FALSE;
+bool global_halfspellgain  = FALSE;
+bool global_halfstancegain = FALSE;
+bool global_halfweapongain = FALSE;
+
+int pulse_doubleexp     = 0;
+int pulse_doubledam     = 0;
+int pulse_doubleqp      = 0;
+int pulse_doublesspeed  = 0;
+int pulse_doublespellgain  = 0;
+int pulse_doublestancegain = 0;
+int pulse_doubleweapongain = 0;
+int pulse_halfexp     = 0;
+int pulse_halfdam     = 0;
+int pulse_halfqp      = 0;
+int pulse_halfsspeed  = 0;
+int pulse_halfspellgain  = 0;
+int pulse_halfstancegain = 0;
+int pulse_halfweapongain = 0;
+
 void do_bonus( CHAR_DATA *ch, char *argument )
 {
     char arg [MAX_INPUT_LENGTH];
