@@ -1,0 +1,85 @@
+# GodWars Modernized Trivia Database
+# Format:
+#   Question: <text>
+#   Answer: <text>
+#
+# Answers are case-insensitive. Keep them to a single word or short phrase.
+# Lines beginning with # are comments and are ignored.
+
+Question: What original Diku Mud derivative is GodWars based on?
+Answer: Merc
+
+Question: What creature uses the Celerity discipline in GodWars?
+Answer: Vampire
+
+Question: What is the mortal-level class number in GodWars?
+Answer: 0
+
+Question: What command lets you see a list of connected players?
+Answer: who
+
+Question: What does the 'recall' command do?
+Answer: Teleports you to the temple
+
+Question: What is the maximum number of quest points you can bounty?
+Answer: 10000
+
+Question: What status bit marks a player as a newbie?
+Answer: PLR_NEWBIE
+
+Question: What file stores player character data in a text MUD?
+Answer: pfile
+
+Question: What vampire discipline allows shapeshifting?
+Answer: Protean
+
+Question: What is the name of the vampire power that drains life?
+Answer: Quietus
+
+Question: What MUD type is GodWars — hack-and-slash, roleplay, or power-level?
+Answer: Power-level
+
+Question: What command lets an immortal safely reboot without disconnecting players?
+Answer: copyover
+
+Question: What discipline gives vampires enhanced senses?
+Answer: Auspex
+
+Question: What clan is known as the Nosferatu of God Wars lore?
+Answer: Nosferatu
+
+Question: What werewolf rank comes after Cub?
+Answer: Cliath
+
+Question: What command do you type to check your current quest points?
+Answer: score
+
+Question: What is the name of the demon power system in GodWars?
+Answer: demaff
+
+Question: What number is the maximum level for immortals?
+Answer: 12
+
+Question: What do werewolves use instead of blood points?
+Answer: Rage
+
+Question: What is the name of the angel class's holy power?
+Answer: Grace
+
+Question: What in-game currency rewards players for defeating quest targets?
+Answer: Quest points
+
+Question: What body part is targeted by the 'crack head' combat move?
+Answer: Head
+
+Question: What vampire clan is associated with fire?
+Answer: Brujah
+
+Question: What is the name of the highlander special ability?
+Answer: Quickening
+
+Question: What mage system is based on spheres of knowledge?
+Answer: Mage
+
+Question: What is the connection state when a player finishes loading from copyover?
+Answer: CON_PLAYING

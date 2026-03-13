@@ -4754,6 +4754,19 @@ DECLARE_DO_FUN( do_fatality          );
 DECLARE_DO_FUN( do_unwerewolf        );
 DECLARE_DO_FUN( do_mortalvamp        );
 
+/* Bounty system */
+DECLARE_DO_FUN( do_bountylist        );
+
+/* Trivia system (trivia.c) */
+DECLARE_DO_FUN( do_answer            );
+DECLARE_DO_FUN( do_trivia            );
+extern void     trivia_load          ( void );
+extern void     trivia_update        ( void );
+
+/* auto_copyover and cptimer_check (util.c) */
+extern void     auto_copyover        ( void );
+extern void     cptimer_check        ( void );
+
 /* Non-DO_FUN function prototypes */
 extern void clear_stats( CHAR_DATA *ch );
 extern void one_hit( CHAR_DATA *ch, CHAR_DATA *victim, int dt );

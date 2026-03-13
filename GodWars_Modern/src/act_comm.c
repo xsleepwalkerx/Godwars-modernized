@@ -1167,41 +1167,75 @@ void do_pardon( CHAR_DATA *ch, char *argument )
     char arg1 [MAX_INPUT_LENGTH];
     char buf[MAX_STRING_LENGTH];
     CHAR_DATA *victim;
-    char *vchsex;
-    vchsex = victim->sex == SEX_FEMALE ? "her" : "his";
-                
+    const char *vchsex;
+
     argument = one_argument( argument, arg1 );
-        
-        if ( arg1[0] == '\0' )
-        {
- 	send_to_char( "Pardon who?\n\rSyntax: Pardon <victim>\n\r", ch );
-  	return;
-        }
-    
-        if ( ( victim = get_char_world( ch, arg1 ) ) == NULL)
-        {
-                send_to_char( "They ain't here dummy", ch );
-                return;
-        }
-        if (IS_NPC(victim))
-      {
-        send_to_char( "You cannot pardon NPCs!", ch );
- 	return;
-      }  
-        if (victim->pcdata->bounty <= 0)
-        {
+
+    if ( arg1[0] == '\0' )
+    {
+        send_to_char( "Pardon who?\n\rSyntax: Pardon <victim>\n\r", ch );
+        return;
+    }
+
+    if ( ( victim = get_char_world( ch, arg1 ) ) == NULL )
+    {
+        send_to_char( "They aren't here.\n\r", ch );
+        return;
+    }
+    if (IS_NPC(victim))
+    {
+        send_to_char( "You cannot pardon NPCs!\n\r", ch );
+        return;
+    }
+    /* vchsex assigned after victim is resolved */
+    vchsex = victim->sex == SEX_FEMALE ? "her" : "his";
+
+    if (victim->pcdata->bounty <= 0)
+    {
         send_to_char("They do not have a bounty on them.\n\r", ch);
         return;
-        }
-        if (victim->pcdata->bounty > 0)
-        {
-        send_to_char("You pardon them for their crimes.\n\r", ch);
-        sprintf(buf, "#r%s#g has pardoned #r%s#g for %s crimes.\n\r",ch->name,victim->name,vchsex);
-        do_info(ch, buf);
-        victim->pcdata->bounty = 0;
-        }
+    }
+
+    send_to_char("You pardon them for their crimes.\n\r", ch);
+    sprintf(buf, "#r%s#g has pardoned #r%s#g for %s crimes.\n\r",
+            ch->name, victim->name, vchsex);
+    do_info(ch, buf);
+    victim->pcdata->bounty = 0;
+    save_char_obj(victim);
     return;
- }
+}
+
+/*
+ * do_bountylist - display all active player bounties.
+ */
+void do_bountylist( CHAR_DATA *ch, char *argument )
+{
+    DESCRIPTOR_DATA *d;
+    CHAR_DATA *victim;
+    char buf[MAX_STRING_LENGTH];
+    bool found = FALSE;
+
+    send_to_char("#R+--[ Active Bounties ]-------------------------------------------+#n\n\r", ch);
+
+    for (d = descriptor_list; d != NULL; d = d->next)
+    {
+        if (d->connected != CON_PLAYING) continue;
+        victim = d->original ? d->original : d->character;
+        if (!victim || IS_NPC(victim)) continue;
+        if (victim->pcdata->bounty <= 0) continue;
+
+        sprintf(buf, "#R| #7%-20s  #rBounty: #R%6d qp#n\n\r",
+                victim->name, victim->pcdata->bounty);
+        send_to_char(buf, ch);
+        found = TRUE;
+    }
+
+    if (!found)
+        send_to_char("#7  No active bounties at this time.#n\n\r", ch);
+
+    send_to_char("#R+----------------------------------------------------------------+#n\n\r", ch);
+    return;
+}
 
 void do_psay( CHAR_DATA *ch, char *argument )
 {

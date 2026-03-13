@@ -791,7 +791,8 @@ LOG_NORMAL },*/
     { "seal",	do_seal,	POS_STANDING,   3,   LOG_NORMAL },
     { "unseal",	do_unseal,	POS_STANDING,   3,   LOG_NORMAL },
     { "wiznet", do_wiznet,	POS_STANDING,   7,   LOG_NORMAL },
-    { "bounty", do_bounty,	POS_STANDING,   3,   LOG_ALWAYS },
+    { "bounty",		do_bounty,	POS_STANDING,    3,  LOG_ALWAYS  },
+    { "bountylist",	do_bountylist,	POS_SLEEPING,    0,  LOG_NORMAL  },
 
     /*
      * New Angel Obeah per Maizoon
@@ -852,6 +853,7 @@ LOG_NORMAL },*/
     { "shutdow",	do_shutdow,	POS_DEAD,	12,  LOG_NORMAL	},
     { "shutdown",	do_shutdown,	POS_DEAD,	11,  LOG_ALWAYS	},
     { "timercheck",	do_timer_check,	POS_DEAD,	12,  LOG_NEVER	},
+    { "trivia",		do_trivia,	POS_SLEEPING,	 0,  LOG_NORMAL	},
     { "users",		do_users,	POS_DEAD,	 8,  LOG_NORMAL	},
     { "wizlock",	do_wizlock,	POS_DEAD,	11,  LOG_ALWAYS	},
     { "watche",		do_huh,		POS_DEAD,	 2,  LOG_NEVER	},

@@ -2733,10 +2733,8 @@ void update_handler( void )
 	    }
 	}
 
-/*
- * 	Auto Copyover  **Mistif**
- */
-//	cptimer_check();
+/* Auto Copyover countdown/trigger */
+	cptimer_check();
  
 	for ( d = descriptor_list; d != NULL; d = d->next )
 	{
@@ -3081,6 +3079,7 @@ void update_handler( void )
 	pulse_point     = number_range( PULSE_TICK / 2, 3 * PULSE_TICK / 2 );
 	weather_update	( );
 	char_update	( );
+	trivia_update	( );
     }
 
     if ( --pulse_dtrap    <= 0)

@@ -23,115 +23,130 @@ bool    write_to_descriptor     args( ( int desc, char *txt, int length ) );
 void call_all( CHAR_DATA *ch );
 
 
+/*
+ * cptimer_check - called every pulse from update_handler.
+ * Counts up to MAXCPTIMER seconds, broadcasting warnings at
+ * 60/30/10 seconds remaining, then triggers auto_copyover.
+ */
 void cptimer_check(void)
 {
     int timeleft;
     DESCRIPTOR_DATA *d;
     char buf[MAX_STRING_LENGTH];
-    
+
     timeleft = (MAXCPTIMER - cptimer);
 
-	if (cptimer <= MAXCPTIMER)
-         {
-           cptimer++;
+    if (cptimer <= MAXCPTIMER)
+    {
+        cptimer++;
 
-	   if (timeleft == 60
-           ||  timeleft == 30
-           ||  timeleft == 10)
-           {
-           for (d = descriptor_list; d != NULL; d = d->next)
+        if (   timeleft == 3600   /* 1 hour   */
+            || timeleft == 1800   /* 30 min   */
+            || timeleft == 600    /* 10 min   */
+            || timeleft == 300    /* 5 min    */
+            || timeleft == 60     /* 1 min    */
+            || timeleft == 30
+            || timeleft == 10)
+        {
+            /* Format time-remaining label */
+            char timestr[32];
+            if      (timeleft >= 3600) sprintf(timestr, "%d hour(s)",  timeleft / 3600);
+            else if (timeleft >= 60)   sprintf(timestr, "%d minute(s)", timeleft / 60);
+            else                       sprintf(timestr, "%d second(s)", timeleft);
+
+            sprintf(buf, "\n\r#1*** #7Automatic copyover in %s #1***#n\n\r", timestr);
+
+            for (d = descriptor_list; d != NULL; d = d->next)
             {
-            sprintf(buf,"\n\r
-#1****
-****#7 Automatic copyover in %d seconds
-#1****#n\n\r",timeleft);
-            send_to_char(buf,d->character);
+                if (d->connected == CON_PLAYING && d->character)
+                    send_to_char(buf, d->character);
             }
-           } 
+        }
+        return;
+    }
 
-	   return;
-         }
-        if (cptimer >= MAXCPTIMER)
-         {
-         auto_copyover();
-	 return;
-         }
+    if (cptimer >= MAXCPTIMER)
+    {
+        auto_copyover();
+        return;
+    }
 }
+
+/*
+ * auto_copyover - timed automatic copyover.
+ * Saves all PCs, drops logging-on connections, writes the copyover file,
+ * and exec()s the new binary with file descriptors inherited.
+ */
 void auto_copyover(void)
 {
-        FILE *fp;
-        DESCRIPTOR_DATA *d, *d_next;
-        CHAR_DATA *ch;
-        char buf [100], buf2[100];
-        extern int port,control; /* db.c */
+    FILE *fp;
+    DESCRIPTOR_DATA *d, *d_next;
+    CHAR_DATA *ch;
+    char buf [100], buf2[100];
+    extern int port, control;
 
-        cptimer = 0;
-        fp = fopen (COPYOVER_FILE, "w");
+    cptimer = 0;
+    fp = fopen (COPYOVER_FILE, "w");
 
-        if (!fp)
+    if (!fp)
+    {
+        /* ch is not set here — log to file only */
+        mud_logf("auto_copyover: could not open %s for writing.", COPYOVER_FILE);
+        perror ("auto_copyover:fopen");
+        return;
+    }
+
+    /* Save all playing characters and call them to the void safely */
+    for (ch = char_list; ch != NULL; ch = ch->next)
+    {
+        if (IS_NPC(ch)) continue;
+        do_peace(ch, "");
+        call_all(ch);
+        do_save(ch, "");
+    }
+
+    sprintf(buf, "\n\r *** TIMED SYSTEM COPYOVER *** - please remain seated!\n\r");
+
+    /* Write descriptor table and close any half-connected sockets */
+    for (d = descriptor_list; d ; d = d_next)
+    {
+        CHAR_DATA *och = CH(d);
+        d_next = d->next;
+
+        if (!d->character || d->connected > CON_PLAYING)
         {
-                send_to_char ("Copyover file not writeable, aborted.\n\r",ch);
-                logf ("Could not write to copyover file: %s", COPYOVER_FILE);
-                perror ("do_copyover:fopen");
-                return;
+            write_to_descriptor(d->descriptor,
+                "\n\rSorry, we are rebooting. Come back in a few minutes.\n\r", 0);
+            close_socket(d);
         }
-
-        /* Consider changing all saved areas here, if you use OLC */
-
-        /* do_asave (NULL, ""); - autosave changed areas */
-
-
-        sprintf (buf, "\n\r *** TIMED SYSTEM COPYOVER *** - please remain seated!\n\r");
-
-
-	for ( ch = char_list; ch != NULL;ch = ch->next )
-	{
-		do_peace(ch, "");
-                do_restore(ch, "all");
-		call_all(ch);
-		do_save(ch, "");
-	}		
-
-        /* For each playing descriptor, save its state */
-        for (d = descriptor_list; d ; d = d_next)
+        else
         {
-                CHAR_DATA * och = CH (d);
-                d_next = d->next; /* We delete from the list , so need to save this */
-
-                if (!d->character || d->connected > CON_PLAYING) /* drop those logging on */
-                {
-                        write_to_descriptor (d->descriptor, "\n\rSorry, we are rebooting. Come back in a few minutes.\n\r", 0);
-                        close_socket (d); /* throw'em out */
-                }
-                else
-                {
-                        fprintf (fp, "%d %s %s\n", d->descriptor, och->name, d->host);
-                        save_char_obj (och);
-                        write_to_descriptor (d->descriptor, buf, 0);
-                }
+            fprintf(fp, "%d %s %s\n", d->descriptor, och->name, d->host);
+            save_char_obj(och);
+            write_to_descriptor(d->descriptor, buf, 0);
         }
+    }
 
-        fprintf (fp, "-1\n");
-        fclose (fp);
+    fprintf(fp, "-1\n");
+    fclose(fp);
 
-        /* Close reserve and other always-open files and release other resources */
+    fclose(fpReserve);
 
-        fclose (fpReserve);
+    sprintf(buf,  "%d", port);
+    sprintf(buf2, "%d", control);
+    execl(EXE_FILE, "merc", buf, "copyover", buf2, (char *) NULL);
 
-        /* exec - descriptors are inherited */
-
-        sprintf (buf, "%d", port);
-        sprintf (buf2, "%d", control);
-        execl (EXE_FILE, "merc", buf, "copyover", buf2, (char *) NULL);
-
-        /* Failed - sucessful exec will not return */
-
-        perror ("do_copyover: execl");
-        send_to_char ("Copyover FAILED!\n\r",ch);
-
-        /* Here you might want to reopen fpReserve */
+    /* If we reach here execl() failed */
+    perror("auto_copyover: execl");
+    mud_logf("auto_copyover: execl failed!");
+    /* fpReserve is closed — nothing safe to send_to_char */
 }
 
+/*
+ * do_timer_check - immortal command to inspect/set internal timers.
+ * Syntax: timercheck status copyover
+ *         timercheck set copyover <seconds>
+ */
 void do_timer_check(CHAR_DATA *ch, char *argument)
 {
     char buf[MAX_STRING_LENGTH];
@@ -140,53 +155,49 @@ void do_timer_check(CHAR_DATA *ch, char *argument)
     char arg1 [MAX_INPUT_LENGTH];
     char arg2 [MAX_INPUT_LENGTH];
     char arg3 [MAX_INPUT_LENGTH];
-    argument = one_argument( argument, arg1 );
-    argument = one_argument( argument, arg2 );
-    argument = one_argument( argument, arg3 );
+    argument = one_argument(argument, arg1);
+    argument = one_argument(argument, arg2);
+    argument = one_argument(argument, arg3);
 
     if (!IS_IMMORTAL(ch))
     {
-    send_to_char("Huh?\n\r",ch);
-    return;
-    }
-
-    if (arg1[0] == '\0'
-    ||  arg2[0] == '\0')
-    {
-        sprintf(buf,"\n\rSyntax: timercheck <status/set> <timer> <time remaining>.\n\r
-	****Available Timers****
-	------------------------
-	copyover\n\r");
-	send_to_char(buf,ch);
+        send_to_char("Huh?\n\r", ch);
         return;
     }
-	
-    if (!str_cmp(arg1,"status"))
+
+    if (arg1[0] == '\0' || arg2[0] == '\0')
     {
-	if (!str_cmp(arg2,"copyover"))
+        send_to_char(
+            "\n\rSyntax: timercheck <status|set> <timer> [time]\n\r"
+            "  Available timers: copyover\n\r", ch);
+        return;
+    }
+
+    if (!str_cmp(arg1, "status"))
+    {
+        if (!str_cmp(arg2, "copyover"))
         {
-	 timeleft = MAXCPTIMER - cptimer;
-	 sprintf(buf, "Time remaining untill next automatic copyover : %d seconds\n\r",timeleft);
-	 send_to_char(buf,ch);
-	 return;
+            timeleft = MAXCPTIMER - cptimer;
+            sprintf(buf, "Time remaining until next automatic copyover: %d seconds.\n\r", timeleft);
+            send_to_char(buf, ch);
+            return;
         }
     }
 
-    if (!str_cmp(arg1,"set"))
+    if (!str_cmp(arg1, "set"))
     {
-	if (arg3[0] == '\0')
-	{
-	 sprintf(buf, "You must specify a value to set the timer manually.\n\r");
-	 send_to_char(buf,ch);
-	 return;
-	}
-	if (!str_cmp(arg2,"copyover"))
-	{
-	 cptimer = (MAXCPTIMER - atoi(arg3)); 
-	 newtime = (MAXCPTIMER - cptimer);
-	 sprintf(buf,"Timer set.  Remaining time for %s timer is %d.\n\r",arg2,newtime);
-	 send_to_char(buf,ch);
-	 return;
-	}
+        if (arg3[0] == '\0')
+        {
+            send_to_char("You must specify a value to set the timer.\n\r", ch);
+            return;
+        }
+        if (!str_cmp(arg2, "copyover"))
+        {
+            cptimer  = (MAXCPTIMER - atoi(arg3));
+            newtime  = (MAXCPTIMER - cptimer);
+            sprintf(buf, "Copyover timer set. Time remaining: %d seconds.\n\r", newtime);
+            send_to_char(buf, ch);
+            return;
+        }
     }
 }

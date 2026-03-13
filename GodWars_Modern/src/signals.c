@@ -55,8 +55,13 @@ fclose(fp);
  DESCRIPTOR_DATA *d;
  DESCRIPTOR_DATA *d_next;
 
-/* if (sig != SIGINT && sig != SIGPFILE)
-attempt_copyover();*/
+/* Attempt graceful copyover on crash for most signals.
+ * Skip for SIGINT (clean shutdown) or SIGPFILE (pfile bug in loading). */
+if (sig != SIGINT && sig != SIGPFILE)
+{
+    attempt_copyover();
+    /* If attempt_copyover() returns, execl() failed — fall through to save+abort */
+}
 
 for (d = descriptor_list; d; d = d->next)
     if (d->character && d->connected >= CON_PLAYING) do_wake(d->character,
@@ -99,14 +104,21 @@ void attempt_copyover(void)
 	if (!fp)
 		return;
 
-log_string("CRASHING..");
+log_string("CRASH COPYOVER initiated..");
 for (d = descriptor_list; d; d = d->next)
 {
  CHAR_DATA *ch = d->original ? d->original : d->character;
+ /* Null-check BEFORE using ch to avoid double-fault */
+ if (!ch)
+ {
+     write_to_descriptor(d->descriptor, "We are crashing. Please reconnect.\n\r", 0);
+     close_socket(d);
+     continue;
+ }
  save_char_obj(ch);
- if (!ch) {write_to_descriptor(d->descriptor,"We are crashing. Please reconnect.\n\r", 0);close_socket(d);continue;}
-fprintf(fp, "%d %s %s\n", d->descriptor, d->character->name, d->host);
- write_to_descriptor(d->descriptor, "The Ethereal Mists is crashing! Attempting to copyover from the crash.\n\r", 0);
+ fprintf(fp, "%d %s %s\n", d->descriptor, ch->name, d->host);
+ write_to_descriptor(d->descriptor,
+     "\n\r *** CRASH COPYOVER *** Attempting to restore your session...\n\r", 0);
 }
         fprintf (fp, "-1\n");
 	fflush(fp);
