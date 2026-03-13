@@ -1022,8 +1022,8 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
 	
 	if ((ch->level < 6) && (obj->pIndexData->vnum == 29616))
     {
-	act( "Your knowledge of the arcane arts is not evolved enough to wield this, 
-		you are zapped  by $p and drop it.", ch, obj, NULL, TO_CHAR );
+	act( "Your knowledge of the arcane arts is not evolved enough to wield this, "
+	    "you are zapped by $p and drop it.", ch, obj, NULL, TO_CHAR );
 	act( "$n is zapped by $p and drops it.", ch, obj, NULL, TO_ROOM );
 	obj_from_char( obj );
 	obj_to_room( obj, ch->in_room );

@@ -3430,7 +3430,7 @@ int gettimeofday( struct timeval *tp, void *tzp )
 				    break;				\
 				}
 
-void logf (char * fmt, ...)
+void mud_logf (char * fmt, ...)
 {
         char buf [2*MAX_STRING_LENGTH];
         va_list args;

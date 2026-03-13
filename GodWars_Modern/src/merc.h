@@ -639,7 +639,6 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define MORE_HELIOS         4096
 #define MORE_HEAD           8192
 #define MORE_SHIELDED       16384
-#define MORE_CHAMPION       32768
 #define MORE_DISINT         65536
 #define MORE_CLOAK          131072
 #define MORE_THINBLOOD      262144
@@ -1689,6 +1688,104 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
  * Quest rune constant.
  */
 #define QUEST_MASTER_RUNE   16
+#define QUEST_SPELLPROOF    (1 << 0)
+#define OBJ_VNUM_ASHES      2
+
+/*
+ * Character color scale constants.
+ */
+#define COL_SCALE           30
+
+/*
+ * Armor color constants.
+ */
+#define ARM_RED             1
+#define ARM_BLACK           2
+#define ARM_MIDNIGHT        3
+
+/*
+ * Worn/wear bit constants.
+ */
+#define WEAR_STAKE          128
+
+/*
+ * Special item constants.
+ */
+#define SITEM_HIGHLANDER    1
+
+/*
+ * Extra flag constants for interp.c/db.c.
+ */
+#define EXTRA_DONE          1
+#define EXTRA_EXP           2
+#define AREA_ADDED          1
+#define DISABLED_FILE       "disabled.txt"
+
+/*
+ * More bits for vampire coterie/power system.
+ */
+#define MORE_LEADER         (1 << 20)
+
+/*
+ * String case conversion helper macros.
+ */
+#define UPPER(c)            ((c) >= 'a' && (c) <= 'z' ? (c) - 'a' + 'A' : (c))
+#define LOWER(c)            ((c) >= 'A' && (c) <= 'Z' ? (c) - 'A' + 'a' : (c))
+
+/*
+ * Mage sphere index for elemental magic.
+ */
+#define MSPI                0
+
+/*
+ * Vampire discipline power constants (indexed by discipline).
+ */
+#define POW_NONE            0
+#define POW_ANIMALISM       1
+#define POW_AUSPEX          2
+#define POW_CELERITY        3
+#define POW_CHIMERSTRY      4
+#define POW_DAIMOINON       5
+#define POW_DOMINATE        6
+#define POW_FORTITUDE       7
+#define POW_MELPOMINEE      8
+#define POW_NECROMANCY      9
+#define POW_OBEAH           10
+#define POW_OBFUSCATE       11
+#define POW_OBTENEBRATION   12
+#define POW_POTENCE         13
+#define POW_PRESENCE        14
+#define POW_PROTEAN         15
+#define POW_QUIETUS         16
+#define POW_SERPENTIS       17
+#define POW_THANATOSIS      18
+#define POW_THAUMATURGY     19
+#define POW_VICISSITUDE     20
+
+/*
+ * Coterie (vampire group) power level and special tracking.
+ */
+#define COT_BANNED          0
+#define COT_BASIC           1
+#define COT_INTERMEDIATE    2
+#define COT_ADVANCED        3
+#define COT_EXPERT          4
+#define COT_HP              5
+#define COT_GENERATION      6
+#define COT_SKILL           7
+#define COT_STANCE          8
+#define COT_EXTRA           9
+#define COT_MAX             10
+
+/* Coterie extra flags */
+#define COT_ADV_STANCE      1
+#define COT_GOLCONDA        2
+#define COT_NO_DIABLERIE    4
+
+/*
+ * Celerity resistance constant.
+ */
+#define RES_CELERITY        1
 
 /*
  * Room VNUMs (additional).
@@ -3130,6 +3227,18 @@ typedef struct wiznet_type  { char *name; long flag; int16_t level; }           
 #define IS_DROW(ch)         ((ch)->class == CLASS_DROW)
 #define IS_DRAGON(ch)       ((ch)->class == CLASS_DRAGON)
 #define IS_ELEMENTAL(ch)    ((ch)->class == CLASS_ELEMENTAL)
+
+/* Character permission/status macros */
+#define IS_JUDGE(ch)        (get_trust(ch) >= LEVEL_JUDGE)
+#define IS_QUESTMAKER(ch)   (get_trust(ch) >= LEVEL_QUESTMAKER)
+#define IS_MOD(ch, bit)     (IS_SET((ch)->pcdata->modifiers, (bit)))
+#define IS_IMMUNE(ch, bit)  (IS_SET((ch)->immune, (bit)))
+#define IS_WILLPOWER(ch)    (!IS_NPC(ch) && (ch)->pcdata->willpower > 0)
+#define IS_NEWBIE(ch)       (IS_SET((ch)->act, PLR_NEWBIE))
+#define IS_FORM(ch, bit)    (IS_SET((ch)->form, (bit)))
+#define IS_DEMPOWER(ch, bit) (IS_SET((ch)->pcdata->powers, (bit)))
+#define IS_DEMAFF(ch, bit)  (IS_SET((ch)->pcdata->demaff, (bit)))
+#define CAN_SIT(ch)         (!IS_SET((ch)->affected_by, AFF_ANCHORED))
 
 /* Body part macros */
 #define IS_HEAD(ch,sn)      (IS_SET((ch)->loc_hp[0], (sn)))
@@ -4633,6 +4742,29 @@ DECLARE_DO_FUN( do_side              );
 DECLARE_DO_FUN( do_status            );
 DECLARE_DO_FUN( do_tempering         );
 DECLARE_DO_FUN( do_yangvanish        );
+
+/* EM/Genesis merged missing prototypes */
+DECLARE_DO_FUN( do_info              );
+DECLARE_DO_FUN( do_forceauto         );
+DECLARE_DO_FUN( do_watching          );
+DECLARE_DO_FUN( do_noutcast          );
+DECLARE_DO_FUN( do_moutcast          );
+DECLARE_DO_FUN( do_tradition         );
+DECLARE_DO_FUN( do_fatality          );
+DECLARE_DO_FUN( do_unwerewolf        );
+DECLARE_DO_FUN( do_mortalvamp        );
+
+/* Non-DO_FUN function prototypes */
+extern void clear_stats( CHAR_DATA *ch );
+extern void one_hit( CHAR_DATA *ch, CHAR_DATA *victim, int dt );
+extern void improve_wpn( CHAR_DATA *ch, CHAR_DATA *victim, int dt );
+extern void disarm( CHAR_DATA *ch, CHAR_DATA *victim );
+extern void raw_kill( CHAR_DATA *ch, CHAR_DATA *victim );
+extern void critical_hit( CHAR_DATA *ch, CHAR_DATA *victim, int dt );
+extern void crack_head( CHAR_DATA *ch, CHAR_DATA *victim );
+extern void make_part( CHAR_DATA *ch, int part );
+extern void take_item( CHAR_DATA *ch, OBJ_DATA *obj );
+extern void mud_logf( char *fmt, ... );
 
 #undef CD
 #undef MID
