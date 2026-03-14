@@ -252,15 +252,15 @@ static void save_board (BOARD_DATA *board)
 {
 	FILE *fp;
 	char filename[200];
-	char buf[200];
+	char buf[240];   /* large enough for "Error writing to: " + filename[200] */
 	NOTE_DATA *note;
-	
+
 	sprintf (filename, "%s%s", NOTE_DIR, board->short_name);
-	
+
 	fp = fopen (filename, "w");
 	if (!fp)
 	{
-		sprintf (buf, "Error writing to: %s", filename);
+		snprintf (buf, sizeof(buf), "Error writing to: %s", filename);
 		bug (buf, 0);
 	}
 	else

@@ -1317,8 +1317,8 @@ void clear_eq( CHAR_DATA *ch )
 void do_level( CHAR_DATA *ch, char *argument )
 {
     char arg       [MAX_INPUT_LENGTH];
-    char skill  [20];
-    char stance [20];
+    char skill  [80];   /* increased from 20: longest format is ~47 chars */
+    char stance [32];   /* increased from 20: " Swallow\n\r" + "Autostance:" prefix */
     one_argument( argument, arg );
 
     if (IS_NPC(ch)) return;

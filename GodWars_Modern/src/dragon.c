@@ -12,8 +12,8 @@
 void do_dragonform( CHAR_DATA *ch, char *argument )
 {
     char arg[MAX_INPUT_LENGTH];
-    char c1[MAX_STRING_LENGTH];
-    char c2[MAX_STRING_LENGTH];
+    char c1[8];     /* holds short ANSI color codes like "#R", "#L" */
+    char c2[16];    /* holds colour names like "Red", "Bronze", "Black" */
     char age[MAX_STRING_LENGTH];
 
     argument = one_argument( argument, arg );

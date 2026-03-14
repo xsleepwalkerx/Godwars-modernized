@@ -193,6 +193,11 @@ static	long			theKeys	[4];
 int	gettimeofday		args( ( struct timeval *tp, void *tzp ) );
 #endif
 
+/* isascii is inside macintosh-only guard above; define for all platforms */
+#if !defined(isascii)
+#define isascii(c)  ((unsigned char)(c) < 0200)
+#endif
+
 #if	defined(MIPS_OS)
 extern	int		errno;
 #endif

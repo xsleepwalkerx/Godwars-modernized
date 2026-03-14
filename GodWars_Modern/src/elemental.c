@@ -339,9 +339,9 @@ void do_flarearrow( CHAR_DATA *ch, char *argument )
     hpcheck = victim->hit;
     WAIT_STATE(ch, 20 - ch->pcdata->powers[ELEM_FIRE]);
 
-    one_hit(ch, victim, TYPE_HIT, "flare arrow");
-    one_hit(ch, victim, TYPE_HIT, "flare arrow");
-    one_hit(ch, victim, TYPE_HIT, "flare arrow");
+    one_hit(ch, victim, TYPE_HIT, 0);
+    one_hit(ch, victim, TYPE_HIT, 0);
+    one_hit(ch, victim, TYPE_HIT, 0);
 
     if (victim == NULL || hpcheck == victim->hit) return;
 
@@ -496,7 +496,7 @@ void do_iciclestorm( CHAR_DATA *ch, char *argument )
     act("$n sends a swathe of sharp icicles at $N.",ch,NULL,victim,TO_NOTVICT);
     act("$n sends a swathe of sharp icicles at you.",ch,NULL,victim,TO_VICT);
 
-    one_hit(ch, victim, TYPE_HIT, "icicle barrage");
+    one_hit(ch, victim, TYPE_HIT, 0);
 
     WAIT_STATE(ch, 12);
     return;
@@ -752,9 +752,9 @@ void do_windblades( CHAR_DATA *ch, char *argument )
     WAIT_STATE(ch, 12);
     ch->mana -= power;
 
-    one_hit(ch, victim, TYPE_HIT, "wind blade");
-    one_hit(ch, victim, TYPE_HIT, "wind blade");
-    one_hit(ch, victim, TYPE_HIT, "wind blade");
+    one_hit(ch, victim, TYPE_HIT, 0);
+    one_hit(ch, victim, TYPE_HIT, 0);
+    one_hit(ch, victim, TYPE_HIT, 0);
 
     return; 
 }
@@ -797,8 +797,8 @@ void do_stoneblast( CHAR_DATA *ch, char *argument )
 	if (!CAN_PK(victim)) continue;
 	if (IS_BUI(victim)) continue;
 	if (!str_cmp(ch->pcdata->conding, victim->name) && IS_MORE(ch, MORE_LOYAL)) continue;
-  	one_hit(ch, victim, TYPE_HIT, "rock shower");
-  	one_hit(ch, victim, TYPE_HIT, "rock shower");
+  	one_hit(ch, victim, TYPE_HIT, 0);
+  	one_hit(ch, victim, TYPE_HIT, 0);
     }
     WAIT_STATE(ch, 13);
     return; 

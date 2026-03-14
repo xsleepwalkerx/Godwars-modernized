@@ -181,7 +181,7 @@ void do_acidbolt( CHAR_DATA *ch, char *argument )
     act("You fire a bolt of acid at $N!", ch, NULL, victim, TO_CHAR);
     act("$n fires a bolt of acid at you!", ch, NULL, victim, TO_VICT);
     act("$n fires a bolt of acid at $N!", ch, NULL, victim, TO_NOTVICT);
-    one_hit(ch, victim, TYPE_HIT, "acid bolt");
+    one_hit(ch, victim, TYPE_HIT, 0);
     WAIT_STATE(ch, 8);
     return;  
 }

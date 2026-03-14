@@ -5435,7 +5435,7 @@ bool char_exists( int file_dir, char *argument )
     {
 	found = TRUE;
 	fclose( fp );
-	fflush( fp );
+	/* fflush removed: fp is already closed, flushing it is undefined behaviour */
 	fpReserve = fopen( NULL_FILE, "r" );
     }
     return found;
