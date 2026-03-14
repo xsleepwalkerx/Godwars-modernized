@@ -50,7 +50,7 @@ void show_page( CHAR_DATA *ch, OBJ_DATA *book, long pnum, bool pagefalse )
 	    stc(buf, ch);
 	    if (!pagefalse)
 	    {
-		if (page->chpoweruse == NULL || page->chpoweruse == '\0' || !str_cmp(page->chpoweruse, "(null)"))
+		if (page->chpoweruse == NULL || page->chpoweruse == NULL || !str_cmp(page->chpoweruse, "(null)"))
 		{
 		    stc("This page is blank.\n\r", ch);
 		    return;
@@ -78,7 +78,7 @@ void do_colors( CHAR_DATA *ch, char *argument )
 
     if (argument[0] == '\0')
     {
-	sprintf(buf, "Purple: %li, Red: %li, Blue: %li, Green: %li, Yellow: %li, Black: %li.\n\r",
+	sprintf(buf, "Purple: %d, Red: %d, Blue: %d, Green: %d, Yellow: %d, Black: %d.\n\r",
 	 get_color(ch, PURPLE_MAGIC), get_color(ch, RED_MAGIC), get_color(ch, BLUE_MAGIC),
 	 get_color(ch, GREEN_MAGIC), get_color(ch, YELLOW_MAGIC), get_color(ch, BLACK_MAGIC));
 	stc(buf, ch);
@@ -1129,9 +1129,9 @@ void adv_spell_action( CHAR_DATA *ch, OBJ_DATA *book, OBJ_DATA *page, char *argu
 	 char_stat(victim, STAT_STR), char_stat(victim, STAT_DEX), char_stat(victim, STAT_CON),
 	 char_stat(victim, STAT_INT), char_stat(victim, STAT_WIS));
 	stc(buf, ch);
-	sprintf(buf, "Hp: %li/%li, Mana: %li/%li.\n\r", victim->hit, victim->max_hit, victim->mana, victim->max_mana);
+	sprintf(buf, "Hp: %d/%d, Mana: %d/%d.\n\r", victim->hit, victim->max_hit, victim->mana, victim->max_mana);
 	stc(buf, ch);
-	sprintf(buf, "Hitroll: %li, Damroll: %li, AC: %li.\n\r", char_hitroll(victim), char_damroll(victim), char_ac(victim));
+	sprintf(buf, "Hitroll: %d, Damroll: %d, AC: %d.\n\r", char_hitroll(victim), char_damroll(victim), char_ac(victim));
 	stc(buf, ch);
     }
     else if (color == YELLOW_MAGIC) /* Object Travel */

@@ -59,7 +59,7 @@ void do_pcwipe(CHAR_DATA *ch,char *argument)
       }
        if (!valid_name(arg1))
       {
-                sprintf(old_name, victim->name);
+                sprintf(old_name, "%s", victim->name);
 		send_to_char("deleting\n\r",ch);
                 sprintf( strsave, "%s%s", PLAYER_DIR, capitalize( old_name
 ) );
@@ -115,7 +115,7 @@ void do_pcrename(CHAR_DATA *ch, char *argument)
       }
    if (valid_name(arg2))
       {
-		sprintf(old_name, victim->name);
+		sprintf(old_name, "%s", victim->name);
 		sprintf(buf, "%s renamed to %s\n\r", old_name, arg2);
 		send_to_char(buf,ch);
 		sprintf(buf, "%s renamed %s to %s", ch->name, old_name, arg2);
@@ -134,7 +134,7 @@ void do_pcrename(CHAR_DATA *ch, char *argument)
     	}
 		free_string(victim->name);
 		victim->name = strdup(capitalize(arg2));
-	//	sprintf(victim->name, arg2); /* Save the new p-file */
+	//	sprintf(victim->name, "%s", arg2); /* Save the new p-file */
 		save_char_obj(victim);
 
 		sprintf( strsave, "%s%s", PLAYER_DIR, capitalize( old_name ) );

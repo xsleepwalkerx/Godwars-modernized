@@ -147,7 +147,7 @@ void do_disint( CHAR_DATA *ch, char *argument )
     stc("Your body begins to disintegrate!\n\r", victim);
     act("$n's body begins to disintegrate!", victim, NULL, NULL, TO_ROOM);
 
-    one_hit(ch, victim, TYPE_HIT, "disintegrate");
+    one_hit(ch, victim, TYPE_HIT, 0);
     SET_BIT(victim->more, MORE_DISINT);
 
     return;
@@ -591,7 +591,7 @@ void do_fistofcaine( CHAR_DATA *ch, char *argument )
 
     WAIT_STATE( ch, 4 );
 
-    one_hit(ch, victim, TYPE_UNARMED, "Fist of Caine");
+    one_hit(ch, victim, TYPE_UNARMED, 0);
     WAIT_STATE(ch, 14);	
 
     return;

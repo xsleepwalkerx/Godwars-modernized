@@ -334,11 +334,11 @@ void say_spell( CHAR_DATA *ch, int sn )
     {
         sprintf(colour,"$n's %s glow%s black for a moment.", gtype,
             add_s ? "s" : "");
-        ADD_COLOUR(ch,colour,GREY);
+        ADD_COLOUR(ch,colour,WHITE);
         act(colour,ch,NULL,NULL,TO_ROOM);
         sprintf(colour,"Your %s glow%s black for a moment.", gtype,
             add_s ? "s" : "");
-        ADD_COLOUR(ch,colour,GREY);
+        ADD_COLOUR(ch,colour,WHITE);
         act(colour,ch,NULL,NULL,TO_CHAR);
     }
     return;
@@ -3717,7 +3717,7 @@ void spell_voodoo( int sn, int level, CHAR_DATA *ch, void *vo )
 	return;
     }
 
-    sprintf(part2,obj->name);
+    sprintf(part2, "%s", obj->name);
 
     if ( str_cmp(part1,part2) )
     {

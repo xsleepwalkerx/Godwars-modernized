@@ -55,11 +55,13 @@
 /* Scale columns for color arrays */
 #define SCALE_COLS	4
 
-/* ADD_COLOUR macro: prepend color code to a buffer */
+/* ADD_COLOUR macro: prepend color code to a buffer.
+ * Extra 32 bytes to accommodate the ANSI color prefix. */
 #define ADD_COLOUR(ch, buf, color)  \
     do { \
-        char _tmp[MAX_STRING_LENGTH]; \
+        char _tmp[MAX_STRING_LENGTH + 32]; \
         snprintf(_tmp, sizeof(_tmp), "%s%s", (color), (buf)); \
         strncpy((buf), _tmp, sizeof(buf)-1); \
+        (buf)[sizeof(buf)-1] = '\0'; \
     } while(0)
 

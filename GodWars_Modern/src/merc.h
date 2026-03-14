@@ -1545,9 +1545,7 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define QUEST_MAGEENCHANT   (1 << 13)
 #define QUEST_SORCENCHANT   (1 << 14)  /* sorcerer enchant applied */
 
-/* Sphere indices (shortcuts matching mage.h SPHERE_* for convenience) */
-#define MENT    4   /* SPHERE_MIND */
-#define MTIM    8   /* SPHERE_TIME */
+/* MENT and MTIM already defined above as sphere aliases */
 
 /* Koe class power indices (pcdata->powers[] array indices) */
 #define KOE_CURRENT     0
@@ -2608,9 +2606,9 @@ extern int gsn_backfist;
 #define HOME_AREA   "../area/home.dat"  /* player home data file */
 
 /*
- * Macro for minimum mob VNUM.
+ * Macro for minimum mob VNUM (not to be confused with MMIN = SPHERE_MIND above).
  */
-#define MMIN        1
+#define MOB_VNUM_MIN    1
 
 /*
  * =========================================================================
@@ -5178,6 +5176,14 @@ DECLARE_DO_FUN( do_noutcast          );
 DECLARE_DO_FUN( do_moutcast          );
 DECLARE_DO_FUN( do_tradition         );
 DECLARE_DO_FUN( do_fatality          );
+DECLARE_DO_FUN( do_werewolf          );
+DECLARE_DO_FUN( do_phoenixform       );
+DECLARE_DO_FUN( do_solarlight        );
+DECLARE_DO_FUN( do_aquabarrier       );
+DECLARE_DO_FUN( do_fireblade         );
+DECLARE_DO_FUN( do_doppleganger      );
+DECLARE_DO_FUN( do_malleable         );
+DECLARE_DO_FUN( do_spydirection      );
 DECLARE_DO_FUN( do_unwerewolf        );
 DECLARE_DO_FUN( do_mortalvamp        );
 
@@ -5220,6 +5226,11 @@ extern long     mod_damcap           ( CHAR_DATA *ch, CHAR_DATA *victim );
 extern LEADER_BOARD leader_board;
 
 /* Non-DO_FUN function prototypes */
+extern void behead          ( CHAR_DATA *victim, CHAR_DATA *ch );
+extern void paradox         ( CHAR_DATA *ch );
+extern void show_spell      ( CHAR_DATA *ch, int dtype );
+extern void trip            ( CHAR_DATA *ch, CHAR_DATA *victim );
+extern bool write_to_descriptor( int desc, char *txt, int length );
 extern void clear_stats( CHAR_DATA *ch );
 extern void one_hit( CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype );
 extern void improve_wpn( CHAR_DATA *ch, int dtype, bool right_hand );

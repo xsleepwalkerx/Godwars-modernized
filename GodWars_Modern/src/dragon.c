@@ -136,7 +136,7 @@ void do_dbreath( CHAR_DATA *ch, char *argument )
     }
     if (is_safe(ch,victim)) return;
 
-    one_hit(ch, victim, TYPE_HIT, "breath");
+    one_hit(ch, victim, TYPE_HIT, 0);
     WAIT_STATE(ch, 8);
     return;
 }
@@ -252,7 +252,7 @@ void do_stail( CHAR_DATA *ch, char *argument )
 
     dam = 500 + char_damroll(ch);
 
-    one_hit( ch, victim, TYPE_HIT, "spiked tail" );
+    one_hit(ch, victim, TYPE_HIT, 0);
     WAIT_STATE(ch,8);
     return;
 }

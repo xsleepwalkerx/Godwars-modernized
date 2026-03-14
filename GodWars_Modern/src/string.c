@@ -187,7 +187,7 @@ void string_add( CHAR_DATA *ch, char *argument )
     if ( strlen( buf ) + strlen( argument ) >= ( MAX_STRING_LENGTH - 4 ) )
     {
         send_to_char( "String too long, truncating.\n\r", ch );
-        strncat( buf, argument, MAX_STRING_LENGTH );
+        strncat( buf, argument, MAX_STRING_LENGTH - 1 );
         free_string( *ch->desc->pString );
         *ch->desc->pString = str_dup( buf );
         ch->desc->pString = NULL;

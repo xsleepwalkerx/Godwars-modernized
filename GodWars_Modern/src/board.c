@@ -137,8 +137,8 @@ static void append_note (FILE *fp, NOTE_DATA *note)
 {
 	fprintf (fp, "Sender  %s~\n", note->sender);
 	fprintf (fp, "Date    %s~\n", note->date);
-	fprintf (fp, "Stamp   %ld\n", note->date_stamp);
-	fprintf (fp, "Expire  %ld\n", note->expire);
+	fprintf (fp, "Stamp   %d\n", note->date_stamp);
+	fprintf (fp, "Expire  %d\n", note->expire);
 	fprintf (fp, "To      %s~\n", note->to_list);
 	fprintf (fp, "Subject %s~\n", note->subject);
 	fprintf (fp, "Text\n%s~\n\n", note->text);
@@ -561,7 +561,7 @@ static void do_nwrite (CHAR_DATA *ch, char *argument)
 		              BOLD YELLOW "Expires" NO_COLOR ": %s\n\r"
 		              BOLD YELLOW "Subject" NO_COLOR ": %s\n\r", 
 		               ch->pcdata->in_progress->to_list,
-		               ctime(&ch->pcdata->in_progress->expire),
+		               ctime((time_t*)(&ch->pcdata->in_progress->expire)),
 		               ch->pcdata->in_progress->subject);
 		send_to_char (buf,ch);
 		send_to_char (BOLD GREEN "Your note so far:\n\r" NO_COLOR,ch);
@@ -1036,7 +1036,7 @@ void handle_con_note_subject (DESCRIPTOR_DATA *d, char * argument)
 		{
 			ch->pcdata->in_progress->expire = 
 				current_time + ch->pcdata->board->purge_days * 24L * 3600L;				
-			sprintf (buf, "This note will expire %s\r",ctime(&ch->pcdata->in_progress->expire));
+			sprintf (buf, "This note will expire %s\r",ctime((time_t*)(&ch->pcdata->in_progress->expire)));
 			write_to_buffer (d,buf,0);
 			write_to_buffer (d, "\n\rEnter text. Type " BOLD "~" NO_COLOR " or " BOLD "END" NO_COLOR " on an empty line to end note.\n\r"
 			                    "=======================================================\n\r",0);

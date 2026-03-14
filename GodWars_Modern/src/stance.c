@@ -235,7 +235,7 @@ void do_skill( CHAR_DATA *ch, char *argument )
 
     if (IS_NPC(ch)) return;
 
-    if (arg[0] == '\0') sprintf(arg, ch->name);
+    if (arg[0] == '\0') sprintf(arg, "%s", ch->name);
 
     if ((victim = get_char_room(ch, arg)) == NULL)
     {

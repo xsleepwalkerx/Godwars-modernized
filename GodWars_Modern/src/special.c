@@ -709,7 +709,7 @@ bool spec_guard2( CHAR_DATA *ch )
 	    act("You give $N an annoyed look.",ch,NULL,victim,TO_CHAR);
 	    act("$n gives you a annoyed look.",ch,NULL,victim,TO_VICT);
 	    act("$n gives $N a annoyed look.",ch,NULL,victim,TO_NOTVICT);
-	    sprintf( buf, "%s, arcátlan nagy kujon...",
+	    sprintf( buf, "%s, arcï¿½tlan nagy kujon...",
 	        victim->name);
 	    do_say( ch, buf );
 	}
@@ -730,7 +730,7 @@ bool spec_guard2( CHAR_DATA *ch )
 	    sprintf( buf, "You dare to attack %s! You shall suffer and die!",
 	        ech->name);
 	    do_say( ch, buf );
-		act( "$n screams 'Die, puhány asszony valaki!'", ch, NULL, NULL, TO_ROOM );
+		act( "$n screams 'Die, puhï¿½ny asszony valaki!'", ch, NULL, NULL, TO_ROOM );
 	    do_rescue( ch, ech->name );
 	    return TRUE;
 	}
@@ -3701,12 +3701,6 @@ bool spec_zombie_lord( CHAR_DATA *ch )
     ROOM_INDEX_DATA	*to_room;
     int door;
     int consider 	= 4;
-    bool north_ok 	= TRUE;
-    bool east_ok 	= TRUE;
-    bool south_ok 	= TRUE;
-    bool west_ok 	= TRUE;
-    bool up_ok 		= TRUE;
-    bool down_ok 	= TRUE;
     int countup 	= 6;
     int option;
     int bored = 0;
@@ -3946,6 +3940,7 @@ bool spec_zombie_lord( CHAR_DATA *ch )
 		else
 		    sprintf(buf,"I shall feast on your soul for this, %s",victim->name);
 		do_say(ch,buf);
+		break;
 	    case 3:
 		if (IS_NPC(victim))
 		    sprintf(buf,"%s shall pay for his arrogance!",victim->short_descr);
@@ -4015,12 +4010,12 @@ bool spec_zombie_lord( CHAR_DATA *ch )
 	    {
 		switch (door)
 		{
-		    case DIR_NORTH: north_ok = FALSE; countup -= 1; break;
-		    case DIR_SOUTH: south_ok = FALSE; countup -= 1; break;
-		    case DIR_EAST:  east_ok  = FALSE; countup -= 1; break;
-		    case DIR_WEST:  west_ok  = FALSE; countup -= 1; break;
-		    case DIR_UP:    up_ok    = FALSE; countup -= 1; break;
-		    case DIR_DOWN:  down_ok  = FALSE; countup -= 1; break;
+		    case DIR_NORTH: countup -= 1; break;
+		    case DIR_SOUTH: countup -= 1; break;
+		    case DIR_EAST:  countup -= 1; break;
+		    case DIR_WEST:  countup -= 1; break;
+		    case DIR_UP:    countup -= 1; break;
+		    case DIR_DOWN:  countup -= 1; break;
 		}
 	    }
 	}
@@ -4297,12 +4292,6 @@ bool spec_dog( CHAR_DATA *ch )
     EXIT_DATA		*pexit;
     ROOM_INDEX_DATA	*to_room;
     int door;
-    bool north_ok 	= TRUE;
-    bool east_ok 	= TRUE;
-    bool south_ok 	= TRUE;
-    bool west_ok 	= TRUE;
-    bool up_ok 		= TRUE;
-    bool down_ok 	= TRUE;
     int countup 	= 6;
     int option;
     int random = number_range(1,5);
@@ -4439,12 +4428,12 @@ bool spec_dog( CHAR_DATA *ch )
 	    {
 		switch (door)
 		{
-		    case DIR_NORTH: north_ok = FALSE; countup -= 1; break;
-		    case DIR_SOUTH: south_ok = FALSE; countup -= 1; break;
-		    case DIR_EAST:  east_ok  = FALSE; countup -= 1; break;
-		    case DIR_WEST:  west_ok  = FALSE; countup -= 1; break;
-		    case DIR_UP:    up_ok    = FALSE; countup -= 1; break;
-		    case DIR_DOWN:  down_ok  = FALSE; countup -= 1; break;
+		    case DIR_NORTH: countup -= 1; break;
+		    case DIR_SOUTH: countup -= 1; break;
+		    case DIR_EAST:  countup -= 1; break;
+		    case DIR_WEST:  countup -= 1; break;
+		    case DIR_UP:    countup -= 1; break;
+		    case DIR_DOWN:  countup -= 1; break;
 		}
 	    }
 	}

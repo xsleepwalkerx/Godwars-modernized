@@ -2182,7 +2182,7 @@ void do_score( CHAR_DATA *ch, char *argument )
     sprintf( buf, "                              Quests Completed: %d\n\r", ch->pcdata->score[SCORE_NUM_QUEST] );
     send_to_char( buf, ch );
 
-    sprintf( buf, "                              PK Score: %d\n\r", (ch->pkill * get_ratio(ch)) );
+    sprintf( buf, "                              PK Score: %ld\n\r", (ch->pkill * get_ratio(ch)) );
     send_to_char( buf, ch );
 
     sprintf( buf, "                              Damcap: %d\n\r", ch->damcap[0] );

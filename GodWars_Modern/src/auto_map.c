@@ -115,7 +115,7 @@ void map_exits(CHAR_DATA *ch, ROOM_INDEX_DATA *pRoom, int x, int y, int depth)
       map[x][y].tegn = '*';
       break;
     case SECT_HILLS:
-      map[x][y].tegn = '¤';
+      map[x][y].tegn = 'ï¿½';
       break;
     case SECT_MOUNTAIN:
       map[x][y].tegn = '@';
@@ -234,7 +234,7 @@ void reformat_desc( char *desc )
   buf[j] = '\0';
 
   /* Copy to desc */
-  sprintf( desc, buf );
+  sprintf(desc, "%s", buf);
 }
 
 int get_line( char *desc, int max_len )
@@ -308,7 +308,7 @@ void show_map( CHAR_DATA *ch, char *text )
         case '"':
           sprintf(buf + strlen(buf), "#G%c#n", map[x][y].tegn);
           break;
-        case '¤':
+        case 'ï¿½':
           sprintf(buf + strlen(buf), "#o%c#n", map[x][y].tegn);
           break;
         case '@':
@@ -403,7 +403,7 @@ void draw_map( CHAR_DATA *ch, char *desc )
   int x, y;
   static char buf[MAX_STRING_LENGTH];
 
-  sprintf( buf, desc );
+  sprintf(buf, "%s", desc);
   /* Remove undesirable characters */
   reformat_desc( buf );
 

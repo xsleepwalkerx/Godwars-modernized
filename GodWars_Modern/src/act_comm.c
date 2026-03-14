@@ -1058,11 +1058,11 @@ void do_say( CHAR_DATA *ch, char *argument )
 	if (!is_ok) continue;
 
 	if (IS_NPC(ch))
-	    sprintf(name, ch->short_descr);
+	    sprintf(name, "%s", ch->short_descr);
 	else if (!IS_NPC(ch) && IS_AFFECTED(ch,AFF_POLYMORPH))
-	    sprintf(name, ch->morph);
+	    sprintf(name, "%s", ch->morph);
 	else
-	    sprintf(name, ch->name);
+	    sprintf(name, "%s", ch->name);
 	name[0]=UPPER(name[0]);
 	sprintf(poly,"%s %s '#r%s#n'.\n\r", name,speaks,argument);
 	send_to_char(poly,to);
@@ -1625,7 +1625,7 @@ void room_text( CHAR_DATA *ch, char *argument)
 	 || is_in(argument, rt->input)
 	 || all_in(argument, rt->input)) 
 	{
-	    if ( rt->name != NULL         && rt->name != '\0'
+	    if ( rt->name != NULL        
 	    &&   str_cmp(rt->name,"all")  && str_cmp(rt->name,"|all*") ) 
 	    	if (!is_in(ch->name, rt->name) ) continue;
 	    mobfound = TRUE;
@@ -1718,7 +1718,7 @@ void room_text( CHAR_DATA *ch, char *argument)
 		    hop = TRUE;
 		    break;
 		case RT_ACTION:
-		    sprintf(arg,argument);
+		    sprintf(arg, "%s", argument);
 		    argument = one_argument( arg, arg1 );
 		    argument = one_argument( arg, arg2 );
 		    if ( (mob = get_char_room(ch, arg2) ) == NULL ) continue;
@@ -2095,11 +2095,11 @@ void do_emote( CHAR_DATA *ch, char *argument )
 	if (!is_ok) continue;
 
 	if (IS_NPC(ch))
-	    sprintf(name, ch->short_descr);
+	    sprintf(name, "%s", ch->short_descr);
 	else if (!IS_NPC(ch) && IS_AFFECTED(ch,AFF_POLYMORPH))
-	    sprintf(name, ch->morph);
+	    sprintf(name, "%s", ch->morph);
 	else
-	    sprintf(name, ch->name);
+	    sprintf(name, "%s", ch->name);
 	name[0]=UPPER(name[0]);
 	sprintf(poly,"%s %s\n\r", name,buf);
 	send_to_char(poly,to);
@@ -2256,11 +2256,11 @@ oldarg = argument;
 	if (!is_ok) continue;
 
 	if (IS_NPC(ch))
-	    sprintf(name, ch->short_descr);
+	    sprintf(name, "%s", ch->short_descr);
 	else if (!IS_NPC(ch) && IS_AFFECTED(ch,AFF_POLYMORPH))
-	    sprintf(name, ch->morph);
+	    sprintf(name, "%s", ch->morph);
 	else
-	    sprintf(name, ch->name);
+	    sprintf(name, "%s", ch->name);
 	name[0]=UPPER(name[0]);
 	sprintf(poly,"%s %s\n\r", name,buf);
 	send_to_char(poly,to);

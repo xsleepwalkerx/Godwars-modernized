@@ -2964,10 +2964,10 @@ void do_activate( CHAR_DATA *ch, char *argument )
 	}
     }
     else victim = ch;
-    if (obj->chpoweruse != NULL && obj->chpoweruse != '\0'
+    if (obj->chpoweruse != NULL
 	&& str_cmp(obj->chpoweruse,"(null)") )
 	kavitem(obj->chpoweruse,ch,obj,NULL,TO_CHAR);
-    if (obj->victpoweruse != NULL && obj->victpoweruse != '\0'
+    if (obj->victpoweruse != NULL
 	&& str_cmp(obj->victpoweruse,"(null)") )
 	kavitem(obj->victpoweruse,ch,obj,NULL,TO_ROOM);
     if ( IS_SET(obj->spectype, SITEM_SPELL))
@@ -2983,10 +2983,10 @@ void do_activate( CHAR_DATA *ch, char *argument )
     }
     else if ( IS_SET(obj->spectype, SITEM_TRANSPORTER))
     {
-    	if (obj->chpoweron != NULL && obj->chpoweron != '\0'
+    	if (obj->chpoweron != NULL
 	    && str_cmp(obj->chpoweron,"(null)") )
 	    kavitem(obj->chpoweron,ch,obj,NULL,TO_CHAR);
-    	if (obj->victpoweron != NULL && obj->victpoweron != '\0'
+    	if (obj->victpoweron != NULL
 	    && str_cmp(obj->victpoweron,"(null)") )
 	    kavitem(obj->victpoweron,ch,obj,NULL,TO_ROOM);
 	if ( (pRoomIndex = get_room_index(obj->specpower)) == NULL ) return;
@@ -2994,10 +2994,10 @@ void do_activate( CHAR_DATA *ch, char *argument )
 	char_from_room(ch);
 	char_to_room(ch,pRoomIndex);
 	do_look(ch,"auto");
-    	if (obj->chpoweroff != NULL && obj->chpoweroff != '\0'
+    	if (obj->chpoweroff != NULL
 	    && str_cmp(obj->chpoweroff,"(null)") )
 	    kavitem(obj->chpoweroff,ch,obj,NULL,TO_CHAR);
-    	if (obj->victpoweroff != NULL && obj->victpoweroff != '\0'
+    	if (obj->victpoweroff != NULL
 	    && str_cmp(obj->victpoweroff,"(null)") )
 	    kavitem(obj->victpoweroff,ch,obj,NULL,TO_ROOM);
 	if (!IS_SET(obj->quest, QUEST_ARTIFACT) && 
@@ -3019,10 +3019,10 @@ void do_activate( CHAR_DATA *ch, char *argument )
     }
     else if ( IS_SET(obj->spectype, SITEM_TELEPORTER))
     {
-    	if (obj->chpoweron != NULL && obj->chpoweron != '\0'
+    	if (obj->chpoweron != NULL
 	    && str_cmp(obj->chpoweron,"(null)") )
 	    kavitem(obj->chpoweron,ch,obj,NULL,TO_CHAR);
-    	if (obj->victpoweron != NULL && obj->victpoweron != '\0'
+    	if (obj->victpoweron != NULL
 	    && str_cmp(obj->victpoweron,"(null)") )
 	    kavitem(obj->victpoweron,ch,obj,NULL,TO_ROOM);
 	pRoomIndex     = get_room_index(obj->specpower);
@@ -3030,10 +3030,10 @@ void do_activate( CHAR_DATA *ch, char *argument )
 	char_from_room(ch);
 	char_to_room(ch,pRoomIndex);
 	do_look(ch,"auto");
-    	if (obj->chpoweroff != NULL && obj->chpoweroff != '\0'
+    	if (obj->chpoweroff != NULL
 	    && str_cmp(obj->chpoweroff,"(null)") )
 	    kavitem(obj->chpoweroff,ch,obj,NULL,TO_CHAR);
-    	if (obj->victpoweroff != NULL && obj->victpoweroff != '\0'
+    	if (obj->victpoweroff != NULL
 	    && str_cmp(obj->victpoweroff,"(null)") )
 	    kavitem(obj->victpoweroff,ch,obj,NULL,TO_ROOM);
 	if (!IS_SET(obj->quest, QUEST_ARTIFACT) && 
@@ -3071,8 +3071,7 @@ void do_activate( CHAR_DATA *ch, char *argument )
 	if (IS_NPC(ch)) SET_BIT(ch->act, ACT_COMMANDED);
 	interpret(ch,obj->victpoweron);
 	if (IS_NPC(ch)) REMOVE_BIT(ch->act, ACT_COMMANDED);
-	if (obj->victpoweroff != NULL && str_cmp(obj->victpoweroff,"(null)") &&
-	    obj->victpoweroff != '\0')
+	if (obj->victpoweroff != NULL && str_cmp(obj->victpoweroff,"(null)"))
 	{
 	    for ( victim = char_list; victim != NULL; victim = victim_next )
 	    {

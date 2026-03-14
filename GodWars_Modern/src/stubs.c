@@ -151,3 +151,9 @@ long mod_damcap( CHAR_DATA *ch, CHAR_DATA *victim )
     if ( victim == NULL ) return 1000;
     return (long)victim->max_hit;
 }
+
+/* do_malleable — Craft: Malleable form polymorph. Not yet implemented. */
+void do_malleable( CHAR_DATA *ch, char *argument )
+{
+    send_to_char( "The malleable form ability is not yet implemented.\n\r", ch );
+}

@@ -271,7 +271,7 @@ void do_element( CHAR_DATA *ch, char *argument )
 	cost = (ch->pcdata->powers[improve] + 1) * 10;
 	if (cost > ch->primal)
 	{
-	    sprintf(buf, "You need %li primal to improve your skill with the %s element.\n\r", cost, arg1);
+	    sprintf(buf, "You need %d primal to improve your skill with the %s element.\n\r", cost, arg1);
 	    stc(buf, ch);
 	    return;
 	}
@@ -858,25 +858,25 @@ void do_localquake( CHAR_DATA *ch, char *argument ) {
 	{
 	   if (dam >= 0  && dam <= 300)
 	   {
-		sprintf (buf,"Your local quake shakes $N. [#g%li#n]",dam);
+		sprintf (buf,"Your local quake shakes $N. [#g%d#n]",dam);
 		act(buf, ch, NULL, victim, TO_CHAR);
-		sprintf(buf, "$n's local quake shakes you. [#r%li#n]",dam);
+		sprintf(buf, "$n's local quake shakes you. [#r%d#n]",dam);
 		act(buf, ch,NULL, victim, TO_VICT);
 		act("$n's local quake shakes $N.", ch,NULL, victim, TO_NOTVICT);
 	   }
 	   if (dam >= 301 && dam <= 1200)
 	   {
-		sprintf (buf,"Your local quake causes the ground underneath $N to fracture! [#g%li#n]",dam);
+		sprintf (buf,"Your local quake causes the ground underneath $N to fracture! [#g%d#n]",dam);
 		act(buf, ch, NULL, victim, TO_CHAR);
-		sprintf(buf,"$n's local quake causes the ground underneath you to fracture! [#r%li#n]",dam);
+		sprintf(buf,"$n's local quake causes the ground underneath you to fracture! [#r%d#n]",dam);
 		act(buf, ch,NULL, victim, TO_VICT);
 		act("$n's local quake causes the ground underneath $N to fracture!", ch,NULL, victim, TO_NOTVICT);
 	   }
 	   if (dam >= 1201 && dam <= 1500)
 	   {
-		sprintf (buf,"Your local quake rips up the ground underneath $N!! [#g%li#n]",dam);
+		sprintf (buf,"Your local quake rips up the ground underneath $N!! [#g%d#n]",dam);
 		act(buf, ch, NULL, victim, TO_CHAR);
-		sprintf(buf,"$n's local quake rips up the ground underneath you!! [#r%li#n]", dam);
+		sprintf(buf,"$n's local quake rips up the ground underneath you!! [#r%d#n]", dam);
 		act(buf, ch,NULL, victim, TO_VICT);
 		act("$n's local quake rips up the ground underneath $N!!", ch,NULL, victim, TO_NOTVICT);
 	   }
@@ -1789,41 +1789,41 @@ void do_nightblade( CHAR_DATA *ch, char *argument)
 	    if (victim == NULL) break;
 	   if ((dam >= 0) && dam <= 400)
 	   {
-	   	sprintf (buf,"Your night blade barely hits $N. [#g%li#n]",dam);
+	   	sprintf (buf,"Your night blade barely hits $N. [#g%d#n]",dam);
 	   	act(buf, ch, NULL, victim, TO_CHAR);
-	   	sprintf(buf,"$n's night blade barely hits you. [#r%li#n]",dam);
+	   	sprintf(buf,"$n's night blade barely hits you. [#r%d#n]",dam);
            	act(buf, ch, NULL, victim, TO_VICT);
 	   	act("$n's night blade barely hits $N.", ch,NULL, victim, TO_NOTVICT);
 	   }
 	   if (dam >=401 && dam <= 900)
 	   {
-		sprintf(buf, "Your night blade strikes $N. [#g%li#n]",dam);
+		sprintf(buf, "Your night blade strikes $N. [#g%d#n]",dam);
 		act(buf, ch, NULL, victim, TO_CHAR);
-		sprintf(buf, "$n's nightblade strikes you. [#r%li#n]",dam);
+		sprintf(buf, "$n's nightblade strikes you. [#r%d#n]",dam);
 		act(buf, ch, NULL, victim, TO_VICT);
 		act("$n's night blade strikes $N.", ch, NULL, victim, TO_NOTVICT);
 	   }
 	   if (dam >=901 && dam <= 1800)
 	   {
-		sprintf(buf, "Your night blade strikes $N hard. [#g%li#n]",dam);
+		sprintf(buf, "Your night blade strikes $N hard. [#g%d#n]",dam);
 		act(buf, ch, NULL, victim, TO_CHAR);
-		sprintf(buf, "$n's nightblade strikes you hard. [#r%li#n]",dam);
+		sprintf(buf, "$n's nightblade strikes you hard. [#r%d#n]",dam);
 		act(buf, ch, NULL, victim, TO_VICT);
 		act("$n's night blade strikes $N hard.", ch, NULL, victim, TO_NOTVICT);
 	   }
 	   if (dam >=1801 && dam <= 2800)
 	   {
-		sprintf(buf, "Your night blade strikes $N hard! [#g%li#n]",dam);
+		sprintf(buf, "Your night blade strikes $N hard! [#g%d#n]",dam);
 		act(buf, ch, NULL, victim, TO_CHAR);
-		sprintf(buf, "$n's nightblade strikes you hard! [#r%li#n]",dam);
+		sprintf(buf, "$n's nightblade strikes you hard! [#r%d#n]",dam);
 		act(buf, ch, NULL, victim, TO_VICT);
 		act("$n's night blade strikes $N hard!", ch, NULL, victim, TO_NOTVICT);
 	   }
 	   if (dam >=2801)
 	   {
-		sprintf(buf, "Your night blade strikes $N *REALLY* hard. [#g%li#n]",dam);
+		sprintf(buf, "Your night blade strikes $N *REALLY* hard. [#g%d#n]",dam);
 		act(buf, ch, NULL, victim, TO_CHAR);
-		sprintf(buf, "$n's nightblade strikes you *REALLY* hard. [#r%li#n]",dam);
+		sprintf(buf, "$n's nightblade strikes you *REALLY* hard. [#r%d#n]",dam);
 		act(buf, ch, NULL, victim, TO_VICT);
 		act("$n's night blade strikes $N *REALLY* hard.", ch, NULL, victim, TO_NOTVICT);
 	   }

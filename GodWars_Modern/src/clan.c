@@ -4232,7 +4232,7 @@ void do_tribe( CHAR_DATA *ch, char *argument )
 	if ( IS_IMMORTAL(gch) && !IS_IMMORTAL(ch) && IS_SET(gch->act, PLR_WIZINVIS) ) continue;
 	if ( strlen(gch->clan) > 16) continue;
 	if ( gch->clan != NULL && strlen(gch->clan) > 1 )
-	    sprintf(clan,gch->clan);
+	    sprintf(clan, "%s", gch->clan);
 	else if ( gch->vampgen == 1 )
 	    sprintf(clan,"All");
 	else

@@ -32,6 +32,7 @@
 #include <string.h>
 #include <time.h>
 #include <unistd.h> /* unlink() */
+#include <crypt.h>  /* crypt() */
 #include "merc.h"
 
 #include <ctype.h>
@@ -1255,9 +1256,9 @@ void do_ostat( CHAR_DATA *ch, char *argument )
     }
 
     if (obj->questmaker != NULL && strlen(obj->questmaker) > 1)
-	sprintf(nm1,obj->questmaker); else sprintf(nm1,"None");
+	sprintf(nm1, "%s", obj->questmaker); else sprintf(nm1,"None");
     if (obj->questowner != NULL && strlen(obj->questowner) > 1)
-	sprintf(nm2,obj->questowner); else sprintf(nm2,"None");
+	sprintf(nm2, "%s", obj->questowner); else sprintf(nm2,"None");
 
     sprintf( buf, "Name: %s.\n\r",
 	obj->name );
@@ -2217,7 +2218,7 @@ void do_preturn( CHAR_DATA *ch, char *argument )
     if (IS_NPC(ch)) {send_to_char("Huh?\n\r",ch);return;}
 
     if (ch->pload == NULL) {send_to_char("Huh?\n\r",ch);return;}
-    sprintf(arg,ch->pload);
+    sprintf(arg, "%s", ch->pload);
     if (strlen(arg) < 3 || strlen(arg) > 8) 
 	{send_to_char("Huh?\n\r",ch);return;}
 
@@ -6754,7 +6755,7 @@ void do_lordname( CHAR_DATA *ch, char *argument )
     if ( IS_NPC(victim) ) return;
 
     smash_tilde( argument );
-    if ( strlen(argument) < 0 || strlen(argument) > 25 )
+    if ( argument[0] == '\0' || strlen(argument) > 25 )
     {
         send_to_char( "Lord name should be between 0 and 25 letters long.\n\r", ch );
         send_to_char( "Leave a blank to remove Lord.\n\r", ch);

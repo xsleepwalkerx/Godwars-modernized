@@ -160,7 +160,7 @@ void do_mother( CHAR_DATA *ch, char *argument )
     if (ch->pcdata->obeah > 0)
     {
 	if (ch->pcdata->obeah > 1)
-	    sprintf(buf, "You cannot call upon your healing powers for another %li seconds.\n\r", ch->pcdata->obeah);
+	    sprintf(buf, "You cannot call upon your healing powers for another %d seconds.\n\r", ch->pcdata->obeah);
 	else
 	    sprintf(buf, "You cannot call upon your healing powers for another 1 second.\n\r");
 	stc(buf, ch);
@@ -543,6 +543,9 @@ void do_geas( CHAR_DATA *ch, char *argument )
     one_argument( argument, arg );
 
     if (IS_NPC(ch)) return;
+
+    if ((sn = skill_lookup("geas")) < 0)
+        sn = 0;
 
     if (!IS_WEREWOLF(ch))
     {

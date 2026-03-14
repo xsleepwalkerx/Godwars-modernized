@@ -624,7 +624,7 @@ void do_drowupkeep( CHAR_DATA *ch, char *argument )
 
     if (ch->pcdata->drow[DROW_SPEED] > 0)
     {
-	sprintf(buf, "Speed %li%s", ch->pcdata->drow[DROW_SPEED], counter == 3 ? "" : "\n\r");
+	sprintf(buf, "Speed %d%s", ch->pcdata->drow[DROW_SPEED], counter == 3 ? "" : "\n\r");
 	stc(buf, ch);
     }
 

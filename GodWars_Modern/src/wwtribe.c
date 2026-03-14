@@ -77,7 +77,7 @@ void do_aeolus( CHAR_DATA *ch, char *argument )
     if (ch->pcdata->weather > 0)
     {
 	if (ch->pcdata->weather > 1)
-	    sprintf(buf,"You cannot call the Curse of Aeolus for another %li seconds.\n\r",ch->pcdata->weather);
+	    sprintf(buf,"You cannot call the Curse of Aeolus for another %d seconds.\n\r",ch->pcdata->weather);
 	else
 	    sprintf(buf,"You cannot call the Curse of Aeolus for another 1 second.\n\r");
 	send_to_char(buf,ch);
@@ -647,7 +647,7 @@ void do_surge( CHAR_DATA *ch, char *argument )
 	if (is_safe(ch, vch)) continue;
 	if (!CAN_PK(vch)) continue;
 	if (IS_BUI(vch)) continue;
-	one_hit(ch, vch, TYPE_HIT, "surge");
+	one_hit(ch, vch, TYPE_HIT, 0);
     }
 
     WAIT_STATE(ch, 12);
@@ -1517,11 +1517,11 @@ void do_falling( CHAR_DATA *ch, char *argument )
 
     damage = number_range(125, 250) * get_tribe(ch, TRIBE_STARGAZERS);
 
-    sprintf(buf, "You touch $N, sending them sprawling! [#g%li#n]", damage);
+    sprintf(buf, "You touch $N, sending them sprawling! [#g%d#n]", (int)damage);
     act(buf, ch, NULL, victim, TO_CHAR);
-    sprintf(buf, "You touch $N, sending them sprawling! [#0%li#n]", damage);
+    sprintf(buf, "You touch $N, sending them sprawling! [#0%d#n]", (int)damage);
     act(buf, ch, NULL, victim, TO_NOTVICT);
-    sprintf(buf, "$n touches you, sending you sprawling! [#r%li#n]",damage);
+    sprintf(buf, "$n touches you, sending you sprawling! [#r%d#n]", (int)damage);
     act(buf, ch, NULL, victim, TO_VICT);
 
     hurt_person(ch, victim, damage, FALSE);
@@ -1642,7 +1642,7 @@ void do_fetishdoll( CHAR_DATA *ch, char *argument )
 	return;
     }
 
-    sprintf(part2,obj->name);
+    sprintf(part2, "%s", obj->name);
 
     if ( str_cmp(part1,part2) )
     {
@@ -1744,7 +1744,7 @@ void do_cutting( CHAR_DATA *ch, char *argument )
 
     if (is_safe(ch, victim)) return;
 
-    one_hit(ch, victim, TYPE_HIT, "cutting wind");
+    one_hit(ch, victim, TYPE_HIT, 0);
 
     if (victim != NULL && number_range(1, (40 - get_tribe(ch, TRIBE_WENDIGOS) * 5)) == 1)
     {
@@ -1869,7 +1869,7 @@ void do_invoke( CHAR_DATA *ch, char *argument )
     if (ch->pcdata->weather > 0)
     {
 	if (ch->pcdata->weather > 1)
-	    sprintf(buf, "You may not Invoke the Spirits of the Storm for %li seconds.\n\r", ch->pcdata->weather);
+	    sprintf(buf, "You may not Invoke the Spirits of the Storm for %d seconds.\n\r", ch->pcdata->weather);
 	else
 	    sprintf(buf, "You may not Invoke the Spirits of the Storm for 1 second.\n\r");
 	stc(buf, ch);

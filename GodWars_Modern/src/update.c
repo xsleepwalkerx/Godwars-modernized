@@ -305,7 +305,7 @@ void mobile_update( void )
 
 	if ( ch->in_room == NULL ) continue;
 /*
-	if ( ch->hunting != NULL && ch->hunting != '\0' && 
+	if ( ch->hunting != NULL && 
 	    strlen(ch->hunting) > 1 )
 	{
 	    check_hunt( ch );
@@ -2560,7 +2560,7 @@ void aggr_update( void )
 	if ( !IS_NPC(wch) && ( IS_WEREWOLF(wch) ||
 	    IS_ITEMAFF(wch, ITEMA_STALKER) ) )
 	{
-	    if ( wch->hunting != NULL && wch->hunting != '\0' && 
+	    if ( wch->hunting != NULL && wch->hunting != NULL && 
 		strlen(wch->hunting) > 1 && get_auspice(wch, AUSPICE_RAGABASH) > 2)
 	    {
 		ROOM_INDEX_DATA *old_room = wch->in_room;

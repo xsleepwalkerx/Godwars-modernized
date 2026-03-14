@@ -31,11 +31,11 @@ void do_expmod( CHAR_DATA *ch, char *argument )
     if (arg1[0] == '\0' || arg2[0] == '\0')
     {
 	if (IS_SET(exp_info.bit, EXP_RANDOM))
-	    sprintf(buf, "Current Expmod: Random%% for %li minutes.\n\r", exp_info.time / 60);
+	    sprintf(buf, "Current Expmod: Random%% for %d minutes.\n\r", exp_info.time / 60);
 	else if (IS_SET(exp_info.bit, EXP_DEGRADE))
-	    sprintf(buf, "Current Expmod: %li%% for %li minutes.  Degrading.\n\r", exp_info.exp, exp_info.time / 60);
+	    sprintf(buf, "Current Expmod: %d%% for %d minutes.  Degrading.\n\r", exp_info.exp, exp_info.time / 60);
 	else
-	    sprintf(buf, "Current Expmod: %li%% for %li minutes.\n\r", exp_info.exp, exp_info.time / 60);
+	    sprintf(buf, "Current Expmod: %d%% for %d minutes.\n\r", exp_info.exp, exp_info.time / 60);
 	stc(buf, ch);
 	stc("Syntax: expmod <amount> <time>.\n\r", ch);
 	stc(" Amount: 0 - 250, in %.\n\r", ch);
@@ -141,11 +141,11 @@ void do_godstrike( CHAR_DATA *ch, char *argument )
     }
 
     victim->hit -= amount;
-    sprintf(buf, "You godstrike %s for %li.\n\r", victim->name, amount);
+    sprintf(buf, "You godstrike %s for %d.\n\r", victim->name, amount);
     stc(buf, ch);
-    sprintf(buf, "%s godstrikes you for %li.\n\r", ch->name, amount);
+    sprintf(buf, "%s godstrikes you for %d.\n\r", ch->name, amount);
     stc(buf, victim);
-    sprintf(buf, "#r%s#n calls down a %li volt #LGod #CStrike#n on #r%s#n.", ch->name, amount, victim->name);
+    sprintf(buf, "#r%s#n calls down a %d volt #LGod #CStrike#n on #r%s#n.", ch->name, amount, victim->name);
     do_info(ch, buf);
 
     if (victim->hit < 1)
@@ -594,7 +594,7 @@ void mageupkeep(CHAR_DATA *ch)
 
     if (ch->spheres[MLIF] >= 4)
     {
-	sprintf(buf, "You are affected by better body for: %li.\n\r", ch->better_body_timer);
+	sprintf(buf, "You are affected by better body for: %d.\n\r", ch->better_body_timer);
 	stc(buf, ch);
     }
 
@@ -606,7 +606,7 @@ void mageupkeep(CHAR_DATA *ch)
 
     if (ch->spheres[MTIM] >= 5)
     {
-	sprintf(buf, "You can use your powers of time again in: %li.\n\r", ch->doublecast_timer);
+	sprintf(buf, "You can use your powers of time again in: %d.\n\r", ch->doublecast_timer);
 	stc(buf, ch);
     }
 
@@ -616,13 +616,13 @@ void mageupkeep(CHAR_DATA *ch)
 
     if (ch->paradox_ward > 0)
     {
-	sprintf(buf, "You are affected by a paradox ward with %li quintessence in it.\n\r", ch->paradox_ward);
+	sprintf(buf, "You are affected by a paradox ward with %d quintessence in it.\n\r", ch->paradox_ward);
 	stc(buf, ch);
     }
 
     if (ch->beginners_luck > 0)
     {
-	sprintf(buf, "You are affected by beginner's luck for %li attacks.\n\r", ch->beginners_luck);
+	sprintf(buf, "You are affected by beginner's luck for %d attacks.\n\r", ch->beginners_luck);
 	stc(buf, ch);
     }
 
@@ -637,7 +637,7 @@ void mageupkeep(CHAR_DATA *ch)
 
     if(ch->spheres[MPRI]>0)
     {
-	sprintf(buf,"\n\rYou have %li quintessence stored in within your body.\n\rYou have %li quintessence stored within your Avatar.\n\r",
+	sprintf(buf,"\n\rYou have %d quintessence stored in within your body.\n\rYou have %d quintessence stored within your Avatar.\n\r",
 	ch->quint[BODY],ch->quint[AVATAR]);
 	stc(buf,ch);
     }
@@ -686,21 +686,21 @@ void save_leaderboard()
 	return;
     }
     fprintf(fp, "%s~\n", leader_board.bestpk_name);
-    fprintf(fp, "%li\n", leader_board.bestpk_number);
+    fprintf(fp, "%d\n", leader_board.bestpk_number);
     fprintf(fp, "%s~\n", leader_board.worstpk_name);
-    fprintf(fp, "%li\n", leader_board.worstpk_number);
+    fprintf(fp, "%d\n", leader_board.worstpk_number);
     fprintf(fp, "%s~\n", leader_board.pk_name);
-    fprintf(fp, "%li\n", leader_board.pk_number);
+    fprintf(fp, "%d\n", leader_board.pk_number);
     fprintf(fp, "%s~\n", leader_board.pd_name);
-    fprintf(fp, "%li\n", leader_board.pd_number);
+    fprintf(fp, "%d\n", leader_board.pd_number);
     fprintf(fp, "%s~\n", leader_board.mk_name);
-    fprintf(fp, "%li\n", leader_board.mk_number);
+    fprintf(fp, "%d\n", leader_board.mk_number);
     fprintf(fp, "%s~\n", leader_board.md_name);
-    fprintf(fp, "%li\n", leader_board.md_number);
+    fprintf(fp, "%d\n", leader_board.md_number);
     fprintf(fp, "%s~\n", leader_board.tt_name);
-    fprintf(fp, "%li\n", leader_board.tt_number);
+    fprintf(fp, "%d\n", leader_board.tt_number);
     fprintf(fp, "%s~\n", leader_board.qc_name);
-    fprintf(fp, "%li\n", leader_board.qc_number);
+    fprintf(fp, "%d\n", leader_board.qc_number);
     fclose (fp);
 }
 
@@ -713,43 +713,43 @@ void do_leader( CHAR_DATA *ch, char *argument )
     stc("   #cMr. Best PK'er   #L--->    ", ch);
     sprintf(buf, "#C%-13s", leader_board.bestpk_name);
     stc(buf, ch);
-    sprintf(buf, " #cwith a #C%li #cPK score#n\n\r",leader_board.bestpk_number);
+    sprintf(buf, " #cwith a #C%d #cPK score#n\n\r",leader_board.bestpk_number);
     stc(buf, ch);
 
     stc("   #cMr. Deadly       #L--->    ", ch);
     sprintf(buf, "#C%-13s", leader_board.pk_name);
     stc(buf, ch);
-    sprintf(buf, " #cwith #C%li #cpkills#n\n\r", leader_board.pk_number);
+    sprintf(buf, " #cwith #C%d #cpkills#n\n\r", leader_board.pk_number);
     stc(buf, ch);
 
     stc("   #cMr. Pathetic     #L--->    ", ch);
     sprintf(buf, "#C%-13s", leader_board.pd_name);
     stc(buf, ch);
-    sprintf(buf, " #cwith #C%li #cpdeaths#n\n\r", leader_board.pd_number);
+    sprintf(buf, " #cwith #C%d #cpdeaths#n\n\r", leader_board.pd_number);
     stc(buf, ch);
 
     stc("   #cMr. Slayer       #L--->    ", ch);
     sprintf(buf, "#C%-13s", leader_board.mk_name);
     stc(buf, ch);
-    sprintf(buf, " #cwith #C%li #cmkills#n\n\r", leader_board.mk_number);
+    sprintf(buf, " #cwith #C%d #cmkills#n\n\r", leader_board.mk_number);
     stc(buf, ch);
 
     stc("   #cMr. Wimpy        #L--->    ", ch);
     sprintf(buf, "#C%-13s", leader_board.md_name);
     stc(buf, ch);
-    sprintf(buf, " #cwith #C%li #cmdeaths#n\n\r", leader_board.md_number);
+    sprintf(buf, " #cwith #C%d #cmdeaths#n\n\r", leader_board.md_number);
     stc(buf, ch);
 
     stc("   #cMr. No life      #L--->    ", ch);
     sprintf(buf, "#C%-13s", leader_board.tt_name);
     stc(buf, ch);
-    sprintf(buf, " #cwith #C%li #cHours played#n\n\r", leader_board.tt_number);
+    sprintf(buf, " #cwith #C%d #cHours played#n\n\r", leader_board.tt_number);
     stc(buf, ch);
 
     stc("   #cMr. Questor      #L--->    ", ch);
     sprintf(buf, "#C%-13s", leader_board.qc_name);
     stc(buf, ch);
-    sprintf(buf, " #cwith #C%li #cQuests completed#n\n\r", leader_board.qc_number);
+    sprintf(buf, " #cwith #C%d #cQuests completed#n\n\r", leader_board.qc_number);
     stc(buf, ch);
 
     stc("\n\r#l-==#r**#l==--==#r**#l==--==#r**#l==--==#r**#l==--==#r**#l==--==#r**#l==--==#r**#l==--==#r**#l==--==#r**#l==#n\n\r",ch);

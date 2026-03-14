@@ -85,6 +85,7 @@ extern	int	malloc_verify	args( ( void ) );
 #if defined(unix)
 #include <signal.h>
 #include <unistd.h>
+#include <crypt.h>   /* crypt() */
 #include <sys/resource.h>	/* for RLIMIT_NOFILE */
 #endif
 
