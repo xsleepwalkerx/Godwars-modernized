@@ -114,6 +114,14 @@ const	char	echo_on_str	[] = { IAC, WONT, TELOPT_ECHO, '\0' };
 const	char 	go_ahead_str	[] = { IAC, GA, '\0' };
 #endif
 
+#if !defined(macintosh) && !defined(MSDOS) && !defined(unix)
+/* Fallback for Windows / Pelles C and other non-POSIX platforms */
+const	char	echo_off_str	[] = { '\0' };
+const	char	echo_on_str	[] = { '\0' };
+const	char	go_ahead_str	[] = { '\0' };
+static char *crypt( const char *key, const char *salt ) { return (char *)key; }
+#endif
+
 
 
 /*
