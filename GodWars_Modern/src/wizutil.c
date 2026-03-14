@@ -461,7 +461,8 @@ void do_vopen( CHAR_DATA *ch, char *argument )
    this is 10499 (Hell) in stock muds, anything higher is open */
     int top_vnum = 30345;
     int i,lvnum,uvnum,col=1;
-    int vlist[top_vnum];
+    int *vlist = (int *)malloc( top_vnum * sizeof(int) );
+    if ( !vlist ) { send_to_char( "Out of memory.\n\r", ch ); return; }
 
 /* initialize the array */
     for ( i=0;i<top_vnum;i++ )
@@ -508,5 +509,6 @@ void do_vopen( CHAR_DATA *ch, char *argument )
     /* show the top vnum */
     sprintf(buf," (%5d and up)\n\r", top_vnum);
     send_to_char(buf,ch);
+    free(vlist);
     return;
 }

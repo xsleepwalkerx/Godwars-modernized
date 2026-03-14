@@ -5,12 +5,14 @@
 #include <string.h>
 #include <signal.h>
 #include <stdarg.h>
-#include <unistd.h>
 #include <ctype.h>
+#if !defined(_WIN32)
+#include <unistd.h>     /* execl(), close() */
 #include <fcntl.h>
 #include <netdb.h>
 #include <netinet/in.h>
 #include <sys/socket.h>
+#endif
 #include "merc.h"
 
 extern 		int		control, port;
@@ -28,12 +30,14 @@ void init_signals( void )
     signal(SIGPFILE,	crash_notice);
     signal(SIGFPE,	crash_notice);
     signal(SIGINT,	crash_notice);
-    signal(SIGHUP,	crash_notice);
     signal(SIGSEGV,	crash_notice);
     signal(SIGTERM,	crash_notice);
+#if !defined(_WIN32)   /* POSIX-only signals */
+    signal(SIGHUP,	crash_notice);
     signal(SIGIO,	crash_notice);
     signal(SIGPIPE,	crash_notice);
     signal(SIGTRAP,	crash_notice);
+#endif
 return;
 }
 /* end aristoi */
@@ -127,7 +131,9 @@ for (d = descriptor_list; d; d = d->next)
 sprintf(buf, "%d", port);
 sprintf(buf2, "%d", control); 
 
-execl(EXE_FILE, "merc", buf, "copyover", buf2, (char *) NULL);
+#if !defined(_WIN32)
+    execl(EXE_FILE, "merc", buf, "copyover", buf2, (char *) NULL);
+#endif
 
 for (d = descriptor_list; d; d = d->next)
  write_to_descriptor(d->descriptor, "COPYOVER FAILED! Attempting NORMAL boot!\n\r", 0);

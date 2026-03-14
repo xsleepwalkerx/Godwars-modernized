@@ -23,9 +23,11 @@
  ***************************************************************************/
 #if defined(macintosh)
 #include <types.h>
-#else
+#elif defined(unix)
 #include <sys/types.h>
 #include <sys/time.h>
+#elif !defined(_WIN32)
+#include <sys/types.h>
 #endif
 #include <stdio.h>
 #include <stdlib.h>
