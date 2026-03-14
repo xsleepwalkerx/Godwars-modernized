@@ -435,7 +435,6 @@ void draw_map( CHAR_DATA *ch, char *desc )
 
 char *get_exits(CHAR_DATA *ch)
 {
-  extern char *const dir_name[];
   static char buf[MAX_STRING_LENGTH];
   EXIT_DATA *pexit;
   bool found;

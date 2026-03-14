@@ -2055,7 +2055,6 @@ void do_examine( CHAR_DATA *ch, char *argument )
  */
 void do_exits( CHAR_DATA *ch, char *argument )
 {
-    extern char * const dir_name[];
     char buf[MAX_STRING_LENGTH];
     EXIT_DATA *pexit;
     bool found;
