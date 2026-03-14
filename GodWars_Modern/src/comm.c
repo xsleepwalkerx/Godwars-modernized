@@ -42,7 +42,7 @@
 
 #if defined(macintosh)
 #include <types.h>
-#else
+#elif !defined(_WIN32)
 #include <sys/types.h>
 #include <sys/time.h>
 #endif
@@ -121,6 +121,10 @@ const	char	echo_off_str	[] = { '\0' };
 const	char	echo_on_str	[] = { '\0' };
 const	char	go_ahead_str	[] = { '\0' };
 static char *crypt( const char *key, const char *salt ) { return (char *)key; }
+/* Pelles C / MSVC: map POSIX I/O names to their Windows equivalents */
+#include <io.h>
+#define write  _write
+#define close  _close
 #endif
 
 
