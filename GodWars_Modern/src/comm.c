@@ -83,8 +83,9 @@ extern	int	malloc_verify	args( ( void ) );
 #define __attribute(x)
 #endif
 
+#include <signal.h>   /* standard C — available on all platforms */
+
 #if defined(unix)
-#include <signal.h>
 #include <unistd.h>
 #include <crypt.h>   /* crypt() — POSIX only */
 #include <sys/resource.h>	/* for RLIMIT_NOFILE */
@@ -399,9 +400,11 @@ void handler( int s )
 
     switch ( s )
     {
+#ifdef SIGBUS
         case SIGBUS:
             bug( "Bus error signal.", 0 );
             break;
+#endif
         case SIGSEGV:
             bug( "Segmentation violation signal.", 0 );
             break;
@@ -420,7 +423,9 @@ int port, control;
 
 int main( int argc, char **argv )
 {
+#if defined(unix)
     struct timeval now_time;
+#endif
     bool fCopyOver = FALSE;
 
 /* added by Aristoi */
@@ -449,8 +454,12 @@ int main( int argc, char **argv )
     /*
      * Init time and encryption.
      */
+#if defined(unix)
     gettimeofday( &now_time, NULL );
     current_time = (time_t) now_time.tv_sec;
+#else
+    current_time = time( NULL );
+#endif
     strcpy( str_boot_time, ctime( &current_time ) );
     strcpy( crypt_pwd, "KaG7eS0AGJ82s" );
     strcpy( first_place, "Nobody" );
