@@ -602,7 +602,7 @@ void auction_load( void )
                         pAuc->timer   = timer_val;
                         strncpy(pAuc->seller, seller, sizeof(pAuc->seller)-1);
                         strncpy(pAuc->bidder, bidder, sizeof(pAuc->bidder)-1);
-                        pAuc->obj     = create_object(pIdx, pIdx->level);
+                        pAuc->obj     = create_object(pIdx, 0);
                         pAuc->next    = auction_list;
                         auction_list  = pAuc;
                     }
