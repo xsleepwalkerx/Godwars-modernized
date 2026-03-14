@@ -32,7 +32,9 @@
 #include <string.h>
 #include <time.h>
 #include <unistd.h> /* unlink() */
-#include <crypt.h>  /* crypt() */
+#if !defined(_WIN32)
+#include <crypt.h>  /* crypt() — POSIX only, not available on Windows */
+#endif
 #include "merc.h"
 
 #include <ctype.h>
@@ -6811,8 +6813,11 @@ void do_deleteme( CHAR_DATA *ch, char *argument)
   	return;
    }
 
-    if ( strcmp( arg1, ch->pcdata->pwd ) &&
-         strcmp( crypt( arg1, ch->pcdata->pwd ), ch->pcdata->pwd ) )
+    if ( strcmp( arg1, ch->pcdata->pwd )
+#if !defined(_WIN32)
+      && strcmp( crypt( arg1, ch->pcdata->pwd ), ch->pcdata->pwd )
+#endif
+       )
     {
         WAIT_STATE( ch, 40 );
         send_to_char( "Wrong password.  Wait 10 seconds.\n\r", ch );
