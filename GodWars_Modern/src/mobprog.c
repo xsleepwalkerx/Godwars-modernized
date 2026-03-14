@@ -32,7 +32,9 @@
  *   mpcancel           -- cancel pending delay                           *
  ***************************************************************************/
 
+#if !defined(_WIN32)
 #include <sys/types.h>
+#endif
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>

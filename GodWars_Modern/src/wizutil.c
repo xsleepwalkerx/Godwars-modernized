@@ -24,7 +24,7 @@
 
 #if defined(macintosh)
 #include <types.h>
-#else
+#elif !defined(_WIN32)
 #include <sys/types.h>
 #endif
 #include <stdio.h>
@@ -32,7 +32,9 @@
 #include <string.h>
 #include <time.h>
 #include <assert.h>
+#if !defined(_WIN32)
 #include <unistd.h>
+#endif
 #include <string.h>
 #include "merc.h"
 

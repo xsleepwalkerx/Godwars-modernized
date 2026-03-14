@@ -6,7 +6,9 @@
  * Replace stubs with real implementations incrementally.
  */
 
+#if !defined(_WIN32)
 #include <sys/types.h>
+#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

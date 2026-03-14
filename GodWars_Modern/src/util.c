@@ -1,13 +1,18 @@
 #if defined(macintosh)
 #include <types.h>
-#else
+#elif !defined(_WIN32)
 #include <sys/types.h>
 #endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#if !defined(_WIN32)
 #include <unistd.h> /* unlink() */
+#else
+#include <io.h>
+#define unlink _unlink
+#endif
 #include "merc.h"
 
 extern int port, control;

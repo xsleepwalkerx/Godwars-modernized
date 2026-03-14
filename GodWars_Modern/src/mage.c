@@ -23,7 +23,9 @@
  */
 #include <stdio.h>
 #include <string.h>
+#if !defined(_WIN32)
 #include <sys/types.h>
+#endif
 #include <stdlib.h>
 #include "merc.h"
 

@@ -24,8 +24,12 @@
 #if defined(macintosh)
 #include <types.h>
 #elif defined(unix)
+#if !defined(_WIN32)
 #include <sys/types.h>
+#endif
+#if !defined(_WIN32)
 #include <sys/time.h>
+#endif
 #elif !defined(_WIN32)
 #include <sys/types.h>
 #endif
@@ -33,7 +37,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#if !defined(_WIN32)
 #include <unistd.h> /* unlink() */
+#else
+#include <io.h>
+#define unlink _unlink
+#endif
 #if !defined(_WIN32)
 #include <crypt.h>  /* crypt() — POSIX only, not available on Windows */
 #endif

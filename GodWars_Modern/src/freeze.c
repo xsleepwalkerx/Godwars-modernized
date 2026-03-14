@@ -74,7 +74,9 @@ them in the #define statements below.
 */
 
 #include <stdio.h>
+#if !defined(_WIN32)
 #include <sys/types.h>
+#endif
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>

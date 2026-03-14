@@ -17,7 +17,9 @@
 #if defined(macintosh) 
 #include <types.h> 
 #else 
+#if !defined(_WIN32)
 #include <sys/types.h>
+#endif
 #endif 
 #include <stdio.h> 
 #include <stdlib.h> 

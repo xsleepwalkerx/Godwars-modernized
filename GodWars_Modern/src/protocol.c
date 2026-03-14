@@ -14,12 +14,28 @@
  *   MXP    - MUD eXtension Protocol (clickable links)                     *
  ***************************************************************************/
 
+#if !defined(_WIN32)
 #include <sys/types.h>
+#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#if !defined(_WIN32)
 #include <arpa/telnet.h>
+#else
+/* Minimal telnet constants for Windows / Pelles C (arpa/telnet.h is POSIX-only) */
+#define IAC     255
+#define DONT    254
+#define DO      253
+#define WONT    252
+#define WILL    251
+#define SB      250
+#define SE      240
+#define TELOPT_ECHO     1
+#define TELOPT_NAWS     31
+#define TELOPT_TTYPE    24
+#endif
 
 #include "merc.h"
 #include "protocol.h"

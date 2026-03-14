@@ -1,6 +1,6 @@
 #if defined(macintosh)
 #include <types.h>
-#else
+#elif !defined(_WIN32)
 #include <sys/types.h>
 #endif
 #include <stdio.h>
@@ -8,7 +8,12 @@
 #include <string.h>
 #include <time.h>
 #include "merc.h"
-#include <unistd.h> /* Added by Aristoi for unlink */
+#if !defined(_WIN32)
+#include <unistd.h>
+#else
+#include <io.h>
+#define unlink _unlink
+#endif
 
 // Corpse Timers
 #define CS1 75

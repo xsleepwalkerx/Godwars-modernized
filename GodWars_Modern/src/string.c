@@ -22,7 +22,7 @@
 
 #if defined(macintosh)
 #include <types.h>
-#else
+#elif !defined(_WIN32)
 #include <sys/types.h>
 #endif
 #include <ctype.h>

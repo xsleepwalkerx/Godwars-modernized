@@ -24,11 +24,15 @@
  * A few minor extensions to spiff it up was made by Jobo.
  */
 
+#if !defined(_WIN32)
 #include <sys/types.h>
+#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#if !defined(_WIN32)
 #include <unistd.h>
+#endif
 #include <time.h>
 #include "merc.h"
 
