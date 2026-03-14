@@ -1561,7 +1561,7 @@ bool is_safe( CHAR_DATA *ch, CHAR_DATA *victim )
         return TRUE;
     }
 
-    if (ch->madness > 0 )
+    if (ch->madness != NULL )
     {
       if (victim->name == ch->madness)
       {
@@ -3900,7 +3900,7 @@ void do_kill( CHAR_DATA *ch, char *argument )
 	return;
     }
 
-    if (ch->madness > 0 )
+    if (ch->madness != NULL )
     {
       if (victim->name == ch->madness)
       {
