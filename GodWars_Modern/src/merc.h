@@ -2601,7 +2601,11 @@ extern int gsn_backfist;
 /*
  * File paths (additional).
  */
+#if defined(_WIN32)
+#define NULL_FILE   "NUL"
+#else
 #define NULL_FILE   "/dev/null"
+#endif
 #define PLAYER_DIR  "../player/"
 #define HOME_AREA   "../area/home.dat"  /* player home data file */
 
