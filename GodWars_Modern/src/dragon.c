@@ -69,11 +69,11 @@ void do_dragonform( CHAR_DATA *ch, char *argument )
 	case AGE_YOUNG:		sprintf(age, "%sA Young %s Dragon#n[#0%s#n]", c1, c2, ch->name);	break;
 	case AGE_JUVENILE:	sprintf(age, "%sA Juvenile %s Dragon#n[#0%s#n]", c1, c2, ch->name);	break;
 	case AGE_YADULT:	sprintf(age, "%sA Young Adult %s Dragon#n[#0%s#n]", c1, c2, ch->name);	break;
-	case AGE_ADULT:		sprintf(age, "%sAn Adult %s Dragon#n[#0%s#n]", c1, c2, ch->name);	break;
+	case 5:		sprintf(age, "%sAn Adult %s Dragon#n[#0%s#n]", c1, c2, ch->name);	break;
 	case AGE_MATURE:	sprintf(age, "%sA Mature Adult %s Dragon#n[#0%s#n]", c1, c2, ch->name);	break;
 	case AGE_OLD:		sprintf(age, "%sAn Old %s Dragon#n[#0%s#n]", c1, c2, ch->name);		break;
 	case AGE_VOLD:		sprintf(age, "%sA Very Old %s Dragon#n[#0%s#n]", c1, c2, ch->name);	break;
-	case AGE_ANCIENT:	sprintf(age, "%sAn Ancient %s Dragon#n[#0%s#n]", c1, c2, ch->name);	break;
+	case 9:	sprintf(age, "%sAn Ancient %s Dragon#n[#0%s#n]", c1, c2, ch->name);	break;
 	case AGE_WYRM:		sprintf(age, "%sA %s Wyrm#n[#0%s#n]", c1, c2, ch->name);		break;
 	case AGE_AWYRM:		sprintf(age, "%sAn Ancient %s Wyrm#n[#0%s#n]", c1, c2, ch->name);	break;
 	default:		stc("Bug, report to Akuma(age).\n\r", ch); return;
@@ -368,11 +368,11 @@ void do_dragonskill( CHAR_DATA *ch, char *argument )
 	    case AGE_YOUNG:      cost = 7500;   break;               /* -> Juvenile     */
 	    case AGE_JUVENILE:   cost = 10000;  break;               /* -> Young Adult  */
 	    case AGE_YADULT:     cost = 15000;  qpcost = 500;  break; /* -> Adult        */
-	    case AGE_ADULT:      cost = 25000;  qpcost = 1000; break; /* -> Mature Adult */
+	    case 5:              cost = 25000;  qpcost = 1000; break; /* -> Mature Adult (adult dragon) */
 	    case AGE_MATURE:     cost = 35000;  qpcost = 1500; break; /* -> Old          */
 	    case AGE_OLD:        cost = 50000;  qpcost = 2000; break; /* -> Very Old     */
 	    case AGE_VOLD:       cost = 70000;  qpcost = 2500; break; /* -> Ancient      */
-	    case AGE_ANCIENT:    cost = 100000; qpcost = 3000; break; /* -> Wyrm         */
+	    case 9:              cost = 100000; qpcost = 3000; break; /* -> Wyrm (ancient dragon) */
 	}
 
 	if (ch->pcdata->classpoints[CP_CURRENT] < cost || ch->pcdata->quest < qpcost)

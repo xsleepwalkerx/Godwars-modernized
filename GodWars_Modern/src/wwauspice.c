@@ -362,7 +362,7 @@ void do_lobotomy( CHAR_DATA *ch, char *argument )
     victim->mana -= victim->max_mana * .20;
     WAIT_STATE(ch, 12);
     if (victim->mana < 0) victim->mana = 0;
-    if (victim->fighting == NULL) multi_hit(victim,ch);
+    if (victim->fighting == NULL) multi_hit(victim,ch,TYPE_UNDEFINED);
     return;
 }
 

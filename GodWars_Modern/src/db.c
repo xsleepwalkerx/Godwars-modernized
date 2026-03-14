@@ -458,7 +458,8 @@ void boot_db( void )
 	load_disabled( );
 	load_bans( );
         load_leaderboard();
-	trivia_load( ); /* Load trivia question database */
+	trivia_load( );  /* Load trivia question database */
+	auction_load( ); /* Load auction house lots */
     }
 
     /* 

@@ -37,7 +37,7 @@
 
 
 
-int     get_ratio       args( ( CHAR_DATA *ch ) );
+long    get_ratio       args( ( CHAR_DATA *ch ) );
 
 char *	const	where_name	[] =
 {

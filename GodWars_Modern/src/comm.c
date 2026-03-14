@@ -311,7 +311,7 @@ int		    score_2 = 0;	/* Actual scores		*/
 int		    score_3 = 0;	/* Actual scores		*/
 int		    world_affects = 0;	/* World Affect bits		*/
 int		    bootcount = 0;	/* Used for timed reboots	*/
-int		    chainspell = 0;	/* Used for mage chain spells	*/
+long		    chainspell = 0;	/* Used for mage chain spells	*/
 extern              BAN_DATA          *     ban_list;
 
 

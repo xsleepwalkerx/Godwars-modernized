@@ -1160,7 +1160,7 @@ void do_mirageslice( CHAR_DATA *ch, char *argument ) {
     	act( "$n forms an illusionary double and both attack $N!", ch, NULL, victim, TO_NOTVICT);
     	for (loop = 1; loop <= 2; loop++)
     	{
-	   one_hit(ch, victim, TYPE_HIT, "mirage strike");
+	   one_hit(ch, victim, TYPE_HIT, 0);
     	}
     	WAIT_STATE(ch, 8);
 	return; 

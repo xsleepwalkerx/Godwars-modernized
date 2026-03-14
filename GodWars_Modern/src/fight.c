@@ -2771,7 +2771,11 @@ void raw_kill( CHAR_DATA *victim, CHAR_DATA *ch )
           ch->pcdata->quest += qpr;
         }
     }
-    if (IS_NPC(victim) && (IS_EXTRA(victim, EXTRA_ILLUSION) || 
+    /* Quest kill-task check (questmaster.c) */
+    if ( IS_NPC(victim) && !IS_NPC(ch) )
+        quest_kill_check( ch, victim );
+
+    if (IS_NPC(victim) && (IS_EXTRA(victim, EXTRA_ILLUSION) ||
 	IS_SPIRIT(victim)))
 	act("$n slowly fades away to nothing.",victim,NULL,NULL,TO_ROOM);
     else if (IS_NPC(victim) && strlen(victim->powertype) > 1 && 

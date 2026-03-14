@@ -43,14 +43,14 @@ O_FILES = \
 	highland.o   mage.o       random.o     sorcerer.o   stance.o    \
 	trap.o       wwauspice.o  wwbreed.o    wwtribe.o    \
 	\
-	protocol.o   mobprog.o
+	protocol.o   mobprog.o  stubs.o
 
 # ---------------------------------------------------------------------------
 TARGET = merc
 
 $(TARGET): $(O_FILES)
 	rm -f $(TARGET)
-	$(CC) $(L_FLAGS) -o $(TARGET) $(O_FILES)
+	$(CC) -o $(TARGET) $(O_FILES) $(L_FLAGS)
 
 .c.o: merc.h
 	$(CC) -c $(C_FLAGS) $<

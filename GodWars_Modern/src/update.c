@@ -3080,6 +3080,8 @@ void update_handler( void )
 	weather_update	( );
 	char_update	( );
 	trivia_update	( );
+	quest_update	( );
+	auction_update	( );
     }
 
     if ( --pulse_dtrap    <= 0)

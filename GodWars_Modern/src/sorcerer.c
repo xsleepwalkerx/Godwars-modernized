@@ -114,7 +114,10 @@ void do_colors( CHAR_DATA *ch, char *argument )
     }
 
     ch->primal -= cost;
-    ch->pcdata->colors[color]++;
+    {
+        int cidx = (color==PURPLE_MAGIC)?0:(color==RED_MAGIC)?1:(color==BLUE_MAGIC)?2:(color==GREEN_MAGIC)?3:(color==YELLOW_MAGIC)?4:5;
+        ch->pcdata->colors[cidx]++;
+    }
     sprintf(buf, "You use %i primal to improve your %s magic!\n\r", cost, argument);
     stc(buf, ch);
     return;

@@ -806,7 +806,7 @@ void do_enrage( CHAR_DATA *ch, char *argument )
 	    if (can_see(victim,vch))
 	    {
     
-		multi_hit( victim, vch);
+		multi_hit( victim, vch, TYPE_UNDEFINED);
 		number_hit++;
 	    }
 	}

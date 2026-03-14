@@ -134,8 +134,7 @@ void do_bloodpact( CHAR_DATA *ch, char *argument)
     }
     if ( IS_SET(victim->act,WAS_STAKED))
     {
-        send_to_char( "The taint of a vampire does not go well with fae blood. Best find someone 
-else.\n\r", ch );
+        send_to_char( "The taint of a vampire does not go well with fae blood. Best find someone else.\n\r", ch );
         return;
     }
     if (!IS_IMMUNE(victim,IMM_VAMPIRE))

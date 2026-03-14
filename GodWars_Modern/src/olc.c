@@ -51,7 +51,7 @@ extern          int                     top_ed;
 extern          int                     top_room;
 
 AREA_DATA		*	area_free;
-EXTRA_DESCR_DATA	*	extra_descr_free;
+/* extra_descr_free defined in db.c */
 EXIT_DATA		*	exit_free;
 ROOM_INDEX_DATA		*	room_index_free;
 OBJ_INDEX_DATA		*	obj_index_free;
@@ -2249,6 +2249,51 @@ void oedit( CHAR_DATA *ch, char *argument )
     }
 
 
+    /* Explicit 'type <name>' alias for setting item_type */
+    if ( !str_cmp( arg1, "type" ) )
+    {
+        if ( arg2[0] == '\0' )
+        {
+            send_to_char( "Syntax:  type [item type name]\n\r", ch );
+            return;
+        }
+        if ( ( value = item_name_type( arg2 ) ) == ITEM_NONE )
+        {
+            send_to_char( "OEdit:  Unknown item type.\n\r", ch );
+            return;
+        }
+        pObj->item_type = value;
+        SET_BIT( pArea->area_flags, AREA_CHANGED );
+        send_to_char( "Item type set.\n\r", ch );
+        return;
+    }
+
+    /* Explicit 'extra <flag>' alias for toggling extra flags */
+    if ( !str_cmp( arg1, "extra" ) )
+    {
+        if ( arg2[0] == '\0' )
+        { send_to_char( "Syntax:  extra [flag name]\n\r", ch ); return; }
+        if ( ( value = extra_name_bit( arg2 ) ) == EXTRA_NONE )
+        { send_to_char( "OEdit:  Unknown extra flag.\n\r", ch ); return; }
+        TOGGLE_BIT( pObj->extra_flags, value );
+        SET_BIT( pArea->area_flags, AREA_CHANGED );
+        send_to_char( "Extra flag toggled.\n\r", ch );
+        return;
+    }
+
+    /* Explicit 'wear <flag>' alias for toggling wear flags */
+    if ( !str_cmp( arg1, "wear" ) )
+    {
+        if ( arg2[0] == '\0' )
+        { send_to_char( "Syntax:  wear [flag name]\n\r", ch ); return; }
+        if ( ( value = wear_name_bit( arg2 ) ) == ITEM_WEAR_NONE )
+        { send_to_char( "OEdit:  Unknown wear flag.\n\r", ch ); return; }
+        TOGGLE_BIT( pObj->wear_flags, value );
+        SET_BIT( pArea->area_flags, AREA_CHANGED );
+        send_to_char( "Wear flag toggled.\n\r", ch );
+        return;
+    }
+
     interpret( ch, arg );
     return;
 }
@@ -2661,6 +2706,90 @@ void medit( CHAR_DATA *ch, char *argument )
         return;
     }
 
+
+    if ( !str_cmp( arg1, "hitroll" ) )
+    {
+        if ( arg2[0] == '\0' || !is_number( arg2 ) )
+        { send_to_char( "Syntax:  hitroll [number]\n\r", ch ); return; }
+        pMob->hitroll = atoi( arg2 );
+        SET_BIT( pArea->area_flags, AREA_CHANGED );
+        send_to_char( "Hitroll set.\n\r", ch );
+        return;
+    }
+
+    if ( !str_cmp( arg1, "ac" ) )
+    {
+        if ( arg2[0] == '\0' || !is_number( arg2 ) )
+        { send_to_char( "Syntax:  ac [number]\n\r", ch ); return; }
+        pMob->ac = atoi( arg2 );
+        SET_BIT( pArea->area_flags, AREA_CHANGED );
+        send_to_char( "Armor class set.\n\r", ch );
+        return;
+    }
+
+    if ( !str_cmp( arg1, "gold" ) )
+    {
+        if ( arg2[0] == '\0' || !is_number( arg2 ) )
+        { send_to_char( "Syntax:  gold [number]\n\r", ch ); return; }
+        pMob->gold = atoi( arg2 );
+        SET_BIT( pArea->area_flags, AREA_CHANGED );
+        send_to_char( "Gold set.\n\r", ch );
+        return;
+    }
+
+    if ( !str_cmp( arg1, "exp" ) )
+    {
+        if ( arg2[0] == '\0' || !is_number( arg2 ) )
+        { send_to_char( "Syntax:  exp [number]\n\r", ch ); return; }
+        pMob->exp = atoi( arg2 );
+        SET_BIT( pArea->area_flags, AREA_CHANGED );
+        send_to_char( "Exp set.\n\r", ch );
+        return;
+    }
+
+    if ( !str_cmp( arg1, "pos" ) || !str_cmp( arg1, "position" ) )
+    {
+        if ( arg2[0] == '\0' || !is_number( arg2 ) )
+        { send_to_char( "Syntax:  pos [0-6]\n\r", ch ); return; }
+        pMob->default_pos = atoi( arg2 );
+        SET_BIT( pArea->area_flags, AREA_CHANGED );
+        send_to_char( "Default position set.\n\r", ch );
+        return;
+    }
+
+    if ( !str_cmp( arg1, "damage" ) || !str_cmp( arg1, "dam" ) )
+    {
+        /* damage <ndice> <sdice> <plus> */
+        char a[16], b[16], c[16];
+        argument = one_argument( arg2, a );
+        argument = one_argument( argument, b );
+        one_argument( argument, c );
+        if ( a[0] == '\0' || b[0] == '\0' || c[0] == '\0' )
+        { send_to_char( "Syntax:  damage <ndice> <sdice> <plus>\n\r", ch ); return; }
+        pMob->damnodice  = atoi( a );
+        pMob->damsizedice = atoi( b );
+        pMob->damplus    = atoi( c );
+        SET_BIT( pArea->area_flags, AREA_CHANGED );
+        send_to_char( "Damage dice set.\n\r", ch );
+        return;
+    }
+
+    if ( !str_cmp( arg1, "hit" ) || !str_cmp( arg1, "hpdice" ) )
+    {
+        /* hit <ndice> <sdice> <plus> */
+        char a[16], b[16], c[16];
+        argument = one_argument( arg2, a );
+        argument = one_argument( argument, b );
+        one_argument( argument, c );
+        if ( a[0] == '\0' || b[0] == '\0' || c[0] == '\0' )
+        { send_to_char( "Syntax:  hit <ndice> <sdice> <plus>\n\r", ch ); return; }
+        pMob->hitnodice   = atoi( a );
+        pMob->hitsizedice = atoi( b );
+        pMob->hitplus     = atoi( c );
+        SET_BIT( pArea->area_flags, AREA_CHANGED );
+        send_to_char( "Hit dice set.\n\r", ch );
+        return;
+    }
 
     interpret( ch, arg );
     return;
@@ -4316,5 +4445,159 @@ void do_arealist( CHAR_DATA *ch, char *argument )
 	send_to_char( buf, ch );
     }
 
+    return;
+}
+
+/* -------------------------------------------------------------------------
+ * do_mlist — list all mobs in the builder's current area
+ * ------------------------------------------------------------------------- */
+void do_mlist( CHAR_DATA *ch, char *argument )
+{
+    extern MOB_INDEX_DATA *mob_index_hash[MAX_KEY_HASH];
+    MOB_INDEX_DATA *pMob;
+    AREA_DATA      *pArea;
+    char            buf[MAX_STRING_LENGTH];
+    int             i, count = 0;
+
+    if ( IS_NPC(ch) ) return;
+
+    pArea = ch->in_room ? ch->in_room->area : NULL;
+    if ( !pArea )
+    {
+        send_to_char( "You are not in any area.\n\r", ch );
+        return;
+    }
+
+    if ( !IS_BUILDER(ch, pArea) )
+    {
+        send_to_char( "You do not have builder access to this area.\n\r", ch );
+        return;
+    }
+
+    send_to_char( "[Vnum ] [Lvl] Mob Name\n\r", ch );
+    send_to_char( "------- ----- ----------------------------------------\n\r", ch );
+
+    for ( i = 0; i < MAX_KEY_HASH; i++ )
+    {
+        for ( pMob = mob_index_hash[i]; pMob != NULL; pMob = pMob->next )
+        {
+            if ( pMob->vnum < pArea->lvnum || pMob->vnum > pArea->uvnum ) continue;
+            sprintf( buf, "[%5d] [%3d] %s\n\r",
+                pMob->vnum, pMob->level,
+                pMob->short_descr ? pMob->short_descr : "(none)" );
+            send_to_char( buf, ch );
+            count++;
+        }
+    }
+
+    if ( count == 0 )
+        send_to_char( "No mobs found in this area.\n\r", ch );
+    else
+    {
+        sprintf( buf, "\n\r%d mob(s) listed.\n\r", count );
+        send_to_char( buf, ch );
+    }
+    return;
+}
+
+/* -------------------------------------------------------------------------
+ * do_olist — list all objects in the builder's current area
+ * ------------------------------------------------------------------------- */
+void do_olist( CHAR_DATA *ch, char *argument )
+{
+    extern OBJ_INDEX_DATA *obj_index_hash[MAX_KEY_HASH];
+    OBJ_INDEX_DATA *pObj;
+    AREA_DATA      *pArea;
+    char            buf[MAX_STRING_LENGTH];
+    int             i, count = 0;
+
+    if ( IS_NPC(ch) ) return;
+
+    pArea = ch->in_room ? ch->in_room->area : NULL;
+    if ( !pArea )
+    {
+        send_to_char( "You are not in any area.\n\r", ch );
+        return;
+    }
+
+    if ( !IS_BUILDER(ch, pArea) )
+    {
+        send_to_char( "You do not have builder access to this area.\n\r", ch );
+        return;
+    }
+
+    send_to_char( "[Vnum ] [Type     ] Object Name\n\r", ch );
+    send_to_char( "------- ----------- ----------------------------------------\n\r", ch );
+
+    for ( i = 0; i < MAX_KEY_HASH; i++ )
+    {
+        for ( pObj = obj_index_hash[i]; pObj != NULL; pObj = pObj->next )
+        {
+            if ( pObj->vnum < pArea->lvnum || pObj->vnum > pArea->uvnum ) continue;
+            sprintf( buf, "[%5d] [%-9s] %s\n\r",
+                pObj->vnum,
+                item_type_name(pObj->item_type),
+                pObj->short_descr ? pObj->short_descr : "(none)" );
+            send_to_char( buf, ch );
+            count++;
+        }
+    }
+
+    if ( count == 0 )
+        send_to_char( "No objects found in this area.\n\r", ch );
+    else
+    {
+        sprintf( buf, "\n\r%d object(s) listed.\n\r", count );
+        send_to_char( buf, ch );
+    }
+    return;
+}
+
+/* -------------------------------------------------------------------------
+ * do_rlist — list all rooms in the builder's current area
+ * ------------------------------------------------------------------------- */
+void do_rlist( CHAR_DATA *ch, char *argument )
+{
+    ROOM_INDEX_DATA *pRoom;
+    AREA_DATA       *pArea;
+    char             buf[MAX_STRING_LENGTH];
+    int              vnum, count = 0;
+
+    if ( IS_NPC(ch) ) return;
+
+    pArea = ch->in_room ? ch->in_room->area : NULL;
+    if ( !pArea )
+    {
+        send_to_char( "You are not in any area.\n\r", ch );
+        return;
+    }
+
+    if ( !IS_BUILDER(ch, pArea) )
+    {
+        send_to_char( "You do not have builder access to this area.\n\r", ch );
+        return;
+    }
+
+    send_to_char( "[Vnum ] Room Name\n\r", ch );
+    send_to_char( "------- ----------------------------------------\n\r", ch );
+
+    for ( vnum = pArea->lvnum; vnum <= pArea->uvnum; vnum++ )
+    {
+        pRoom = get_room_index(vnum);
+        if ( !pRoom ) continue;
+        sprintf( buf, "[%5d] %s\n\r",
+            pRoom->vnum,
+            pRoom->name ? pRoom->name : "(none)" );
+        send_to_char( buf, ch );
+        count++;
+    }
+
+    if ( count == 0 )
+        send_to_char( "No rooms found in this area.\n\r", ch );
+    else
+    {
+        sprintf( buf, "\n\r%d room(s) listed.\n\r", count );
+        send_to_char( buf, ch );
+    }
     return;
 }

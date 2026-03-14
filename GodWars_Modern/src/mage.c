@@ -1153,7 +1153,7 @@ void do_step_sideways(CHAR_DATA* ch, char * argument)
         return;
     }
 
-    if (IS_AFFECTED(ch, AFF_DEEPUMBRA))
+    if (IS_XTRA(ch, XTRA_DEEPUMBRA))
     {
 	send_to_char("You must leave the deep umbra first.\n\r", ch);
 	return;
@@ -1199,7 +1199,7 @@ void do_step_sideways(CHAR_DATA* ch, char * argument)
     }
     dam = 0;
 
-    for(loop = 0; loop < (ch->arete + ch->paradox - power); loop++)
+    for(loop = 0; loop < (ch->arete + ch->paradox[1] - power); loop++)
     {
 	if (number_range(1, 10) >= 6)	dam += number_range(1, 1000);
     }
@@ -1292,22 +1292,22 @@ void do_break_dreamshell(CHAR_DATA* ch, char * argument)
     }
     dam = 0;
 
-    for(loop = 0; loop < (ch->arete + ch->paradox - power); loop++)
+    for(loop = 0; loop < (ch->arete + ch->paradox[1] - power); loop++)
     {
         if (number_range(1, 10) >= 6)   dam += number_range(500, 2000);
     }
 
-    if (!IS_AFFECTED(ch, AFF_DEEPUMBRA))
+    if (!IS_XTRA(ch, XTRA_DEEPUMBRA))
     {
         send_to_char("You break through the dreamshell into the deep umbra.\n\r",ch);
         act("$n breaks through the dreamshell into the deep umbra.",ch,NULL,NULL,TO_ROOM);
-        SET_BIT(ch->affected_by, AFF_DEEPUMBRA);
+        SET_BIT(ch->xtra, XTRA_DEEPUMBRA);
         do_look(ch,"auto");
     }
 
     else
     {
-        REMOVE_BIT(ch->affected_by, AFF_DEEPUMBRA);
+        REMOVE_BIT(ch->xtra, XTRA_DEEPUMBRA);
         send_to_char("You break back through the dreamshell to the near umbra\n\r",ch);
         act("$n breaks back through the dreamshell to the near umbra.",ch,NULL,NULL,TO_ROOM);
         do_look(ch,"auto");
@@ -1644,13 +1644,13 @@ void backlash(CHAR_DATA *ch)
 
     dam = 0;
 
-    ch->paradox -= ch->paradox_ward;
+    ch->paradox[1] -= ch->paradox_ward;
     ch->paradox_ward = 0;
 
-    while(ch->paradox > 0)
+    while(ch->paradox[1] > 0)
     {
 	dam += number_range(250, 750);
-	ch->paradox--;
+	ch->paradox[1]--;
     }
 
     if (!IS_FLAG(ch, FLAG_PK)) dam /= 2; //making paradox not as bad for non-pks
@@ -1709,9 +1709,9 @@ void add_paradox(CHAR_DATA *ch, long highest_sphere, bool botch)
     else if (vulgar && witness && botch)
 	paradox = 2 * highest_sphere + 2;
 
-   if (!IS_AFFECTED(ch, AFF_DEEPUMBRA))    ch->paradox += paradox;
+   if (!IS_XTRA(ch, XTRA_DEEPUMBRA))    ch->paradox[1] += paradox;
 
-    if ((paradox > 5 || botch || ch->paradox > 40) && !IS_AFFECTED(ch, AFF_DEEPUMBRA))
+    if ((paradox > 5 || botch || ch->paradox[1] > 40) && !IS_XTRA(ch, XTRA_DEEPUMBRA))
 	backlash(ch);
 }
 
@@ -1759,7 +1759,7 @@ long spellpower(CHAR_DATA *ch, long highest_sphere)
 
     if (success > 0) success++; //counteracting the cost for correspondence 1
 
-    if (IS_AFFECTED(ch, AFF_DEEPUMBRA)) success *=2;
+    if (IS_XTRA(ch, XTRA_DEEPUMBRA)) success *=2;
 
     return success;
 

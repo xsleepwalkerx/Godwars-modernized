@@ -356,6 +356,14 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
 
 	fprintf( fp, "Bounty       %d\n", ch->pcdata->bounty );
 	fprintf( fp, "Quest        %d\n", ch->pcdata->quest );
+	fprintf( fp, "QuestType    %d\n", ch->pcdata->quest_type );
+	fprintf( fp, "QuestMob     %d\n", ch->pcdata->quest_mob );
+	fprintf( fp, "QuestObj     %d\n", ch->pcdata->quest_obj );
+	fprintf( fp, "QuestTimer   %d\n", ch->pcdata->quest_timer );
+	fprintf( fp, "QuestReward  %d\n", ch->pcdata->quest_reward );
+	fprintf( fp, "QuestCount   %d\n", ch->pcdata->quest_count );
+	fprintf( fp, "QuestFailed  %d\n", ch->pcdata->quest_failed );
+	fprintf( fp, "QuestWait    %d\n", ch->pcdata->quest_wait );
 	fprintf( fp, "Wolf         %d\n", ch->pcdata->wolf );
 	fprintf( fp, "Rank         %d\n", ch->pcdata->rank );
 	fprintf( fp, "Regenerate   %d\n", ch->pcdata->regenerate );
@@ -1272,6 +1280,11 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     }
 
     fpReserve = fopen( NULL_FILE, "r" );
+
+    /* Deliver any auction items won while this player was offline */
+    if ( found && d->character )
+        auction_deliver( d->character );
+
     return found;
 }
 
@@ -1743,6 +1756,11 @@ bool load_char_short( DESCRIPTOR_DATA *d, char *name )
     }
 
     fpReserve = fopen( NULL_FILE, "r" );
+
+    /* Deliver any auction items won while this player was offline */
+    if ( found && d->character )
+        auction_deliver( d->character );
+
     return found;
 }
 
@@ -2369,7 +2387,15 @@ void fread_char( CHAR_DATA *ch, FILE *fp )
                 break;
             }
 
-	    KEY( "Quest",        ch->pcdata->quest,	fread_number( fp ) );
+	    KEY( "Quest",        ch->pcdata->quest,       fread_number( fp ) );
+	    KEY( "QuestType",   ch->pcdata->quest_type,   fread_number( fp ) );
+	    KEY( "QuestMob",    ch->pcdata->quest_mob,    fread_number( fp ) );
+	    KEY( "QuestObj",    ch->pcdata->quest_obj,    fread_number( fp ) );
+	    KEY( "QuestTimer",  ch->pcdata->quest_timer,  fread_number( fp ) );
+	    KEY( "QuestReward", ch->pcdata->quest_reward, fread_number( fp ) );
+	    KEY( "QuestCount",  ch->pcdata->quest_count,  fread_number( fp ) );
+	    KEY( "QuestFailed", ch->pcdata->quest_failed, fread_number( fp ) );
+	    KEY( "QuestWait",   ch->pcdata->quest_wait,   fread_number( fp ) );
 	    break;
 
 	case 'R':

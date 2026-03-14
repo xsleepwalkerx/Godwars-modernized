@@ -153,6 +153,27 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define AGE_YOUTH           2
 #define AGE_ANCIENT         3
 
+/* Dragon age stages (dragon.c — vampgen 0..11, 12 stages)
+ * Note: AGE_ADULT=1 and AGE_ANCIENT=3 (werewolf) conflict with
+ * VYOUNG=1 and JUVENILE=3; those two cases use numeric literals in dragon.c.
+ */
+#define AGE_HATCHLING       0
+#define AGE_VYOUNG          1
+#define AGE_YOUNG           2
+#define AGE_JUVENILE        3
+#define AGE_YADULT          4
+/* stage 5: adult dragon — use literal 5 in switch (conflicts with AGE_ADULT=1) */
+#define AGE_MATURE          6
+#define AGE_OLD             7
+#define AGE_VOLD            8
+/* stage 9: ancient dragon — use literal 9 in switch (conflicts with AGE_ANCIENT=3) */
+#define AGE_WYRM            10
+#define AGE_AWYRM           11
+
+/* classpoints[] array indices */
+#define CP_CURRENT  0   /* classpoints[0] = current class points */
+#define CP_MAX      1   /* classpoints[1] = max class points */
+
 #define PARADOX_TICK        10
 #define MAX_SKILL          165
 #define MAX_SPELL           62
@@ -355,6 +376,10 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define DROW_MIGHT      32768
 #define DROW_TOUGH      65536
 #define DROW_GLOBE      262144
+#define DROW_MAX        DROW_GLOBE  /* highest DROW bit for iteration */
+
+/* EXTRA_VAMPIRE — extra bit marking a drow with vampire blood */
+#define EXTRA_VAMPIRE   EXTRA_NIGHTSHADE  /* reuse NIGHTSHADE bit as vampire mark */
 
 /*
  * Dragon ability bits — in pcdata->dragskills.
@@ -400,6 +425,17 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define SPHERE_FORCES           6
 #define SPHERE_MATTER           7
 #define SPHERE_TIME             8
+
+/* Short aliases for sphere indices (rot_wiz.c / magic.c) */
+#define MCOR    SPHERE_CORRESPONDENCE
+#define MLIF    SPHERE_LIFE
+#define MPRI    SPHERE_PRIME
+#define MENT    SPHERE_ENTROPY
+#define MMIN    SPHERE_MIND
+#define MSPI    SPHERE_SPIRIT
+#define MFOR    SPHERE_FORCES
+#define MMAT    SPHERE_MATTER
+#define MTIM    SPHERE_TIME
 
 /*
  * Combat Stances — pcdata->stance[0].
@@ -516,6 +552,7 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define PLR_NO_EMOTE        67108864
 #define PLR_NO_TELL         134217728
 #define PLR_WOLFMAN         268435456
+#define PLR_AUTOFOLLOW      536870912  /* autofollow ally flag */
 
 /*
  * Affected_by bits.
@@ -551,6 +588,8 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define AFF_JAIL            268435456
 #define AFF_TOTALBLIND      536870912
 #define AFF_NINJAHIDE       1073741824
+/* AFF_ANCHORED — used by CAN_SIT() to block sitting while anchored */
+#define AFF_ANCHORED        2147483648u
 
 /*
  * Item affect bits.
@@ -695,6 +734,9 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define EXTRA_INVIS_EMAIL   1073741824
 #define EXTRA_FAKE_CON      (int)2147483647
 #define EXTRA_STANCE        (int32_t)(-2147483648) /* bit 31 — auto-stance flag */
+
+/* EXTRA_CLEARED_EQ — used to track whether starter eq has been removed */
+#define EXTRA_CLEARED_EQ    EXTRA_FAKE_CON  /* alias: reuse bit */
 
 /* extra2 overflow bits — use IS_EXTRA2(ch, sn) and ch->extra2 field */
 #define EXTRA2_BORN         1       /* Character was properly born/initialized */
@@ -857,6 +899,7 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define ITEM_BOOK       33
 #define ITEM_PAGE       34
 #define ITEM_BOARD      35
+#define ITEM_PEN        36  /* pen (sorcerer spellbook writing tool) */
 
 /*
  * Wear locations.
@@ -905,6 +948,7 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define ITEM_WEAR_WRIST     4096
 #define ITEM_WIELD          8192
 #define ITEM_HOLD           16384
+#define ITEM_WEAR_HOLD      ITEM_HOLD   /* alias: hold slot wear flag */
 #define ITEM_WEAR_EYES      32768
 #define ITEM_WEAR_FACE      65536
 #define ITEM_WEAR_HORNS     131072
@@ -1086,6 +1130,11 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define EX_SECRET           256
 #define EX_TRAPPED          512     /* Genesis trap system */
 #define EX_BASHED           128     /* Door was bashed open */
+#define EX_BASHPROOF        256     /* Door cannot be bashed */
+
+/* Area flags */
+#define AREA_NONE           0       /* No area flags set */
+
 /* Area flags for OLC */
 #define AREA_LOADING        1       /* Area is being loaded (boot phase) */
 #define AREA_CHANGED        2       /* Area has unsaved OLC changes */
@@ -1328,6 +1377,7 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define GREEN_MAGIC     131072
 #define YELLOW_MAGIC    262144
 #define BLACK_MAGIC     524288
+#define RANDOM_MAGIC    (-1)    /* sentinel: pick random magic color */
 #define PURPLE_MAGIC    1048576
 
 /*
@@ -1472,6 +1522,28 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define MAGE_POLYAPPEAR     8       /* Mage power: polymorphic appearance */
 #define MAGE_BETTERBODY     16      /* Mage power: enhanced body */
 #define MFLAGS_DIMMAK       32      /* Mflags: dim mak (death touch) enabled */
+#define MAGE_PERCEPTION     64      /* Mage power: enhanced perception */
+#define MAGE_SHAPED         128     /* Mage power: shapeshifted (spirit) */
+#define MAGE_INROOM_GATE    1       /* Ward gate obj value: in-room side */
+#define MAGE_TOROOM_GATE    2       /* Ward gate obj value: to-room side */
+
+/* Mage damage type constants (passed to mage_damage()) */
+#define MAGEDAM_ELECTRIC    1
+#define MAGEDAM_ICESTORM    2
+#define MAGEDAM_QUINT       3
+#define MAGEDAM_OTHER       4
+
+/* Immunity level indices (ch->imms[]) */
+#define IMMUNITY    0
+#define RESISTANCE  1
+#define VULNERABLE  2
+
+/* Object vnum: ward gate (warlock portal) */
+#define OBJ_VNUM_WGATE      100
+
+/* Quest enchantment flag (mage item enchanting) */
+#define QUEST_MAGEENCHANT   (1 << 13)
+#define QUEST_SORCENCHANT   (1 << 14)  /* sorcerer enchant applied */
 
 /* Sphere indices (shortcuts matching mage.h SPHERE_* for convenience) */
 #define MENT    4   /* SPHERE_MIND */
@@ -1555,7 +1627,33 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 /*
  * affected_by2 bits (ch->affected_by2).
  */
-#define AF2_GARGOYLE    1
+#define AF2_GARGOYLE        1
+#define AF2_PERMEATE        2       /* koe permeate state active */
+#define AF2_PLACATE         4       /* koe placate state active */
+#define AF2_TOTALBLIND      8       /* total blindness effect */
+
+/* APPLY_AFF2: affect location type for affected_by2 modifications */
+#define APPLY_AFF2          100
+
+/* Special character flags (ch->special) */
+#define SPC_PRINCE          1       /* character is a Kindred prince */
+#define SPC_AKUMA           2       /* character is Akuma (infernal pact) */
+
+/* Universal affect index (pcdata->stats[] slot for affect flags) */
+#define UNI_AFF             2       /* stats[2] = universal affect bitfield */
+
+/* Additional POLY form bits */
+#define POLY_SHADOWDEMON    131072
+#define POLY_SHADOWBERSERKER 262144
+#define POLY_SHADOWMONKEY   524288
+#define POLY_BLACKTORTOISE  1048576
+#define POLY_WHITETIGER     2097152
+#define POLY_SCARLETPHOENIX 4194304
+#define POLY_HIMA           8388608
+#define POLY_CHINGSHIH      16777216
+
+/* SITEM_WOLFWEAPON — weapon is usable in wolf form */
+#define SITEM_WOLFWEAPON    2
 
 /*
  * Exit wall/ward flags (exit_data->exit_info additions).
@@ -1691,10 +1789,69 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define QUEST_SPELLPROOF    (1 << 0)
 #define OBJ_VNUM_ASHES      2
 
+/* Object quest bitflags for naming/enchanting (kav_wiz.c / magic.c) */
+#define QUEST_NAME          (1 << 9)    /* item has been named */
+#define QUEST_SHORT         (1 << 10)   /* short desc customised */
+#define QUEST_LONG          (1 << 11)   /* long desc customised */
+#define QUEST_FREENAME      (1 << 12)   /* free renaming token */
+
+/* qstats[] array indices */
+#define QS_HIT      0
+#define QS_DAM      1
+#define QS_AC       2
+#define QS_TOTAL    3   /* total qstat bonus index */
+
+/* Armor color constant (additional) */
+#define ARM_PURPLE  4
+
+/* Object vnum: blank notepaper */
+#define OBJ_VNUM_NOTEPAPER  77
+
 /*
- * Character color scale constants.
+ * Quest task type constants (questmaster.c).
  */
-#define COL_SCALE           30
+#define QTYPE_NONE          0
+#define QTYPE_KILL          1   /* Kill a specific mob vnum  */
+#define QTYPE_FETCH         2   /* Return a specific obj vnum to questmaster */
+
+#define QUEST_COOLDOWN      5   /* Ticks to wait between quests              */
+#define QUEST_DURATION      10  /* Ticks before quest expires (10 min)       */
+#define QUEST_KEYWORD       "questmaster"  /* Keyword NPCs must have         */
+
+/*
+ * Auction house constants and structures (auction.c).
+ */
+#define AUCTION_FILE        "../area/auction.dat"
+#define AUCTION_DURATION    30          /* Ticks an auction runs (30 min)    */
+#define AUCTION_MIN_BID     100         /* Absolute floor for opening bid    */
+#define AUCTION_MAX         10          /* Max simultaneous lots             */
+#define AUCTION_BID_STEP    10          /* Minimum raise over current bid    */
+
+typedef struct auction_data AUCTION_DATA;
+struct auction_data
+{
+    AUCTION_DATA   *next;
+    OBJ_DATA       *obj;            /* item being auctioned (detached)   */
+    char            seller[50];     /* name of the seller                */
+    char            bidder[50];     /* name of current high bidder       */
+    int32_t         min_bid;        /* opening / minimum bid in QP       */
+    int32_t         cur_bid;        /* current high bid in QP            */
+    int32_t         timer;          /* ticks remaining                   */
+    int32_t         lot;            /* sequential lot number             */
+};
+
+/*
+ * COL_SCALE(buf, ch, cur, max) — write a color-coded numeric value into buf
+ * based on what percentage cur is of max (green/yellow/orange/red).
+ */
+#define COL_SCALE(buf, ch, cur, max)                                    \
+    do {                                                                  \
+        int _pct = ((max) > 0) ? ((cur) * 100 / (max)) : 0;             \
+        if      (_pct >= 75) sprintf((buf), "#G%d#n", (cur));            \
+        else if (_pct >= 50) sprintf((buf), "#Y%d#n", (cur));            \
+        else if (_pct >= 25) sprintf((buf), "#y%d#n", (cur));            \
+        else                 sprintf((buf), "#R%d#n", (cur));            \
+    } while (0)
 
 /*
  * Armor color constants.
@@ -1702,6 +1859,18 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define ARM_RED             1
 #define ARM_BLACK           2
 #define ARM_MIDNIGHT        3
+#define ARM_BLUE            5
+#define ARM_IVORY           6
+#define ARM_WHITE           7
+#define ARM_SILVER          8
+
+/* Demon special power flags (ch->pcdata->powers[0]) — additional */
+#define DEM_DEMONFORM       (1 << 17)  /* demon's true form active */
+#define DEM_IMP             (1 << 18)  /* demon imp power unlocked */
+#define DEM_LIFESPAN        (1 << 19)  /* demon extended lifespan */
+
+/* Room vnum: Heaven */
+#define ROOM_VNUM_HEAVEN    30001
 
 /*
  * Worn/wear bit constants.
@@ -1720,6 +1889,8 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define EXTRA_EXP           2
 #define AREA_ADDED          1
 #define DISABLED_FILE       "disabled.txt"
+#define COPYOVER_FILE       "copyover.data"
+#define EXE_FILE            "../src/merc"
 
 /*
  * More bits for vampire coterie/power system.
@@ -1731,11 +1902,6 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
  */
 #define UPPER(c)            ((c) >= 'a' && (c) <= 'z' ? (c) - 'a' + 'A' : (c))
 #define LOWER(c)            ((c) >= 'A' && (c) <= 'Z' ? (c) - 'A' + 'a' : (c))
-
-/*
- * Mage sphere index for elemental magic.
- */
-#define MSPI                0
 
 /*
  * Vampire discipline power constants (indexed by discipline).
@@ -1781,6 +1947,8 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define COT_ADV_STANCE      1
 #define COT_GOLCONDA        2
 #define COT_NO_DIABLERIE    4
+#define COT_NO_KILL_SECT    8   /* coterie members cannot kill sect members */
+#define COT_NO_KILL_COTERIE 16  /* coterie members cannot kill each other */
 
 /*
  * Celerity resistance constant.
@@ -2217,15 +2385,20 @@ extern int gsn_backfist;
 #define LOC_LEG_L   4
 #define LOC_LEG_R   5
 
-/*
- * AWARE constant (combat awareness flag on ch->spectype).
- */
+/* AWARE — combat awareness spectype flag AND monk awareness-path array index */
 #define AWARE       1
 
 /*
- * SPIRIT constant (for IS_SPIRIT check via ch->more).
+ * Zombie NPC AI state constants (ch->spectype for zombies).
  */
-#define SPIRIT      MORE_SPIRIT
+#define ZOMBIE_NOTHING      0
+#define ZOMBIE_REST         1
+#define ZOMBIE_TRACKING     2
+#define ZOMBIE_ANIMATE      3
+#define ZOMBIE_CAST         4
+
+/* SPIRIT — monk spirit-path array index (IS_SPIRIT() uses MORE_SPIRIT directly) */
+#define SPIRIT      2
 
 /*
  * WAS_STAKED constant.
@@ -2236,8 +2409,173 @@ extern int gsn_backfist;
  * Werewolf/Ninja constants.
  */
 #define NEW_MONKSKIN    1
+#define NEW_MONKFLAME   2   /* monk: flame aura */
+#define NEW_MONKADAM    4   /* monk: adamantine skin */
+#define NEW_POWER       8   /* monk: power-up newbit */
 #define NPOWER_NINGENNO 3
+
+/* Monk power index in powers[] */
+#define PMONK   20          /* index into ch->pcdata->powers[] for monk level */
+
+/* Focus / chi array indices (ch->focus[], ch->chi[]) */
+#define CURRENT 0           /* focus[CURRENT] / chi[CURRENT] = current points */
+#define MAXFOC  1           /* focus[MAXFOC]  = max focus */
+/* MAXIMUM=1 already defined below for chi */
+
+/*
+ * Monk fighting-system technique bits (ch->monkstuff — IS_SET bitfield).
+ */
+#define TECH_KNEE       1
+#define TECH_SWEEP      2
+#define TECH_ELBOW      4
+#define TECH_THRUST     8
+#define TECH_SPIN       16
+#define TECH_BACK       32
+#define TECH_PALM       64
+#define TECH_SHIN       128
+
+/* Free-stance sub-technique bits (monkstuff, higher bits) */
+#define FS_TRIP         256
+#define FS_KICK         512
+#define FS_BASH         1024
+#define FS_ELBOW        2048
+#define FS_KNEE         4096
+#define FS_DISARM       8192
+#define FS_BITE         16384
+#define FS_DIRT         32768
+#define FS_GRAPPLE      65536
+#define FS_PUNCH        131072
+#define FS_RIP          262144
+#define FS_STAMP        524288
+#define FS_BACKFIST     1048576
+#define FS_JUMPKICK     2097152
+#define FS_SPINKICK     4194304
+#define FS_CHARGE       8388608
+#define FS_HURL         16777216
+#define FS_GOUGE        33554432
+#define FS_HEADBUTT     67108864
+#define FS_SWEEP        134217728
+
+/*
+ * Monk combo-step bits (ch->monkcrap — IS_SET bitfield).
+ */
+#define COMB_SHIN       1
+#define COMB_KNEE       2
+#define COMB_THRUST1    4
+#define COMB_THRUST2    8
 #define TOTEM_SPIDER    3
+#define TOTEM_OWL       4   /* werewolf totem: owl */
+#define TOTEM_BEAR      5   /* werewolf totem: bear */
+
+/* Array index constants shared across multiple struct arrays:
+ *   quint[4]:  BODY=0, AVATAR=1, PRIME=2, MTOTAL=3
+ *   monkab[4]: BODY=0, AWARE=1, SPIRIT=2, COMBAT=3
+ *   chi[2]:    CURRENT=0, MAXIMUM=1
+ *   focus[2]:  CURRENT=0, MAXIMUM=1
+ */
+#define BODY    0
+#define AVATAR  1
+#define PRIME   2
+#define MTOTAL  3   /* quint[3] = total mage quintessence */
+#define COMBAT  3   /* monkab[3] = combat monk path (shares value with MTOTAL; different arrays) */
+/* AWARE=1, SPIRIT=2 are already defined above */
+
+/* chi[]/focus[] */
+#define MAXIMUM 1
+
+/* Room type flag: deathtrap */
+#define ROOM_DEATHTRAP  (1 << 20)
+
+/* Object vnum: empty dragon egg */
+#define OBJ_VNUM_EMPTY_EGG  55
+
+/* Missing colour constant */
+#define GREY            7   /* terminal grey / dark-white colour index */
+
+/* Missing demon power flag */
+#define DEM_MAGIC       65536   /* demon special power: magic resistance */
+
+/* Object vnums (additional) */
+#define OBJ_VNUM_BLOOD_SPRING   77  /* blood-pool spring object */
+
+/* Quest-related object flags (magic enchanting) */
+#define QUEST_ENCHANTED     256     /* item has been magically enchanted */
+#define QUEST_AGGRAVATED    512     /* item deals aggravated damage */
+
+/* Extra character flags (additional) */
+#define EXTRA_SUMMON        EXTRA_AFK      /* char can be summoned (alias) */
+#define EXTRA_MARK          (1 << 25)      /* char is marked for tracking */
+
+/* IS_XTRA — test a bit in ch->xtra */
+#define IS_XTRA(ch, bit)    (IS_SET((ch)->xtra, (bit)))
+
+/* Xtra bits (ch->xtra bitfield) */
+#define XTRA_HEARTS_BLOOD   (1 << 0)   /* mage: hearts blood active */
+#define XTRA_TENEBROUS      (1 << 10)  /* vampire: tenebrous form */
+#define XTRA_ATONING        (1 << 11)  /* elemental: atoning winds */
+#define XTRA_LIQUIFY        (1 << 12)  /* elemental: liquify form */
+#define XTRA_SLOW           (1 << 13)  /* elemental: slow effect */
+#define XTRA_DEEPUMBRA      (1 << 14)  /* mage: in the deep umbra */
+#define XTRA_MAGE_CARESS    (1 << 15)  /* mage: spirit caress active */
+#define XTRA_HOLY_SMOTE     (1 << 16)  /* mage: holy smote active */
+#define XTRA_MUTATE_EPHEMERA (1 << 17) /* mage: mutate ephemera active */
+#define XTRA_BETTER_STR     (1 << 18)  /* mage: better body STR */
+#define XTRA_BETTER_DEX     (1 << 19)  /* mage: better body DEX */
+#define XTRA_BETTER_CON     (1 << 20)  /* mage: better body CON */
+#define XTRA_BETTER_INT     (1 << 21)  /* mage: better body INT */
+#define XTRA_BETTER_WIS     (1 << 22)  /* mage: better body WIS */
+
+/* Poly bits for polyaff field (higher range to avoid conflicts) */
+#define POLY_CHIMERA        (1 << 25)  /* monk chimera polymorph */
+#define POLY_PIG            (1 << 26)  /* mage pig polymorph */
+
+/* Mage craft bits (stub — malleable is a bodycraft ability) */
+#define IS_CRAFT(ch, bit)   (0)
+#define CRAFT_MALLEABLE     1
+
+/* Level constants */
+#define LEV_SLE             (LEVEL_MORTAL)  /* sleepwalker: mortal-level witness */
+#define LEV_AWA             (LEVEL_MORTAL)  /* awakened: minimum level after wipe */
+#define LEV_IMP             (LEVEL_IMPLEMENTOR) /* implementor level threshold */
+
+/* Ninja array indices for pcdata->ninja[5] */
+#define NINJA_KI            0
+#define NINJA_CHIKYU        1   /* earth element */
+#define NINJA_NINGENNO      2   /* human relation / ninjutsu */
+#define NINJA_TAIJUTSU      3
+#define NINJA_BUJUTSU       4
+
+/* Accessor macros for class-specific skill arrays */
+#define get_ninja(ch, idx)    (!IS_NPC(ch) ? (ch)->pcdata->ninja[(idx)] : 0)
+#define get_highland(ch, idx) (!IS_NPC(ch) ? (ch)->pcdata->highland[(idx)] : 0)
+
+/* Player backup directory */
+#define BACKUP_DIR          "../backup/"
+
+/* pcdata->highland[4] array indices */
+#define HIGH_ATTACK         0
+#define HIGH_DEFENSE        1
+#define HIGH_WEAPON         2
+#define HIGH_ABILITY        3
+
+/* pcdata->flag bitfield constants (Genesis sorcerer / player flags) */
+#define IS_FLAG(ch, bit)    (!IS_NPC(ch) && IS_SET((ch)->pcdata->flag, (bit)))
+#define FLAG_RP             1
+#define FLAG_PK             2
+#define FLAG_TEST           4
+#define FLAG_AFK            8
+#define FLAG_PIMP           16
+#define FLAG_KINKY          32
+#define FLAG_CCC            64
+#define FLAG_LAZY           128
+
+/* ITEMA_ bits (additional) */
+#define ITEMA_FLAMING       (1 << 25)  /* weapon aflame */
+#define ITEMA_AQUABARRIER   (1 << 26)  /* item has aqua barrier */
+#define ITEMA_AURA          (1 << 27)  /* item has elemental aura */
+
+/* POLY form bits (additional) */
+#define POLY_PHOENIXFORM    (1 << 19)  /* elemental phoenix form */
 
 /*
  * Spell target types (additional).
@@ -2248,7 +2586,14 @@ extern int gsn_backfist;
  * Room VNUMs (additional).
  */
 #define ROOM_VNUM_HELL  30050
+#define ROOM_VNUM_BANK      3700    /* bank room for account transactions */
+#define ROOM_VNUM_FREEZE    30003   /* freeze-tag game staging room */
+#define GAME_ON             TAG_PLAYING  /* freeze-tag: player is in active game */
 #define ABS_MOB_VNUM    30000
+
+/* absorb[] array indices (pcdata->absorb[6]) */
+#define ABS_MOB_HP      4   /* absorb[4] = stored mob HP for possession */
+#define ABS_MOB_MAX_HP  5   /* absorb[5] = stored mob max HP */
 
 /*
  * Mob VNUMs (additional).
@@ -2260,6 +2605,7 @@ extern int gsn_backfist;
  */
 #define NULL_FILE   "/dev/null"
 #define PLAYER_DIR  "../player/"
+#define HOME_AREA   "../area/home.dat"  /* player home data file */
 
 /*
  * Macro for minimum mob VNUM.
@@ -2460,6 +2806,7 @@ struct room_index_data
     int32_t             track_dir[5];   /* Directions of tracked characters          */
     OBJ_DATA           *to_obj;        /* Object this room is inside (if any)       */
     int32_t             passed;         /* Pathfinding / visited flag               */
+    TRAP_DATA          *trap;           /* Genesis: trap attached to room           */
 };
 
 struct shop_data
@@ -2515,13 +2862,29 @@ struct mob_index_data
 struct trap_data
 {
     TRAP_DATA  *next;
-    int32_t     type;
+    int32_t     type;       /* TRAP_* flag bits */
     int32_t     level;
     int32_t     charges;
     int32_t     trigger;
     int32_t     value;
+    int32_t     diff;       /* dodge difficulty check */
+    int32_t     numhits;    /* damage: number of hits */
+    int32_t     lodam;      /* damage: low damage */
+    int32_t     hidam;      /* damage: high damage */
+    int32_t     spellsn;    /* spell skill number to apply */
+    int32_t     movevnum;   /* teleport: destination room vnum */
+    int32_t     summonvnum; /* summon: mob vnum to summon */
     char       *name;
+    char       *charmess;   /* message shown to trapped char */
+    char       *roommess;   /* message shown to room */
+    char       *dammess;    /* damage message prefix */
 };
+
+/* TRAP_DATA flags (trap->type bitmask) */
+#define IS_TRAP(trap, bit)  (IS_SET((trap)->type, (bit)))
+#define TRAP_SILENT         1   /* no avoidance message */
+#define TRAP_ALARM          2   /* send alarm to info channel */
+#define TRAP_AREA           4   /* affects all in room, not just triggerer */
 
 /*
  * Time & weather.
@@ -2591,6 +2954,8 @@ typedef struct map_type
 {
     int32_t  vnum;
     int32_t  depth;
+    int32_t  info;      /* room_flags or exit_info for this cell */
+    bool     can_see;   /* whether the cell is visible */
     char     tegn;
 } MAP_TYPE;
 
@@ -2762,7 +3127,7 @@ struct char_data
     int32_t             flag2;
     int32_t             focus[2];
     int32_t             spheres[9];
-    int32_t             quint[3];
+    int32_t             quint[4];           /* BODY, AVATAR, PRIME, MTOTAL */
 
     /* Misc fields */
     int32_t             newbits;
@@ -2770,6 +3135,15 @@ struct char_data
     int32_t             death_timer;
     int32_t             save_timer;
     int32_t             shadowtimer;
+    int32_t             enrage_timer;       /* berserk/enrage countdown */
+    int32_t             liquify_timer;      /* genesis liquify effect */
+    int32_t             atoningwinds_timer; /* genesis atoning winds */
+    int32_t             slow_timer;         /* genesis slow effect */
+    int32_t             better_body_timer;  /* genesis better body */
+    int32_t             ephemera_timer;     /* genesis ephemeral state */
+    int32_t             polymorph_timer;    /* mage polymorph countdown */
+    int32_t             doublecast_timer;   /* mage double-cast cooldown */
+    int32_t             beginners_luck;     /* mage beginners luck active */
     int32_t             goblinspark;
     int32_t             imms[3];
     int32_t             mflags;
@@ -2821,6 +3195,7 @@ struct pc_data
     char           *bamfin;
     char           *bamfout;
     char           *title;
+    char           *pretit;             /* pretitle prefix shown before name */
     char           *conception;
     char           *parents;
     char           *cparents;
@@ -2995,6 +3370,20 @@ struct pc_data
 
     /* Genesis sorcerer flag */
     int32_t         flag;
+
+    /* Body modification / demon affinity bitfields */
+    int32_t         modifiers;          /* IS_MOD() — MOD_* body mod flags */
+    int32_t         demaff;             /* IS_DEMAFF() — DEM_* demon aff flags */
+
+    /* Quest task system (questmaster.c) */
+    int32_t         quest_type;     /* QTYPE_* — active quest type, 0 = none */
+    int32_t         quest_mob;      /* mob vnum for kill tasks */
+    int32_t         quest_obj;      /* obj vnum for fetch tasks */
+    int32_t         quest_timer;    /* ticks remaining before expiry */
+    int32_t         quest_reward;   /* QP reward on completion */
+    int32_t         quest_count;    /* lifetime quests completed */
+    int32_t         quest_failed;   /* lifetime quests failed */
+    int32_t         quest_wait;     /* cooldown ticks after last quest */
 };
 
 
@@ -3230,13 +3619,41 @@ typedef struct wiznet_type  { char *name; long flag; int16_t level; }           
 
 /* Character permission/status macros */
 #define IS_JUDGE(ch)        (get_trust(ch) >= LEVEL_JUDGE)
+
+/* Staff level shorthand macros */
+#define IS_IMP(ch)          (!IS_NPC(ch) && (ch)->level >= LEVEL_IMPLEMENTOR)
+#define IS_ST(ch)           (!IS_NPC(ch) && (ch)->level >= LEVEL_ENFORCER)
+#define IS_IMM(ch)          (!IS_NPC(ch) && (ch)->level >= LEVEL_IMMORTAL)
+#define IS_BUI(ch)          (!IS_NPC(ch) && (ch)->level >= LEVEL_BUILDER)
+#define IS_AWA(ch)          (!IS_NPC(ch) && IS_MAGE(ch))   /* Awakened = mage */
+
+/* Class-specific affinity macros */
+#define IS_ELEM(ch)         IS_ELEMENTAL(ch)
+#define IS_AFF2(ch, bit)    (IS_SET((ch)->affected_by2, (bit)))
+#define IS_KOEAFF(ch, bit)  (!IS_NPC(ch) && IS_SET((ch)->pcdata->powers[KOE_CURRENT], (bit)))
+#define IS_DRAGAFF(ch, bit) (!IS_NPC(ch) && IS_SET((ch)->pcdata->dragskills, (bit)))
+#define get_drow(ch, bit)   (!IS_NPC(ch) ? IS_SET((ch)->pcdata->drow[0], (bit)) : 0)
+
+/* PK eligibility check — single char */
+#define CAN_PK(ch)          (!IS_NPC(ch) && IS_FLAG((ch), FLAG_PK))
+
+/* Auto-map boundary check */
+#define BOUNDARY(x, y)      ((x) < 0 || (x) > MAPX || (y) < 0 || (y) > MAPY)
+
+/* Stat accessor macro */
+#define char_stat(ch, stat) \
+    ((stat) == STAT_STR ? get_curr_str(ch) : \
+     (stat) == STAT_INT ? get_curr_int(ch) : \
+     (stat) == STAT_WIS ? get_curr_wis(ch) : \
+     (stat) == STAT_DEX ? get_curr_dex(ch) : \
+     (stat) == STAT_CON ? get_curr_con(ch) : 0)
 #define IS_QUESTMAKER(ch)   (get_trust(ch) >= LEVEL_QUESTMAKER)
 #define IS_MOD(ch, bit)     (IS_SET((ch)->pcdata->modifiers, (bit)))
 #define IS_IMMUNE(ch, bit)  (IS_SET((ch)->immune, (bit)))
-#define IS_WILLPOWER(ch)    (!IS_NPC(ch) && (ch)->pcdata->willpower > 0)
+#define IS_WILLPOWER(ch, bit) (!IS_NPC(ch) && IS_SET((ch)->pcdata->resist[0], (bit)))
 #define IS_NEWBIE(ch)       (IS_SET((ch)->act, PLR_NEWBIE))
 #define IS_FORM(ch, bit)    (IS_SET((ch)->form, (bit)))
-#define IS_DEMPOWER(ch, bit) (IS_SET((ch)->pcdata->powers, (bit)))
+#define IS_DEMPOWER(ch, bit) (IS_SET((ch)->pcdata->powers[0], (bit)))
 #define IS_DEMAFF(ch, bit)  (IS_SET((ch)->pcdata->demaff, (bit)))
 #define CAN_SIT(ch)         (!IS_SET((ch)->affected_by, AFF_ANCHORED))
 
@@ -3278,6 +3695,9 @@ typedef struct wiznet_type  { char *name; long flag; int16_t level; }           
 #define REMOVE_BIT(var, bit)    ((var) &= ~(bit))
 #define IS_SET(flag, bit)       ((flag) & (bit))
 #define TOGGLE_BIT(var, bit)    ((var) ^= (bit))
+
+/* STR — null-safe struct field accessor returning "" if field is NULL */
+#define STR(ptr, field) ((ptr) && (ptr)->field ? (ptr)->field : "")
 
 #define UMIN(a, b)  ((a) < (b) ? (a) : (b))
 #define UMAX(a, b)  ((a) > (b) ? (a) : (b))
@@ -3355,6 +3775,14 @@ extern WEATHER_DATA     weather_info;
 extern DXP_DATA         dxp_info;
 extern MAP_TYPE         map[MAPX + 1][MAPY + 1];
 
+/* Score tracking globals (defined in comm.c) */
+extern char             first_place[40];
+extern char             second_place[40];
+extern char             third_place[40];
+extern int              score_1;
+extern int              score_2;
+extern int              score_3;
+
 /* Fight list */
 extern CHAR_DATA        *first_fight;
 extern CHAR_DATA        *last_fight;
@@ -3396,7 +3824,7 @@ extern char    *last_user;
 /* World affect flags (declared in comm.c) */
 extern int      world_affects;
 extern int      bootcount;
-extern int      chainspell;
+extern long     chainspell;
 
 /* GSN skill numbers (declared in db.c) */
 extern int      gsn_charm_person;
@@ -3505,7 +3933,8 @@ void    mageupkeep          ( CD *ch );
 void    check_leaderboard   ( CD *ch, char *argument );
 void    load_leaderboard    ( void );
 void    save_leaderboard    ( void );
-int     strlen2             ( const char *s );
+long    strlen2             ( const char *s );
+long    get_ratio           ( CHAR_DATA *ch );
 
 /* M2.c (EM utility functions) */
 void    append_decap    ( CD *ch, char *file, char *str );
@@ -3533,8 +3962,6 @@ void    act2            ( const char *format, CD *ch,
                           const void *arg1, const void *arg2, int type );
 void    kavitem         ( const char *format, CD *ch,
                           const void *arg1, const void *arg2, int type );
-void    logf            ( char *fmt, ... );
-
 /* db.c */
 char   *print_flags     ( int flag );
 void    boot_db         ( void );
@@ -3723,7 +4150,7 @@ void    part_reg        ( CD *ch );
 void    reg_mend        ( CD *ch );
 void    vamp_rage       ( CD *ch );
 bool    char_exists     ( int file_dir, char *argument );
-OD     *get_page        ( OD *book, int page_num );
+OD     *get_page        ( OD *book, long page_num );
 void    update_gen      ( CD *ch );
 int     true_generation ( CD *ch, char *argument );
 void    mummify_corpse  ( CD *ch, OD *obj );
@@ -3792,7 +4219,7 @@ void    do_setflag      ( CD *ch, char *argument );
 void    update_style    ( CD *ch );
 void    improve_stance  ( CD *ch );
 void    improve_style   ( CD *ch );
-void    improve_weapon  ( CD *ch, int skill );
+void    improve_weapon  ( CD *ch, long skill );
 
 /* trap.c (Genesis) */
 void    trigger_trap    ( CD *ch, TRAP_DATA *trap );
@@ -4767,15 +5194,40 @@ extern void     trivia_update        ( void );
 extern void     auto_copyover        ( void );
 extern void     cptimer_check        ( void );
 
+/* Quest task system (questmaster.c) */
+DECLARE_DO_FUN( do_questmaster       );
+DECLARE_DO_FUN( do_complete          );
+DECLARE_DO_FUN( do_questinfo         );
+extern void     quest_update         ( void );
+
+/* Auction house (auction.c) */
+DECLARE_DO_FUN( do_auction           );
+extern void     auction_load         ( void );
+extern void     auction_save         ( void );
+extern void     auction_update       ( void );
+extern void     auction_deliver      ( CHAR_DATA *ch );
+
+/* OLC extended (olc.c) */
+DECLARE_DO_FUN( do_mlist             );
+DECLARE_DO_FUN( do_olist             );
+DECLARE_DO_FUN( do_rlist             );
+
+/* Missing utility functions (defined in stubs.c) */
+extern long     get_color            ( CHAR_DATA *ch, long color );
+extern bool     hurt_fighting        ( CHAR_DATA *ch, CHAR_DATA *victim );
+extern void     quest_kill_check     ( CHAR_DATA *ch, CHAR_DATA *victim );
+extern long     mod_damcap           ( CHAR_DATA *ch, CHAR_DATA *victim );
+extern LEADER_BOARD leader_board;
+
 /* Non-DO_FUN function prototypes */
 extern void clear_stats( CHAR_DATA *ch );
-extern void one_hit( CHAR_DATA *ch, CHAR_DATA *victim, int dt );
-extern void improve_wpn( CHAR_DATA *ch, CHAR_DATA *victim, int dt );
+extern void one_hit( CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype );
+extern void improve_wpn( CHAR_DATA *ch, int dtype, bool right_hand );
 extern void disarm( CHAR_DATA *ch, CHAR_DATA *victim );
 extern void raw_kill( CHAR_DATA *ch, CHAR_DATA *victim );
-extern void critical_hit( CHAR_DATA *ch, CHAR_DATA *victim, int dt );
-extern void crack_head( CHAR_DATA *ch, CHAR_DATA *victim );
-extern void make_part( CHAR_DATA *ch, int part );
+extern void critical_hit( CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam );
+extern void crack_head( CHAR_DATA *ch, OBJ_DATA *obj, char *argument );
+extern void make_part( CHAR_DATA *ch, char *argument );
 extern void take_item( CHAR_DATA *ch, OBJ_DATA *obj );
 extern void mud_logf( char *fmt, ... );
 

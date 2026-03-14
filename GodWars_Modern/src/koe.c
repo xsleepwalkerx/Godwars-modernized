@@ -403,9 +403,8 @@ void do_kdiscipline(CHAR_DATA * ch, char *argument)
 		|| ch->pcdata->powers[KOE_DYANG] > 10
 		|| ch->pcdata->powers[KOE_BLACKWIND] > 10) 
 		{
-		send_to_char("You are already devoted to a 
-			     discipline.\n \r ", ch);
-			     return;
+		send_to_char("You are already devoted to a discipline.\n\r", ch);
+			return;
 	        }
 	} 
 	else if (!str_cmp(arg1, "Blackwind")) 
@@ -417,9 +416,8 @@ void do_kdiscipline(CHAR_DATA * ch, char *argument)
 		|| ch->pcdata->powers[KOE_DYANG] > 10
 		|| ch->pcdata->powers[KOE_DYIN] > 10) 
 		{
-		send_to_char("You are already devoted to a 
-			     discipline.\n\r ", ch);
-			     return;
+		send_to_char("You are already devoted to a discipline.\n\r", ch);
+			return;
 	        }
 	} 
 	else 

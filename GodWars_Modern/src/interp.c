@@ -951,10 +951,10 @@ LOG_NORMAL },*/
     /*
      * Online creation commands.
      */
-    { "aedit",		do_aedit,	POS_DEAD,	12,  LOG_NORMAL },
-    { "redit",		do_redit,	POS_DEAD,	12,  LOG_NORMAL },
-    { "oedit",          do_oedit,	POS_DEAD,	12,  LOG_NORMAL },
-    { "medit",          do_medit,	POS_DEAD,	12,  LOG_NORMAL },
+    { "aedit",		do_aedit,	POS_DEAD,	 7,  LOG_NORMAL },
+    { "redit",		do_redit,	POS_DEAD,	 7,  LOG_NORMAL },
+    { "oedit",          do_oedit,	POS_DEAD,	 7,  LOG_NORMAL },
+    { "medit",          do_medit,	POS_DEAD,	 7,  LOG_NORMAL },
 
     { "ashow",          do_ashow,	POS_DEAD,	 7,  LOG_NORMAL },
     { "rshow",          do_rshow,	POS_DEAD,	 7,  LOG_NORMAL },
@@ -963,7 +963,7 @@ LOG_NORMAL },*/
 
     { "resets",         do_resets,      POS_DEAD,	 7,  LOG_NORMAL },
 
-    { "asave",          do_asave,	POS_DEAD,	 12,  LOG_NORMAL },
+    { "asave",          do_asave,	POS_DEAD,	  7,  LOG_NORMAL },
 
     { "alist",		do_arealist,	POS_DEAD,	 7,  LOG_NORMAL },
 
@@ -998,6 +998,19 @@ LOG_NORMAL },*/
 	{ "bluetalk",       do_blue,    POS_RESTING,     0,  LOG_NORMAL },
 
 
+
+
+    /* Quest system */
+    { "questmaster",   do_questmaster, POS_STANDING,    0,  LOG_NORMAL },
+    { "questinfo",      do_questinfo,   POS_SLEEPING,    0,  LOG_NORMAL },
+
+    /* Auction house */
+    { "auction",        do_auction,     POS_SLEEPING,    0,  LOG_NORMAL },
+
+    /* OLC builder list commands */
+    { "mlist",          do_mlist,       POS_DEAD,        7,  LOG_NORMAL },
+    { "olist",          do_olist,       POS_DEAD,        7,  LOG_NORMAL },
+    { "rlist",          do_rlist,       POS_DEAD,        7,  LOG_NORMAL },
 
     /*
      * End of list.
