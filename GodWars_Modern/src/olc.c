@@ -4453,7 +4453,6 @@ void do_arealist( CHAR_DATA *ch, char *argument )
  * ------------------------------------------------------------------------- */
 void do_mlist( CHAR_DATA *ch, char *argument )
 {
-    extern MOB_INDEX_DATA *mob_index_hash[MAX_KEY_HASH];
     MOB_INDEX_DATA *pMob;
     AREA_DATA      *pArea;
     char            buf[MAX_STRING_LENGTH];
@@ -4505,7 +4504,6 @@ void do_mlist( CHAR_DATA *ch, char *argument )
  * ------------------------------------------------------------------------- */
 void do_olist( CHAR_DATA *ch, char *argument )
 {
-    extern OBJ_INDEX_DATA *obj_index_hash[MAX_KEY_HASH];
     OBJ_INDEX_DATA *pObj;
     AREA_DATA      *pArea;
     char            buf[MAX_STRING_LENGTH];

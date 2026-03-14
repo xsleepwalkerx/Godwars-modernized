@@ -46,6 +46,11 @@
 #include <time.h>
 #include <stdarg.h>
 
+extern bool merc_down;
+extern bool wizlock;
+extern bool newbielock;
+extern int  port, control;
+
 
 
 
@@ -1537,7 +1542,6 @@ void do_mstat( CHAR_DATA *ch, char *argument )
 
 void do_mfind( CHAR_DATA *ch, char *argument )
 {
-    extern int top_mob_index;
     char buf[MAX_STRING_LENGTH];
     char arg[MAX_INPUT_LENGTH];
     MOB_INDEX_DATA *pMobIndex;
@@ -1588,7 +1592,6 @@ void do_mfind( CHAR_DATA *ch, char *argument )
 
 void do_ofind( CHAR_DATA *ch, char *argument )
 {
-    extern int top_obj_index;
     char buf[MAX_STRING_LENGTH];
     char arg[MAX_INPUT_LENGTH];
     OBJ_INDEX_DATA *pObjIndex;
@@ -1797,13 +1800,11 @@ void do_reboo( CHAR_DATA *ch, char *argument )
 void do_reboot( CHAR_DATA *ch, char *argument )
 {
     char buf[MAX_STRING_LENGTH];
-    extern int bootcount;
     int boottime;
 
     if (argument[0] == '\0')
     {
 	char buf[MAX_STRING_LENGTH];
-	extern bool merc_down;
 	sprintf( buf, "Reboot by %s.", ch->name );
 	do_echo( ch, buf );
 	do_forceauto(ch,"save");
@@ -1845,7 +1846,6 @@ void do_shutdow( CHAR_DATA *ch, char *argument )
 void do_shutdown( CHAR_DATA *ch, char *argument )
 {
     char buf[MAX_STRING_LENGTH];
-    extern bool merc_down;
     if((str_cmp(ch->name, "Kaelas")) && ch->trust < 12)
     {
     send_to_char( "Sorry, Coder and Imp use only.\n\r", ch);
@@ -3171,7 +3171,6 @@ void do_allow( CHAR_DATA *ch, char *argument )
 
 void do_wizlock( CHAR_DATA *ch, char *argument )
 {
-    extern bool wizlock;
     char buf[MAX_STRING_LENGTH];
 
     sprintf(buf,"%s: Wizlock %s",ch->name,argument);
@@ -3188,7 +3187,6 @@ void do_wizlock( CHAR_DATA *ch, char *argument )
 
 void do_newbielock( CHAR_DATA *ch, char *argument )
 {
-    extern bool newbielock;
     char buf[MAX_STRING_LENGTH];
 
     sprintf(buf,"%s: Newbielock %s",ch->name,argument);
@@ -6535,7 +6533,6 @@ void do_copyover (CHAR_DATA *ch, char * argument)
         FILE *fp;
         DESCRIPTOR_DATA *d, *d_next;
         char buf [100], buf2[100];
-	extern int port,control; /* db.c */
 
         fp = fopen (COPYOVER_FILE, "w");
       

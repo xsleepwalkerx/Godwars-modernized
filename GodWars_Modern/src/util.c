@@ -10,6 +10,7 @@
 #include <unistd.h> /* unlink() */
 #include "merc.h"
 
+extern int port, control;
 
 /*
  * Local Defines
@@ -83,7 +84,6 @@ void auto_copyover(void)
     DESCRIPTOR_DATA *d, *d_next;
     CHAR_DATA *ch;
     char buf [100], buf2[100];
-    extern int port, control;
 
     cptimer = 0;
     fp = fopen (COPYOVER_FILE, "w");

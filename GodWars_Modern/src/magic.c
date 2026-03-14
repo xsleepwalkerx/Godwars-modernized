@@ -33,6 +33,7 @@
 #include <time.h>
 #include "merc.h"
 
+extern bool fBootDb;
 
 
 /*
@@ -142,7 +143,6 @@ int skill_lookup( const char *name )
  */
 int slot_lookup( int slot )
 {
-    extern bool fBootDb;
     int sn;
 
     if ( slot <= 0 )

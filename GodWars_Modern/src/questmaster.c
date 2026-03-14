@@ -27,7 +27,6 @@
  * Requirements: NPC, not in the same area as the player, level >= ch->level. */
 static MOB_INDEX_DATA *pick_quest_mob( CHAR_DATA *ch )
 {
-    extern MOB_INDEX_DATA *mob_index_hash[MAX_KEY_HASH];
     MOB_INDEX_DATA *pMob;
     MOB_INDEX_DATA *candidates[64];
     int             ncand = 0;
@@ -56,7 +55,6 @@ static MOB_INDEX_DATA *pick_quest_mob( CHAR_DATA *ch )
  * Requirements: not a quest item, not a corpse, accessible vnum. */
 static OBJ_INDEX_DATA *pick_quest_obj( CHAR_DATA *ch )
 {
-    extern OBJ_INDEX_DATA *obj_index_hash[MAX_KEY_HASH];
     OBJ_INDEX_DATA *pObj;
     OBJ_INDEX_DATA *candidates[64];
     int             ncand = 0;

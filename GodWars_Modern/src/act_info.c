@@ -35,6 +35,7 @@
 #include <time.h>
 #include "merc.h"
 
+extern char str_boot_time[];
 
 
 long    get_ratio       args( ( CHAR_DATA *ch ) );
@@ -2492,7 +2493,6 @@ char *	const	month_name	[] =
 
 void do_time( CHAR_DATA *ch, char *argument )
 {
-    extern char str_boot_time[];
     char buf[MAX_STRING_LENGTH];
     char *suf;
     int day;

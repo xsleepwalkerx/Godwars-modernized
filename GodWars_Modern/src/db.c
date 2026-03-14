@@ -1412,7 +1412,6 @@ void load_notes( void )
  */
 void fix_exits( void )
 {
-    extern const int rev_dir [];
     char buf[MAX_STRING_LENGTH];
     ROOM_INDEX_DATA *pRoomIndex;
     ROOM_INDEX_DATA *to_room;

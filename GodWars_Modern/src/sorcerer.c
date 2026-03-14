@@ -526,7 +526,6 @@ void do_chant( CHAR_DATA *ch, char *argument )
     OBJ_DATA *book;
     OBJ_DATA *page;
     char arg[MIL];
-    extern long chainspell;
 
     chainspell = 0;
 
@@ -582,7 +581,6 @@ void adv_spell_damage( CHAR_DATA *ch, OBJ_DATA *book, OBJ_DATA *page, char *argu
     char buf[MSL];
     int cost, dam, color = page->toughness;
     bool aggy = FALSE, area = FALSE, heal = FALSE, spec = FALSE;
-    extern long chainspell;
 
     if (++chainspell > 10) return;
 
@@ -797,7 +795,6 @@ void adv_spell_affect( CHAR_DATA *ch, OBJ_DATA *book, OBJ_DATA *page, char *argu
     long bonuses, sn, color = page->toughness, duration = page->level, cost = 1500 + 30*duration;
     long affect_bit = page->value[3], apply_bit = page->value[1];
     bool any_affects = FALSE;
-    extern long chainspell;
 
     if (++chainspell > 10) return;
 
@@ -985,7 +982,6 @@ void adv_spell_action( CHAR_DATA *ch, OBJ_DATA *book, OBJ_DATA *page, char *argu
     char arg[MSL];
     char buf[MSL];
     long color = page->toughness, cost = 3000;
-    extern long chainspell;
 
     if (++chainspell > 10) return;
 

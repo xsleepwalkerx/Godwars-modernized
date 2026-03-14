@@ -57,6 +57,7 @@
 
 #include "merc.h"
 
+extern char *help_greeting;
 
 /*
  * Malloc debugging stuff.
@@ -614,7 +615,6 @@ void game_loop_mac_msdos( void )
      * Send the greeting.
      */
     {
-	extern char * help_greeting;
 	if ( help_greeting[0] == '.' )
 	    write_to_buffer( &dcon, help_greeting+1, 0 );
 	else
@@ -1114,7 +1114,6 @@ void new_descriptor( int control )
      * Send the greeting.
      */
     {
-	extern char * help_greeting;
 	if ( help_greeting[0] == '.' )
 	    write_to_buffer( dnew, help_greeting+1, 0 );
 	else
@@ -1510,7 +1509,6 @@ wiznet(log_buf,d->character,NULL,WIZ_SPAM,0,get_trust(d->character));
  */
 bool process_output( DESCRIPTOR_DATA *d, bool fPrompt )
 {
-    extern bool merc_down;
 
     /*
      * Bust a prompt.
@@ -2694,7 +2692,6 @@ bool check_parse_name( char *name )
     /*
      * Prevent players from naming themselves after mobs.
     {
-	extern MOB_INDEX_DATA *mob_index_hash[MAX_KEY_HASH];
 	MOB_INDEX_DATA *pMobIndex;
 	int iHash;
 

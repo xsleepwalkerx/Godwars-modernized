@@ -32,6 +32,7 @@
 #include <time.h>
 #include "merc.h"
 
+extern bool merc_down;
 
 
 /*
@@ -2702,7 +2703,6 @@ void update_handler( void )
 	CHAR_DATA *ch = NULL;
 	CHAR_DATA *ch_next = NULL;
 	int sn;
-	extern int bootcount;
 	pulse_gain_exp	= PULSE_GAIN_EXP;
 	if (bootcount > 0)
 	{
@@ -2721,7 +2721,6 @@ void update_handler( void )
 	    if (strlen(buf) > 2) sysmes(buf);
 	    if (bootcount <= 0)
 	    {
-		extern bool merc_down;
 		for ( ch = char_list; ch != NULL; ch = ch_next )
 		{
 		    ch_next = ch->next;
