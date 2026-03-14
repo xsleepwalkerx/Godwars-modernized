@@ -11,6 +11,7 @@
 #include <unistd.h> /* unlink() */
 #else
 #include <io.h>
+#include <process.h>
 #define unlink _unlink
 #endif
 #include "merc.h"
@@ -139,11 +140,15 @@ void auto_copyover(void)
 
     sprintf(buf,  "%d", port);
     sprintf(buf2, "%d", control);
+#if !defined(_WIN32)
     execl(EXE_FILE, "merc", buf, "copyover", buf2, (char *) NULL);
 
     /* If we reach here execl() failed */
     perror("auto_copyover: execl");
     mud_logf("auto_copyover: execl failed!");
+#else
+    mud_logf("auto_copyover: copyover not supported on Windows.");
+#endif
     /* fpReserve is closed — nothing safe to send_to_char */
 }
 

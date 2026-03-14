@@ -6645,7 +6645,7 @@ void copyover_recover ()
 #if !defined(_WIN32)
                         close (desc); /* nope */
 #else
-                        closesocket (desc); /* nope */
+                        _close (desc); /* nope */
 #endif
                         continue;
                 }
