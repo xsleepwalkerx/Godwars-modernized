@@ -41,6 +41,7 @@
 #include <unistd.h> /* unlink() */
 #else
 #include <io.h>
+#include <process.h>  /* _execl */
 #define unlink _unlink
 #endif
 #if !defined(_WIN32)
@@ -6595,11 +6596,15 @@ void do_copyover (CHAR_DATA *ch, char * argument)
 
         sprintf (buf, "%d", port);
         sprintf (buf2, "%d", control);
+#if !defined(_WIN32)
         execl (EXE_FILE, "merc", buf, "copyover", buf2, (char *) NULL);
 
         /* Failed - sucessful exec will not return */
 
         perror ("do_copyover: execl");
+#else
+        send_to_char ("Copyover is not supported on Windows.\n\r", ch);
+#endif
         send_to_char ("Copyover FAILED!\n\r",ch);
 
         /* Here you might want to reopen fpReserve */
@@ -6637,7 +6642,11 @@ void copyover_recover ()
                 /* Write something, and check if it goes error-free */
                 if (!write_to_descriptor (desc, "\n\rRestoring from copyover...\n\r",0))
                 {
+#if !defined(_WIN32)
                         close (desc); /* nope */
+#else
+                        closesocket (desc); /* nope */
+#endif
                         continue;
                 }
 

@@ -4487,7 +4487,7 @@ DECLARE_DO_FUN( do_close        );
 DECLARE_DO_FUN( do_command      );
 DECLARE_DO_FUN( do_commands     );
 DECLARE_DO_FUN( do_compare      );
-DECLARE_DO_FUN( do_complete     );
+DECLARE_DO_FUN( do_questcard    );
 DECLARE_DO_FUN( do_conditioning );
 DECLARE_DO_FUN( do_config       );
 DECLARE_DO_FUN( do_consent      );
@@ -5191,7 +5191,8 @@ DECLARE_DO_FUN( do_mortalvamp        );
 DECLARE_DO_FUN( do_bountylist        );
 
 /* Trivia system (trivia.c) */
-DECLARE_DO_FUN( do_answer            );
+bool trivia_is_active( void );
+void do_trivia_answer(CHAR_DATA *ch, char *argument);
 DECLARE_DO_FUN( do_trivia            );
 extern void     trivia_load          ( void );
 extern void     trivia_update        ( void );

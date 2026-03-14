@@ -13,6 +13,10 @@
 #include <time.h>
 #include "merc.h"
 
+#if defined(_WIN32)
+#define strncasecmp _strnicmp
+#endif
+
 /*--------------------------------------------------------------------------
  * Constants
  *--------------------------------------------------------------------------*/
@@ -215,7 +219,12 @@ void trivia_update(void)
  * do_answer
  * Player command: answer <text>
  *--------------------------------------------------------------------------*/
-void do_answer(CHAR_DATA *ch, char *argument)
+bool trivia_is_active( void )
+{
+    return trivia_state == TRIVIA_ACTIVE && trivia_current >= 0;
+}
+
+void do_trivia_answer(CHAR_DATA *ch, char *argument)
 {
     char buf[MAX_STRING_LENGTH];
 

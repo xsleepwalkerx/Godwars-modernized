@@ -3379,7 +3379,7 @@ void quest_object( CHAR_DATA *ch, OBJ_DATA *obj )
 */
 }
 
-void do_complete( CHAR_DATA *ch, char *argument )
+void do_questcard( CHAR_DATA *ch, char *argument )
 {
     char buf[MAX_STRING_LENGTH];
     char arg1[MAX_INPUT_LENGTH];

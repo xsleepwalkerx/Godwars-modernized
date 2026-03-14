@@ -480,6 +480,13 @@ void do_question( CHAR_DATA *ch, char *argument )
 
 void do_answer( CHAR_DATA *ch, char *argument )
 {
+    /* If a trivia question is live, handle it and skip the Q&A channel */
+    if ( trivia_is_active() )
+    {
+        do_trivia_answer( ch, argument );
+        return;
+    }
+
     if (IS_SET(ch->deaf, CHANNEL_QUESTION) )
     {
         send_to_char("You aren't on that channel!\n\r", ch);

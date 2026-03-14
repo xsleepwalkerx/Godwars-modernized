@@ -298,6 +298,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "call",		do_call,	POS_FIGHTING,	 0,  LOG_NORMAL	},
     { "claim",		do_claim,	POS_STANDING,	 0,  LOG_NORMAL	},
     { "complete",	do_complete,	POS_FIGHTING,	 0,  LOG_NORMAL	},
+    { "questcard",	do_questcard,	POS_FIGHTING,	 0,  LOG_NORMAL	},
     { "consen",		do_huh,		POS_STANDING,	 1,  LOG_NORMAL	},
     { "consent",	do_consent,	POS_STANDING,	 1,  LOG_NORMAL	},
     { "demote",		do_demote,	POS_STANDING,	 0,  LOG_NORMAL },
