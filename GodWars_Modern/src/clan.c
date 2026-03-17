@@ -6131,7 +6131,7 @@ void do_discipline( CHAR_DATA *ch, char *argument )
     char arg  [MAX_INPUT_LENGTH];
     char buf  [MAX_INPUT_LENGTH];
     char disc [25];
-    int  improve;
+    int  improve = -1;
     int  cost;
     int  max_d = (IS_ABOMINATION(ch) || IS_LICH(ch) || IS_BAALI(ch)) ? 4 : 5;
     int  sn, col;
@@ -9775,12 +9775,12 @@ void do_autoclass( CHAR_DATA *ch, char *argument )
 
     if ( !str_cmp( arg, "mage" ))
     {
-       if (  (ch->spl[RED_MAGIC] < 150)
-           ||(ch->spl[GREEN_MAGIC] < 150)
-	   ||(ch->spl[BLUE_MAGIC] < 150)
-	   ||(ch->spl[YELLOW_MAGIC] < 150)
-	   ||(ch->spl[PURPLE_MAGIC] < 150)
-	   ||(ch->spl[BLACK_MAGIC] < 150) )
+       if (  (ch->spl[SPL_RED] < 150)
+           ||(ch->spl[SPL_GREEN] < 150)
+	   ||(ch->spl[SPL_BLUE] < 150)
+	   ||(ch->spl[SPL_YELLOW] < 150)
+	   ||(ch->spl[SPL_PURPLE] < 150)
+	   ||(ch->spl[SPL_BLACK] < 150) )
        {	
 	   send_to_char("You must practice all magic to 150 to become a mage.\n\r", ch);
 	   return;

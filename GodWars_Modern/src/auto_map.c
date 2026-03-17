@@ -97,7 +97,7 @@ void clear_room( int x, int y )
 /* This function is recursive, ie it calls itself */
 void map_exits(CHAR_DATA *ch, ROOM_INDEX_DATA *pRoom, int x, int y, int depth)
 {
-  static char map_chars [4] = "|-|-";
+  static char map_chars [5] = "|-|-";
   int door;
   int exitx = 0, exity = 0;
   int roomx = 0, roomy = 0;

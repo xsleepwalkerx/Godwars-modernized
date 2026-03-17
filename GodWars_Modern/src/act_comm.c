@@ -2974,7 +2974,7 @@ void do_command( CHAR_DATA *ch, char *argument )
 	    	act("$s mind is too strong to overcome.",victim,NULL,ch,TO_VICT);
 		continue;
 	    }
-	    else if ( IS_NPC(victim) && victim->spl[BLUE_MAGIC] >= level )
+	    else if ( IS_NPC(victim) && victim->spl[SPL_BLUE] >= level )
 	    {
 		act("You shake off $N's suggestion.",victim,NULL,ch,TO_CHAR);
 		act("$n shakes off $N's suggestion.",victim,NULL,ch,TO_NOTVICT);
@@ -3138,7 +3138,7 @@ void do_command( CHAR_DATA *ch, char *argument )
     }
     
 	if ( IS_NPC(victim) && 
-	( victim->level >= level || victim->spl[BLUE_MAGIC] >= level ) )
+	( victim->level >= level || victim->spl[SPL_BLUE] >= level ) )
     {
 	act("You shake off $N's suggestion.",victim,NULL,ch,TO_CHAR);
 	act("$n shakes off $N's suggestion.",victim,NULL,ch,TO_NOTVICT);

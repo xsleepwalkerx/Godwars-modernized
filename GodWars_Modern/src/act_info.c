@@ -3481,7 +3481,7 @@ ch );
 void do_inventory( CHAR_DATA *ch, char *argument )
 {
     char buf[MAX_INPUT_LENGTH];
-    OBJ_DATA *obj;
+    OBJ_DATA *obj = NULL;
     OBJ_DATA *portal;
     OBJ_DATA *portal_next;
     ROOM_INDEX_DATA *pRoomIndex;

@@ -315,7 +315,7 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define DISC_SPIRITUS           15
 #define DISC_THAUMATURGY        16
 #define DISC_VICISSITUDE        17
-#define DISC_MAX                18
+#define DISC_MAX                23  /* raised: DISC_THANATOSIS=22 is highest index */
 
 /*
  * Werewolf Breed — indices into pcdata->breed[].
@@ -1379,6 +1379,13 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define BLACK_MAGIC     524288
 #define RANDOM_MAGIC    (-1)    /* sentinel: pick random magic color */
 #define PURPLE_MAGIC    1048576
+/* spl[] array indices — one per magic colour (spl has 6 elements, 0-5) */
+#define SPL_PURPLE  0
+#define SPL_RED     1
+#define SPL_BLUE    2
+#define SPL_GREEN   3
+#define SPL_YELLOW  4
+#define SPL_BLACK   5
 
 /*
  * Additional vampire discipline indices.
@@ -3292,7 +3299,7 @@ struct pc_data
     int32_t         cland[3];
     int32_t         tgift[3];
     int32_t         diableries[2];
-    int32_t         resist[6];
+    int32_t         resist[9];  /* raised: WILL_PRESENCE=8 is highest timer index */
 
     /* Werewolf subsystems (Genesis) */
     int32_t         breed[3];

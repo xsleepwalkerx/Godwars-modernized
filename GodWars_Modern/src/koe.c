@@ -1040,7 +1040,7 @@ void do_bloodawaken(CHAR_DATA * ch, char *argument)
     if (is_safe(ch, victim))
 	return;
 
-    dam = ch->spl[RED_MAGIC] * 4;
+    dam = ch->spl[SPL_RED] * 4;
 
     sprintf(buf, "Your awaken the blood within $N! [%d]\n\r", dam);
     act(buf, ch, NULL, victim, TO_CHAR);
@@ -1435,36 +1435,36 @@ void do_whitetigercorpse(CHAR_DATA * ch, char *argument)
 	act("$n opens $s mouth at you and expells the 5 poison cloud at your direction!", ch, NULL, victim, TO_VICT);
 
 	if ((IS_KOE(victim)) || IS_VAMPIRE(victim))
-	    level = ch->spl[RED_MAGIC] * 2;
-	else level = ch->spl[RED_MAGIC] / 2;
+	    level = ch->spl[SPL_RED] * 2;
+	else level = ch->spl[SPL_RED] / 2;
 	act("$n opens $s mouth at you and expells a blast of #Rfire#n in your direction!", ch, NULL, victim, TO_ROOM);
 	act("You open your mouth and expell a blast of #Rfire#n at $N!", ch, NULL, victim, TO_CHAR);
 	act("$n opens $s mouth and expells a blast of #Rfire#n at $N.", ch, NULL, victim, TO_NOTVICT);
 	hurt_person(ch, victim, level, FALSE);
 	/*
-	 * if (IS_CLASS(victim, CLASS_WRAITH)) level = ch->spl[YELLOW_MAGIC] *
+	 * if (IS_CLASS(victim, CLASS_WRAITH)) level = ch->spl[SPL_YELLOW] *
 	 * 2; else
 	 */
-	level = ch->spl[YELLOW_MAGIC] * 2;
+	level = ch->spl[SPL_YELLOW] * 2;
 	act("$n opens $s mouth at you and expells a bolt of #ylightning#n in your direction!", ch, NULL, victim, TO_ROOM);
 	act("You open your mouth at $s and expell a bolt of #ylightning#n!", ch, NULL, victim, TO_CHAR);
 	act("$n opens $s mouth and releases a bolt of #ylightning#n at $N.", ch, NULL, victim, TO_NOTVICT);
 	hurt_person(ch, victim, level, FALSE);
-	level = ch->spl[GREEN_MAGIC] * 2;
+	level = ch->spl[SPL_GREEN] * 2;
 	act("$n opens $s mouth at you and expells a noxious #Ggreen#n cloud in your direction!", ch, NULL, victim, TO_ROOM);
 	act("You open your mouth and release a noxious #Ggreen#n cloud at $N!", ch, NULL, victim, TO_CHAR);
 	act("$n opens $s mouth and releases a noxious #Ggreen#n cloud at $N.", ch, NULL, victim, TO_NOTVICT);
 	hurt_person(ch, victim, level, FALSE);
 	if ((IS_VAMPIRE(victim)) || IS_KOE(victim))
 	    level = 1;
-	else level = ch->spl[GREEN_MAGIC] * 2;
+	else level = ch->spl[SPL_GREEN] * 2;
 	act("You open your mouth and release a #Pgas#n cloud at $N!", ch, NULL, victim, TO_CHAR);
 	act("$n opens $s mouth and releases a #Pgas#n cloud at $N.", ch, NULL, victim, TO_NOTVICT);
 	act("$n opens $s mouth at you and expells a #Pgas#n cloud in your direction!", ch, NULL, victim, TO_ROOM);
 	hurt_person(ch, victim, level, FALSE);
 	if (IS_DEMON(victim))
-	    level = ch->spl[BLUE_MAGIC] * 2;
-	else level = ch->spl[BLUE_MAGIC];
+	    level = ch->spl[SPL_BLUE] * 2;
+	else level = ch->spl[SPL_BLUE];
 	act("You open your mouth and release shower of #Lice#n at $N!", ch, NULL, victim, TO_CHAR);
 	act("$n opens $s mouth and releases a shower of #Lice#n at $N.", ch, NULL, victim, TO_NOTVICT);
 	act("$n opens $s mouth at you and expells a shower of #Lice#n in your direction!", ch, NULL, victim, TO_ROOM);
@@ -3262,9 +3262,9 @@ void do_piercetheshroud(CHAR_DATA * ch, char *argument)
 	     * {send_to_char( "You are unable to use this while under
 	     * protection.\n\r", ch );return;}
 	     * 
-	     * if (ch->spl[RED_MAGIC] < 200 || ch->spl[BLUE_MAGIC] < 200 ||
-	     * ch->spl[PURPLE_MAGIC] < 200 || ch->spl[GREEN_MAGIC] < 200 ||
-	     * ch->spl[YELLOW_MAGIC] < 200 ) {send_to_char( "Your mind is to
+	     * if (ch->spl[SPL_RED] < 200 || ch->spl[SPL_BLUE] < 200 ||
+	     * ch->spl[PURPLE_MAGIC] < 200 || ch->spl[SPL_GREEN] < 200 ||
+	     * ch->spl[SPL_YELLOW] < 200 ) {send_to_char( "Your mind is to
 	     * undisiplined to use this yet.\n\r", ch );return;}
 	     * 
 	     * if ( arg[0] == '\0' || argument[0] == '\0' ) {send_to_char(
@@ -3327,7 +3327,7 @@ void do_piercetheshroud(CHAR_DATA * ch, char *argument)
 	     * $N's suggestion.",victim,NULL,ch,TO_NOTVICT); act("$n shakes
 	     * off your suggestion.",victim,NULL,ch,TO_VICT); act("$s mind is
 	     * too strong to overcome.",victim,NULL,ch,TO_VICT); return; }
-	     * else if ( victim->spl[BLUE_MAGIC] >= (ch->spl[RED_MAGIC]) ) {
+	     * else if ( victim->spl[BLUE_MAGIC] >= (ch->spl[SPL_RED]) ) {
 	     * act("You shake off $N's suggestion.",victim,NULL,ch,TO_CHAR);
 	     * act("$n shakes off $N's
 	     * suggestion.",victim,NULL,ch,TO_NOTVICT); act("$n shakes off

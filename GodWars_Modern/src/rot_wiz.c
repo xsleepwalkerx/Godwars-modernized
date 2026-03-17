@@ -826,7 +826,7 @@ void do_pset( CHAR_DATA *ch, char *argument )
 	}
 
 	if (IS_JUDGE(ch)) {
-		victim->spl[PURPLE_MAGIC] = value;
+		victim->spl[SPL_PURPLE] = value;
 		send_to_char("Ok.\n\r",ch);}
 	else
 		send_to_char( "Sorry, no can do...\n\r", ch );
@@ -853,7 +853,7 @@ void do_pset( CHAR_DATA *ch, char *argument )
 	}
 
 	if (IS_JUDGE(ch)) {
-		victim->spl[RED_MAGIC] = value;
+		victim->spl[SPL_RED] = value;
 		send_to_char("Ok.\n\r",ch);}
 	else
 		send_to_char( "Sorry, no can do...\n\r", ch );
@@ -880,7 +880,7 @@ void do_pset( CHAR_DATA *ch, char *argument )
 	}
 
 	if (IS_JUDGE(ch)) {
-		victim->spl[BLUE_MAGIC] = value;
+		victim->spl[SPL_BLUE] = value;
 		send_to_char("Ok.\n\r",ch);}
 	else
 		send_to_char( "Sorry, no can do...\n\r", ch );
@@ -907,7 +907,7 @@ void do_pset( CHAR_DATA *ch, char *argument )
 	}
 
 	if (IS_JUDGE(ch)) {
-		victim->spl[GREEN_MAGIC] = value;
+		victim->spl[SPL_GREEN] = value;
 		send_to_char("Ok.\n\r",ch);}
 	else
 		send_to_char( "Sorry, no can do...\n\r", ch );
@@ -934,7 +934,7 @@ void do_pset( CHAR_DATA *ch, char *argument )
 	}
 
 	if (IS_JUDGE(ch)) {
-		victim->spl[YELLOW_MAGIC] = value;
+		victim->spl[SPL_YELLOW] = value;
 		send_to_char("Ok.\n\r",ch);}
 	else
 		send_to_char( "Sorry, no can do...\n\r", ch );
@@ -961,7 +961,7 @@ void do_pset( CHAR_DATA *ch, char *argument )
         }
 
         if (IS_JUDGE(ch)) {
-                victim->spl[BLACK_MAGIC] = value;
+                victim->spl[SPL_BLACK] = value;
                 send_to_char("Ok.\n\r",ch);}
         else
                 send_to_char( "Sorry, no can do...\n\r", ch );
