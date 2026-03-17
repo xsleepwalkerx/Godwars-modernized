@@ -1048,11 +1048,15 @@ void game_loop_unix( int control )
 
 		stall_time.tv_usec = usecDelta;
 		stall_time.tv_sec  = secDelta;
+#if defined(_WIN32)
+		Sleep( stall_time.tv_sec * 1000 + stall_time.tv_usec / 1000 );
+#else
 		if ( select( 0, NULL, NULL, NULL, &stall_time ) < 0 )
 		{
 		    perror( "Game_loop: select: stall" );
 		    exit( 1 );
 		}
+#endif
 	    }
 	}
 
