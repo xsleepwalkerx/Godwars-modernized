@@ -3411,7 +3411,7 @@ struct descriptor_data
     int32_t             outtop;         /* Current top of output buffer  */
     int32_t             outsize;        /* Allocated size of outbuf      */
     char               *host;
-    int16_t             descriptor;
+    int                 descriptor;
     int16_t             connected;
     bool                fcommand;
     char                inbuf[4 * MAX_INPUT_LENGTH];

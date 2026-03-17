@@ -1429,7 +1429,7 @@ bool read_from_descriptor( DESCRIPTOR_DATA *d )
     }
 #endif
 
-#if defined(MSDOS) || defined(unix)
+#if defined(MSDOS) || defined(unix) || defined(_WIN32)
     for ( ; ; )
     {
 	int nRead;
@@ -1447,8 +1447,13 @@ bool read_from_descriptor( DESCRIPTOR_DATA *d )
 	    log_string( "EOF encountered on read." );
 	    return FALSE;
 	}
+#if defined(_WIN32)
+	else if ( WSAGetLastError() == WSAEWOULDBLOCK )
+	    break;
+#else
 	else if ( errno == EWOULDBLOCK )
 	    break;
+#endif
 	else
 	{
 	    perror( "Read_from_descriptor" );

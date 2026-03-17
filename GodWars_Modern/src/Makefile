@@ -43,7 +43,8 @@ O_FILES = \
 	highland.o   mage.o       random.o     sorcerer.o   stance.o    \
 	trap.o       wwauspice.o  wwbreed.o    wwtribe.o    \
 	\
-	protocol.o   mobprog.o  stubs.o
+	protocol.o   mobprog.o  stubs.o                                   \
+	trivia.o     auction.o  questmaster.o
 
 # ---------------------------------------------------------------------------
 TARGET = merc

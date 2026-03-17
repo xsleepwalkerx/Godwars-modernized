@@ -233,7 +233,7 @@ void	new_load_area	args( ( FILE *fp ) );	/* OLC */
 long fread_flag( FILE *fp)
 {
     int number;
-    char c;
+    int c;
     bool negative = FALSE;
 
     do
@@ -241,6 +241,12 @@ long fread_flag( FILE *fp)
         c = getc(fp);
     }
     while ( isspace(c));
+
+    if ( c == EOF )
+    {
+        bug( "Fread_flag: EOF", 0 );
+        exit( 1 );
+    }
 
     if (c == '-')
     {
@@ -2333,15 +2339,20 @@ ROOM_INDEX_DATA *get_room_index( int vnum )
  */
 char fread_letter( FILE *fp )
 {
-    char c;
+    int c;
 
     do
     {
 	c = getc( fp );
+	if ( c == EOF )
+	{
+	    bug( "Fread_letter: EOF", 0 );
+	    exit( 1 );
+	}
     }
     while ( isspace(c) );
 
-    return c;
+    return (char)c;
 }
 
 
@@ -2353,13 +2364,19 @@ int fread_number( FILE *fp )
 {
     int number;
     bool sign;
-    char c;
+    int c;
 
     do
     {
 	c = getc( fp );
     }
     while ( isspace(c) );
+
+    if ( c == EOF )
+    {
+	bug( "Fread_number: EOF", 0 );
+	exit( 1 );
+    }
 
     number = 0;
 
@@ -2520,17 +2537,21 @@ char *fread_string( FILE *fp )
  */
 void fread_to_eol( FILE *fp )
 {
-    char c;
+    int c;
 
     do
     {
 	c = getc( fp );
+	if ( c == EOF )
+	    return;
     }
     while ( c != '\n' && c != '\r' );
 
     do
     {
 	c = getc( fp );
+	if ( c == EOF )
+	    return;
     }
     while ( c == '\n' || c == '\r' );
 
@@ -2547,11 +2568,16 @@ char *fread_word( FILE *fp )
 {
     static char word[MAX_INPUT_LENGTH];
     char *pword;
-    char cEnd;
+    int cEnd;
 
     do
     {
 	cEnd = getc( fp );
+	if ( cEnd == EOF )
+	{
+	    bug( "Fread_word: EOF", 0 );
+	    exit( 1 );
+	}
     }
     while ( isspace( cEnd ) );
 
@@ -2561,15 +2587,21 @@ char *fread_word( FILE *fp )
     }
     else
     {
-	word[0] = cEnd;
+	word[0] = (char)cEnd;
 	pword   = word+1;
 	cEnd    = ' ';
     }
 
     for ( ; pword < word + MAX_INPUT_LENGTH; pword++ )
     {
-	*pword = getc( fp );
-	if ( cEnd == ' ' ? isspace(*pword) : *pword == cEnd )
+	int ch = getc( fp );
+	if ( ch == EOF )
+	{
+	    bug( "Fread_word: EOF in word body", 0 );
+	    exit( 1 );
+	}
+	*pword = (char)ch;
+	if ( cEnd == ' ' ? isspace(*pword) : *pword == (char)cEnd )
 	{
 	    if ( cEnd == ' ' )
 		ungetc( *pword, fp );
