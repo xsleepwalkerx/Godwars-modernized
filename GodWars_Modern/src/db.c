@@ -2410,7 +2410,7 @@ int fread_number( FILE *fp )
 char *fread_string( FILE *fp )
 {
     char *plast;
-    char c;
+    int c;
 
     plast = top_string + sizeof(char *);
     if ( plast > &string_space[MAX_STRING - MAX_STRING_LENGTH] )
@@ -2426,10 +2426,15 @@ char *fread_string( FILE *fp )
     do
     {
 	c = getc( fp );
+	if ( c == EOF )
+	{
+	    bug( "Fread_string: EOF before string data", 0 );
+	    exit( 1 );
+	}
     }
     while ( isspace(c) );
 
-    if ( ( *plast++ = c ) == '~' )
+    if ( ( *plast++ = (char)c ) == '~' )
 	return &str_empty[0];
 
     for ( ;; )
@@ -2446,7 +2451,7 @@ char *fread_string( FILE *fp )
 	    break;
 
 	case EOF:
-	    bug( "Fread_string: EOF", 0 );
+	    bug( "Fread_string: EOF in string body", 0 );
 	    exit( 1 );
 	    break;
 
