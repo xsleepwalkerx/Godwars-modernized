@@ -121,10 +121,28 @@ const	char	echo_off_str	[] = { '\0' };
 const	char	echo_on_str	[] = { '\0' };
 const	char	go_ahead_str	[] = { '\0' };
 static char *crypt( const char *key, const char *salt ) { return (char *)key; }
-/* Pelles C / MSVC: map POSIX I/O names to their Windows equivalents */
-#include <io.h>
-#define write  _write
-#define close  _close
+/* Winsock2 — must be included before windows.h */
+#include <winsock2.h>
+#pragma comment(lib, "ws2_32.lib")
+#include <windows.h>
+/* Map POSIX socket I/O names to Winsock equivalents.
+ * All write()/read()/close() calls in comm.c operate on socket handles. */
+#define write(f,b,n)  send((f),(b),(n),0)
+#define read(f,b,n)   recv((f),(b),(n),0)
+#define close         closesocket
+/* gettimeofday() replacement using Win32 high-resolution clock */
+static int gettimeofday( struct timeval *tv, void *tz )
+{
+    FILETIME ft;
+    unsigned long long t;
+    GetSystemTimeAsFileTime( &ft );
+    t  = ((unsigned long long)ft.dwHighDateTime << 32) | ft.dwLowDateTime;
+    t -= 116444736000000000ULL; /* 100-ns intervals from 1601-01-01 to 1970-01-01 */
+    t /= 10;                    /* convert to microseconds */
+    tv->tv_sec  = (long)(t / 1000000);
+    tv->tv_usec = (long)(t % 1000000);
+    return 0;
+}
 #endif
 
 
@@ -545,7 +563,7 @@ int main( int argc, char **argv )
 
 
 
-#if defined(unix)
+#if defined(unix) || defined(_WIN32)
 int init_socket( int port )
 {
     static struct sockaddr_in sa_zero;
