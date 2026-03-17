@@ -1,4 +1,10 @@
-#AREA	Veronica  Chemosh Hq~
+#AREADATA
+Name        Chemosh Hq~
+Builders    Veronica~
+VNUMs       16100 16199
+Security    1
+End
+
 
 
 #MOBILES
@@ -216,6 +222,10 @@ M  16101 spec_clan_chemosh 			Chemosh
 M  16103 spec_clan_chemosh2			Abbot
 M  16104 spec_clan_chemosh3			Junapruss
 S
+
+
+#SHOPS
+0
 
 
 #$

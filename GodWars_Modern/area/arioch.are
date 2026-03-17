@@ -1,4 +1,9 @@
-#AREA   Arioch   Bits area~
+#AREADATA
+Name        Arioch's Tower~
+Builders    Unknown~
+VNUMs       18000 18009
+Security    1
+End
 
 
 
@@ -72,7 +77,7 @@ Facing you is doorway which opens out to a small balcony; the curtains
 tied back so as to sway less in the breeze.  On the lime washed walls 
 is a strange a painting of a japanese lady in formal dress.
 ~
-0 8|1024|16382 3
+0 8|1024|16384 3
 D0
 ~
 A small step~
