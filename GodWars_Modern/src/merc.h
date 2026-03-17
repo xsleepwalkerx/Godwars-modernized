@@ -1967,7 +1967,7 @@ struct auction_data
 #define ROOM_VNUM_TEMPLE    30006
 #define ROOM_VNUM_LIMBO     2
 #define ROOM_VNUM_ARTIFACTS 30020
-#define ROOM_VNUM_SCHOOL    30001   /* Newbie school starting room */
+#define ROOM_VNUM_SCHOOL    3001    /* Newbie school starting room (NorshenPier temple, has exit UP to mud school) */
 #define ROOM_VNUM_CHAT      30002   /* Chat/OOC room */
 
 /*

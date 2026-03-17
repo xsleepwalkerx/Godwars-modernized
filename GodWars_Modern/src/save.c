@@ -237,6 +237,7 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
     fprintf( fp, "Played       %d\n",
 	ch->played + (int) (current_time - ch->logon)		);
     fprintf( fp, "Room         %d\n",
+	ch->in_room == NULL ? ROOM_VNUM_ALTAR :
 	(  ch->in_room == get_room_index( ROOM_VNUM_LIMBO )
 	&& ch->was_in_room != NULL )
 	    ? ch->was_in_room->vnum
