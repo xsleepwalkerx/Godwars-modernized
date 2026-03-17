@@ -3,6 +3,7 @@
 #elif !defined(_WIN32)
 #include <sys/types.h>
 #endif
+#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -652,6 +653,21 @@ void mageupkeep(CHAR_DATA *ch)
 }
 
 
+/* Peek past whitespace and return TRUE if we are at EOF. */
+static bool leader_eof( FILE *fp )
+{
+    int c;
+    while ( (c = fgetc(fp)) != EOF )
+    {
+        if ( !isspace(c) )
+        {
+            ungetc(c, fp);
+            return FALSE;
+        }
+    }
+    return TRUE;
+}
+
 void load_leaderboard()
 {
     FILE *fp;
@@ -662,22 +678,39 @@ void load_leaderboard()
 	do_leaderclear(NULL, "");
 	return;
     }
+
+    if ( leader_eof(fp) ) { fclose(fp); do_leaderclear(NULL, ""); save_leaderboard(); return; }
     leader_board.bestpk_name = fread_string(fp);
     leader_board.bestpk_number = fread_number(fp);
+
+    if ( leader_eof(fp) ) { fclose(fp); save_leaderboard(); return; }
     leader_board.worstpk_name = fread_string(fp);
     leader_board.worstpk_number = fread_number(fp);
+
+    if ( leader_eof(fp) ) { fclose(fp); save_leaderboard(); return; }
     leader_board.pk_name = fread_string(fp);
     leader_board.pk_number = fread_number(fp);
+
+    if ( leader_eof(fp) ) { fclose(fp); save_leaderboard(); return; }
     leader_board.pd_name = fread_string(fp);
     leader_board.pd_number = fread_number(fp);
+
+    if ( leader_eof(fp) ) { fclose(fp); save_leaderboard(); return; }
     leader_board.mk_name = fread_string(fp);
     leader_board.mk_number = fread_number(fp);
+
+    if ( leader_eof(fp) ) { fclose(fp); save_leaderboard(); return; }
     leader_board.md_name = fread_string(fp);
     leader_board.md_number = fread_number(fp);
+
+    if ( leader_eof(fp) ) { fclose(fp); save_leaderboard(); return; }
     leader_board.tt_name = fread_string(fp);
     leader_board.tt_number = fread_number(fp);
+
+    if ( leader_eof(fp) ) { fclose(fp); save_leaderboard(); return; }
     leader_board.qc_name = fread_string(fp);
     leader_board.qc_number = fread_number(fp);
+
     fclose(fp);
 }
 
