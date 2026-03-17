@@ -2033,12 +2033,14 @@ OBJ_DATA *create_object( OBJ_INDEX_DATA *pObjIndex, int level )
     case ITEM_STAKE:
     case ITEM_MISSILE:
     case ITEM_AMMO:
+    case ITEM_QUESTITEM:
     case ITEM_QUEST:
     case ITEM_QUESTCARD:
     case ITEM_QUESTMACHINE:
     case ITEM_SYMBOL:
     case ITEM_BOOK:
     case ITEM_PAGE:
+    case ITEM_BOARD:
     case ITEM_TOOL:
     case ITEM_WALL:
     case ITEM_SIT_SINGLE:
