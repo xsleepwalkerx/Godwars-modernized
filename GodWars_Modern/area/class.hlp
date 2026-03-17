@@ -1,14 +1,17 @@
 #HELPS
 
 0 Classes~
-There are 10 available classes.  For more information on an individual class,
+There are 13 available classes.  For more information on an individual class,
 refer to the help file (help dragon, help drow, etc.).  If you need to know
 anything not listed in these files, ask an experienced player or an immortal.
 To become classed, simply type autoclass once you meet the stat requirements.
 
-Dragon       - Mythical beasts who soar through the sky.
+#rAngel#n       - Divine warriors of righteousness and light.
+Demon       - Infernal lords of chaos and shadow.
+Dragon      - Mythical beasts who soar through the sky.
 #PDrow#n         - Cruel masters of the underdark.
 #cElementalist#n - Instinctive users of natural magics.
+#RFae#n          - Ethereal beings of pure elemental force.
 #CHighlander#n   - Immortal blademasters...of death! (*gasp*)
 #pMage#n         - WoD mages, spheres, paradox, and all.
 #7Monk#n         - Devout practioners of unarmed combat.
@@ -100,6 +103,25 @@ any questions you may have to Akuma.
 Related Helps: Leaders, and Clan.
 ~
 
+0 Angel~
+Angels are divine beings of grace and holy power. Custodians of righteousness
+and light, angels possess unparalleled knowledge of the heavens. They wield
+sacred powers granted by the divine, allowing them to protect the innocent and
+smite evil. Angels begin their existence as mortals who have been embraced by
+the Archangel, the supreme leader of all angels.
+
+Angel Abilities
+ Pact         - Angels may form pacts with mortal champions.
+ Inpart       - Angels can bestow divine powers upon their champions.
+ Divine Forms - Angels can transform into Angelform or take Cherub form.
+ Champion Aid - Angels grant boons to their chosen champions: Fangs, Claws,
+                Wings, Nightsight, Might, Toughness, Speed, Travel, Scry,
+                Shadowsight, Aura, and many more.
+ Inferno      - Angels can call down divine flames to smite their enemies.
+ Holy Channel - Angels use the Communion channel to communicate.
+
+Related Helps: Class, Inpart, and Leaders.
+~
 
 0 Dragons~
 The fierce and lethal dracos.  Strong and proud reptilian creatures, their mere
@@ -189,6 +211,26 @@ Heighten                        {syntax: heighten}      DP cost: 20000
 Related Helps: Drow.
 ~
 
+0 Demon~
+Demons are infernal beings of immense power and ambition. Born from the depths
+of chaos and shadow, demons are driven by a hunger for dominion and corruption.
+They serve the Demon Lord, the supreme ruler of all demons, and together they
+plot to expand their dark influence across the realms. Mortals may be embraced
+as demons through a dark pact with the Demon Lord.
+
+Demon Abilities
+ Pact         - Demons may form pacts with mortal champions.
+ Inpart       - Demons can bestow infernal powers upon their champions.
+ Demonic Forms- Demons can transform into Demonform or summon Imp servants.
+ Champion Aid - Demons grant boons to their chosen champions: Fangs, Claws,
+                Hooves, Nightsight, Might, Toughness, Speed, Travel, Scry,
+                Shadowsight, and many more.
+ Inferno      - Demons can rain infernal flames upon their enemies.
+ Dark Channel - Demons use the Communion channel to communicate.
+ Vision       - Demons can increase their magical vision and power.
+
+Related Helps: Class, Inpart, and Leaders.
+~
 
 0 Elementalists~
 Called everything from geomancers to wizards, these men and women have devoted 
@@ -276,6 +318,28 @@ Infinity - Element of Unity and the Void.
 Related Helps: Elementalist, and Elements.
 ~
 
+0 Fae~
+The Fae are ethereal beings of pure elemental force, existing at the boundaries
+between the mortal and spirit worlds. These magnificent creatures harness the
+raw power of nature itself, growing stronger through their command of elemental
+energies. With delicate wings and an alien grace, Fae are both beautiful and
+terrifying in their power. They channel through Windwhisper and draw strength
+from the very elements that surround them.
+
+Fae Abilities
+ Elemental Force - Fae can increase their Elemental Attack and Defence.
+ Earthshield     - Grants damage resistance (2% per Defence point plus 10%).
+ True Form       - Fae can assume their true form when needed.
+ Bloodpact       - At maximum power, Fae can form mystical blood pacts.
+ Faestorm        - Fae can summon devastating elemental storms.
+ Wing Slice      - Fae can strike with razor-sharp wing attacks.
+ Soar            - Fae can take flight through the air.
+ Wail            - Fae can emit a powerful piercing wail.
+ Natural Magic   - Fae have access to Scry and Read Aura abilities.
+ Channel         - Fae use Windwhisper to communicate.
+
+Related Helps: Class, and Elementalists.
+~
 
 0 Highlanders~
 For as long as history itself, there have been the immortals. Those, whom 

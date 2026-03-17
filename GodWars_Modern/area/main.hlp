@@ -1426,6 +1426,54 @@ Periapt of Protection - +500 armor, -500 opponent's damcap.
 *Artifact is currently in circulation.
 ~
 
+0 BANK BALANCE DEPOSIT WITHDRAW~
+The bank allows players to safely store their gold coins for safekeeping.
+You must be in the bank (in Midgaard) to use these commands.
+
+Syntax:
+  balance              - Shows your current bank account balance.
+  deposit <amount>     - Deposits gold from your inventory into your account.
+  withdraw <amount>    - Withdraws gold from your account to your inventory.
+
+Your bank account is tied to your character and will persist even after you
+log out, making it a safe place to store excess gold. You can access your
+account from the bank in Midgaard.
+
+Related Helps: Quest.
+~
+
+0 AUCTION BID SELL~
+The auction house allows players to buy and sell items using quest points.
+Auctions run for a set duration, with the highest bidder winning the item.
+
+Syntax:
+  auction list         - Shows all active auction lots.
+  auction info <lot>   - Details about a specific lot.
+  auction sell <item> <bid> - Put an item up for auction with a minimum bid.
+  auction bid <lot> <amount> - Place a bid on an auction lot.
+  auction withdraw <lot> - Cancel your own auction (only if no bids exist).
+
+When you sell an item at auction, it stays available until someone wins it or
+the auction expires. If no one bids, you can reclaim your item. The winning
+bidder pays in quest points, and the seller receives those quest points.
+
+Related Helps: Quest.
+~
+
+0 TRIVIA ANSWER~
+Trivia is an automated quiz game where players can earn quest points by answering
+questions correctly. Trivia sessions start automatically at regular intervals.
+
+Syntax:
+  answer <response>    - Submit your answer to the current trivia question.
+
+When a trivia question is asked, you have a limited time to answer it. The first
+player to answer correctly receives a reward of quest points. All answers are
+case-insensitive, and you only need to type enough of the answer to be unique.
+
+Related Helps: Quest.
+~
+
 0 $~
 
 #$
