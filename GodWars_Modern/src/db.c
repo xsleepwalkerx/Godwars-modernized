@@ -394,9 +394,11 @@ void boot_db( void )
 	    }
 	    else
 	    {
-		if ( ( fpArea = fopen( strArea, "r" ) ) == NULL )
+		char areaPath[256];
+		snprintf( areaPath, sizeof(areaPath), "%s%s", AREA_DIR, strArea );
+		if ( ( fpArea = fopen( areaPath, "r" ) ) == NULL )
 		{
-		    perror( strArea );
+		    perror( areaPath );
 		    exit( 1 );
 		}
 	    }

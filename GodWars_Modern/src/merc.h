@@ -1141,6 +1141,7 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 /* Directions */
 #define MAX_DIR             6       /* N, E, S, W, U, D */
 /* File paths */
+#define AREA_DIR            "../area/"
 #define AREA_LIST           "../area/area.lst"
 #define NOTE_FILE           "../area/notes.not"
 
