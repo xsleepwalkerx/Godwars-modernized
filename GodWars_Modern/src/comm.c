@@ -372,7 +372,7 @@ bool	read_from_descriptor	args( ( DESCRIPTOR_DATA *d ) );
 bool	write_to_descriptor	args( ( int desc, char *txt, int length ) );
 #endif
 
-#if defined(unix)
+#if defined(unix) || defined(_WIN32)
 void	game_loop_unix		args( ( int control ) );
 int	init_socket		args( ( int port ) );
 void	new_descriptor		args( ( int control ) );
