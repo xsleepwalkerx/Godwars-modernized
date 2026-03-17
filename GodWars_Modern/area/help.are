@@ -172,28 +172,20 @@ For more information, check out the GODWARS-INFO help file.
 #l----------------------------------------------------------------------
                  #c--==> I M P L E M E N T O R S <==--
 		       
-                        #RXentoth  #rAkasha#n  #pKaelas#n
- 
-                              #CAspertame#n
-
                  #c--===> H I G H   J U D G E S <===--
  		       
-                        #gRavage#n  #0Ktulu#n  #PKaly#n
-
                  #c-----=====> J U D G E S <=====-----
-		          
-                         #GTrekthar#n  #lValindar#n 
-                                                               
+		                                                                     
                  #c---====> E N F O R C E R S <====---
 		      
-                             #nIntrinsic#n        
-             
-                 #c---==> Q U E S T   M A K E R <==---
+			 #c----====> B U I L D E R S <====----
 
+                 #c---==> O R I G I N A L S  <==---
+ 				 #RXentoth  #rAkasha#n #BJoronas#n #pKaelas#n
+ 
+                              #CAspertame#n 
                 
-		 #c----====> B U I L D E R S <====----
-
-	       	             #LGortoris#n
+		
 
 #l----------------------------------------------------------------------#n
 ~
@@ -217,7 +209,13 @@ For more information, check out the GODWARS-INFO help file.
                                 / /|_/ / / ___/ __/ ___/    
                                / /  / / (__  ) /_(__  )     
                               /_/  /_/_/____/\__/____/      
-                                           
+
+						  ____      _                      
+						 |  _ \ ___| |__   ___  _ __ _ __  
+						 | |_) / _ \ '_ \ / _ \| '__| '_ \ 
+						 |  _ <  __/ |_) | (_) | |  | | | |
+						 |_| \_\___|_.__/ \___/|_|  |_| |_|
+                                   
 
                  #gBased on Merc 2.1 code by Furey, Hatchet and Kahn
             Diku Mud was created by Hans Henrick Staerfeldt, Kataja Nyboe,
@@ -225,13 +223,9 @@ For more information, check out the GODWARS-INFO help file.
                           
                            #gGod Wars was created by KaVir
 
-                Administered by: #RXentoth#n, #7Mistif#n, #rAkasha#n, #pKaelas#n, #CAspertame#n.
+                Administered by: Sleepwalker (At least for now)
                 	   
-    	         #RIf you are under 18, leave now or get your parents consent.   
-  		    This mud contains adult content not intended for minors.
-
-                           #GWeb page: www.etherealmist.net
-			  Admin Email: Knockbarrum@yahoo.com	
+			Ethereal Mists Reborn based on the creation of those like Xentoth and Joronas
 
                               #rWelcome to the #7M#6i#7s#6t#7s#n
 
@@ -5035,7 +5029,7 @@ will meet or exceed the following:
 ~
 0 DIRECTIONS DIRS~
 
-This is a list of some areas and the directions to them from Market Square
+This is a list of some areas and the directions to them from Market Square (These might be outdated and broken)
 Areas with a plus indicate mazes.  The name in parentheses next to it is the room to look for in the maze:
 
 Atlantis-sd
@@ -5395,7 +5389,7 @@ description will include a map of the rooms around the player.
 Symbols used for the map are :
 
 #G"#n  Fields
-#o¤#n  Hills
+#oÂ¤#n  Hills
 #g*#n  Woodland, Forest
 #o@#n  Mountain
 #nO#n  Inside, City
