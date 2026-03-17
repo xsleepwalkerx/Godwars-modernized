@@ -29,7 +29,9 @@ void init_signals( void )
   pfile = FALSE;
 //  pfile_name = str_dup("");
 
+#if !defined(_WIN32)  /* SIGPFILE=77 is not a valid Windows signal number */
     signal(SIGPFILE,	crash_notice);
+#endif
     signal(SIGFPE,	crash_notice);
     signal(SIGINT,	crash_notice);
     signal(SIGSEGV,	crash_notice);

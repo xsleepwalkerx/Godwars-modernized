@@ -123,7 +123,7 @@ const	char	go_ahead_str	[] = { '\0' };
 static char *crypt( const char *key, const char *salt ) { return (char *)key; }
 /* Winsock2 — must be included before windows.h */
 #include <winsock2.h>
-#pragma comment(lib, "ws2_32.lib")
+#pragma lib("ws2_32.lib")
 #include <windows.h>
 /* Map POSIX socket I/O names to Winsock equivalents.
  * All write()/read()/close() calls in comm.c operate on socket handles. */
@@ -553,6 +553,27 @@ int main( int argc, char **argv )
     close( control );
 #endif
 
+#if defined(_WIN32)
+    {
+        WSADATA wsaData;
+        if ( WSAStartup( MAKEWORD(2, 2), &wsaData ) != 0 )
+        {
+            fprintf( stderr, "WSAStartup failed.\n" );
+            exit( 1 );
+        }
+    }
+    if (!fCopyOver)
+        control = init_socket( port );
+    boot_db( );
+    sprintf( log_buf, "Ethereal Mist is ready to rock on port %d.", port );
+    log_string( log_buf );
+    if (fCopyOver)
+        copyover_recover();
+    game_loop_unix( control );
+    close( control );
+    WSACleanup();
+#endif
+
     /*
      * That's all, folks.
      */
@@ -804,7 +825,7 @@ void game_loop_mac_msdos( void )
 
 
 
-#if defined(unix)
+#if defined(unix) || defined(_WIN32)
 
 void excessive_cpu(int blx)
 {
@@ -829,11 +850,14 @@ void game_loop_unix( int control )
     static struct timeval null_time;
     struct timeval last_time;
 
+#ifdef SIGBUS
     signal( SIGBUS,  handler );
+#endif
     signal( SIGSEGV, handler );
     signal( SIGILL,  handler );
-
+#if !defined(_WIN32)
     signal( SIGPIPE, SIG_IGN );
+#endif
     gettimeofday( &last_time, NULL );
     current_time = (time_t) last_time.tv_sec;
 
@@ -1042,7 +1066,7 @@ void game_loop_unix( int control )
 
 
 
-#if defined(unix)
+#if defined(unix) || defined(_WIN32)
 void new_descriptor( int control )
 {
     static DESCRIPTOR_DATA d_zero;
@@ -1062,15 +1086,25 @@ void new_descriptor( int control )
 	return;
     }
 
+#if defined(_WIN32)
+    {
+        u_long ioctlarg = 1;
+        if ( ioctlsocket( desc, FIONBIO, &ioctlarg ) != 0 )
+        {
+            perror( "New_descriptor: ioctlsocket: FIONBIO" );
+            return;
+        }
+    }
+#else
 #if !defined(FNDELAY)
 #define FNDELAY O_NDELAY
 #endif
-
     if ( fcntl( desc, F_SETFL, FNDELAY ) == -1 )
     {
 	perror( "New_descriptor: fcntl: FNDELAY" );
 	return;
     }
+#endif
 
     /*
      * Cons a new descriptor.
