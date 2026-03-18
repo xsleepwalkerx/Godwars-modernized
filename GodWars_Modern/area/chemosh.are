@@ -218,8 +218,8 @@ S
 
 #SPECIALS
 M  16100 spec_cast_adept			a healer
-M  16101 spec_clan_chemosh 			Chemosh 
-M  16103 spec_clan_chemosh2			Abbot
+M  16101 spec_breath_any			Chemosh
+M  16103 spec_cast_cleric			Abbot
 M  16104 spec_clan_chemosh3			Junapruss
 S
 

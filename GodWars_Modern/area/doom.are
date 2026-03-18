@@ -1388,7 +1388,8 @@ M  11000 spec_fido			A zombified soldier
 M  11001 spec_cast_undead			An imp
 M  11002 spec_fido			A bull looking creature
 M  11003 spec_fido			A large alligator
-M  11004 spec_guard			A zombified guardM  11008 spec_executioner			The space marine commander
+M  11004 spec_guard			A zombified guard
+M  11008 spec_guard			The space marine commander
 M  11009 spec_fido			A horrific mutated creature
 S
 
