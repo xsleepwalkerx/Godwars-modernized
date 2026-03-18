@@ -1409,7 +1409,7 @@ M 9627 spec_breath_gas Load to: Succubus
 M 9636 spec_breath_any Load to: Xerias Dartoreth
 M 9653 spec_guard Load to: Danyeal Tedronai Bgreathiou
 M 9656 spec_cast_cleric Load to: Yvonne Bgreathiou
-M 9658 spec_isha_breg Load to: Ishamael Bgreathiou
+M 9658 spec_breath_any Load to: Ishamael Bgreathiou
 M 9660 spec_breath_any Load to: Mashadar
 M 9661 spec_cast_mage Load to: Joronas Shadowson
 M 9663 spec_cast_cleric Load to: Priest of Dischord
