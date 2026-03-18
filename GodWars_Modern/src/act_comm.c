@@ -121,16 +121,7 @@ void talk_channel( CHAR_DATA *ch, char *argument, int channel, const char *verb 
 
     REMOVE_BIT(ch->deaf, channel);
     
-    if(!str_cmp(ch->name, "Xentoth")) sprintf(temp, "#R%s#n",argument);
-    else if(!str_cmp(ch->name, "Trekthar")) sprintf(temp, "#G%s#n",argument);
-    else if(!str_cmp(ch->name, "Akasha")) sprintf(temp, "#r%s#n",argument);
-    else if(!str_cmp(ch->name, "Ravage")) sprintf(temp, "#g%s#n",argument);
-    else if(!str_cmp(ch->name, "Aspertame")) sprintf(temp, "#C%s#n",argument);
-    else if(!str_cmp(ch->name, "Kaelas")) sprintf(temp, "#p%s#n",argument);
-    else if(!str_cmp(ch->name, "Kaly")) sprintf(temp, "#P%s#n",argument);
-    else if(!str_cmp(ch->name, "Valindar")) sprintf(temp, "#0%s#n",argument);
-    else if(!str_cmp(ch->name, "Ktulu")) sprintf(temp, "#0%s#n",argument);
-    else if(!str_cmp(ch->name, "Gortoris")) sprintf(temp, "#L%s#n",argument);
+    if(!str_cmp(ch->name, "Sleepwalker")) sprintf(temp, "#W%s#n",argument);
     else sprintf(temp,"%s",argument);
     strcpy(argument,temp);
 

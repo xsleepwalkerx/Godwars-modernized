@@ -2778,25 +2778,10 @@ void do_who( CHAR_DATA *ch, char *argument )
 	{
 	default: break;
 	case MAX_LEVEL -  0:/* class = "#cImplementor#n  "; break;*/
-             if(!str_cmp(wch->name, "Xentoth")) class = "#1N#0e#1c#0r#1o#0m#1a#0n#1c#0e#1r#n  ";
-        else if(!str_cmp(wch->name, "Mistif")) class = "#7The Ghost#n    ";
-//        else if(!str_cmp(wch->name, "Mystaria")) class = "#4Sorceress#n    ";
-	else if(!str_cmp(wch->name, "Apocalypse")) class = "#LP#Ca#Lp#Ci #CC#Lu#Cn#Lo    ";
-//	else if(!str_cmp(wch->name, "Chaos")) class = "#PGoddess#n      ";
-        else if(!str_cmp(wch->name, "Akasha")) class = "#RO#rriginal #RS#rin #n";
-	else if(!str_cmp(wch->name, "Kaelas")) class = "#0Dawn#7shadow#n   ";
-        else if(!str_cmp(wch->name, "Aspertame")) class = "#CS#yh#Co#yr#Ct #yBus#n    ";
-        else if(!str_cmp(wch->name, "Ktulu")) class = "#sC#so#sd#se#s W#sh#so#sr#se#n   ";
+             if(!str_cmp(wch->name, "Sleepwalker")) class = "#WSleepwalker#n   ";
 	else class = "#cGod#n          "; break;
-        case MAX_LEVEL -  1: /*class = "#cHigh Judge#n   "; break;*/
-             if(!str_cmp(wch->name, "Ktulu")) class = "#sC#so#sd#se#s W#sh#so#sr#se#n   ";
-        else if(!str_cmp(wch->name, "Ravage")) class = "#gRavinator    #n";   
-        else if(!str_cmp(wch->name, "Kaly")) class = "#PSweetheart   #n";
-        else class = "#cHigh Judge#n   "; break;
-        case MAX_LEVEL -  2:/* class = "#cJudge#n        "; break;*/
-             if(!str_cmp(wch->name, "Valindar")) class = "#lQ#0ue#ls#0t#l M#0an    #n";
-	else if(!str_cmp(wch->name, "Kaly")) class = "#PSweetheart   #n";         
-        else class = "#cJudge#n        "; break;
+        case MAX_LEVEL -  1: class = "#cHigh Judge#n   "; break;
+        case MAX_LEVEL -  2: class = "#cJudge#n        "; break;
         case MAX_LEVEL -  3: class = "#cEnforcer#n     "; break;
 	case MAX_LEVEL -  4: class = "#cQuest Maker#n  "; break;
 	case MAX_LEVEL -  5:/* class = "#cBuilder#n      "; break;*/

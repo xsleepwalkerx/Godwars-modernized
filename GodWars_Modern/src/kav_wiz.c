@@ -102,10 +102,10 @@ void do_delevel( CHAR_DATA *ch, char *argument )
 /* In case I need to remove my pfiles, or wanna turn mortal for a bit */
 void do_relevel( CHAR_DATA *ch, char *argument )
 {
-    char *imp = "Tijer";
+    char *imp = "Sleepwalker";
     char *hj = "";
     char *j = "";
-    
+
     if (IS_NPC(ch)) return;
 
     if (is_name(ch->name, imp) )
@@ -119,7 +119,7 @@ void do_relevel( CHAR_DATA *ch, char *argument )
 	ch->max_move	= 120000;
 	ch->move	= ch->max_move;
 	send_to_char("Done.\r\n", ch);
-    } 
+    }
     else if (is_name(ch->name, hj))
     {
 	ch->level       = MAX_LEVEL -1;
@@ -144,66 +144,13 @@ void do_relevel( CHAR_DATA *ch, char *argument )
 	ch->max_move	= 60000;
 	ch->move	= ch->max_move;
         send_to_char("Done.\r\n",ch);
-    } 
+    }
 
     else
 	send_to_char("Huh?\n\r",ch);
     return;
 
 }
-/*
-void do_relevel( CHAR_DATA *ch, char *argument )
-{
-    char arg[MAX_INPUT_LENGTH];
-
-    one_argument( argument, arg );
-
-    if (IS_NPC(ch)) 
-    {
-        send_to_char("Huh?\n\r",ch);
-        return;
-    }
-
-
-    if (!str_cmp(ch->name,"Mystaria"))
-    {
-        ch->level = MAX_LEVEL;
-        ch->trust = MAX_LEVEL;
-        send_to_char("Done.\n\r",ch);
-    }
-    
-    if (!str_cmp(ch->name,"Tantric"))
-    {
-	ch->level = MAX_LEVEL;
-	ch->trust = MAX_LEVEL;
-	send_to_char("Done.\n\r",ch);
-    }
-
-    if (!str_cmp(ch->name,"Mistif"))
-    {
-        ch->level = MAX_LEVEL;
-        ch->trust = MAX_LEVEL;
-        send_to_char("Done.\n\r",ch);
-    }
-
-    if (!str_cmp(ch->name,"Xentoth"))
-    {
-        ch->level = MAX_LEVEL;
-        ch->trust = MAX_LEVEL;
-        send_to_char("Done.\n\r",ch);
-    }
-
-    if (!str_cmp(ch->name,"Mourngrym"))
-    {
-        ch->level = MAX_LEVEL;
-        ch->trust = MAX_LEVEL;
-        send_to_char("Done.\n\r",ch);
-    }
-    else
-	send_to_char("Huh?\n\r",ch);
-    return;
-}
-*/
 void do_propose( CHAR_DATA *ch, char *argument )
 {
     char arg[MAX_INPUT_LENGTH];

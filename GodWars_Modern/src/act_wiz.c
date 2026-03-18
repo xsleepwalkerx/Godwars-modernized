@@ -872,26 +872,11 @@ void do_echo( CHAR_DATA *ch, char *argument )
         send_to_char( "Echo what?\n\r", ch );
         return;
     }
-    if(!str_cmp(ch->name, "Xentoth")) sprintf( buf, "#R%s#n\n\r",argument);
-    else if(!str_cmp(ch->name, "Akasha")) sprintf(buf, "#r%s#n\n\r",argument);
-    else if(!str_cmp(ch->name, "Ravage")) sprintf(buf, "#g%s#n\n\r",argument);
-    else if(!str_cmp(ch->name, "Aspertame")) sprintf(buf, "#C%s#n\n\r",argument);
-    else if(!str_cmp(ch->name, "Kaelas")) sprintf(buf, "#p%s#n\n\r",argument);
-    else if(!str_cmp(ch->name, "Kaly")) sprintf(buf, "#P%s#n\n\r",argument);
-    else if(!str_cmp(ch->name, "Trekthar")) sprintf(buf, "#G%s#n\n\r",argument);  
-    else if(!str_cmp(ch->name, "Ktulu")) sprintf(buf, "#0%s#n\n\r",argument);
-    else if(!str_cmp(ch->name, "Valindar")) sprintf(buf, "#l%s#n\n\r",argument);
-    else if(!str_cmp(ch->name, "Gortoris")) sprintf(buf, "#L%s#n\n\r",argument);
-    else if(!str_cmp(ch->name, "Emerath")) sprintf(buf, "#c%s#n\n\r",argument);
+    if(!str_cmp(ch->name, "Sleepwalker")) sprintf( buf, "#W%s#n\n\r",argument);
     else sprintf( buf, "%s\n\r",argument);
 
-    if(!str_cmp(ch->name, "Gortoris"))	send_to_char("No.\n\r",ch);
-
-    else 
-    {
-	for ( d = descriptor_list; d != NULL; d = d->next )
-            if ( d->connected == CON_PLAYING ) send_to_char(buf, d->character);
-    }
+    for ( d = descriptor_list; d != NULL; d = d->next )
+        if ( d->connected == CON_PLAYING ) send_to_char(buf, d->character);
 
     return;
 }
