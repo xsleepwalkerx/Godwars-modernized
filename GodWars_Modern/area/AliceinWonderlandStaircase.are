@@ -1,4 +1,10 @@
-#AREA	Gortoris AliceinWonderlandStaircase.are~
+#AREADATA
+Name        Alice in Wonderland Staircase~
+Builders    Gortoris~
+VNUMs       15060 15099
+Security    1
+End
+
 
 
 #MOBILES
@@ -169,6 +175,10 @@ Alice expalins, "That's it, Dinah! If I had a world of my own, everything would 
 150 0 0 0d0+0 0d0+0
 0 0
 8 8 1
+#0
+
+
+#OBJECTS
 #0
 
 
@@ -1044,6 +1054,14 @@ M 1 15072 1 15073			Dodo to Down the Staircase.
 *
 M 1 15068 1 15073			March Hare to Down the Staircase.
 S
+
+
+#SPECIALS
+S
+
+
+#SHOPS
+0
 
 
 #$

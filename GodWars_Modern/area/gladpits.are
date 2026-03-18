@@ -1,5 +1,10 @@
+#AREADATA
+Name        Gladiator Pits~
+Builders    Ravage~
+VNUMs       955 961
+Security    1
+End
 
-#AREA Ravage   Gladiator Pits~
 
 
 #MOBILES
@@ -191,14 +196,15 @@ E 0 955 1 16  * a sabre
 S
 
 
-#SHOPS
-0
-
-
 #SPECIALS
 M 955 spec_guard  * The Guard
 M 956 spec_guard  * The Guard
 S
+
+
+#SHOPS
+0
+
 
 #$
 
