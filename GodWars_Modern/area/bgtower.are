@@ -1397,27 +1397,6 @@ S
 
 
 
-#SPECIALS
-M 9603 spec_breath_gas Load to: Iron Golem
-M 9608 spec_breath_gas Load to: Amethyst Dragon
-M 9609 spec_breath_any Load to: Ultan Bgreathiou
-M 9614 spec_breath_gas Load to: Tanar'ri Balor Guard
-M 9617 spec_breath_any Load to: Ice Mephit
-M 9623 spec_breath_any Load to: Ologothian
-M 9626 spec_breath_gas Load to: Retriever
-M 9627 spec_breath_gas Load to: Succubus
-M 9636 spec_breath_any Load to: Xerias Dartoreth
-M 9653 spec_guard Load to: Danyeal Tedronai Bgreathiou
-M 9656 spec_cast_cleric Load to: Yvonne Bgreathiou
-M 9658 spec_breath_any Load to: Ishamael Bgreathiou
-M 9660 spec_breath_any Load to: Mashadar
-M 9661 spec_cast_mage Load to: Joronas Shadowson
-M 9663 spec_cast_cleric Load to: Priest of Dischord
-M 9666 spec_thief Load to: Prisoner
-S
-
-
-
 #RESETS
 M 0 9601 2 9601
 M 0 9601 2 9601
@@ -1476,6 +1455,27 @@ M 0 9656 5 9656
 M 0 9658 1 9658
 E 0 9658 0 11
 M 0 9660 1 9660
+S
+
+
+
+#SPECIALS
+M 9603 spec_breath_gas Load to: Iron Golem
+M 9608 spec_breath_gas Load to: Amethyst Dragon
+M 9609 spec_breath_any Load to: Ultan Bgreathiou
+M 9614 spec_breath_gas Load to: Tanar'ri Balor Guard
+M 9617 spec_breath_any Load to: Ice Mephit
+M 9623 spec_breath_any Load to: Ologothian
+M 9626 spec_breath_gas Load to: Retriever
+M 9627 spec_breath_gas Load to: Succubus
+M 9636 spec_breath_any Load to: Xerias Dartoreth
+M 9653 spec_guard Load to: Danyeal Tedronai Bgreathiou
+M 9656 spec_cast_cleric Load to: Yvonne Bgreathiou
+M 9658 spec_breath_any Load to: Ishamael Bgreathiou
+M 9660 spec_breath_any Load to: Mashadar
+M 9661 spec_cast_mage Load to: Joronas Shadowson
+M 9663 spec_cast_cleric Load to: Priest of Dischord
+M 9666 spec_thief Load to: Prisoner
 S
 
 
