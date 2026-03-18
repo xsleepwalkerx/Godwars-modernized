@@ -181,7 +181,7 @@ For more information, check out the GODWARS-INFO help file.
 			 #c----====> B U I L D E R S <====----
 
                  #c---==> O R I G I N A L S  <==---
- 				 #RXentoth  #rAkasha#n #BJoronas#n #pKaelas#n
+ 		#RXentoth  #rAkasha#n #BJoronas#n #pKaelas#n
  
                               #CAspertame#n 
                 
@@ -211,10 +211,10 @@ For more information, check out the GODWARS-INFO help file.
                               /_/  /_/_/____/\__/____/      
 
 						  ____      _                      
-						 |  _ \ ___| |__   ___  _ __ _ __  
-						 | |_) / _ \ '_ \ / _ \| '__| '_ \ 
-						 |  _ <  __/ |_) | (_) | |  | | | |
-						 |_| \_\___|_.__/ \___/|_|  |_| |_|
+				 |  _ \ ___| |__   ___  _ __ _ __  
+				 | |_) / _ \ '_ \ / _ \| '__| '_ \ 
+				 |  _ <  __/ |_) | (_) | |  | | | |
+				 |_| \_\___|_.__/ \___/|_|  |_| |_|
                                    
 
                  #gBased on Merc 2.1 code by Furey, Hatchet and Kahn
@@ -435,35 +435,7 @@ Also help on: CHANGES DAMAGE DEATH EXPERIENCE STORY TICK
 This MUD has all the GodWars Deluxe changes, see 'help godwars-changes'
 for a list of them, as well as the following:
 
-* Keep up with the note board, all changes are posted there.
-* Removed the space hogging, useless IMC protocol.
-* Customizable ANSI color, see 'help color'.
-* Removed godless support, puny mortals! :-)
-* Added ban, disable, and copyover.
-* Only Immortals can see hostnames in finger.
-* Added autostance, see 'help autostance'.
-* Damcap info on score command.
-* Damage values to attacks during combat.
-* Level command redone.
-* Added color to many MUD commands and messages.
-* Newbies get a set of black shimmering armor upon logging in.
-* Users command redone. (Immortal only)
-* Class channel procedures redone.
-* Class specific status, see 'help statustable'.
-* Score command redone.
-* Reinserted immunities.
-* Quest cloning removed, negative spell power quest bug fixed.
-* Added noteboards, see 'help note'.
-* Mindflex added for mages.  -Xentoth
-* Contort added for ninjas.  -Xentoth
-* The Mists added, random weather affect.  -Xentoth
-* Mage Spheres redone and added in, correct this time.  -Xentoth
-* Mupkeep added for mage hybrids  -Xentoth
-* Sphere help files added.  -Xentoth
-* Flame channel added. 	-Xentoth
-* Hybrid status table in, code to follow soon.  -Xentoth
-* Black magic added.  -Xentoth
-* Vampire rituals added...more to come.  -Xentoth
+* Trying to get this thing working right, can't wear EQ or LOOK - SW
 ~
 
 -1 DAMAGE~
@@ -4599,24 +4571,24 @@ To start your first charector you should know: -This is a Player Kill (PK) mud.
 ~
 
 0 CLAN CLANS~
-#7VAMPIRE#n  : LaSombra (#rTshaya#n), Ravnos (#rMalakai#n),       
-                Tzimisce (  ),  Tremere (#rAramark#n),                
-                         Brujah (#rSaber#n)
+#7VAMPIRE#n  : LaSombra (  ), Ravnos (  ),       
+                Tzimisce (  ),  Tremere (  ),                
+                         Brujah (  )
 
-#7WEREWOLF#n : Shadow Lords (#pRazil#n), Bone Gnawers (#pAsh#n),
-	       Stormcallers (#pDakeyras#n), Red Talons (#pCarvvo#n),
-			 Get of Fenris (#pVerilak#n)
+#7WEREWOLF#n : Shadow Lords (  ), Bone Gnawers (  ),
+	       Stormcallers (  ), Red Talons (  ),
+			 Get of Fenris (  )
 
-#7MAGE#n     : Water (#LOmnitron#n), Air (#pKaitlyn#n), Fire (  ), 
-                Earth (#gBlackwolf#n), Lightning (#yPentex#n)
+#7MAGE#n     : Water (  ), Air (  ), Fire (  ), 
+                Earth (  ), Lightning (  )
 
-#7DEMON#n    : (#rDesdemona#n), (#rThoth#n), (#rVanquish#n), (#rDilaudid#n),
-               (#rLorena#n)
+#7DEMON#n    : (  ), (  ), (  ), (  ),
+              (  )
 
-#7NINJAS#n   : Bishamon (#p#n), Hotei (#pTreehugger#n), Jurojin
-               (#pBloodrath#n), Mudevi (#pSarik#n), Kotaro (#pDirk#n)
+#7NINJAS#n   : Bishamon (  ), Hotei (  ), Jurojin
+               (  ), Mudevi (  ), Kotaro (  )
 
-#7ANGELS#n   : (#CSelena#n), (#COphelia#n), (#CDuunken#n), (#COdysseus#n),
+#7ANGELS#n   : (  ), (  ), (  ), (  ),
                (  )
 ~
 
