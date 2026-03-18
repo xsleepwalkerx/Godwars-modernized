@@ -786,16 +786,6 @@ void one_hit( CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 
     if ( dam <= 0 )
 	dam = 1;
-//Claw/bite bug  --Aristoi 
-if ( (dam == 1)
-  || (dam == 87)
-  || (dam == 89)
-  || (dam == 90)
-  || (dam == 262)
-  || (!IS_NPC(ch) && IS_ANGEL(ch)) )
-{
-   dam = (ch->damcap[0] - number_range(1, 250));
-}
 /* heavensgate 
     if (IS_ANGEL(ch) && (number_range(1, 2) == 2)
     {
