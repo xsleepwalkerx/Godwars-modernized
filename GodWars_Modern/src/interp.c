@@ -114,7 +114,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "get",		do_get,		POS_SITTING,	 0,  LOG_NORMAL	},
     { "inventory",	do_inventory,	POS_DEAD,	 0,  LOG_NORMAL	},
     { "kill",		do_kill,	POS_FIGHTING,	 0,  LOG_NORMAL	},
-    { "look",		do_look,	POS_MEDITATING,	 0,  LOG_NORMAL	},
+    { "look",		do_look,	POS_RESTING,	 0,  LOG_NORMAL	},
     { "level",		do_level,	POS_SITTING,	 0,  LOG_NORMAL	},
     { "mount",          do_mount,       POS_STANDING,    0,  LOG_NORMAL },
     { "map",		do_map, 	POS_DEAD,	 0,  LOG_NORMAL	},

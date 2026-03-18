@@ -1334,11 +1334,6 @@ void wear_obj( CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace )
 	&&   !remove_obj( ch, WEAR_HOLD  , fReplace ) )
 	    return;
 
-	if (!IS_NPC(ch) && !IS_FORM(ch,ITEM_WIELD))
-	{
-	    send_to_char("You are unable to use it.\n\r",ch);
-	    return;
-	}
 	if (get_eq_char( ch, WEAR_WIELD ) == NULL && is_ok_to_wear(ch,wolf_ok,"right_hand"))
 	{
 	    if ( obj->item_type == ITEM_LIGHT )

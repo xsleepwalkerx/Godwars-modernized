@@ -96,7 +96,7 @@ void save_char_obj( CHAR_DATA *ch )
     char strsave[MAX_STRING_LENGTH];
     FILE *fp;
 
-    if ( IS_NPC(ch) || ch->level < 2 )
+    if ( IS_NPC(ch) || ch->level < 1 )
 	return;
 
     if ( ch->desc != NULL && ch->desc->connected != CON_PLAYING )

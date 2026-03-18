@@ -3,7 +3,8 @@ GodWars_Modern/src/*.o
 GodWars_Modern/src/merc
 
 # Player/area save files (runtime data)
-GodWars_Modern/player/
+GodWars_Modern/player/*
+!GodWars_Modern/player/.gitkeep
 GodWars_Modern/gods/
 GodWars_Modern/clans/
 

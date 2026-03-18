@@ -2234,7 +2234,7 @@ struct auction_data
 /*
  * Room VNUMs (additional).
  */
-#define ROOM_VNUM_ALTAR     30021
+#define ROOM_VNUM_ALTAR     3054
 
 /*
  * Item types (additional).
