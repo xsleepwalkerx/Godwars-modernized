@@ -9702,7 +9702,8 @@ void do_autoclass( CHAR_DATA *ch, char *argument )
     if ( arg[0] == '\0' )
     {
        send_to_char( "Choose a class from:\n\r", ch );
-       send_to_char("Mage, Ninja, Vampire, Werewolf\n\r",ch);
+       send_to_char("Angel, Demon, Dragon, Drow, Elemental, Fae, Highlander,\n\r",ch);
+       send_to_char("KOE, Mage, Monk, Ninja, Sorcerer, Vampire, Werewolf\n\r",ch);
        return;
     }
    
@@ -9860,6 +9861,142 @@ void do_autoclass( CHAR_DATA *ch, char *argument )
 	return;
     }
 
+    if ( !str_cmp( arg, "highlander" ) )
+    {
+	ch->exp -= 100000;
+	ch->class = CLASS_HIGHLANDER;
+	send_to_char( "You are now a Highlander.\n\r", ch );
+	free_string(ch->lord);
+	ch->lord = str_dup("");
+	free_string(ch->clan);
+	ch->clan = str_dup("");
+	do_autosave(ch,"");
+	return;
+    }
+
+    if ( !str_cmp( arg, "demon" ) )
+    {
+	ch->exp -= 100000;
+	ch->class = CLASS_DEMON;
+	ch->alignment = -1000;
+	SET_BIT(ch->act, PLR_DEMON);
+	send_to_char( "You are now a Demon Lord.\n\r", ch );
+	free_string(ch->lord);
+	ch->lord = str_dup("");
+	free_string(ch->clan);
+	ch->clan = str_dup("");
+	do_autosave(ch,"");
+	return;
+    }
+
+    if ( !str_cmp( arg, "angel" ) )
+    {
+	ch->exp -= 100000;
+	ch->class = CLASS_ANGEL;
+	ch->alignment = 1000;
+	SET_BIT(ch->act, PLR_DEMON);
+	send_to_char( "You are now an Angel.\n\r", ch );
+	free_string(ch->lord);
+	ch->lord = str_dup("");
+	free_string(ch->clan);
+	ch->clan = str_dup("");
+	do_autosave(ch,"");
+	return;
+    }
+
+    if ( !str_cmp( arg, "monk" ) )
+    {
+	ch->exp -= 100000;
+	ch->class = CLASS_MONK;
+	send_to_char( "You are now a Monk.\n\r", ch );
+	free_string(ch->lord);
+	ch->lord = str_dup("");
+	free_string(ch->clan);
+	ch->clan = str_dup("");
+	do_autosave(ch,"");
+	return;
+    }
+
+    if ( !str_cmp( arg, "koe" ) )
+    {
+	ch->exp -= 100000;
+	ch->class = CLASS_KOE;
+	send_to_char( "You are now a Kindred of the East.\n\r", ch );
+	free_string(ch->lord);
+	ch->lord = str_dup("");
+	free_string(ch->clan);
+	ch->clan = str_dup("");
+	ch->vampgen = 4;
+	do_autosave(ch,"");
+	return;
+    }
+
+    if ( !str_cmp( arg, "fae" ) )
+    {
+	ch->exp -= 100000;
+	ch->class = CLASS_FAE;
+	send_to_char( "You are now of the Fae.\n\r", ch );
+	free_string(ch->lord);
+	ch->lord = str_dup("");
+	free_string(ch->clan);
+	ch->clan = str_dup("");
+	do_autosave(ch,"");
+	return;
+    }
+
+    if ( !str_cmp( arg, "sorcerer" ) )
+    {
+	ch->exp -= 100000;
+	ch->class = CLASS_SORCERER;
+	send_to_char( "You are now a Sorcerer.\n\r", ch );
+	free_string(ch->lord);
+	ch->lord = str_dup("");
+	free_string(ch->clan);
+	ch->clan = str_dup("");
+	do_autosave(ch,"");
+	return;
+    }
+
+    if ( !str_cmp( arg, "drow" ) )
+    {
+	ch->exp -= 100000;
+	ch->class = CLASS_DROW;
+	send_to_char( "You are now a Drow.\n\r", ch );
+	free_string(ch->lord);
+	ch->lord = str_dup("");
+	free_string(ch->clan);
+	ch->clan = str_dup("");
+	do_autosave(ch,"");
+	return;
+    }
+
+    if ( !str_cmp( arg, "dragon" ) )
+    {
+	ch->exp -= 100000;
+	ch->class = CLASS_DRAGON;
+	send_to_char( "You are now a Dragon.\n\r", ch );
+	free_string(ch->lord);
+	ch->lord = str_dup("");
+	free_string(ch->clan);
+	ch->clan = str_dup("");
+	do_autosave(ch,"");
+	return;
+    }
+
+    if ( !str_cmp( arg, "elemental" ) || !str_cmp( arg, "elementalist" ) )
+    {
+	ch->exp -= 100000;
+	ch->class = CLASS_ELEMENTAL;
+	send_to_char( "You are now an Elemental.\n\r", ch );
+	free_string(ch->lord);
+	ch->lord = str_dup("");
+	free_string(ch->clan);
+	ch->clan = str_dup("");
+	do_autosave(ch,"");
+	return;
+    }
+
 send_to_char("Please choose one of the following:\n\r", ch);
-send_to_char("Mage, Ninja, Vampire, Werewolf\n\r", ch);
+send_to_char("Angel, Demon, Dragon, Drow, Elemental, Fae, Highlander,\n\r", ch);
+send_to_char("KOE, Mage, Monk, Ninja, Sorcerer, Vampire, Werewolf\n\r", ch);
 }
