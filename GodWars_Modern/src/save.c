@@ -365,6 +365,10 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
 	fprintf( fp, "QuestCount   %d\n", ch->pcdata->quest_count );
 	fprintf( fp, "QuestFailed  %d\n", ch->pcdata->quest_failed );
 	fprintf( fp, "QuestWait    %d\n", ch->pcdata->quest_wait );
+	fprintf( fp, "Deity        %d\n", ch->pcdata->deity );
+	fprintf( fp, "Glory        %d\n", ch->pcdata->glory );
+	fprintf( fp, "GloryTimer   %d\n", ch->pcdata->glory_timer );
+	fprintf( fp, "DeityFlags   %d\n", ch->pcdata->deity_flags );
 	fprintf( fp, "Wolf         %d\n", ch->pcdata->wolf );
 	fprintf( fp, "Rank         %d\n", ch->pcdata->rank );
 	fprintf( fp, "Regenerate   %d\n", ch->pcdata->regenerate );
@@ -2032,6 +2036,8 @@ void fread_char( CHAR_DATA *ch, FILE *fp )
 	    KEY( "Damroll",	ch->damroll,		fread_number( fp ) );
 	    KEY( "Darkness",    ch->pcdata->darkness,	fread_number( fp ) );
 	    KEY( "Deaf",	ch->deaf,		fread_number( fp ) );
+	    KEY( "Deity",       ch->pcdata->deity,       fread_number( fp ) );
+	    KEY( "DeityFlags",  ch->pcdata->deity_flags, fread_number( fp ) );
 	    KEY( "Demonic",     ch->pcdata->demonic,	fread_number( fp ) );
 	    KEY( "DenyDate",	ch->pcdata->denydate,	fread_number( fp ) );
 	    KEY( "Description",	ch->description,	fread_string( fp ) );
@@ -2148,6 +2154,8 @@ void fread_char( CHAR_DATA *ch, FILE *fp )
 		fMatch = TRUE;
 		break;
 	    }
+	    KEY( "Glory",       ch->pcdata->glory,       fread_number( fp ) );
+	    KEY( "GloryTimer",  ch->pcdata->glory_timer, fread_number( fp ) );
 	    KEY( "Gold",	ch->gold,		fread_number( fp ) );
 	    KEY( "Gpoints",    	ch->pcdata->gpoints,	fread_number( fp ) );
 	    break;

@@ -46,7 +46,8 @@ O_FILES = \
 	protocol.o   mobprog.o  stubs.o                                   \
 	trivia.o     auction.o  questmaster.o                             \
 	\
-	bard.o       amazon.o   jedi.o         golem.o
+	bard.o       amazon.o   jedi.o         golem.o      \
+	deity.o
 
 # ---------------------------------------------------------------------------
 TARGET = merc

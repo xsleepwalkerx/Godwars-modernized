@@ -343,6 +343,12 @@ const	struct	cmd_type	cmd_table	[] =
     { "amazonworship",  do_amazonworship,POS_STANDING,   0,  LOG_NORMAL },
     { "artemisworship", do_artemisworship,POS_STANDING,  0,  LOG_NORMAL },
 
+    /* Deity / Glorify system commands */
+    { "deity",          do_deity,       POS_STANDING,    0,  LOG_NORMAL },
+    { "glorify",        do_glorify,     POS_STANDING,    0,  LOG_NORMAL },
+    { "deitypower",     do_deitypower,  POS_SLEEPING,    0,  LOG_NORMAL },
+    { "dpower",         do_dpower,      POS_FIGHTING,    0,  LOG_NORMAL },
+
     /* Jedi class commands */
     { "jediskill",      do_jediskill,   POS_SLEEPING,    0,  LOG_NORMAL },
     { "apprentice",     do_apprentice,  POS_STANDING,    0,  LOG_NORMAL },

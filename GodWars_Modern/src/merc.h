@@ -2030,6 +2030,53 @@ struct auction_data
 #define SONG_SLEEP          512
 
 /*
+ * =========================================================================
+ * DEITY / GLORIFY SYSTEM
+ * Players may pledge themselves to one of several deities and earn glory
+ * through the glorify command.  Higher glory unlocks deity-specific powers.
+ * =========================================================================
+ */
+
+/* Deity identifiers (pcdata->deity) */
+#define DEITY_NONE      0   /* no deity chosen */
+#define DEITY_ARTEMIS   1   /* goddess of the hunt — favours Amazons */
+#define DEITY_MARS      2   /* god of war — favours combat classes */
+#define DEITY_HECATE    3   /* goddess of magic — favours Mages/Sorcerers */
+#define DEITY_ANUBIS    4   /* god of death — favours Demons/Vampires */
+#define DEITY_LOKI      5   /* god of chaos — favours tricksters */
+#define DEITY_GAIA      6   /* earth mother — favours Werewolves */
+#define DEITY_ODIN      7   /* god of wisdom — favours Highlanders */
+#define DEITY_MAX       7   /* highest valid deity index */
+
+/* Glory thresholds */
+#define GLORY_MAX           1000
+#define GLORY_INITIATE      0    /* Initiate: 0-99 */
+#define GLORY_DEVOTED       100  /* Devoted: 100-299 */
+#define GLORY_FAITHFUL      300  /* Faithful: 300-599 */
+#define GLORY_CHAMPION      600  /* Champion: 600-999 */
+#define GLORY_AVATAR        1000 /* Avatar: 1000 */
+
+/* Glory timer (ticks between glorify uses) */
+#define GLORIFY_COOLDOWN    60   /* 60 ticks (~15 minutes at 4 pps) */
+
+/* Deity boon flags (pcdata->deity_flags) */
+#define DFLAG_BOON1         1    /* minor boon (Devoted) active */
+#define DFLAG_BOON2         2    /* major boon (Faithful) active */
+#define DFLAG_BOON3         4    /* divine boon (Champion) active */
+#define DFLAG_AVATAR        8    /* avatar form active */
+#define DFLAG_INVOKE_TIMER  16   /* invoke power on cooldown */
+
+/* VNUMs for the divine temple area (rooms 40001-40020) */
+#define ROOM_VNUM_DIVINE_NEXUS  40001  /* The Divine Nexus — central hub */
+#define ROOM_VNUM_SHRINE_ART    40002  /* Shrine of Artemis */
+#define ROOM_VNUM_SHRINE_MARS   40003  /* Shrine of Mars */
+#define ROOM_VNUM_SHRINE_HEC    40004  /* Shrine of Hecate */
+#define ROOM_VNUM_SHRINE_ANU    40005  /* Shrine of Anubis */
+#define ROOM_VNUM_SHRINE_LOK    40006  /* Shrine of Loki */
+#define ROOM_VNUM_SHRINE_GAI    40007  /* Shrine of Gaia */
+#define ROOM_VNUM_SHRINE_ODI    40008  /* Shrine of Odin */
+
+/*
  * Amazon class — pcdata->powers[] indices.
  */
 #define PAMAZON             0   /* amazon power flags */
@@ -3490,6 +3537,12 @@ struct pc_data
     int32_t         quest_count;    /* lifetime quests completed */
     int32_t         quest_failed;   /* lifetime quests failed */
     int32_t         quest_wait;     /* cooldown ticks after last quest */
+
+    /* Deity / Glorify system */
+    int32_t         deity;          /* DEITY_* constant: which deity followed */
+    int32_t         glory;          /* current glory points (0-1000) */
+    int32_t         glory_timer;    /* ticks until next glorify allowed */
+    int32_t         deity_flags;    /* DFLAG_* active boon bits */
 };
 
 
@@ -5369,6 +5422,12 @@ DECLARE_DO_FUN( do_slaveinsight      );
 DECLARE_DO_FUN( do_amazonworship     );
 DECLARE_DO_FUN( do_artemisworship    );
 
+/* Deity / Glorify system commands (deity.c) */
+DECLARE_DO_FUN( do_deity             );
+DECLARE_DO_FUN( do_glorify           );
+DECLARE_DO_FUN( do_deitypower        );
+DECLARE_DO_FUN( do_dpower            );
+
 /* Jedi class commands (jedi.c) */
 DECLARE_DO_FUN( do_jediskill         );
 DECLARE_DO_FUN( do_apprentice        );
@@ -5425,6 +5484,8 @@ DECLARE_DO_FUN( do_rocktalk          );
 
 /* Non-DO_FUN function prototypes */
 extern void behead          ( CHAR_DATA *victim, CHAR_DATA *ch );
+extern void update_glory    ( CHAR_DATA *ch );
+extern const char *deity_name( int deity );
 extern void paradox         ( CHAR_DATA *ch );
 extern void show_spell      ( CHAR_DATA *ch, int dtype );
 extern void trip            ( CHAR_DATA *ch, CHAR_DATA *victim );

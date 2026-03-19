@@ -1737,6 +1737,9 @@ void char_update( void )
 	    update_pos( ch );
 	}
 
+	/* Deity / Glorify cooldown tick */
+	update_glory( ch );
+
         if ( IS_SET(ch->mflags, MAGE_EMBRACED2) )
         {
           stc("The earth surrounding you starts to slowly crack.\n\r",ch);
