@@ -69,6 +69,7 @@ DXP_DATA 		dxp_info;
 CHAR_DATA	*   first_fight = NULL;	/* First character to fight	*/
 CHAR_DATA	*   last_fight  = NULL;	/* Last character to fight	*/
 
+int			gsn_bard;
 int			gsn_backstab;
 int			gsn_hide;
 int			gsn_peek;

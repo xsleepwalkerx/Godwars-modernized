@@ -97,6 +97,7 @@ typedef struct  shop_data           SHOP_DATA;
 typedef struct  time_info_data      TIME_INFO_DATA;
 typedef struct  trap_data           TRAP_DATA;      /* Genesis trap system */
 typedef struct  weather_data        WEATHER_DATA;
+typedef struct  granite_data        GRANITE_DATA;   /* Golem astral portal node */
 
 /*
  * Function pointer types.
@@ -293,6 +294,11 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define CLASS_DROW              16384
 #define CLASS_DRAGON            32768
 #define CLASS_ELEMENTAL         65536
+/* New classes: Bard, Amazon, Jedi, Golem */
+#define CLASS_BARD              131072
+#define CLASS_AMAZON            262144
+#define CLASS_JEDI              524288
+#define CLASS_GOLEM             1048576
 
 /*
  * Vampire Disciplines — indices into pcdata->disc[].
@@ -553,6 +559,7 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define PLR_NO_TELL         134217728
 #define PLR_WOLFMAN         268435456
 #define PLR_AUTOFOLLOW      536870912  /* autofollow ally flag */
+#define PLR_SACREDINVIS     1073741824 /* amazon: sacred camouflage */
 
 /*
  * Affected_by bits.
@@ -1644,6 +1651,11 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 /* Special character flags (ch->special) */
 #define SPC_PRINCE          1       /* character is a Kindred prince */
 #define SPC_AKUMA           2       /* character is Akuma (infernal pact) */
+#define SPC_JEDI_FSHIELD    4       /* Jedi: force shield active */
+#define SPC_JEDI_LEVITATE   8       /* Jedi: force levitate active */
+#define SPC_JEDI_QUICKEN    16      /* Jedi: force quicken active */
+#define SPC_GOLEMBIND       32      /* Golem: bind active */
+#define SPC_CHAMPION        64      /* Demon: champion status */
 
 /* Universal affect index (pcdata->stats[] slot for affect flags) */
 #define UNI_AFF             2       /* stats[2] = universal affect bitfield */
@@ -1980,6 +1992,7 @@ struct auction_data
 #define ITEM_WALL           45
 #define ITEM_WARD           46
 #define ITEM_KEEP           47
+#define ITEM_INSTRUMENT     48  /* bard: musical instrument */
 
 /*
  * Power sub-indices.
@@ -1987,6 +2000,62 @@ struct auction_data
 #define POWER_CURRENT   0
 #define POWER_TOTAL     1
 #define FOCUS_CURRENT   0
+
+/*
+ * Bard class — pcdata->stats[] indices (using high indices to avoid conflicts).
+ */
+#define BARD_SONG_PLAYING   9   /* currently playing song type */
+#define BARD_LYRIC_COUNTER  10  /* current lyric line index */
+
+/* Bard instrument type constants */
+#define INSTR_LYRE          1
+#define INSTR_MANDOLIN      2
+#define INSTR_CHIMES        4
+#define INSTR_FLUTE         8
+#define INSTR_LUTE          16
+#define INSTR_FIDDLE        32
+#define INSTR_DRUMS         64
+#define INSTR_TAMBOURINE    128
+
+/* Bard song type constants */
+#define SONG_LOVE           1
+#define SONG_HATE           2
+#define SONG_BATTLE         4
+#define SONG_LAUGHTER       8
+#define SONG_DEFENSE        16
+#define SONG_CALM           32
+#define SONG_CHARMING       64
+#define SONG_FEAR           128
+#define SONG_ANIMAL         256
+#define SONG_SLEEP          512
+
+/*
+ * Amazon class — pcdata->powers[] indices.
+ */
+#define PAMAZON             0   /* amazon power flags */
+#define AMA_COMBO           1   /* amazon combo state */
+
+/*
+ * Jedi class — pcdata->powers[] indices.
+ * Shared with amazon since only one class active at a time.
+ */
+#define JPOWER_BODY         0   /* jedi body power points */
+#define JPOWER_MIND         1   /* jedi mind power points */
+#define JPOWER_SPIRIT       2   /* jedi spirit power points */
+#define JPOWER_TECHNIQUE    3   /* jedi technique points */
+#define JAPP_TAKEN          4   /* jedi apprentice taken flag */
+#define JAPP_MASTERED       5   /* jedi apprentice mastered flag */
+#define JEDI_FOCUS          6   /* jedi focus level */
+#define JEDI_STATE          7   /* jedi state (light/dark) */
+#define JEDI_FOCUS_MAX      8   /* jedi focus max */
+#define JEDI_STATE_MAX      9   /* jedi state max */
+#define JEDI_COMBO_CURR     11  /* jedi current combo step */
+#define JEDI_TP_COMBO       12  /* jedi technique combo points */
+
+/*
+ * PLR_SHADOWSIGHT alias — jedi sight power uses AFF_SHADOWSIGHT.
+ */
+#define PLR_SHADOWSIGHT     AFF_SHADOWSIGHT
 
 /*
  * Additional discipline indices.
@@ -2251,6 +2320,7 @@ struct auction_data
 /*
  * GSN declarations — global skill numbers, defined in db.c.
  */
+extern int gsn_bard;
 extern int gsn_backstab;
 extern int gsn_berserk;
 extern int gsn_blindness;
@@ -2418,6 +2488,8 @@ extern int gsn_backfist;
 #define NEW_MONKFLAME   2   /* monk: flame aura */
 #define NEW_MONKADAM    4   /* monk: adamantine skin */
 #define NEW_POWER       8   /* monk: power-up newbit */
+#define NEW_JAWLOCK     16  /* amazon: jaw-lock effect */
+#define NEW_SKIN        32  /* amazon: barkskin effect */
 #define NPOWER_NINGENNO 3
 
 /* Monk power index in powers[] */
@@ -2989,6 +3061,16 @@ struct note_data
 typedef struct board_data BOARD_DATA;
 
 /*
+ * GRANITE_DATA — Golem astral portal node linked list.
+ */
+struct granite_data
+{
+    GRANITE_DATA   *next;
+    int32_t         vnum;
+    char           *name;
+};
+
+/*
  * =========================================================================
  * CHAR_DATA  — the central character structure.
  * Merges EM fields with Genesis additions (style[], dragskills, elem_type).
@@ -3174,6 +3256,20 @@ struct char_data
     /* Genesis: mage timers */
     int32_t             arete;
     int32_t             paradox_ward;
+
+    /* Class rank/generation — used by amazon/jedi/golem for power tier */
+    int32_t             generation;
+
+    /* Golem class fields */
+    int32_t             countdown;      /* golem: combo countdown timer */
+    int32_t             convert_to;     /* golem: stone form being converted to */
+    int32_t             wait2;          /* golem: secondary wait timer */
+    int32_t             golem_moves;    /* golem: combo move bitfield */
+    int32_t             morphy;         /* golem: currently in stone form (bool) */
+    GRANITE_DATA       *influx;         /* golem: astral portal list */
+
+    /* Bard class fields */
+    AFFECT_DATA        *combat_affects; /* bard: short-duration combat affects */
 };
 
 /* Compatibility alias: stance.c uses ch->weapon[] while the field is wpn[] */
@@ -3626,6 +3722,12 @@ typedef struct wiznet_type  { char *name; long flag; int16_t level; }           
 #define IS_DROW(ch)         ((ch)->class == CLASS_DROW)
 #define IS_DRAGON(ch)       ((ch)->class == CLASS_DRAGON)
 #define IS_ELEMENTAL(ch)    ((ch)->class == CLASS_ELEMENTAL)
+
+/* New class check macros */
+#define IS_CLASS(ch, cls)   (!IS_NPC(ch) && IS_SET((ch)->class, (cls)))
+#define IS_BARD(ch)         IS_CLASS((ch), CLASS_BARD)
+#define IS_AMAZON(ch)       IS_CLASS((ch), CLASS_AMAZON)
+#define IS_JEDI(ch)         IS_CLASS((ch), CLASS_JEDI)
 
 /* Character permission/status macros */
 #define IS_JUDGE(ch)        (get_trust(ch) >= LEVEL_JUDGE)
@@ -5237,6 +5339,89 @@ extern bool     hurt_fighting        ( CHAR_DATA *ch, CHAR_DATA *victim );
 extern void     quest_kill_check     ( CHAR_DATA *ch, CHAR_DATA *victim );
 extern long     mod_damcap           ( CHAR_DATA *ch, CHAR_DATA *victim );
 extern LEADER_BOARD leader_board;
+
+/* Bard class commands (bard.c) */
+DECLARE_DO_FUN( do_play              );
+extern void bard_update      ( void );
+
+/* Amazon class commands (amazon.c) */
+DECLARE_DO_FUN( do_succour           );
+DECLARE_DO_FUN( do_drill             );
+DECLARE_DO_FUN( do_sisters           );
+DECLARE_DO_FUN( do_cognizance        );
+DECLARE_DO_FUN( do_amazcamouflage    );
+DECLARE_DO_FUN( do_seduce            );
+DECLARE_DO_FUN( do_net               );
+DECLARE_DO_FUN( do_barkskin          );
+DECLARE_DO_FUN( do_genesis           );
+DECLARE_DO_FUN( do_flare             );
+DECLARE_DO_FUN( do_steelfist         );
+DECLARE_DO_FUN( do_combo             );
+DECLARE_DO_FUN( do_praise            );
+DECLARE_DO_FUN( do_amazspinkick      );
+DECLARE_DO_FUN( do_sweepkick         );
+DECLARE_DO_FUN( do_axekick           );
+DECLARE_DO_FUN( do_forearm           );
+DECLARE_DO_FUN( do_amazknee          );
+DECLARE_DO_FUN( do_amazbackfist      );
+DECLARE_DO_FUN( do_slavecommand      );
+DECLARE_DO_FUN( do_slaveinsight      );
+DECLARE_DO_FUN( do_amazonworship     );
+DECLARE_DO_FUN( do_artemisworship    );
+
+/* Jedi class commands (jedi.c) */
+DECLARE_DO_FUN( do_jediskill         );
+DECLARE_DO_FUN( do_apprentice        );
+DECLARE_DO_FUN( do_jedi              );
+DECLARE_DO_FUN( do_initiate          );
+DECLARE_DO_FUN( do_sense             );
+DECLARE_DO_FUN( do_jedilearn         );
+DECLARE_DO_FUN( do_jstate            );
+DECLARE_DO_FUN( do_make              );
+DECLARE_DO_FUN( do_jedisleep         );
+DECLARE_DO_FUN( do_jedishield        );
+DECLARE_DO_FUN( do_fshield           );
+DECLARE_DO_FUN( do_fspeed            );
+DECLARE_DO_FUN( do_jtouch            );
+DECLARE_DO_FUN( do_jlevitate         );
+DECLARE_DO_FUN( do_jsight            );
+DECLARE_DO_FUN( do_jsense            );
+DECLARE_DO_FUN( do_jeyes             );
+DECLARE_DO_FUN( do_jfocus            );
+DECLARE_DO_FUN( do_jhealing          );
+DECLARE_DO_FUN( do_jwalk             );
+DECLARE_DO_FUN( do_jfight            );
+DECLARE_DO_FUN( do_jsummon           );
+DECLARE_DO_FUN( do_jsault            );
+DECLARE_DO_FUN( do_jreverse          );
+DECLARE_DO_FUN( do_jkneel            );
+DECLARE_DO_FUN( do_jstab             );
+DECLARE_DO_FUN( do_jhigh             );
+DECLARE_DO_FUN( do_jupper            );
+DECLARE_DO_FUN( do_jbutterfly        );
+DECLARE_DO_FUN( do_jcross            );
+DECLARE_DO_FUN( do_jslash            );
+DECLARE_DO_FUN( do_jcircle           );
+DECLARE_DO_FUN( do_jstep             );
+DECLARE_DO_FUN( do_channelforce      );
+DECLARE_DO_FUN( do_jfade             );
+
+/* Golem class commands (golem.c) */
+DECLARE_DO_FUN( do_incubic           );
+DECLARE_DO_FUN( do_sumosplash        );
+DECLARE_DO_FUN( do_bazmapunch        );
+DECLARE_DO_FUN( do_neckcrack         );
+DECLARE_DO_FUN( do_backslash         );
+DECLARE_DO_FUN( do_elbowbash         );
+DECLARE_DO_FUN( do_groinkick         );
+DECLARE_DO_FUN( do_solidify          );
+DECLARE_DO_FUN( do_harden            );
+DECLARE_DO_FUN( do_golpowers         );
+DECLARE_DO_FUN( do_hitch             );
+DECLARE_DO_FUN( do_golbind           );
+DECLARE_DO_FUN( do_modify            );
+DECLARE_DO_FUN( do_study             );
+DECLARE_DO_FUN( do_rocktalk          );
 
 /* Non-DO_FUN function prototypes */
 extern void behead          ( CHAR_DATA *victim, CHAR_DATA *ch );

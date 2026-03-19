@@ -1472,6 +1472,102 @@ Related Helps: Disciplines, and Vampire.
 Related Helps: Disciplines, and Vampire.
 ~
 
+0 BARD~
+Bards are wandering performers who weave music into magical effects. Armed
+with an instrument, a Bard can play songs to bolster allies, soothe enemies,
+or inspire fear. The key to a Bard's power is their instrument — different
+instruments change the duration and potency of their songs.
+
+Commands: play <song>
+Songs:    defense
+
+The Bard must hold an instrument to use their abilities. Each round of combat,
+the Bard has a chance to continue playing; failure interrupts the song. The
+'defense' song applies a short-term armor class boost to the Bard.
+
+Related Helps: Classes, Autoclass.
+~
+
+0 AMAZON AMAZONS~
+Amazons are fierce warrior women who draw their power from the goddess
+Artemis. They combine martial combat mastery with mystical abilities granted
+by their deity. Amazons can take slaves, worship for power, and command
+sisterhood support in battle.
+
+Commands: succour, drill, sisters, cognizance, camouflage, seduce, net,
+          barkskin, flare, steelfist, combo, praise, amazspinkick, sweepkick,
+          axekick, forearm, knee, backfist, slavecommand, slaveinsight,
+          amazonworship, artemisworship
+
+Related Helps: Classes, Autoclass, Amazonslave.
+~
+
+0 AMAZONSLAVE~
+An Amazon's slave is a captured character who serves as an obedient servant.
+The Amazon can command their slave and draw information from the slave's
+senses using 'slaveinsight'. Slaves gain a measure of protection from their
+Amazon mistress.
+
+Related Helps: Amazon.
+~
+
+0 JEDI SITH~
+The Jedi are Force-sensitive warriors who harness the power of the Force to
+enhance their combat abilities and achieve extraordinary feats. They can
+create lightsabers, train apprentices, and channel the Force into attacks
+and defenses. Jedi choose between the light side (Jedi) and dark side (Sith).
+
+Commands: jediskill, apprentice, jedi, initiate, sense, jedilearn, jstate,
+          make, jedisleep, jedishield, fshield, fspeed, jtouch, jlevitate,
+          jsight, jsense, jeyes, jfocus, jhealing, jwalk, jfight, jsummon,
+          jsault, jreverse, jkneel, jstab, jhigh, jupper, jbutterfly, jcross,
+          jslash, jcircle, jstep, channelforce, jfade
+
+Related Helps: Classes, Autoclass.
+~
+
+0 GOLEM ROCK~
+Golems are living constructs of stone and will, shaped from ancient mineral
+essences. They can take on different stone forms — each form grants different
+combat abilities and resistances. In their various forms, Golems can perform
+powerful melee combos unique to that stone type.
+
+Commands: solidify, harden, golpowers, hitch, golbind, gmodify, gstudy,
+          rocktalk, incubic, sumosplash, bazmapunch, neckcrack, backslash,
+          elbowbash, groinkick
+
+Related Helps: Classes, Autoclass, Golemforms, Golemcombos.
+~
+
+0 GOLEMFORMS~
+The Golem class can transform into the following stone forms:
+
+Emerald   - Green stone form; enhanced speed and agility.
+Gold      - Gleaming metal form; enhanced strength.
+Crystal   - Transparent form; enhanced magic resistance.
+Ruby      - Red stone form; enhanced fire resistance.
+Obsidian  - Black glass form; enhanced shadow abilities.
+Granite   - Grey rock form; enhanced defense.
+Diamond   - Hardest form; enhanced all-around durability.
+
+Each form grants access to unique combo attacks.
+
+Related Helps: Golem, Golemcombos.
+~
+
+0 GOLEMCOMBOS~
+Each Golem stone form has unique combo attacks:
+
+Crystal Form:  crystal_move1, crystal_move2
+Obsidian Form: obsidian_move1 through obsidian_move5
+Emerald Form:  emerald_move1, emerald_move2
+Ruby Form:     in_ruby combo sequence
+
+Use 'combo' to execute the current form's combo sequence.
+
+Related Helps: Golem, Golemforms.
+~
+
 0 $~
 
 #$

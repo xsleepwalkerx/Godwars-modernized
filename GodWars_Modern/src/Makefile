@@ -44,7 +44,9 @@ O_FILES = \
 	trap.o       wwauspice.o  wwbreed.o    wwtribe.o    \
 	\
 	protocol.o   mobprog.o  stubs.o                                   \
-	trivia.o     auction.o  questmaster.o
+	trivia.o     auction.o  questmaster.o                             \
+	\
+	bard.o       amazon.o   jedi.o         golem.o
 
 # ---------------------------------------------------------------------------
 TARGET = merc
