@@ -136,12 +136,17 @@ const	struct	cmd_type	cmd_table	[] =
      /* Informational commands.
      */
     { "afk",            do_afk,         POS_DEAD,        0,  LOG_NORMAL },
+    /* alias.c */
+    { "alias",          do_alias,       POS_DEAD,        0,  LOG_NORMAL },
+    { "alia",           do_alia,        POS_DEAD,        0,  LOG_NORMAL },
+    { "unalias",        do_unalias,     POS_DEAD,        0,  LOG_NORMAL },
     { "affects",	do_affects,	POS_DEAD,	 0,  LOG_NORMAL	},
     { "areas",		do_areas,	POS_DEAD,	 0,  LOG_NORMAL	},
     { "commands",	do_commands,	POS_DEAD,	 0,  LOG_NORMAL },
     { "compare",	do_compare,	POS_SITTING,	 0,  LOG_NORMAL },
     { "consider",	do_consider,	POS_SITTING,	 0,  LOG_NORMAL	},
     { "credits",	do_credits,	POS_DEAD,	 0,  LOG_NORMAL	},
+    { "emblazon",       do_emblazon,    POS_STANDING,    0,  LOG_ALWAYS },
     { "equipment",	do_equipment,	POS_DEAD,	 0,  LOG_NORMAL	},
     { "examine",	do_examine,	POS_SITTING,	 0,  LOG_NORMAL	},
     { "help",		do_help,	POS_DEAD,	 0,  LOG_NORMAL	},
@@ -259,6 +264,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "turn",		do_turn,	POS_MEDITATING,	 0,  LOG_NORMAL	},
     { "twist",		do_activate,	POS_STANDING,	 0,  LOG_NORMAL	},
     { "sacrifice",	do_sacrifice,	POS_SITTING,	 0,  LOG_NORMAL	},
+    { "scratch",        do_scratch,     POS_STANDING,    0,  LOG_ALWAYS },
     { "unlock",		do_unlock,	POS_SITTING,	 0,  LOG_NORMAL	},
     { "value",		do_value,	POS_SITTING,	 0,  LOG_NORMAL	},
     { "wear",		do_wear,	POS_SITTING,	 0,  LOG_NORMAL	},
@@ -973,6 +979,7 @@ LOG_NORMAL },*/
     { "qmake",		do_qmake,	POS_DEAD,	 9,  LOG_ALWAYS	},
     { "release",	do_release,	POS_DEAD,	 9,  LOG_ALWAYS	},
     { "relevel",	do_relevel,	POS_DEAD,	 1,  LOG_ALWAYS	},
+    { "randobj2",       do_randobj2,    POS_DEAD,        7,  LOG_ALWAYS },
     { "restore",	do_restore,	POS_DEAD,	 8,  LOG_ALWAYS	},
     { "rset",		do_rset,	POS_DEAD,	12,  LOG_ALWAYS	},
     { "silence",	do_silence,	POS_DEAD,	 8,  LOG_ALWAYS },

@@ -1964,6 +1964,7 @@ OBJ_DATA *create_object( OBJ_INDEX_DATA *pObjIndex, int level )
     obj->actcommands    = str_dup( "" );
     obj->questmaker     = str_dup( "" );
     obj->questowner     = str_dup( "" );
+    obj->owner          = str_dup( "" );
 
     obj->chobj		= NULL;
     obj->sat		= NULL;

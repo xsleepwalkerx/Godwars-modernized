@@ -1978,6 +1978,7 @@ void extract_obj( OBJ_DATA *obj )
     if (obj->actcommands  != NULL) free_string( obj->actcommands );
     if (obj->questmaker   != NULL) free_string( obj->questmaker  );
     if (obj->questowner   != NULL) free_string( obj->questowner  );
+    if (obj->owner        != NULL) free_string( obj->owner       );
     --obj->pIndexData->count;
     obj->next	= obj_free;
     obj_free	= obj;

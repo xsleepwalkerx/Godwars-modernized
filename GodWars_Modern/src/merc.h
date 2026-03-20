@@ -177,6 +177,7 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 
 #define PARADOX_TICK        10
 #define MAX_SKILL          165
+#define MAX_ALIAS           25          /* alias.c — max player aliases */
 #define MAX_SPELL           62
 #define MAX_LEVEL           12
 #define NO_WATCH            10
@@ -2850,6 +2851,7 @@ struct obj_data
     int32_t             sitnum;         /* Max characters that can sit on this */
     CHAR_DATA          *sat;            /* First character sitting on this obj  */
     int32_t             value[4];
+    char               *owner;          /* emblazon.c — emblazoned owner name */
 };
 
 struct exit_data
@@ -3543,6 +3545,10 @@ struct pc_data
     int32_t         glory;          /* current glory points (0-1000) */
     int32_t         glory_timer;    /* ticks until next glorify allowed */
     int32_t         deity_flags;    /* DFLAG_* active boon bits */
+
+    /* Alias system (alias.c) */
+    char           *alias[MAX_ALIAS];
+    char           *alias_sub[MAX_ALIAS];
 };
 
 
@@ -4824,6 +4830,15 @@ DECLARE_DO_FUN( do_sacrifice    );
 DECLARE_DO_FUN( do_save         );
 DECLARE_DO_FUN( do_say          );
 DECLARE_DO_FUN( do_scan         );
+/* alias.c */
+DECLARE_DO_FUN( do_alia         );
+DECLARE_DO_FUN( do_alias        );
+DECLARE_DO_FUN( do_unalias      );
+/* emblazon.c */
+DECLARE_DO_FUN( do_emblazon     );
+DECLARE_DO_FUN( do_scratch      );
+/* rand_obj.c */
+DECLARE_DO_FUN( do_randobj2     );
 DECLARE_DO_FUN( do_score        );
 DECLARE_DO_FUN( do_sell         );
 DECLARE_DO_FUN( do_setflag      );  /* Genesis */
@@ -5500,6 +5515,13 @@ extern void crack_head( CHAR_DATA *ch, OBJ_DATA *obj, char *argument );
 extern void make_part( CHAR_DATA *ch, char *argument );
 extern void take_item( CHAR_DATA *ch, OBJ_DATA *obj );
 extern void mud_logf( char *fmt, ... );
+
+/* alias.c */
+extern void substitute_alias( DESCRIPTOR_DATA *d, char *argument );
+
+/* rand_obj.c */
+extern OBJ_DATA *rand_obj ( CHAR_DATA *ch, int mob_level );
+extern OBJ_DATA *rand_obj2( CHAR_DATA *ch, int mob_level, char *argument );
 
 #undef CD
 #undef MID

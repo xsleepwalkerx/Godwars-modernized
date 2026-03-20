@@ -2577,6 +2577,23 @@ void make_corpse( CHAR_DATA *ch, CHAR_DATA *maker )
     if (IS_AFFECTED(ch, AFF_SHADOWPLANE))
 	SET_BIT(corpse->extra_flags, ITEM_SHADOWPLANE);
 
+    /*
+     * rand_obj loot: NPCs at level 5+ have a chance to drop a random
+     * procedurally generated item.  Higher-level mobs drop better loot
+     * because rand_obj() uses mob_level to gate prefix/suffix tier.
+     */
+    if ( IS_NPC(ch) && ch->level >= 5 )
+    {
+	int drop_chance = 40 + ch->level / 2;  /* 40% base + 0.5% per level */
+	if ( drop_chance > 85 ) drop_chance = 85;
+	if ( number_percent() <= drop_chance )
+	{
+	    OBJ_DATA *loot = rand_obj( NULL, ch->level );
+	    if ( loot != NULL )
+		obj_to_obj( loot, corpse );
+	}
+    }
+
     obj_to_room( corpse, ch->in_room );
     return;
 }

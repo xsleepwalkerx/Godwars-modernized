@@ -228,43 +228,7 @@ void show_spell( CHAR_DATA *ch, int dtype )
     return;
 }
 
-void do_scan( CHAR_DATA *ch, char *argument )
-{
-    ROOM_INDEX_DATA *location;
-
-    location = ch->in_room;
-
-    send_to_char("#r[#yNorth#r]#n\n\r",ch);
-    do_spydirection(ch,"n");
-    char_from_room(ch);
-    char_to_room(ch,location);
-
-    send_to_char("#r[#yEast#r]#n\n\r",ch);
-    do_spydirection(ch,"e");
-    char_from_room(ch);
-    char_to_room(ch,location);
-
-    send_to_char("#r[#ySouth#r]#n\n\r",ch);
-    do_spydirection(ch,"s");
-    char_from_room(ch);
-    char_to_room(ch,location);
-
-    send_to_char("#r[#yWest#r]#n\n\r",ch);
-    do_spydirection(ch,"w");
-    char_from_room(ch);
-    char_to_room(ch,location);
-
-    send_to_char("#r[#yUp#r]#n\n\r",ch);
-    do_spydirection(ch,"u");
-    char_from_room(ch);
-    char_to_room(ch,location);
-
-    send_to_char("#r[#yDown#r]#n\n\r",ch);
-    do_spydirection(ch,"d");
-    char_from_room(ch);
-    char_to_room(ch,location);
-    return;
-}
+/* do_scan is now implemented in scan.c (ported from Distorted Illusions) */
 
 void do_spy( CHAR_DATA *ch, char *argument )
 {

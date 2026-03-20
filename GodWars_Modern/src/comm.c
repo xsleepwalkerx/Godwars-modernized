@@ -729,7 +729,7 @@ void game_loop_mac_msdos( void )
 	            switch ( d->connected )
 	            {
 	            case CON_PLAYING:
-	                interpret( d->character, d->incomm );
+	                substitute_alias( d, d->incomm );
 	                break;
 	            case CON_AEDITOR:
 	                aedit( d->character, d->incomm );
@@ -963,7 +963,7 @@ void game_loop_unix( int control )
 	            switch ( d->connected )
 	            {
 	            case CON_PLAYING:
-	                interpret( d->character, d->incomm );
+	                substitute_alias( d, d->incomm );
 	                break;
 	            case CON_AEDITOR:
 	                aedit( d->character, d->incomm );

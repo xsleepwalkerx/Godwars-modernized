@@ -22,6 +22,7 @@ L_FLAGS  = -O $(PROF) -lcrypt
 # ---------------------------------------------------------------------------
 O_FILES = \
 	act_comm.o   act_info.o   act_move.o   act_obj.o    act_wiz.o   \
+	alias.o      emblazon.o   rand_obj.o   scan.o                   \
 	bit.o        board.o      clan.o       clearclass.o comm.o      \
 	const.o      core.o       db.o         fight.o      handler.o   \
 	interp.o     magic.o      memwatch.o   more.o       olc.o       \

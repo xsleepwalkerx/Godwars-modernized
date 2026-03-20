@@ -622,6 +622,21 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
 	    );
     }
 
+    /* Aliases */
+    if ( !IS_NPC(ch) )
+    {
+        int pos;
+        for ( pos = 0; pos < MAX_ALIAS; pos++ )
+        {
+            if ( ch->pcdata->alias[pos] == NULL
+            ||   ch->pcdata->alias_sub[pos] == NULL )
+                break;
+            fprintf( fp, "Alias        %s~ %s~\n",
+                     ch->pcdata->alias[pos],
+                     ch->pcdata->alias_sub[pos] );
+        }
+    }
+
     fprintf( fp, "End\n\n" );
     return;
 }
@@ -678,6 +693,8 @@ void fwrite_obj( CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest )
     	fprintf( fp, "Questmaker   %s~\n",	obj->questmaker      );
     if (obj->questowner != NULL && strlen(obj->questowner) > 1)
     	fprintf( fp, "Questowner   %s~\n",	obj->questowner      );
+    if (obj->owner != NULL && obj->owner[0] != '\0')
+    	fprintf( fp, "Owner        %s~\n",	obj->owner           );
     fprintf( fp, "Vnum         %d\n",	obj->pIndexData->vnum	     );
 
     fprintf( fp, "ExtraFlags   %d\n",	obj->extra_flags	     );
@@ -905,6 +922,15 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     ch->powertype			= str_dup( "" );
     ch->hunting				= str_dup( "" );
     ch->pcdata->denydate		= 0;
+    /* Alias arrays — initialise all slots to NULL */
+    {
+        int _i;
+        for ( _i = 0; _i < MAX_ALIAS; _i++ )
+        {
+            ch->pcdata->alias[_i]     = NULL;
+            ch->pcdata->alias_sub[_i] = NULL;
+        }
+    }
     ch->pcdata->stancemove[0]		= 0;
     ch->pcdata->stancemove[1]		= 0;
     ch->pcdata->stancemove[2]		= 0;
@@ -1380,6 +1406,15 @@ bool load_char_short( DESCRIPTOR_DATA *d, char *name )
     ch->powertype			= str_dup( "" );
     ch->hunting				= str_dup( "" );
     ch->pcdata->denydate		= 0;
+    /* Alias arrays — initialise all slots to NULL */
+    {
+        int _i;
+        for ( _i = 0; _i < MAX_ALIAS; _i++ )
+        {
+            ch->pcdata->alias[_i]     = NULL;
+            ch->pcdata->alias_sub[_i] = NULL;
+        }
+    }
     ch->pcdata->stancemove[0]		= 0;
     ch->pcdata->stancemove[1]		= 0;
     ch->pcdata->stancemove[2]		= 0;
@@ -1814,6 +1849,25 @@ void fread_char( CHAR_DATA *ch, FILE *fp )
 		ch->pcdata->absorb[3] = fread_number( fp );
 		ch->pcdata->absorb[4] = fread_number( fp );
 		ch->pcdata->absorb[5] = fread_number( fp );
+		fMatch = TRUE;
+		break;
+	    }
+
+	    if ( !str_cmp( word, "Alias" ) )
+	    {
+		int pos;
+		for ( pos = 0; pos < MAX_ALIAS; pos++ )
+		    if ( ch->pcdata->alias[pos] == NULL ) break;
+		if ( pos < MAX_ALIAS )
+		{
+		    ch->pcdata->alias[pos]     = fread_string( fp );
+		    ch->pcdata->alias_sub[pos] = fread_string( fp );
+		}
+		else
+		{
+		    fread_string( fp ); /* discard overflow */
+		    fread_string( fp );
+		}
 		fMatch = TRUE;
 		break;
 	    }
@@ -2746,6 +2800,7 @@ void fread_obj( CHAR_DATA *ch, FILE *fp )
     obj->actcommands	= str_dup( "" );
     obj->questmaker	= str_dup( "" );
     obj->questowner	= str_dup( "" );
+    obj->owner		= str_dup( "" );
     obj->spectype	= 0;
     obj->specpower	= 0;
     obj->condition	= 100;
@@ -2893,6 +2948,10 @@ void fread_obj( CHAR_DATA *ch, FILE *fp )
 	    KEY( "Poweronvict",	obj->victpoweron,	fread_string( fp ) );
 	    KEY( "Poweroffvict",obj->victpoweroff,	fread_string( fp ) );
 	    KEY( "Powerusevict",obj->victpoweruse,	fread_string( fp ) );
+	    break;
+
+	case 'O':
+	    KEY( "Owner",	obj->owner,		fread_string( fp ) );
 	    break;
 
 	case 'Q':
