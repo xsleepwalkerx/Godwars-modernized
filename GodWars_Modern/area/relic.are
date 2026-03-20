@@ -1,0 +1,787 @@
+
+#AREADATA
+Name        KaVir   Relics~
+Builders    None~
+VNUMs       29600 29750
+Security    1
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#29600
+drow sword adamantite~
+a drow adamantite sword~
+A drow adamantite sword lies here.~
+~
+5 0 8193
+0 25 50 3
+1 1000000 0
+A
+19 10
+A
+18 10
+#29601
+drow piwafwi~
+a drow piwafi~
+A drow piwafi lies here.~
+~
+9 0 1025
+25 0 0 0
+1 1000000 0
+A
+19 5
+A
+18 5
+#29602
+drow adamantite armor~
+a drow adamantite armor~
+A drow adamantite armor lies here.~
+~
+9 0 9
+25 0 0 40
+1 1000000 0
+A
+19 5
+A
+18 5
+#29603
+drow boots~
+a pair of drow boots~
+A pair of drow boots lies here.~
+~
+9 0 65
+25 0 0 19
+1 1000000 0
+A
+19 5
+A
+18 5
+#29604
+drow mask~
+a drow face mask~
+A drow face mask lies here.~
+~
+9 0 -32767
+25 0 0 40
+1 1000000 0
+A
+19 5
+A
+18 5
+#29605
+bracers blinding strike~
+bracers of blinding strike~
+A pair of gleaming arm bracers lie here.~
+~
+9 0 257
+25 0 0 0
+1 1000000 0
+A
+19 5
+A
+18 5
+#29606
+Claw of the Damned~
+#0Claw of the Damned#n~
+#0The Claw of the Damned#n~
+~
+5 16384 8193
+4 20 30 5
+1 1000000 0
+A
+17 -50
+A
+14 500
+A
+19 30
+A
+18 30
+Q
+(null)~
+(null)~
+(null)~
+(null)~
+(null)~
+(null)~
+16384 0
+#29607
+pitch black plate~
+a #0Pitch Black Plate#n~
+A #0Pitch Black Plate#n~
+~
+9 16384 9
+30 1 6 57
+1 1000000 0
+A
+14 1000
+A
+19 35
+A
+18 35
+A
+17 -100
+#29608
+pitch black helm~
+a #0Pitch Black Helm#n~
+A #0Pitch Black Helm#n~
+~
+9 16384 17
+30 1 6 52
+1 1000000 0
+A
+14 1000
+A
+19 35
+A
+18 35
+A
+17 -100
+#29609
+Pitch Black Bracers~
+#0Pitch Black Bracers#n~
+A #0Pitch Black Bracer#n lies here.~
+~
+9 16384 4097
+25 0 0 17
+1 1000000 0
+A
+17 -100
+A
+14 500
+A
+19 35
+A
+18 35
+#29610
+Claw of Caine~
+#0Claw of #rCaine#n~
+The #0Claw of #rCaine#n~
+~
+5 16384 8193
+18004 50 50 5
+1 1000000 0
+A
+17 -50
+A
+14 500
+A
+19 45
+A
+18 45
+Q
+(null)~
+(null)~
+(null)~
+(null)~
+(null)~
+(null)~
+16384 0
+#29611
+robes mage~
+#LRobes of Wisdom#n~
+A small pile of cloth lies here.~
+~
+9 16704 1025
+30 0 0 54
+-5 0 0
+A
+24 -100
+A
+17 -50
+A
+12 1000
+#29612
+ring mage~
+#RRing of Meditation#n~
+A small ring lies here.~
+~
+9 16448 3
+30 0 0 57
+-5 0 0
+A
+24 -100
+A
+17 -50
+A
+12 1000
+#29613
+talisman mage~
+an #pengraved #7talisman#n~
+A silver talisman lies here.~
+~
+9 16448 5
+30 0 0 16
+-5 0 0
+A
+24 -100
+A
+19 50
+A
+18 50
+A
+12 1000
+#29614
+breastplate mage~
+#ybreastplate of inner fortitude#n~
+A gold breastplate lies here.~
+~
+9 16448 9
+30 0 0 16
+-5 0 0
+A
+24 -100
+A
+17 -50
+A
+12 1000
+#29615
+staff mage~
+the #Glegendary staff of #0Raistlin#n~
+A long wooden staff stands here of its own power.~
+~
+9 16448 16385
+50 0 0 8
+-5 0 0
+A
+24 -100
+A
+17 -50
+A
+12 1000
+#29616
+tome wisdom archmage~
+the Tome of #RW#Gi#Ls#yd#po#7m#n~
+A large dusty book lies on the floor here.~
+~
+37 16448 16385
+0 0 0 0
+1 1000000 0
+A
+24 -500
+A
+17 -100
+A
+12 2000
+#29617
+ninja kabuto helmet~
+a Kabuto~
+A Kabuto lies here on the ground.~
+~
+9 16384 17
+30 1 6 5
+1 0 0
+A
+19 35
+A
+18 35
+A
+17 -50
+#29618
+ninja muneate plate~
+a Muneate~
+A Muneate~
+~
+9 16384 9
+30 1 6 17
+1 1000000 0
+A
+14 500
+A
+19 35
+A
+18 35
+A
+17 -100
+#29619
+ninja eri collar~
+eri~
+A Eri lies here.~
+~
+9 16384 5
+25 0 0 57
+1 1000000 0
+A
+17 -50
+A
+14 500
+A
+19 35
+A
+18 35
+#29620
+ninja tanto dagger~
+Tanto~
+Tanto~
+~
+5 16384 8193
+53 20 30 11
+1 1000000 0
+A
+17 -50
+A
+14 500
+A
+19 30
+A
+18 30
+Q
+(null)~
+(null)~
+(null)~
+(null)~
+(null)~
+(null)~
+16384 0
+#29621
+ninja kyoujin dagger~
+Kyoujin~
+Kyoujin~
+~
+5 16384 8193
+8004 50 50 11
+1 1000000 0
+A
+17 -50
+A
+14 500
+A
+19 45
+A
+18 45
+Q
+(null)~
+(null)~
+(null)~
+(null)~
+(null)~
+(null)~
+16384 0
+#29622
+wolf moon ring~
+#4Moon Ring#n~
+A small, blue ring~
+~
+9 16384 3
+25 0 0 57
+1 0 0
+A
+17 -50
+A
+19 25
+A
+18 25
+A
+13 500
+#29623
+wolf paws gaia~
+#2Paws of Gaia#n~
+An odd pair of boots~
+~
+9 16384 65
+25 0 0 46
+1 0 0
+A
+17 -50
+A
+19 30
+A
+18 30
+A
+13 500
+#29624
+wolf fur plate~
+#oFur of the Wolf#n~
+An odd bodypiece~
+~
+9 16384 9
+25 0 0 16
+1 0 0
+A
+13 1000
+A
+17 -50
+A
+19 25
+A
+18 25
+#29625
+wolf belt fallen wyrm~
+#1Belt of the Fallen Wyrm#n~
+A red belt~
+~
+9 16384 2049
+25 0 0 2
+1 0 0
+A
+17 -50
+A
+19 25
+A
+18 25
+A
+1 5
+#29626
+wolf lesser klaive~
+#7Lesser Klaive#n~
+A silvery weapon~
+~
+5 16384 8193
+4 20 30 1
+1 0 0
+A
+13 500
+A
+19 30
+A
+18 30
+A
+1 5
+#29627
+wolf greater klaive~
+#7Greater Klaive#n~
+A large silvery weapon~
+~
+5 16384 8193
+18000 35 45 1
+1 0 0
+A
+13 200
+A
+17 -50
+A
+19 40
+A
+18 40
+#29628
+statue~
+a small statue of Xentoth~
+A small statue sits here~
+~
+8 0 16385
+0 0 0 0
+100 0 0
+A
+24 -100
+A
+18 50
+#29650
+%s %sic ring~
+a %s %sic ring~
+A ring crafted from %s %ssteel lies here.~
+~
+9 16384 3
+25 0 0 0
+1 1000000 0
+#29651
+%s %sic collar~
+a %s %sic collar~
+A collar crafted from %s %ssteel lies here.~
+~
+9 16384 5
+25 0 0 0
+1 1000000 0
+#29652
+%s %sic armor armour breastplate plate~
+a %s %sic breastplate~
+A collar crafted from %s %ssteel lies here.~
+~
+9 16384 9
+25 0 0 0
+1 1000000 0
+#29653
+%s %sic helmet~
+a %s %sic helmet~
+A helmet crafted from %s %ssteel lies here.~
+~
+9 16384 17
+25 0 0 0
+1 1000000 0
+#29654
+%s %sic leggings~
+a pair of %s %sic leggings~
+A pair of leggings crafted from %s %ssteel lies here.~
+~
+9 16384 33
+25 0 0 0
+1 1000000 0
+#29655
+%s %sic boots~
+a pair of %s %sic boots~
+A pair of boots crafted from %s %ssteel lies here.~
+~
+9 16384 65
+25 0 0 0
+1 1000000 0
+#29656
+%s %sic gauntlets gloves~
+a pair of %s %sic gauntlets~
+A pair of gauntlets crafted from %s %ssteel lies here.~
+~
+9 16384 129
+25 0 0 0
+1 1000000 0
+#29657
+%s %sic sleeves~
+a pair of %s %sic sleeves~
+A pair of sleeves crafted from %s %ssteel lies here.~
+~
+9 16384 257
+25 0 0 0
+1 1000000 0
+#29658
+%s %sic cape~
+a %s %sic cape~
+A cape crafted from %s %ssilk lies here.~
+~
+9 16384 1025
+25 0 0 0
+1 1000000 0
+#29659
+%s %sic belt~
+a %s %sic belt~
+A belt crafted from %s %ssteel lies here.~
+~
+9 16384 2049
+25 0 0 0
+1 1000000 0
+#29660
+%s %sic bracer~
+a %s %sic bracer~
+A bracer crafted from %s %ssteel lies here.~
+~
+9 16384 4097
+25 0 0 0
+1 1000000 0
+#29661
+%s %sic visor~
+a %s %sic visor~
+A visor crafted from %s %ssteel lies here.~
+~
+9 16384 -32767
+25 0 0 0
+1 1000000 0
+#29662
+black demonic longsword sword~
+a black demonic longsword~
+A longsword crafted from black demonsteel lies here.~
+~
+5 16896 8193
+18000 25 50 3
+1 1000000 0
+A
+19 50
+A
+18 50
+#29663
+black demonic shortsword sword~
+a black demonic shortsword~
+A shortsword crafted from black demonsteel lies here.~
+~
+5 16896 8193
+17000 25 50 11
+1 1000000 0
+A
+19 50
+A
+18 50
+#29664
+white angelic longsword sword~
+a white angelic longsword~
+A longsword crafted from white angelsteel lies here.~
+~
+5 17408 8193
+18000 25 50 3
+1 1000000 0
+A
+19 50
+A
+18 50
+#29665
+white angelic shortsword sword~
+a white angelic shortsword~
+A shortsword crafted from white angelsteel lies here.~
+~
+5 17408 8193
+17000 25 50 11
+1 1000000 0
+A
+19 50
+A
+18 50
+#29695
+highlander katana sword~
+a gleaming katana~
+A gleaming silver katana lies on the ground.~
+~
+5 16384 8193
+0 25 50 1
+1 1000000 0
+#29714
+robe koe~
+A long robe~
+A long black robe lies here.~
+~
+9 16384 1|8
+30 1 6 57 
+1 1000000 1
+A
+17 -100
+A
+18 35
+A
+19 35
+A
+14 1000
+#29715
+sandles koe~
+A pair of sandles~
+A set of sandles sit on the floor.~
+~
+9 16384 65
+25 0 0 46
+1 0 0
+A
+13 500
+A
+18 30
+A
+19 30
+A
+17 -50
+#29716
+Pendant koe~
+A pendant~
+A pendant lies curled up on the floor~
+~
+9 16384 1|4
+25 0 0 57
+1 1000000 1
+A
+18 35
+A
+19 35
+A
+13 500
+A
+17 -50
+#29717
+bracelet koe~
+A bracelet~
+A shiny bracelet glimmers on the ground~
+~
+9 16384 1|4096
+25 0 0 17
+1 1000000 1
+A
+18 35
+A
+19 35
+A
+13 500
+A
+17 -100
+#29718
+crown fae~
+A red crown~
+We'll set descs later~
+~
+9 16384 17
+25 0 0 11
+1 1000 0
+A
+17 -100
+A
+18 50
+A
+19 50
+#29719
+cloak fae~
+A forest green cloak~
+We'll set descs later~
+~
+9 16384 1025
+25 0 0 17
+1 1000 0
+A
+18 50
+A
+19 50
+A
+17 -100
+#29720
+talisman fae~
+A talisman of the Woods~
+We'll set these later~
+~
+9 16384 5
+25 0 0 10
+1 1000 0
+A
+17 -100
+A
+18 50
+A
+19 50
+#29721
+pendant fae~
+A pendant of the Mother~
+We'll set these later~
+~
+9 16384 5
+25 0 0 12
+1 1000 0
+A
+17 -100
+A
+19 50
+A
+18 50
+#29722
+rapier fae~
+A long woodland rapier~
+We'll set these later~
+~
+5 16384 8193
+68 20 30 11
+1 1000000 0
+A
+18 50
+A
+19 50
+#0
+
+
+
+#ROOMS
+#29600
+Test Room~
+~
+0 0 0
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$
+

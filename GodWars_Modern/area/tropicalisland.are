@@ -1,0 +1,1308 @@
+#AREADATA
+Name        Mystaria Tropical Island~
+Builders    Mystaria~
+VNUMs       15000 15059
+Security    1
+End
+
+
+
+#MOBILES
+#15000
+Tyrannosaurus~
+Tyrannosaurus Rex~
+Tyrannosaurus Rex turns her head toward you.
+~
+Tyrannosaurus Rex growls and snorts around sniffing and searching for you.
+~
+99 512 100 S
+1500 0 0 0d0+0 0d0+0
+0 0
+0 0 2
+#15001
+Procompsogmatmus~
+the Compy~
+Procompsogmatmus, the scavenger dinosaur looks at you... you almost look dead.
+~
+A small little lizard looking creature...She seems harmless enough.
+~
+101 512 -100 S
+400 0 0 0d0+0 0d0+0
+0 0
+0 0 2
+#15002
+Triceratops~
+Triceratops~
+Triceratops wanders about, chewing leaves
+~
+Triceratop's soft black eyes look past you at the leaves behind you.
+~
+65 512 200 S
+849 0 0 0d0+0 0d0+0
+0 0
+0 0 2
+#15003
+Apatosaurus~
+the Apatosaurus~
+The Apatosaurus stands here eating the leaves from the top of the Trees.
+~
+The big Gentle beast ignores you as it tears limbs from the top of trees.
+~
+65 512 400 S
+850 0 0 0d0+0 0d0+0
+0 0
+0 0 2
+#15004
+Stegosaurus~
+the Stegosaurus~
+The Stegosaurus moves about chewing on leaves.
+~
+The Stegosaurus snorts at you and continues on his way.
+~
+65 512 350 S
+801 0 0 0d0+0 0d0+0
+0 0
+0 0 2
+#15005
+Baby Steg~
+the Baby Stegosaurus~
+A baby Stegosaurus wanders about aimlessly
+~
+The baby stegosaurus snorts at you.
+~
+65 512 500 S
+450 0 0 0d0+0 0d0+0
+0 0
+0 0 1
+#15006
+Velociraptor~
+a Velociraptor~
+The Velociraptor leaps from concealment to kill you.
+~
+The Snarling lizard looking creature attacks you.
+~
+97 98858 -500 S
+799 0 0 0d0+0 0d0+0
+0 0
+0 0 2
+#15007
+Brontosaurus~
+the Brontosaurus~
+A Brontasaurus stands here eating from the tops of trees
+~
+The brontosaurus ignores you as it eats from the trees.
+~
+65 512 300 S
+750 0 0 0d0+0 0d0+0
+0 0
+0 0 2
+#15008
+Diloposaurus~
+Diloposaurus~
+An innocent looking Lizard stands here looking at you
+~
+The harmless looking lizard seems to stare at you.
+~
+97 98816 -220 S
+651 0 0 0d0+0 0d0+0
+0 0
+0 0 2
+#15009
+Tyrannosaurus Rex~
+Tyrannosaurus Rex~
+Tyrannosaurus Rex turns his head toward you.
+~
+He growls fiercely at you... LUNCH!
+~
+65 0 -400 S
+1549 0 0 0d0+0 0d0+0
+0 0
+0 0 1
+#0
+
+
+
+#OBJECTS
+#15003
+Egg Shell~
+a cracked open Egg shell~
+A cracked open Egg shell sits here... Something hatched from this.~
+~
+8 0 16385
+0 1 6 11
+1 0 0
+#15005
+a small brook~
+a Small brook~
+A small brook trickles across the path~
+~
+17 0 0
+1000 1000 0 0
+9999 0 0
+#15012
+Broken bones T-Rex~
+the broken bones of a T-Rex~
+A huge pile of broken bones are stuck in the mud.~
+~
+15 0 0
+1000 1 6 11
+9999 0 0
+#15013
+leg bone~
+the leg bone of a T-rex~
+The Leg bone of a T-rex is here, stuck in the mud.~
+~
+8 0 1
+0 1 6 11
+75 0 0
+#15014
+toe bone~
+the toe of a T-Rex~
+The toe bone of a T-rex is stuck in the mud here.~
+~
+8 0 1
+0 1 6 11
+20 0 0
+#15015
+Skull~
+the skull of a T-Rex~
+The muddy skull of a T-rex lays here.~
+~
+8 0 1
+0 1 6 11
+50 0 0
+#15016
+Triceratops horn~
+sharp Horn~
+The sharp horn of a Triceratops lays here~
+~
+5 0 8193
+0 8 10 11
+5 0 0
+A
+13 200
+#15017
+T-rex Teeth~
+sharp Teeth~
+The sharp teeth of a T-Rex lie here~
+~
+5 0 8193
+0 10 20 10
+5 0 0
+A
+19 5
+A
+18 5
+A
+17 -20
+#15018
+Bronto Tail~
+huge Tail~
+The monsterous Tail of a large beast lies here.~
+~
+5 0 8193
+0 8 15 4
+50 0 0
+A
+19 5
+A
+13 200
+A
+18 3
+#15019
+Raptor Claw~
+incredibly Sharp Claw~
+The incredably sharp claw of a Velociraptor lies here.~
+~
+5 32 8193
+0 10 15 1
+25 0 0
+A
+17 -10
+A
+13 400
+A
+19 3
+A
+18 4
+#15022
+cane~
+an ornately carved bowl~
+An ornately carved bowl lies here.~
+~
+5 0 8193
+0 5 10 0
+1 0 0
+A
+24 500
+A
+23 100
+A
+9 50
+#15023
+Spike~
+spiked Tail~
+The spiked tail of a Stegosaurus~
+~
+5 0 8193
+0 1 6 11
+50 0 0
+A
+17 -18
+A
+1 8
+#15024
+small broken sign~
+a small broken sign~
+A small broken sign reads "stA owT"~
+~
+13 0 8193
+0 1 6 11
+1 0 0
+#15027
+Pot~
+a clay pot~
+A cracked clay pot sits here~
+~
+17 0 16385
+100 1 13 1
+8 0 0
+#15029
+Large Nest~
+a Large Nest~
+A large nest sits here nestled on the ground... ~
+~
+15 0 1
+3 1 6 11
+599 0 0
+E
+nest~
+This nest doesn't appear to have been made by a bird.
+There seems to be alot of blood around it.~
+#15030
+bones~
+a pile of bones~
+A bunch of bones are scattered here.. remnance of several large animals.~
+~
+13 0 1
+0 1 6 11
+96 0 0
+#0
+
+
+
+#ROOMS
+#15000
+A warm tropical Island~
+You are standing in a warm tropical island.  You see palm trees, and tall grass all around.
+To the north you see what appears to be a clearing.
+~
+0 4 3
+D0
+~
+~
+0 -1 15001
+D2
+~
+~
+0 -1 6152
+S
+#15001
+The clearing~
+You have entered a rather large clearing.  Everything is quiet... too quiet.
+All the sounds you'd expect to hear... birds chirping, frogs croaking...
+There is just an eerie silence.
+~
+0 0 3
+D0
+~
+~
+0 -1 15002
+D2
+~
+~
+0 -1 15000
+S
+#15002
+The center of the clearing.~
+This is the center of the large clearing.  A broken picnic table is here...
+Its obviously been awhile since it was used.  As a bead of sweat rolls down
+your brow, you begin to wish you'd brought something to drink.
+~
+0 0 2
+D0
+~
+~
+0 -1 15020
+D1
+~
+~
+0 -1 15003
+D2
+~
+~
+0 -1 15001
+D3
+~
+~
+0 -1 15021
+S
+#15003
+A deep pile of mud.~
+Ugh!  You walked right in to a very deep pile of mud (well, you hope its mud!)
+You can climb up the tree to get out, or wade east, or north.
+~
+0 8 0
+D0
+~
+~
+0 -1 15004
+D1
+~
+~
+0 -1 15007
+D3
+~
+~
+0 -1 15002
+D4
+~
+~
+0 -1 15011
+S
+#15004
+Out of the muck.~
+Finally! You're out of that muck! There is more solid ground to the east.
+~
+0 8 0
+D1
+~
+~
+0 -1 15005
+D2
+~
+~
+0 -1 15003
+S
+#15005
+A gigantic tree trunk.~
+You find yourself by a gigantic treetrunk.  You can climb up it,
+or go around the north side of it.
+~
+0 8 0
+D0
+~
+~
+0 -1 15006
+D3
+~
+~
+0 -1 15004
+D4
+~
+~
+0 -1 15016
+S
+#15006
+The ant pile~
+Ouch! You have never seen so many gigantic ants in your life.  They
+completely blanket the floor here.  Better turn back before
+they eat you alive.
+~
+0 9 0
+D2
+~
+~
+0 -1 15005
+S
+#15007
+A path through the trees.~
+You found a small path through the trees.  It looks like there is a light
+ahead.
+~
+0 9 0
+D1
+~
+~
+0 -1 15008
+D3
+~
+~
+0 -1 15003
+S
+#15008
+Campfire.~
+You have come to a small campfire.  The fire is low, and there are
+some stone arrowheads laying about. There are teepees to the north,
+east, and south.
+~
+0 8 0
+D0
+~
+~
+0 -1 15012
+D1
+~
+~
+0 -1 15014
+D2
+~
+~
+0 -1 15009
+D3
+~
+~
+0 -1 15007
+S
+#15009
+A lesser teepee.~
+This teepee once belonged to a great indian warrior.
+Now, only a rat and a few roaches reside here.
+~
+0 8 0
+D0
+~
+~
+0 -1 15008
+D3
+~
+~
+0 -1 15015
+S
+#15010
+Along the Branches~
+You are high in the treetops above the Island.
+~
+0 2056 9
+D1
+~
+~
+0 -1 15019
+D3
+~
+~
+0 -1 15011
+S
+#15011
+A large tree.~
+You have climbed into the safety of this trees branches.
+A very large branch extends east into another tree.
+~
+0 8 9
+D1
+~
+~
+0 -1 15010
+D5
+~
+~
+0 -1 15003
+S
+#15012
+A lesser teepee.~
+This teepee once belonged to a very pretty squaw.  It now is the home
+of a scorpion and several ants.
+~
+0 8 0
+D2
+~
+~
+0 -1 15008
+D3
+~
+~
+0 -1 15013
+S
+#15013
+A gigantic tree trunk.~
+You find yourself by a gigantic treetrunk.  You can climb up it, or 
+head to the east.
+~
+0 8 0
+D1
+~
+~
+0 -1 15012
+S
+#15014
+The Cheiftan's Teepee.~
+You find yourself standing before the ruins of what must have been
+the home of a Cheiftan.  The teepee, while very large, has been knocked
+over, and laying on the ground, where the inside of the teepee once was,
+are various animal hides.
+~
+0 8 0
+D3
+~
+~
+0 -1 15008
+S
+#15015
+A gigantic tree trunk.~
+You find yourself by a gigantic treetrunk.  You can climb up it, or 
+head to the east.~
+0 8 0
+D1
+~
+~
+0 -1 15009
+D4
+~
+~
+0 -1 15019
+S
+#15016
+Along the Branches~
+You are high in the treetops above the Island. A branch extends south,
+or you can climb down the trunk.
+~
+0 2057 9
+D2
+~
+~
+0 -1 15017
+D5
+~
+~
+0 -1 15005
+S
+#15017
+Along the Branches~
+You are high in the treetops above the Island. Branches extend north
+and south.
+~
+0 2057 9
+D0
+~
+~
+0 -1 15016
+D2
+~
+~
+0 -1 15018
+S
+#15018
+Along the Branches~
+You are high in the treetops above the Island.  Branches extend north
+and south.
+~
+0 2057 9
+D0
+~
+~
+0 -1 15017
+D2
+~
+~
+0 -1 15019
+S
+#15019
+Along the Branches~
+You are high in the treetops above the Island.  Branches extend
+north, west, and you can climb the trunk down.
+~
+0 9 9
+D0
+~
+~
+0 -1 15018
+D3
+~
+~
+0 -1 15010
+D5
+~
+~
+0 -1 15015
+S
+#15020
+A path~
+You are following a path leading north.  You can see that it once was well worn,
+but the forest has started to reclaim the land.
+~
+0 0 3
+D0
+~
+~
+0 -1 15036
+D2
+~
+~
+0 -1 15002
+S
+#15021
+West of the clearing.~
+You can't believe how hot is is!  It looks like there are some huts to the west.
+Maybe one of the natives will take pity on you, and let you in the cool shade of
+their hut for a drink.
+~
+0 0 2
+D1
+~
+~
+0 -1 15002
+D3
+~
+gate~
+0 -1 15022
+S
+#15022
+Path to ruined village.~
+As you get closer to the village, you realize that its more like a ghost
+town.  There are no ppl wandering about. You wonder what possibly could
+have happened.
+~
+0 0 2
+D1
+~
+Gate~
+0 -1 15021
+D3
+~
+~
+0 -1 15023
+S
+#15023
+Entrance to the village.~
+This village is completely in ruins!  It looks like a hurricane, an earthquake,
+AND a tornado came through here all at once.  This may have been
+smooth terrain once, but the ground has been ripped apart.  You have
+to climb down the upturned earth to get to the first hut.
+~
+0 9 0
+D1
+~
+~
+0 -1 15022
+D5
+~
+~
+0 -1 15024
+S
+#15024
+A ruined hut.~
+This hut is one of the few that are still intact.  When you peer inside
+you see broken bits of clay everywhere.  The roof has been torn off this
+hut.  You don't think its safe to enter.  
+~
+0 9 0
+D0
+~
+~
+0 -1 15025
+D4
+~
+~
+0 -1 15023
+S
+#15025
+Village crossroads~
+This was once the village crossroads.  You see a trampled grassy path
+running east and west.  A slightly less worn path runs north and south.
+Everywere you look, you see hay strewn about.  Its all that's left of
+most of the huts.
+~
+0 9 0
+D0
+~
+~
+0 -1 15029
+D1
+~
+~
+0 -1 15026
+D2
+~
+~
+0 -1 15024
+D3
+~
+~
+0 -1 15032
+S
+#15026
+The Grassy Path~
+Chaos and destruction are everywhere as you travel east along this 
+grassy path.  On your right, you see what looks like the former dining
+area.  There is a broken table with several pieces of clay around it.
+A drumstick is on the ground, covered by ants.
+~
+0 9 0
+D1
+~
+~
+0 -1 15027
+D3
+~
+~
+0 -1 15025
+S
+#15027
+The Grassy path~
+You almost stumble over the corpse of a child as you walk through here.
+All that's left of the childs body is its torso and its right hand, still
+clutching what appears to be a handmade doll.
+~
+0 9 0
+D1
+~
+~
+0 -1 15028
+D3
+~
+~
+0 -1 15026
+S
+#15028
+The end of the Grassy path.~
+A tumbled down hut is at the end of this path.  The roof has caved in.
+All around this hut lay the pieces of handmade children's toys.
+~
+0 9 0
+D3
+~
+~
+0 -1 15027
+S
+#15029
+Ruined Village~
+You slowly pick your way through the massive amounts of debris.
+There is an aweful stench coming from the north.
+~
+0 9 0
+D0
+~
+~
+0 -1 15030
+D2
+~
+~
+0 -1 15025
+S
+#15030
+Ruined Village~
+The debris here seems to be covered with a red sticky substance...
+You suddenly realize that the sticky substance is blood.. GROSS!
+The stench is worse than before, and seems to be coming from the
+north.
+~
+0 9 0
+D0
+~
+~
+0 -1 15031
+D2
+~
+~
+0 -1 15029
+S
+#15031
+The refuse pile~
+The stench is now overwhelming, and you have the powerful urge
+to puke!  Here lies what was once the town bathroom and cemetery?  
+There is a gigantic pile of feces mixxed in with rotting corpses.  
+When you finish losing your lunch, you realize the corpses aren't 
+whole, they are various body parts and entrails... You resume your 
+retching and hacking.  
+~
+0 9 0
+D2
+~
+~
+0 -1 15030
+S
+#15032
+The Grassy path~
+You find it hard not to trip over the debris as you carefully
+make your way down this path.  You can smell putrid death and
+decay everywhere.  On your right is the front half of a little
+lamb, still alive and bleating for its life.
+~
+0 9 0
+D1
+~
+~
+0 -1 15025
+D3
+~
+~
+0 -1 15033
+S
+#15033
+The Grassy path.~
+Almost nothing is left of the huts here.  There is hay everywhere.
+~
+0 9 0
+D1
+~
+~
+0 -1 15032
+D3
+~
+~
+0 -1 15034
+S
+#15034
+The Grassy path~
+The ground is completely drenched in blood here.  You see bits and pieces
+of animals laying about.  Your feet are starting to turn red from walking
+through all this blood.
+~
+0 9 0
+D1
+~
+~
+0 -1 15033
+D3
+~
+~
+0 -1 15035
+S
+#15035
+A ruined hut.~
+This hut is the only one in the village still intact.  Much of the hay has
+fallen in, but you feel safer inside it... away from all the death outside.
+~
+0 9 0
+D1
+~
+~
+0 -1 15034
+S
+#15036
+A fork in the path.~
+As you make your way through the brush, the path splits in two directions.
+Each path leads into dense forest.  You wonder if one of them will lead you
+out of this God forsaken place.
+~
+0 0 3
+D1
+~
+~
+0 -1 15037
+D2
+~
+~
+0 -1 15020
+D3
+~
+~
+0 -1 15051
+S
+#15037
+A path in the jungle.~
+A branch scrapes your arm as you try to make your way through the dense forest.
+It seems darker here... Is it because you're getting deeper in the forest, or
+is it almost night already?
+~
+0 0 3
+D1
+~
+~
+0 -1 15038
+D3
+~
+~
+0 -1 15036
+S
+#15038
+A turn in the path~
+At first it seems like the path has come to an abrupt halt..
+But when you look north, you can barely make out the remains of a path.
+Will you EVER get out of here?
+~
+0 0 3
+D0
+~
+~
+0 -1 15039
+D3
+~
+~
+0 -1 15037
+S
+#15039
+Deep in the Jungle~
+The forest is getting more and more dense. You can barely make your way through it.
+You here a loud roar in the distance... You try to convice yourself that it was
+nothing... just your imagination.  Then you hear it again, closer this time.
+~
+0 0 3
+D0
+~
+~
+0 -1 15040
+D2
+~
+~
+0 -1 15038
+S
+#15040
+Deep in the Jungle.~
+MAN are your legs tired! It feels like you've been trodding through this jungle
+for hours! Will you EVER get home again?
+~
+0 0 3
+D0
+~
+~
+0 -1 15041
+D2
+~
+~
+0 -1 15039
+S
+#15041
+Deep in the Jungle.~
+MAN are your legs tired! It feels like you've been trodding through this jungle
+for hours! Will you EVER get home again?
+~
+0 0 3
+D0
+~
+~
+0 -1 15042
+D2
+~
+~
+0 -1 15040
+D3
+~
+~
+0 -1 15053
+S
+#15042
+A sharp turn~
+You almost lose your way as the path turns sharply.
+~
+0 0 3
+D1
+~
+~
+0 -1 15052
+D2
+~
+~
+0 -1 15041
+D3
+~
+~
+0 -1 15043
+S
+#15043
+Deep in the Jungle.~
+MAN are your legs tired! It feels like you've been trodding through this jungle
+for hours! Will you EVER get home again?
+~
+0 0 3
+D1
+~
+~
+0 -1 15042
+D3
+~
+~
+0 -1 15044
+S
+#15044
+Deep in the Jungle.~
+MAN are your legs tired! It feels like you've been trodding through this jungle
+for hours! Will you EVER get home again?
+~
+0 0 3
+D1
+~
+~
+0 -1 15043
+D3
+~
+~
+0 -1 15045
+S
+#15045
+Deep in the Jungle.~
+MAN are your legs tired! It feels like you've been trodding through this jungle
+for hours! Will you EVER get home again?
+~
+0 0 3
+D1
+~
+~
+0 -1 15044
+D3
+~
+~
+0 -1 15046
+S
+#15046
+A sharp turn~
+You almost lose your way as the path turns sharply.
+~
+0 0 3
+D1
+~
+~
+0 -1 15045
+D2
+~
+~
+0 -1 15047
+S
+#15047
+Deep in the Jungle.~
+MAN are your legs tired! It feels like you've been trodding through this jungle
+for hours! Will you EVER get home again?
+~
+0 0 3
+D0
+~
+~
+0 -1 15046
+D2
+~
+~
+0 -1 15048
+S
+#15048
+Deep in the Jungle.~
+MAN are your legs tired! It feels like you've been trodding through this jungle
+for hours! Will you EVER get home again?
+~
+0 0 3
+D0
+~
+~
+0 -1 15047
+D2
+~
+~
+0 -1 15049
+S
+#15049
+Deep in the Jungle.~
+MAN are your legs tired! It feels like you've been trodding through this jungle
+for hours! Will you EVER get home again?
+~
+0 0 3
+D0
+~
+~
+0 -1 15048
+D1
+~
+~
+0 -1 15059
+D2
+~
+~
+0 -1 15050
+S
+#15050
+A sharp turn~
+You almost lose your way as the path turns sharply.
+~
+0 0 3
+D0
+~
+~
+0 -1 15049
+D1
+~
+~
+0 -1 15051
+S
+#15051
+Deep in the Jungle.~
+MAN are your legs tired! It feels like you've been trodding through this jungle
+for hours! Will you EVER get home again?
+~
+0 0 3
+D1
+~
+~
+0 -1 15036
+D3
+~
+~
+0 -1 15050
+S
+#15052
+A small clearing in the Jungle~
+You find yourself in an odd clearing.  It doesn't seem natural....
+Almost as if some big Animal had trampled everything over.
+~
+0 0 2
+D3
+~
+~
+0 -1 15042
+S
+#15053
+A path in the Jungle~
+You find yourself following a very narrow path through the jungle.
+~
+0 0 3
+D0
+~
+~
+0 -1 15054
+D1
+~
+~
+0 -1 15041
+S
+#15054
+A path in the Jungle~
+You find yourself following a very narrow path through the jungle.
+~
+0 0 3
+D2
+~
+~
+0 -1 15053
+D3
+~
+~
+0 -1 15055
+S
+#15055
+A path in the Jungle~
+You find yourself following a very narrow path through the jungle.
+~
+0 0 3
+D1
+~
+~
+0 -1 15054
+D2
+~
+~
+0 -1 15056
+S
+#15056
+A path in the Jungle~
+You find yourself following a very narrow path through the jungle.
+~
+0 0 3
+D0
+~
+~
+0 -1 15055
+D3
+~
+~
+0 -1 15057
+S
+#15057
+A path in the Jungle~
+You find yourself following a very narrow path through the jungle.
+~
+0 0 3
+D1
+~
+~
+0 -1 15056
+D2
+~
+~
+0 -1 15058
+S
+#15058
+A path in the Jungle~
+You find yourself following a very narrow path through the jungle.
+~
+0 0 3
+D0
+~
+~
+0 -1 15057
+D2
+~
+~
+0 -1 15059
+S
+#15059
+A path in the Jungle~
+You find yourself following a very narrow path through the jungle.
+~
+0 0 3
+D0
+~
+~
+0 -1 15058
+D3
+~
+~
+0 -1 15049
+S
+#0
+
+
+
+#SPECIALS
+M 15001 spec_fido Load to: the Compy
+M 15008 spec_poison Load to: Diloposaurus
+S
+
+
+
+#RESETS
+O 0 15024 0 15002
+O 0 15012 0 15003
+P 0 15013 0 15012
+P 0 15014 0 15012
+P 0 15015 0 15012
+O 0 15022 0 15014
+O 0 15027 0 15005
+O 0 15005 0 15056
+O 0 15003 0 15058
+O 0 15003 0 15058
+O 0 15029 0 15052
+O 0 15030 0 15052
+P 0 15003 0 15029
+P 0 15003 0 15029
+M 0 15000 1 15052
+E 0 15017 0 16
+M 0 15006 1 15022
+E 0 15019 0 16
+M 0 15001 1 15027
+M 0 15001 1 15025
+M 0 15001 1 15030
+M 0 15001 1 15032
+M 0 15006 1 15035
+E 0 15019 0 16
+M 0 15006 1 15005
+E 0 15019 0 16
+M 0 15008 1 15036
+M 0 15007 1 15001
+E 0 15018 0 16
+M 0 15002 1 15038
+E 0 15016 0 16
+G 0 15016 0
+G 0 15016 0
+M 0 15004 1 15040
+E 0 15023 0 16
+M 0 15005 1 15040
+E 0 15023 0 16
+M 0 15003 1 15045
+E 0 15018 0 16
+M 0 15001 1 15049
+M 0 15001 1 15059
+M 0 15008 1 15057
+M 0 15001 1 15055
+M 0 15001 1 15053
+M 0 15006 1 15009
+E 0 15019 0 16
+M 0 15001 1 15012
+M 0 15009 1 15003
+E 0 15017 0 16
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

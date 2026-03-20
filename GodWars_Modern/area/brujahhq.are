@@ -1,0 +1,209 @@
+#AREADATA
+Name        Suurge    Brujah HQ~
+Builders    Mistif~
+VNUMs       16053 16056
+Security    1
+End
+
+
+#MOBILES
+#16053
+Saturn~
+Brackius~
+A shadowy form.
+~
+This is a guardian of the clan. From his chin drops small
+drops of blood. He smiles evilly and a forked tongue snakes
+out, licking up the falling blood.
+~
+64 8|32|512 0 S
+1500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#16054
+Everbero~
+Kracken~
+A disguised individual.
+~
+This is a guardian of the clan. His face is scarred in several
+places, and he looks like he's no newbie to fighting. You'd
+best stay away from him if you can. Though by now, it's
+probably too late.
+~
+64 8|32|512 0 S
+1500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#16055
+Linzi~
+Briarius~
+An obvious hunter.
+~
+This is a guardian of the clan. With a bow slung over his
+back, and a sword sheathed at his hip, you can easily tell
+that this man is a hunter. Of what, you aren't entirely sure..
+Certainly not of Kindred. Perhaps he is a hunter of the norms..?
+~
+64 8|32|512 0 S
+1500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#16056
+Healer~
+Healer~
+The Brujah Healer.
+~
+This is the clan healer. He stands here, awaiting to assist the
+Brujah with their wounds.
+~
+2|64 8|32|128|512|8192 1000 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#16053
+dark throne~
+dark throne~
+#0A very dark throne stands here tall, waiting for the Brujah to return#n~
+~
+12 0 0
+1 0 16 0
+999 0 0
+#16054
+bloody throne~
+bloody throne~
+#1A very dark red throne is here, dripping in blood which slowly runs onto the floor#n~
+~
+12 0 0
+1 0 16 0
+999 0 0
+#16055
+tall throne~
+tall throne~
+#0A very tall throne is here, completely obsedion#n~
+~
+12 0 0
+1 0 16 0
+999 0 0
+#0
+
+
+#ROOMS
+#16053
+#1Brujah Throne Room#n~
+#0You have entered the Lair of the blood thirsty Brujah. Once created as
+protection for an intelligent branch of Kindred, the Brujah grew to great
+power. Even now they are feared as you glanced around the room, noticing
+epic battles depicted in tapestries. There is a dim light somewhere in the
+room, but the shadows seem to envelop everything. You get the feeling
+that where you are standing is far from safe. On the furthest wall, you notice
+a large throne, with a slightly smaller throne on either side of it. The Founder,
+Suurge, sits in the middle surrounded by his Princes, Jaryth and Cruor. A
+smell creeps by your nose, as you look down you notice a body lying in a
+pool of blood. Something tells you it is the last fool to trespass.
+~
+0 8 0
+D1
+~
+~
+0 -1 16054
+D0
+~
+~
+0 -1 16055
+S
+#16054
+#1Brujah Portal Room#n~
+#0Ancient magic swirls in this room, causing the shadows to dance with
+delight. Cobwebs cover many feet of this room, but a large gate is left in
+the center of the room. Before the gate stands a large granite post, which
+seems to have something etched into it. It appears to be written in ancient
+Kindred language. Everything is a dull grey with #1blood stains #0scattered
+about. Large roars can be heard echoing through the Lair of Brujah, as you know
+you are not alone. A large beast steps out from the corner, his fangs still dripping
+with a deep red blood. You feel it is time to go...
+~
+0 8 0
+D3
+~
+~
+0 -1 16053
+E
+granite post~
+When you look at the post closer, you can see many distant lands,
+including: temple, hightower, sphinx, draconia, and staff.
+~
+T
+temple~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 3001 0
+T
+staff~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 25008 0
+T
+sphinx~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2646 0
+T
+hightower~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 1312 0
+T
+draconia~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2201 0
+S
+#16055
+#1Brujah Entrance#n~
+#0Your mind scatters about as you hear chattering and roaring which seem to come
+from all directions. You can't see anyone around you, but you certainly don't feel alone.
+The wind whistles past you adding to the effect as a shrill comes from somewhere in the
+distance causing you to instantly cringe in terror. Stepping out of the darkness, you see
+two large beasts who have just begun to growl, baring their fangs. One speaks, "If you are
+not Brujah, then you shall not escape... alive."
+~
+0 8|1024|16384 0
+D2
+~
+~
+0 -1 16053
+S
+#0
+
+
+#RESETS
+*
+M 1 16056 1 16055	healer to entrance
+*
+M 1 16053 1 16053	guardian1 to throne
+*
+M 1 16054 1 16054	guaridan2 to portal
+O 1 16053 0 16054
+O 1 16054 0 16054
+O 1 16055 0 16054
+*
+M 1 16055 1 16055	guardian3 to entrance
+S
+
+
+#SPECIALS
+M  16053 spec_clan_brujah	Brackius/Saturn
+M  16054 spec_clan_brujah2	Kracken/Everbero
+M  16055 spec_clan_brujah3	Briarius/Linzi
+M  16056 spec_cast_adept 	Healer
+S
+#$

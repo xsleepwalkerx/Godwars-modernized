@@ -1,0 +1,182 @@
+#AREADATA
+Name        Joronas Hotei Hq~
+Builders    None~
+VNUMs       16253 16256
+Security    1
+End
+
+
+
+#MOBILES
+#16253
+Night Mercury~
+Night Mercury~
+A tall man stands here, garbed in black and violet robes, chanting in an arcane tongue.
+~
+Before you Night Lord Mercury stands, God of the Shadowrealms, tending
+the wounds of his children. His long violet hair is draped slightly over one
+shoulder, long and silken. His robes dicate his offices and importance in
+his culture, as a God, and Emperor of his people. He is as Joronas' friend
+and a God-father, curing the ninja of a deadly blindness...
+~
+67 8872 1000 S
+501 0 0 0d0+0 0d0+0
+0 0
+0 0 1
+#0
+
+
+
+#OBJECTS
+#16253
+kchera~
+a high backed chair.~
+A chair covered in a black silk, well padded with a high back, sitting against the fireplace.~
+~
+12 0 0
+1 0 16 0
+999 0 0
+#16254
+kali~
+figurine of a female warrior.~
+A figure of a long and slender warrior.~
+~
+1 1 16385
+0 0 -1 0
+1 0 0
+#16255
+wine rose~
+a small chalice of glowing rose nector.~
+A delicate crystal chalice filled with a glowing wine made from the nector of the flaming roses.~
+~
+25 0 16385
+1000 1000 2 0
+1 0 0
+#16256
+slumber~
+a black covered bed~
+A featherbed covered with soft black sheets.~
+~
+12 0 0
+1 0 128 0
+999 0 0
+#0
+
+
+
+#ROOMS
+#16253
+Chamber of the Dawnshadow~
+A simple chamber made of a shadowy substance with a window
+overlooking outside it, revealing a field of roses glowing the color
+of flame. One climbs the edge of a bookcase, finely crafted and
+filled with books and scrolls. A tapestry holds the story of the
+Dawnshadow, written in kanji on rice paper, carefully illustrating
+his doom. A being with black wings casting a red dagger, whilst
+a warrior casts a gold and a wave of black magic and white fire.
+There are two chairs beside a fireplace, high backed yet padded
+and comfortable, and a comfortable bed. A small table with several
+wineglasses filled with a glowing liquid... wine made of the necter
+of the glowing roses. Above the bed is a portrait of a man's face, pale
+and powerful, commanding of presence. A scar marrs his right cheek,
+and his black eyes are swarmed with a violet mist. Black hair with a touch
+of violet flows down beside his head. On the black gold frame is engraved
+Night Lord Mercury. On either side of this portrait hang two sabres,
+identical, floating as if by magic. Black blades and hilts, they hold a single
+ruby in each, carved perfectly in the shape of a raven.
+~
+0 9 0
+D2
+~
+~
+0 -1 16254
+S
+#16254
+Realm of Shadows~
+A simple chamber of a gently dark beauty, flaming flowers adorning the
+walls to cast what light there is. An open window shows the gentle light
+of a smooth white orb that casts as much light as the full moon. It seems
+to have a strange calmness to it, a gentle safety. One wall is covered
+entirely in kanji and images. There is a history here, of blood and violence,
+and of love and healing. Several names stand out in particular. Karci....
+Kali.... Dulcea.... Moyra.... Jisa..... Jasin..... Lendarion.... Emerath. And near
+the bottom, one final name engraved in silver .... Aerin.
+~
+0 9 0
+D5
+~
+~
+0 -1 16255
+S
+#16255
+Shadows of the Physical World!~
+A simple chamber with shadows of everywhere around a book of directions,
+each beckoning and calling, promising safe transport. Around each shadow
+glows a series of kanji, forming arcs, passageways through reality.....
+~
+0 1033 0
+E
+book destinations~
+When you begin to read the book, you realize there are many different lands you can
+go to, including: temple, hightower, sphinx, draconia, and staff.
+~
+D4
+~
+~
+0 -1 16254
+T
+temple~
+$n slowly fades out of existance.~
+Your surroundigs blur and change.~
+all~
+16384 3001 0
+T
+staff~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 25008 0
+T
+sphinx~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2646 0
+T
+hightower~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 1312 0
+T
+draconia~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2201 0
+S
+#0
+
+
+
+#SPECIALS
+M 16253 spec_cast_adept Load to: Night Mercury
+S
+
+
+
+#RESETS
+M 0 16253 1 16253
+O 0 16253 0 16253
+O 0 16254 0 16253
+O 0 16255 0 16253
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

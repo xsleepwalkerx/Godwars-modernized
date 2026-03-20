@@ -1,0 +1,134 @@
+#AREADATA
+Name        Krel    Krel Hq~
+Builders    Mystaria~
+VNUMs       16100 16149
+Security    1
+End
+
+
+
+#MOBILES
+#16100
+lerk archbishop priest healer~
+Lerk the Archbishop~
+Lerk the Archbishop stands atop a pile of scrolls healing those wounded in battle.
+~
+Lerk the Archbishop stands atop a pile of scrolls healing those wounded in battle.
+~
+2|64 8|32|128|512 0 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#16100
+staff divinity lerk~
+The Staff of Divinity~
+The Staff of Divinity is propped up against the wall.~
+~
+9 0 1|16384
+0 0 0 57 
+5 0 0
+#0
+
+
+#ROOMS
+#16100
+Requiem of Sound~
+A blinding white light fills this room, and an angelic
+noise vibrates from the walls. The noise rolls from the
+tounge saints and your head fills with beutifull song.
+The spirits of angels lost fill this room with warmth,
+from the greatest of archangels to the lowest of lessers
+and even the spirit of the betrayer himself. The effect
+is that of awe and magnificence.
+~
+0 4|8 0
+D1
+~
+~
+0 -1 16102
+D2
+~
+~
+0 -1 16101
+S
+#16101
+Divinity~
+Here stands a monument to the will of god. All around the
+room are marvelous white tapestries. Scripts of religious
+words fill one corner of the room on which the oldest priest
+in all the world sits. His eyes seem to gliter with knowledge
+and you are mystified by the knowingness that surounds him.
+~
+0 8|1024|16384 0
+D0
+~
+~
+0 -1 16100
+S
+#16102
+Pearly White Gates~
+You stand directly inside the fabled gates of heaven.
+From here the whole world below becomes visible. You
+have merely to touch those parts which are rank of
+unholyness and they will be clensed once more. From
+here the angels spread goodness throughout the world.
+~
+0 8 0
+D3
+~
+~
+0 -1 16100
+E
+gates~
+Through the Pearly White Gates, you may visit the Temple, Sphinx, Draconia, Hightower, or Staff.~
+T
+temple~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 3001 0
+T
+staff~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 25008 0
+T
+sphinx~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 2646 0
+T
+hightower~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 1312 0
+T
+draconia~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 2201 0
+S
+#0
+
+
+#RESETS
+*
+M 1 16100 1 16101			Lerk the Archbishop to Divinity
+E 1 16100 100 17
+S
+
+
+#SPECIALS
+M  16100 spec_cast_adept			Lerk the Archbishop
+S
+
+
+#$

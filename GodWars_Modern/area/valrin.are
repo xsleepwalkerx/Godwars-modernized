@@ -1,0 +1,2243 @@
+#AREADATA
+Name        Garden of Valrin~
+Builders    Ravage Merek~
+VNUMs       17500 17599
+Security    1
+End
+
+#MOBILES
+#17500
+displacer beast~
+a displacer beast~
+A panther with two snake tenticles growing from its back paces here
+~
+A magical mix of snake and panther, this creature is one of the most feared of
+the realm.
+~
+1 32768 -1000 S
+424 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#17501
+stone gargoyle~
+a stone gargoyle~
+A stone gargoyle lears at you as you approach the gate
+~
+Created by the darkest of magical rites, this stone gargoyle guards the entrance to the garden.
+~
+1|2|64 0 -1000 S
+416 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#17510
+squirrel~
+a happy squirrel~
+A brown eyed squirrel is here playing with a nut
+~
+Awwww....what big brown eyes!
+~
+1|64 0 1000 S
+399 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#17511
+squirrel bushy tail~
+a bushy tailed squirrel~
+A bushy tailed squirrel stares at you
+~
+Awwww...just look at its tail!
+~
+1|64 0 0 S
+400 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#17512
+singing bird~
+a singing bird~
+A bird is here singing a tune
+~
+The bird is totally oblivious of your presence it is so caught up in its song.
+~
+1|64 0 0 S
+410 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#17513
+owl hoot horned~
+a horn owl~
+A horned owl hoots as you approach
+~
+The owls head swivels towards you as you approach him. HOOT
+~
+1|64 0 0 S
+415 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#17514
+raven black~
+a black raven~
+A black raven caws as it circles above you
+~
+Black as night, the raven tracks your every movement with his beady black eyes.
+~
+1|64 524288 0 S
+424 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#17515
+wandering skeleton~
+a wandering skeleton~
+A wandering skeleton roams the hedges aimlessly
+~
+The skeleton looks right past you as it shuffles aimlessly around the hedges.
+Its flesh has long been picked from its bones by other far more dangerous
+creatures of the area.
+~
+1|64 0 0 S
+430 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#17516
+vicious bunny~
+a vicious bunny~
+A vicious bunny leaps for your throat!
+~
+Harmless at first glance, this little bunny rabbit has razor sharp teeth and
+evil intentions.
+~
+1|64 0 -1000 S
+426 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#17517
+rabid bunny~
+rabid bunny~
+A bunny rabbit is here frothing at the mouth
+~
+Harmless at first glance, this little bunny rabbit is driven by some unknown
+force for the lust of blood.
+~
+1|32|64 0 -1000 S
+439 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#17518
+undead grounds keeper shade~
+an undead grounds keeper~
+The shade of an undead grounds keeper floats through the hedges
+~
+Dressed in coveralls and wielding a spade, this shade takes one look at you
+and screams 'get off the grass!'
+~
+1|64 1048576 -1000 S
+450 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#17519
+undead owlbear~
+an undead owlbear~
+An undead owlbear is here feeding
+~
+At over 9 feet tall, this creature was fearsome in life, now in death it is
+twice as intimidating.
+~
+1|2|64 0 0 S
+441 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#17520
+vampire~
+a vampire~
+A vampire hisses at you and attacks!
+~
+Cloaked in shadows, this creature of the night loves the darkness and the
+protection it provides from the sun.
+~
+1|32|64 0 0 S
+447 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#17521
+thorny bush~
+a thorny bush~
+A particularly thorny bush is here
+~
+Well this is the first attacking bush you have ever seen!
+~
+1|64 0 -1000 S
+392 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#17522
+stinging bush~
+a stinging bush~
+A bush with whiplike tendrils flails as you approach
+~
+Well this is new...an attacking bush.
+~
+1|64 0 -1000 S
+429 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#17523
+black rose bush~
+a black rose bush~
+A black rosebush is here florishing in the twlight.
+~
+My god! There is a small fanged mouth in each of these roses!
+~
+1|64 0 -100 S
+440 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#17524
+white rose bush~
+a white rose bush~
+A white rose bush is here flourishing in the twilight
+~
+My god! There is a small fanged mouth in each of these roses!
+~
+1|2|64 0 1000 S
+431 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#17525
+red rose bush~
+a red rose bush~
+A red rose bush is here flourishing in the twilight
+~
+My god! There is a small fanged mouth in each of these roses!
+~
+1|64 0 0 S
+431 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#17526
+tangle vines~
+tangle vines~
+Some tangle vines are here
+~
+These vines are renouned for holding anything that gets tangled in it..even
+dragons.
+~
+1|64 0 0 S
+440 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#17527
+zombie~
+a zombie~
+A zombie shuffles about the garden
+~
+One human, this zombie was killed in the garden and awakened one of the undead.
+~
+1|64 0 -1000 S
+349 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#17528
+green dragon~
+a green dragon~
+A green dragon blasts you with a breath of clorine gas!
+~
+This ancient wyrm glares at you with hatred for invading her lair.
+~
+1|2|32|64 512 -1000 S
+525 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#17529
+twisted fae~
+a twisted fae~
+An evil twisted fae regards you with glowing red eyes
+~
+Twisted by the evil magic of the garden, this fae has abandoned its humanity
+and is now pure evil
+~
+1|2|64 512 -1000 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#17530
+gorgon~
+a gorgon~
+A gorgon snorts and charges you!
+~
+Resembling a bull, this beast has razor sharp horns and breath that can
+literally turn you to stone.
+~
+1|2|32|64 512 -1000 S
+412 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#17531
+chimera~
+a chimera~
+A mighty chimeral roars as it attacks you!
+~
+With the tail of a scorpion, the body of a lion, and the face of a human, this
+beast is truely a nightmare.
+~
+1|2|32|64 512 -1000 S
+515 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#17532
+revenant~
+a revenant~
+A revenant senses your lifeforce and attacks!
+~
+The revenent glares at you with unholy hatred.
+~
+1|2|32|64 512 -1000 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#17533
+dark druid~
+a dark druid~
+A dark druid is here chanting incantations
+~
+Dressed in dark brown robes, this druid has devoted his life to the darkness.
+~
+1|2|64 512 -1000 S
+491 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#17534
+necromancer~
+the necromancer~
+The necromancer glares at you
+~
+Aged well beyond the normal human, this wizard has mastered the mystical art
+of necromancy to defy death.
+~
+1|2|64 512 -1000 S
+524 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#17535
+undead queen bee~
+the undead queen bee~
+An huge undead queen bee buzzes at your approach
+~
+Bloated and decaying, this queen bee is truely horrifying to look at.
+~
+1|2|64 524288 0 S
+495 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#17536
+undead drone bee~
+an undead bee drone~
+An undead bee drone is here protecting the queen
+~
+Bloated and decaying, this bee will do anything to make sure the queens goes
+on....unliving
+~
+1|2|64 524288 0 S
+418 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#17500
+magical shield~
+a magical shield~
+A magical shield sits in the corner~
+~
+9 1 1|512
+25 0 0 0 
+5 1000 0
+A
+24 -500
+A
+23 -500
+A
+14 -10
+A
+17 -25
+#17501
+magical helmet~
+a magical helmet~
+A magical helmet gleams in the darkness~
+~
+9 1 1|16
+15 0 0 0 
+5 1000 0
+A
+19 2
+A
+18 5
+A
+17 -25
+A
+4 2
+A
+3 2
+#17502
+magical belt~
+a magical belt~
+A magical belt~
+~
+9 1 1|2048
+25 0 0 0 
+2 1000 0
+A
+18 8
+A
+2 5
+#17503
+magical sword~
+a magical sword~
+A magical sword is here~
+~
+5 1 1|8192
+0 5 10 1 
+5 1000 0
+A
+1 2
+A
+19 5
+A
+18 10
+#17504
+magical boots~
+a pair of magical boots~
+A pair of magical boots is here~
+~
+9 1 1|64
+25 0 0 0 
+5 1000 0
+A
+18 3
+A
+2 5
+A
+14 200
+#17505
+magical ring~
+a magical ring~
+A magical ring twinkles here~
+~
+9 1 1|2
+25 0 0 0 
+5 1000 0
+A
+19 4
+A
+18 4
+#17506
+magical leggings~
+a pair of magical leggings~
+A pair of magical leggings is here~
+~
+9 1 1|32
+25 0 0 0 
+5 1000 0
+A
+14 50
+A
+17 -15
+#17507
+rabbit pelt~
+a bloody rabbit pelt~
+A bloodly rabbit pelt is here~
+~
+9 0 1|8
+10 0 0 0 
+5 1000 0
+A
+19 5
+A
+17 -10
+#17508
+magical mask~
+a magical mask~
+A magical mask is here~
+~
+9 1 1|16
+0 0 0 0 
+5 1000 0
+A
+13 50
+A
+17 -15
+A
+18 4
+#17509
+gate key~
+the hedge garden gate key~
+The key to the hedge garden sits here~
+~
+18 1 1
+0 0 0 0 
+5 1000 0
+#17510
+single white rose~
+a single white rose~
+A single perfect white rose sits on the ground.~
+~
+5 1024 1|8192
+0 4 7 10 
+1 1000 0
+A
+19 4
+A
+18 4
+#17511
+black rose single~
+a single black rose~
+A single black rose sits here~
+~
+5 512 1|8192
+0 3 4 10 
+1 1000 0
+A
+18 2
+A
+19 4
+#17512
+red single rose~
+a single red rose~
+A single red rose sits here~
+~
+5 0 1|8192
+0 3 4 10 
+1 1000 0
+A
+19 8
+A
+18 8
+#17513
+magic mushroom~
+a magic mushroom~
+A magic mushroom is here forming a circle~
+~
+26 0 1|8192
+65 17 73 73 
+3 1000 0
+#17514
+horn gorgon~
+horn of a gorgon~
+The horn of a gorgon sits here~
+~
+5 0 1|8192
+0 7 13 2 
+3 1000 0
+A
+23 -50
+A
+19 8
+#17515
+druid cloak~
+a druids cloak~
+A worn druids cloak is here~
+~
+9 1 1|1024
+0 0 0 0 
+5 1000 0
+A
+18 6
+A
+17 -15
+A
+4 3
+A
+3 3
+#17516
+nut~
+a nut~
+A nut of some sort is on the ground~
+~
+26 0 1|8192
+50 28 0 0 
+5 1000 0
+#17517
+magicians staff acid breath~
+a magicians staff of acid breath~
+A staff which glows with an inner power is here~
+~
+4 1 1|8192
+50 8 8 70 
+5 1000 0
+A
+19 10
+A
+18 10
+#17518
+coffin~
+a vampires coffin~
+A vampires coffin is here~
+~
+15 0 0
+25 5 0 0 
+999 1000 0
+#17519
+cache of gold~
+a cache of gold and silver~
+A small cache of gold and silver is here~
+~
+20 0 1|8192
+4000 0 0 0 
+5 1000 0
+#17520
+stinger~
+a bee stinger~
+A huge bee stinger here~
+~
+5 1 1|8192
+0 2 4 11 
+2 1000 0
+A
+19 3
+A
+2 2
+A
+18 8
+#0
+
+
+#ROOMS
+#17510
+A path in the woods~
+You decide to wander off the regular path and trek into the dark forest. The
+tree canopy over your head is so thick that you can barely see the light. The
+path continues north from here.
+~
+0 4 3
+D0
+~
+~
+0 -1 17511
+S
+#17511
+A path in the woods~
+You decide to wander off the regular path and trek into the dark forest. The
+tree canopy over your head is so thick that you can barely see the light. All
+around you birds and other small animals chirp and frollic in the fine summer
+weather. The path goes north and south
+~
+0 0 3
+D0
+~
+~
+0 -1 17512
+D2
+~
+~
+0 -1 17510
+S
+#17512
+A path in the woods~
+The forest is a little more quiet here, the tree's creek with the blowing of
+the wind. Tall trees tower over you on each side of the path making it
+impossible to see anything but what was behind and what is ahead of you.
+~
+0 0 3
+D0
+~
+~
+0 -1 17513
+D2
+~
+~
+0 -1 17511
+S
+#17513
+A path in the woods~
+A cold chill fills the air as a high pitch whining noise splits the air. The
+birds and animals however are unphased by the sound and continue to go on
+their regular routines.
+~
+0 0 3
+D0
+~
+~
+0 -1 17514
+D2
+~
+~
+0 -1 17512
+S
+#17514
+A path in the woods~
+The whining noise gets louder and louder, it seems to be timed with the wind.
+The forest trees seem to retreat slightly here, you can make out what you
+think is a hedge of some sort to the west.
+~
+0 0 3
+D2
+~
+~
+0 -1 17513
+D3
+~
+~
+0 -1 17515
+S
+#17515
+Hedge Entrance~
+You step out from the tree line and find yourself infront of a large
+garden hedge maze. It seems to sprawl for miles and miles in all directions. To
+the east a large black gate guards the entrance to the garden.
+~
+0 0 2
+D1
+~
+~
+0 -1 17514
+D3
+~
+~
+0 -1 17516
+S
+#17516
+Hedge~
+You stand before a huge black gate that guards the entrance to the hedge
+garden. The smell of death and decay wafts through the bars giving you the
+distinct impression this is no ordinary garden (duh!).
+~
+0 8192 2
+D1
+~
+~
+0 -1 17515
+D3
+~
+gate~
+0 17509 17517
+S
+#17517
+Garden of Valrin~
+The gate closes behind you with a rusty squeal putting your nerves on end. The
+overbearing smell of death and decay assaults your senses. It looks like
+everything in the area is suspended in a state of undeath.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17518
+D1
+~
+gate~
+0 -1 17516
+D2
+~
+~
+0 -1 17525
+D3
+~
+~
+0 -1 17521
+S
+#17518
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D2
+~
+~
+0 -1 17517
+D3
+~
+~
+0 -1 17519
+S
+#17519
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. You can faintly smell the scent of roses wafting from the
+north..
+~
+0 8192 2
+D0
+~
+~
+0 -1 17520
+D1
+~
+~
+0 -1 17518
+D2
+~
+~
+0 -1 17521
+D3
+~
+~
+0 -1 17523
+S
+#17520
+Garden of White Roses~
+You have walked into what seems to be a garden of living white roses. Each
+time you brush one of the roses it comes to life and snaps at you!
+~
+0 8192 2
+D2
+~
+~
+0 -1 17519
+S
+#17521
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17519
+D1
+~
+~
+0 -1 17517
+D2
+~
+~
+0 -1 17524
+D3
+~
+~
+0 -1 17522
+S
+#17522
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17523
+D1
+~
+~
+0 -1 17521
+D2
+~
+~
+0 -1 17526
+S
+#17523
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D1
+~
+~
+0 -1 17519
+D2
+~
+~
+0 -1 17522
+S
+#17524
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17521
+D1
+~
+~
+0 -1 17525
+D2
+~
+~
+0 -1 17527
+D3
+~
+~
+0 -1 17526
+S
+#17525
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17517
+D3
+~
+~
+0 -1 17524
+S
+#17526
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17522
+D1
+~
+~
+0 -1 17524
+D3
+~
+~
+0 -1 17528
+S
+#17527
+A Dark Pond~
+Water! You cannot remember the last time you had a cool refreshing drink,
+unfortunatly while peering into the pond you notice it in fact is filled with a
+green slime..quite undrinkable.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17524
+S
+#17528
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D1
+~
+~
+0 -1 17526
+D3
+~
+~
+0 -1 17529
+S
+#17529
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D1
+~
+~
+0 -1 17528
+D3
+~
+~
+0 -1 17530
+S
+#17530
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. The a smaller path splits to the north.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17531
+D1
+~
+~
+0 -1 17529
+D3
+~
+~
+0 -1 17538
+S
+#17531
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. The hedge walls on either side of you seem to press in on you.
+~
+0 8192 2
+D1
+~
+~
+0 -1 17532
+D2
+~
+~
+0 -1 17530
+S
+#17532
+Garden Path~
+You are following a path in the garden. The everpresent hedge wall towers over
+you. The green mist has seemed to all but disappeared
+~
+0 8192 2
+D0
+~
+~
+0 -1 17533
+D3
+~
+~
+0 -1 17531
+S
+#17533
+Garden Path~
+You are following a path in the garden. Both sides of you are flanked by the
+ever present hedge wall. You can see a small clearing up ahead.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17534
+D2
+~
+~
+0 -1 17532
+S
+#17534
+Small Clearing~
+You are standing in a small clearing in the garden. It is surrounded on all
+four sides by the everpresent hedge wall.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17535
+D1
+~
+~
+0 -1 17537
+D2
+~
+~
+0 -1 17533
+S
+#17535
+Small Clearing~
+You are standing in a small clearing in the garden. It is surrounded on all
+four sides by the everpresent hedge wall.
+~
+0 8192 2
+D1
+~
+~
+0 -1 17536
+D2
+~
+~
+0 -1 17534
+S
+#17536
+Small Clearing~
+You are standing in a small clearing in the garden. It is surrounded on all
+four sides by the everpresent hedge wall.
+~
+0 8192 2
+D2
+~
+~
+0 -1 17537
+D3
+~
+~
+0 -1 17535
+S
+#17537
+Small Clearing~
+You are standing in a small clearing in the garden. It is surrounded on all
+four sides by the everpresent hedge wall.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17536
+D3
+~
+~
+0 -1 17534
+S
+#17538
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. The path here splits off into all directions. From the west
+can you hear a faint buzzing noise, while from both the north and south you
+can hear the roar of some unknown beast.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17539
+D1
+~
+~
+0 -1 17530
+D2
+~
+~
+0 -1 17563
+D3
+~
+~
+0 -1 17545
+S
+#17539
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17540
+D2
+~
+~
+0 -1 17538
+S
+#17540
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D2
+~
+~
+0 -1 17539
+D3
+~
+~
+0 -1 17541
+S
+#17541
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. You can barely make out the prints of a large clawed beast
+heading east in the leaf covered ground.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17542
+D1
+~
+~
+0 -1 17540
+S
+#17542
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. To the north you can see the entrance to a cave of some sort.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17543
+D2
+~
+~
+0 -1 17541
+S
+#17543
+Mouth of a Cave~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. You stand before a large cave, the sound of ripping and
+tearing of flesh can be heard coming from within.
+~
+0 4|8192 2
+D0
+~
+~
+0 -1 17544
+D2
+~
+~
+0 -1 17542
+S
+#17544
+Owlbear Lair~
+You have entered the lair of a pack of undead OwlBears, the bones of past
+meals are strewn about the cave. Among the bones you can pick out a dwarf
+skull, a dragon fang, and a half-eaten ogre leg.
+~
+0 8|8192 0
+D2
+~
+~
+0 -1 17543
+S
+#17545
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. A strange buzzing noise seems to be coming from the north.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17546
+D1
+~
+~
+0 -1 17538
+D3
+~
+~
+0 -1 17548
+S
+#17546
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. The buzzing noise gets louder, you notice the bodies of
+various animals on the ground, all stung to death.
+~
+0 4|8192 2
+D2
+~
+~
+0 -1 17545
+D3
+~
+~
+0 -1 17547
+S
+#17547
+Bee Hive~
+You have steped into a HUGE bee hive. Drones fly all around you doing jobs for
+the queen. The bodies of dead animals have been dragged in here to feed the
+younger bee's untill they can hunt for themselves.
+~
+0 8192 2
+D1
+~
+~
+0 -1 17546
+S
+#17548
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D1
+~
+~
+0 -1 17545
+D3
+~
+~
+0 -1 17549
+S
+#17549
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D1
+~
+~
+0 -1 17548
+D3
+~
+~
+0 -1 17550
+S
+#17550
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. To the west you can see a rose garden.
+~
+0 8192 2
+D1
+~
+~
+0 -1 17549
+D2
+~
+~
+0 -1 17551
+D3
+~
+~
+0 -1 17597
+S
+#17551
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17550
+D2
+~
+~
+0 -1 17552
+S
+#17552
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17551
+D1
+~
+~
+0 -1 17559
+D2
+~
+~
+0 -1 17553
+S
+#17553
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17552
+D2
+~
+~
+0 -1 17554
+S
+#17554
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17553
+D1
+~
+~
+0 -1 17557
+D3
+~
+~
+0 -1 17555
+S
+#17555
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17556
+D1
+~
+~
+0 -1 17554
+S
+#17556
+Necromancers Lair~
+You have found the source of evil that has taken over the once beautiful
+garden! This happens the be the Necromancers lair and labratory. It is a good
+thing you have found it, now it will be all that more easy to remove this
+blight of evil from the land. Unfortunatly the power Necromancer is home right
+now and chanting the words of an offensive spell.
+~
+0 8192 2
+D2
+~
+~
+0 -1 17555
+S
+#17557
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17558
+D3
+~
+~
+0 -1 17554
+S
+#17558
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17559
+D2
+~
+~
+0 -1 17557
+S
+#17559
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. The can detect the smell of chlorine gas coming from the east.
+~
+0 8192 2
+D1
+~
+~
+0 -1 17560
+D2
+~
+~
+0 -1 17558
+D3
+~
+~
+0 -1 17552
+S
+#17560
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. The smell of chlorine is strong here, mixed with the mist it
+makes you gag.
+~
+0 8192 2
+D2
+~
+~
+0 -1 17561
+D3
+~
+~
+0 -1 17559
+S
+#17561
+Before a cave~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. The overpowering smell of chlorine seems to originate from the
+cave to the south.
+~
+0 4|8192 2
+D0
+~
+~
+0 -1 17560
+D2
+~
+~
+0 -1 17562
+S
+#17562
+Green Dragons Lair~
+You barely get a glimpse at your surroundings before you have to dodge what
+seems to be a 300 ft long green dragon. You have a hard time concentrating on
+the dragon while holding your breath so you do not breath in any more of the
+chlorine fumes.
+~
+0 8|8192 0
+D0
+~
+~
+0 -1 17561
+S
+#17563
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. The roaring of a large beast can be heard coming from the
+cave to the west.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17538
+D2
+~
+~
+0 -1 17566
+D3
+~
+~
+0 -1 17564
+S
+#17564
+Before a Cave~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. The growls and roars get louder as you approach the cave
+~
+0 4|8192 2
+D1
+~
+~
+0 -1 17563
+D3
+~
+~
+0 -1 17565
+S
+#17565
+Lair of the Chimera~
+You have stumbled upon the lair of a pair chimera, and they look very happy to
+see you..its feeding time!
+~
+0 8|8192 0
+D1
+~
+~
+0 -1 17564
+S
+#17566
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17563
+D2
+~
+~
+0 -1 17567
+S
+#17567
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17566
+D2
+~
+~
+0 -1 17568
+S
+#17568
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17567
+D1
+~
+~
+0 -1 17569
+D2
+~
+~
+0 -1 17574
+S
+#17569
+Edge of a mushroom ring~
+The tingle of magic on your skin warns you of powerful fae magic in the area,
+the question is..is it good fae magic or evil?
+~
+0 4|8192 2
+D1
+~
+~
+0 -1 17570
+D3
+~
+~
+0 -1 17568
+S
+#17570
+Center of the Mushroom ring~
+As you step into the circle of mushrooms the shadows seem to come to life,
+dozens of twisted evil fae seperate from the darkness and start to talk about
+you in the ancient language of the fae.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17571
+D1
+~
+~
+0 -1 17572
+D2
+~
+~
+0 -1 17573
+D3
+~
+~
+0 -1 17569
+S
+#17571
+Mushroom Ring~
+You are at the edge of the faerie mushroom ring. You can hear the sound of
+dozens of whispering faeries around you, but only see a handful of them out in
+the open.
+~
+0 8192 2
+D2
+~
+~
+0 -1 17570
+S
+#17572
+Mushroom Ring~
+You are at the edge of the faerie mushroom ring. You can hear the sound of
+dozens of whispering faeries around you, but only see a handful of them out in
+the open.
+~
+0 8192 2
+D3
+~
+~
+0 -1 17570
+S
+#17573
+Mushroom Ring~
+You are at the edge of the faerie mushroom ring. You can hear the sound of
+dozens of whispering faeries around you, but only see a handful of them out in
+the open.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17570
+S
+#17574
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17568
+D2
+~
+~
+0 -1 17585
+D3
+~
+~
+0 -1 17575
+S
+#17575
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D1
+~
+~
+0 -1 17574
+D3
+~
+~
+0 -1 17576
+S
+#17576
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D1
+~
+~
+0 -1 17575
+D2
+~
+~
+0 -1 17577
+D3
+~
+~
+0 -1 17580
+S
+#17577
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17576
+D2
+~
+~
+0 -1 17578
+S
+#17578
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17577
+D2
+~
+~
+0 -1 17579
+S
+#17579
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17578
+D1
+~
+~
+0 -1 17588
+S
+#17580
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D1
+~
+~
+0 -1 17576
+D3
+~
+~
+0 -1 17581
+S
+#17581
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D1
+~
+~
+0 -1 17580
+D2
+~
+~
+0 -1 17582
+D3
+~
+~
+0 -1 17598
+S
+#17582
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17581
+D1
+~
+~
+0 -1 17583
+S
+#17583
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. A trail of paw marks of some hooved animal leads south from
+here.
+~
+0 4|8192 2
+D2
+~
+~
+0 -1 17584
+D3
+~
+~
+0 -1 17582
+S
+#17584
+Lair of the Gorgon~
+You have entered the lair of the gorgon! Ware its breath for it can turn you
+into stone!
+~
+0 8192 2
+D0
+~
+~
+0 -1 17583
+S
+#17585
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17574
+D1
+~
+~
+0 -1 17595
+D2
+~
+~
+0 -1 17586
+S
+#17586
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17585
+D2
+~
+~
+0 -1 17587
+S
+#17587
+Garden Path~
+The green mist is strangely absent from this part of the garden..very odd.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17586
+D1
+~
+~
+0 -1 17590
+D3
+~
+~
+0 -1 17588
+S
+#17588
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. The sound of chanting can be heard coming from the north.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17589
+D1
+~
+~
+0 -1 17587
+D3
+~
+~
+0 -1 17579
+S
+#17589
+Druid Circle~
+Large giant stones have been places here in a circle. In the center stands a
+dozen druids performing one of their mystic rituals.
+~
+0 8192 2
+D2
+~
+~
+0 -1 17588
+S
+#17590
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D1
+~
+~
+0 -1 17591
+D3
+~
+~
+0 -1 17587
+S
+#17591
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17592
+D3
+~
+~
+0 -1 17590
+S
+#17592
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay.
+~
+0 8192 2
+D0
+~
+~
+0 -1 17593
+D2
+~
+~
+0 -1 17591
+S
+#17593
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. A rose garden has been planted to the east of there.
+~
+0 8192 2
+D1
+~
+~
+0 -1 17594
+D2
+~
+~
+0 -1 17592
+D3
+~
+~
+0 -1 17595
+S
+#17594
+Garden of Black Roses~
+You step into a garden of black roses, unlike the red and white roses these do
+not wait for you to come close to attack. Sensing the blood on your weapons
+and armor they immedatly go into a frenzy.
+~
+0 8192 2
+D3
+~
+~
+0 -1 17593
+S
+#17595
+Garden Path~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. The smell of decay is particulary strong from south.
+~
+0 8192 2
+D1
+~
+~
+0 -1 17593
+D2
+~
+~
+0 -1 17596
+D3
+~
+~
+0 -1 17585
+S
+#17596
+Revenant Lair~
+As you step into this little nook of the garden, undead creatures rise up from
+the ground and attack!
+~
+0 8192 2
+D0
+~
+~
+0 -1 17595
+S
+#17597
+Garden of Red Roses~
+You have wandered into a red rose garden. Bending down to smell one of the
+roses, you draw back in horror as it tries to bite off your nose!
+~
+0 8192 2
+D1
+~
+~
+0 -1 17550
+S
+#17598
+Before a Large Tomb.~
+A green mist snakes around your feet, with it a comes a horrible smell of
+death and decay. A large burial tomb can be seem to the west.
+~
+0 4|8192 2
+D1
+~
+~
+0 -1 17581
+D3
+~
+~
+0 -1 17599
+S
+#17599
+Burial Tomb~
+You break open the tomb letting fresh air run in for probably the first time
+in decades. Dust and cobwebs cover every inch of the tomb. You freeze in your
+tracks as you hear a coffin creak open... ware the vampire has arisen!
+~
+0 8 0
+D1
+~
+~
+0 -1 17598
+S
+#0
+
+
+#RESETS
+O 1 17513 0 17570
+O 1 17518 0 17599
+O 1 17500 0 17562
+O 1 17501 0 17547
+O 1 17502 0 17544
+O 1 17503 0 17589
+O 1 17504 0 17565
+O 1 17505 0 17570
+O 1 17506 0 17584
+O 1 17508 0 17536
+O 1 17505 0 17571
+P 1 17519 0 17518
+M 1 17510 3 17511
+M 1 17511 3 17511
+M 1 17510 3 17512
+G 1 17516 0
+M 1 17510 3 17512
+G 1 17516 0
+M 1 17511 3 17513
+G 1 17516 0
+M 1 17511 3 17513
+G 1 17516 0
+M 1 17512 5 17511
+M 1 17512 5 17511
+M 1 17512 5 17513
+M 1 17512 5 17512
+M 1 17512 5 17512
+M 1 17513 2 17515
+M 1 17513 2 17515
+M 1 17514 5 17515
+M 1 17514 5 17515
+M 1 17514 5 17515
+M 1 17514 5 17515
+M 1 17514 5 17514
+M 1 17524 4 17520
+E 1 17510 0 16
+M 1 17524 4 17520
+E 1 17510 0 16
+M 1 17524 4 17520
+E 1 17510 0 16
+M 1 17524 4 17520
+E 1 17510 0 16
+M 1 17531 2 17565
+M 1 17531 2 17565
+M 1 17519 4 17544
+M 1 17519 4 17544
+M 1 17519 4 17544
+M 1 17519 4 17544
+M 1 17525 4 17597
+E 1 17512 0 16
+M 1 17525 4 17597
+E 1 17512 0 16
+M 1 17525 4 17597
+E 1 17512 0 16
+M 1 17525 4 17597
+E 1 17512 0 16
+M 1 17535 1 17547
+E 1 17520 0 16
+M 1 17536 5 17547
+M 1 17536 5 17547
+M 1 17536 5 17547
+M 1 17536 5 17547
+M 1 17536 5 17547
+M 1 17528 1 17562
+M 1 17534 1 17556
+E 1 17517 0 16
+M 1 17529 12 17570
+E 1 17507 0 5
+M 1 17529 12 17570
+M 1 17529 12 17570
+M 1 17529 12 17571
+M 1 17529 12 17571
+E 1 17507 0 5
+M 1 17529 12 17571
+M 1 17529 12 17573
+E 1 17507 0 5
+M 1 17529 12 17573
+E 1 17507 0 5
+M 1 17529 12 17573
+M 1 17529 12 17572
+E 1 17507 0 5
+M 1 17529 12 17572
+M 1 17529 12 17572
+M 1 17523 4 17594
+E 1 17511 0 16
+M 1 17523 4 17594
+E 1 17511 0 16
+M 1 17523 4 17594
+E 1 17511 0 16
+M 1 17523 4 17594
+E 1 17511 0 16
+M 1 17532 3 17596
+M 1 17532 3 17596
+M 1 17532 3 17596
+M 1 17533 5 17589
+E 1 17515 0 12
+M 1 17533 5 17589
+E 1 17515 0 12
+M 1 17533 5 17589
+E 1 17515 0 12
+M 1 17533 5 17589
+E 1 17515 0 12
+M 1 17533 5 17589
+E 1 17515 0 12
+M 1 17520 3 17599
+M 1 17520 3 17599
+M 1 17520 3 17599
+M 1 17530 2 17584
+E 1 17514 0 16
+M 1 17530 2 17584
+E 1 17514 0 16
+M 1 17515 10 17525
+M 1 17515 10 17521
+M 1 17515 10 17528
+M 1 17515 10 17566
+M 1 17515 10 17548
+M 1 17515 10 17552
+M 1 17515 10 17587
+M 1 17515 10 17579
+M 1 17515 10 17577
+M 1 17515 10 17574
+M 1 17516 10 17533
+M 1 17516 10 17535
+M 1 17516 10 17536
+M 1 17516 10 17538
+M 1 17516 10 17540
+M 1 17516 10 17548
+M 1 17516 10 17567
+M 1 17516 10 17574
+M 1 17516 10 17590
+M 1 17516 10 17577
+M 1 17517 10 17582
+M 1 17517 10 17576
+M 1 17517 10 17587
+M 1 17517 10 17593
+M 1 17517 10 17585
+M 1 17517 10 17542
+M 1 17517 10 17530
+M 1 17517 10 17560
+M 1 17517 10 17554
+M 1 17517 10 17555
+M 1 17500 5 17581
+M 1 17500 5 17559
+M 1 17500 5 17568
+M 1 17500 5 17563
+M 1 17500 5 17595
+M 1 17518 5 17566
+M 1 17518 5 17541
+M 1 17518 5 17529
+M 1 17518 5 17552
+M 1 17518 5 17587
+M 1 17521 8 17534
+M 1 17521 8 17535
+M 1 17521 8 17536
+M 1 17521 8 17531
+M 1 17521 8 17545
+M 1 17521 8 17522
+M 1 17521 8 17521
+M 1 17521 8 17524
+M 1 17522 8 17579
+M 1 17522 8 17578
+M 1 17522 8 17575
+M 1 17522 8 17586
+M 1 17522 8 17524
+M 1 17522 8 17517
+M 1 17522 8 17526
+M 1 17522 8 17553
+M 1 17526 8 17558
+M 1 17526 8 17559
+M 1 17526 8 17550
+M 1 17526 8 17546
+M 1 17526 8 17538
+M 1 17526 8 17574
+M 1 17526 8 17595
+M 1 17526 8 17591
+M 1 17527 10 17518
+M 1 17527 10 17519
+M 1 17527 10 17517
+M 1 17527 10 17529
+M 1 17527 10 17568
+M 1 17527 10 17585
+M 1 17527 10 17560
+M 1 17527 10 17558
+M 1 17527 10 17554
+M 1 17527 10 17579
+M 1 17501 2 17516
+G 1 17509 0
+M 1 17501 2 17516
+S
+
+
+#SPECIALS
+M  17528 spec_breath_gas Load to: a green dragon
+M  17530 spec_breath_gas Load to: a gorgon
+S
+
+
+#$

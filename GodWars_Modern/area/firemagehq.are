@@ -1,0 +1,167 @@
+#AREA	Krynn Fire Mage hq~
+
+
+#MOBILES
+#16550
+healer mage red-robed robed~
+the red-robed healer~
+You see a healer mage clad in a red robe meditating here,
+~
+He looks like an old man in a young man’s body. His long hair and
+beard are both silvery white, but no wrinkles appear on his skin. By his skin,
+he looks 20 years old. But you read his face better, his experience in his
+eyes. He is a very skilled an able healer mage. He is clad in a bright red
+robe, and meditating in the middle of the circle of flames. He chants a spell
+once in a while to heal and protect the Mages of Fire.
+~
+2|64 8|32|512 1000 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#16551
+faykildun guardian flame~
+FayKilDun, Guardian of Flame~
+FayKilDun, the Entity of Fire and Guardian of Flame, stands here to judge your inner fire.
+~
+A 10-foot tower of flame roars before you, you can make out human-like
+characteristics. You know this must be FayKilDun, the dreaded Guardian of Flame and
+Protector to the Mages of Fire. Truly amazing that the Fire Mages could harness such a
+power to protect their home.
+~
+64|8192 8|32|128|512 -1000 S
+800 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#16550
+fountain water~
+mages' of Fire Fountain~
+You see a red marble fountain dripping water, which is tinted red from the marble.~
+~
+25 0 0
+0 0 0 0 
+5 0 0
+#0
+
+
+#ROOMS
+#16550
+Inside a Volcano~
+You are standing on a stone platform in the middle of a magma lake,
+with a path leading east or west, over the lake. You are mysteriously not hot,
+which must be an enchantment of the Grand Sorcerer of Fire. Above you, you can
+see the sky through the crater. To the east, you see a cave emitting a strange
+white glow, a healing glow as it were. To the west, you see a cave emitting a
+deep red glow, and you can make out some portals of some sort. The magma on the north lake almost looks like an illusion, like you could go down and not be burnt to a crisp.
+~
+0 8 0
+D1
+~
+~
+0 -1 16552
+D3
+~
+~
+0 -1 16551
+D5
+~
+~
+0 -1 16553
+S
+#16551
+Burning Fire Portals~
+You are standing in a cave, west of the main crater.  There is a magical fire 
+in the center of the room.  When you look closer, you can see words blazing 
+deep in the fire...
+~
+0 8 0
+D1
+~
+~
+0 -1 16550
+E
+fire blaze blazing~
+As you peer closer, you realize that the fire is not burning you... It is 
+pleasently warm.  There are words dancing within the flames.  "Pick thine 
+destination, and a portal will take you there"  "You may choose from Temple, 
+the Sphinx, Draconia, Hightower, and Staff."~
+T
+temple~
+$n slowly fades out of existance.~
+Your surroundigs blur and change.~
+all~
+16384 3001 0
+T
+staff~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 25008 0
+T
+sphinx~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2646 0
+T
+hightower~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 1312 0
+T
+draconia~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2201 0
+S
+#16552
+Circle of Fire~
+You are in a cave east of the man crater, standing inside a circle of
+fire. You feel safe inside this circle, like nothing can hurt you.
+Unlike the normal walls, this cave’s walls emits a red glow, as if it were giving
+it off itself, not reflecting it. This room is mysterious and mystical. You
+feel a strange aura of power given off from everything in this room.
+~
+0 8|1024|16384 0
+D3
+~
+~
+0 -1 16550
+S
+#16553
+Pit of Magma~
+You are surrounded by magma, which is as thin as air and just as cold. Just as your
+terror subsides from being in magma and still alive, you see a forboding human-like flame
+crackling in front of you. This must be the Guardian Room of the Fire Mages, and that flame
+must be FayKilDun, Protector of the Fire Mages, and Guardian to the Flame.
+~
+0 8 0
+D4
+~
+~
+0 -1 16550
+S
+#0
+
+
+#RESETS
+O 1 16550 100 16550			Mages' of Fire Fountain to Inside a Volcano
+*
+M 1 16550 1 16552			healer to circle of fire
+*
+M 1 16551 1 16553			guardian to pit
+S
+
+
+#SPECIALS
+M  16550 spec_cast_adept			the healer
+*M  16551 spec_clan_fire				guardian1
+S
+
+
+#$

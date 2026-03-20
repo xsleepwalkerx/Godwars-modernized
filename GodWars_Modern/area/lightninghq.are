@@ -1,0 +1,666 @@
+#AREADATA
+Name        Carandir    Lightning Hq~
+Builders    Carandir~
+VNUMs       16400 16449
+Security    1
+End
+
+
+#MOBILES
+#16400
+gwyddion druid~
+Gwyddion the Druid~
+Gwyddion the Druid is here ready to help any wayward Mages.
+~
+Gwyddion the Druid sits here with his herbs and potions. Healing 
+the wounds of any hurt Mage. If you're lucky he might tell you a 
+story of his adventures long ago. But for now you feel safe in 
+the aura that surrounds him.
+~
+1|2|64|128|8192 8|128|512|8192|4194304 0 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#16401
+myrrdin mage~
+Myrrdin the Mage~
+Myrrdin the Mage stands here waiting to prepare you for battle.
+~
+Myrrdin the Mage looks back at you, examining your weaknesses.
+~
+1|2|64|8192 2|4|8|16|32|64|128|512|8192|4194304 0 S
+300 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#16405
+ghost yavathol~
+The Ghost of Yavathol~
+A watery ghost is here, patiently instructing new mages to take no abuses.
+~
+You gaze upon a tall ghost built not of ethereal
+matter, but of water vapor.  The ghost of Yavathol
+wanders about the area offering young mages a gentle
+word or two about diplomacy, temperance, patience, and
+perserverance.  The ghost of Yavathol also stresses
+the importance of guiding and guarding young mages. 
+As you look upon the misty ghost, you notice that his
+eyes are composed entirely of dark pools of water. 
+His gaze turns to settle on you, his slight stare is
+somehow both soothing and unnerving.
+~
+1|4|64|8192|32768 2|8|32|128|512|8192|32768|65536|524288|4194304 0 S
+1500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#16406
+sartan~
+Sartan the Noble~
+Sartan the Noble stands here, trying to summon Gaia.
+~
+Sartan stands here chanting archaic words from a non-descript book. He 
+looks smaller than the other guards, but as we all know, looks can be 
+deceiving.
+~ 
+1|4|64|8192|32768 2|8|32|128|512|8192|32768|65536|524288|4194304 0 S
+1500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#16400
+bracer intelligence~
+bracer of Intelligence~
+A golden bracer lies here.~
+~
+9 32|64 1|4096
+0 0 0 0 
+5 0 0
+A
+3 6
+A
+17 -20
+A
+18 5
+A
+19 5
+#16401
+bracer wisdom~
+Bracer of Wisdom~
+A silver bracer lies here.~
+~
+9 32|64 1|4096
+0 0 0 0 
+1 0 0
+A
+4 6
+A
+17 -20
+A
+18 5
+A
+19 5
+#16402
+boots flight~
+Boots of Flight~
+Some boots lie here.~
+~
+9 32|64 1|64
+0 0 0 39
+1 0 0
+A
+17 -20
+A
+18 5
+A
+19 5
+#16403
+leggings mobility~
+Leggings of Mobility~
+Some leggings lie here.~
+~
+9 32|64 1|32
+0 0 0 52
+1 0 0
+A
+17 -20
+A
+18 5
+A
+19 5
+#16404
+sleeves skill~
+Sleeves of Skill~
+Some pale sleeves lie here.~
+~
+9 32|64 1|256
+0 0 0 10
+1 0 0
+A
+17 -20
+A
+18 5
+A
+19 5
+A
+2 6
+#16405
+robes defense~
+Robes of Defense~
+Some folded up robes lie here.~
+~
+9 32|64 1|8
+0 0 0 57
+1 0 0
+A
+17 -20
+A
+18 5
+A
+19 5
+#16406
+cloak protection~
+Cloak of Protection~
+A tattered up cloak lies here.~
+~
+9 32|64 1|1024
+0 0 0 54
+1 0 0
+A
+17 -20
+A
+18 5
+A
+19 5
+#16407
+belt durability~
+Belt of Durability~
+A beat up old belt lies here.~
+~
+9 32|64 1|2048
+0 0 0 12
+1 0 0
+A
+17 -20
+A
+18 5
+A
+19 5
+A
+5 6
+#16408
+mask disguise~
+Mask of Disguise~
+A wooden mask lies here.~
+~
+9 32|64 1|32768
+0 0 0 46
+1 0 0
+A
+17 -20
+A
+18 5
+A
+19 5
+#16409
+helm sight~
+Helm of Sight~
+An old baseball cap lies here.~
+~
+9 32|64 1|16
+0 0 0 27
+1 0 0
+A
+17 -20
+A
+18 5
+A
+19 5
+#16410
+ring translusence~
+Ring of Translusence~
+A barely visible ring lies here.~
+~
+9 32|64 1|2
+0 0 0 52
+1 0 0
+A
+17 -20
+A
+18 5
+A
+19 5
+#16411
+ring fire~
+Ring of Fire~
+A fiery red ring lies here.~
+~
+9 32|64 1|2
+0 0 0 11
+1 0 0
+A
+17 -20
+A
+18 5
+A
+19 5
+#16412
+gloves might~
+Gloves of Might~
+Some leather work-gloves lie here.~
+~
+9 32|64 1|128
+0 0 0 11
+1 0 0
+A
+17 -20
+A
+18 5
+A
+19 5
+A
+1 6
+#16413
+talisman truth~
+Talisman of Truth~
+A talisman to some ancient god has ben left behind.~
+~
+9 32|64 1|4
+0 0 0 0
+1 0 0
+A
+17 -20
+A
+18 5
+A
+19 5
+#16414
+necklace nondetection~
+Necklace of Nondetection~
+A necklace is hidden here.~
+~
+9 32|64 1|4
+0 0 0 0
+1 0 0
+A
+17 -20
+A
+18 5
+A
+19 5
+#16415
+couch~
+#Pa purple leather couch#n~
+ ~
+~
+12 0 0
+1 0 16 0
+1 0 0
+#0
+
+
+#ROOMS
+#16400
+Hall of Terror~
+This room is deeply enveloped in a dark aura. You wonder if it's evil 
+or good. However you think something so warm and inviting could never 
+be evil, yet you  hear arcane words being muttered in the darkness. 
+You look hoping to penetrate the darkness. But to no avail...
+~
+0 8 0
+D0
+~
+~
+0 -1 16401
+D2
+~
+~
+0 -1 16402
+D3
+~
+~
+0 -1 16404
+D5
+~
+~
+0 -1 16403
+S
+#16401
+Hall of Relaxation~
+The healing room. Mages come here to rest and relax. To get away from 
+the battles and spell writing. A few mats are here to sit down and 
+meditate on.
+~
+0 4|8|1024|16384 0
+D2
+~
+~
+0 -1 16400
+S
+#16402
+Hall of Portals~
+You enter the room and you immediately notice something is wrong. 
+You're trapped!
+The room goes dark. Then with blinding flashes of light, portals 
+through time and space appear.
+~
+0 8 0
+D0
+~
+~
+0 -1 16400
+T
+>ENTER<~
+A great voice booms '#yChild, choose thy destination in time and 
+space.#n' 
+        #CTemple, Staff, Sphinx, Hightower, Draconia#n
+~
+copy~
+all~
+1048578 0 0
+T
+temple~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 3001 0
+T
+staff~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 25008 0
+T
+sphinx~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 2646 0
+T
+hightower~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 1312 0
+T
+draconia~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 2201 0
+T
+winniepooh~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16407 0
+S
+#16403
+Hall of Death~
+Hooks to hang bags filled to the brim line the walls. You see a cloak 
+that has turned to stone and is now part of the black marble wall. No 
+doubt from a spell gone wrong. This is not the kind of place you want 
+to come to very often unless you need to. Mages come here to chant arcane
+words from their spell books.  But the screams of the dead pervade this room 
+with their presence.  Only the strong may enter here and leave alive...
+~
+0 8 0
+D4
+~
+~
+0 -1 16400
+S
+#16404
+Hall of Learning~
+The place for Mages to learn and practice their spells, thus making 
+them stronger. There is a place to put their bags of books, a desk over 
+in the corner for writing a spell if they need to. A bunch of mats a lined 
+neatly in a row, allowing the Mage to sit so as not to get weary from 
+chanting spells endlessly.
+~
+0 8 0
+D1
+~
+~
+0 -1 16400
+S
+#16405
+Hall of Training~
+As you enter the room, you see dark marble pillars lining each wall. 
+Dark leather fighting mats are stacked in piles along the wall ready 
+for use. A small rack has swords and shields in it. You think you can 
+hear the clanging of swords long ago when the great Mages of lore 
+trained here.
+~
+0 8 0
+T
+>ENTER<~
+
+Myrrdin the Mage says '#rGet ready my child, for here you must fight. 
+And#n #rfight diligently, for it will train you for what lies 
+ahead...#n' 
+~
+copy~
+all~
+1048576 0 16401
+S
+#16406
+Rune's Sanctuary~
+With a flash of purple light you appear on a cloud high above the Earth.
+As you gaze around in you awe, you see a small shelf with some books on 
+it stacked in a neat fashion. There's a hook over in the corner with 
+some cloaks on it. 
+        A desk is over in the other corner.
+        #PA purple leather couch#n lies here.
+~
+0 8 0
+D5
+~
+~
+0 -1 16400
+E
+desk~
+On the desk you see a little lamp with purple engravings on the side. 
+Some crumpled papers are . No doubt failed spells. a pen with wet
+ink on it is lying next to the paper. You wonder where the person
+writing the spells could have gone... Maybe you should leave now.~
+E
+couch~
+A #Ppurple leather couch#n looks warm and inviting.~
+T
+terror~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16400 0
+T
+portals~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16402 0
+T
+death~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16403 0
+T
+relaxation~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16401 0
+T
+training~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16405 0
+T
+learning~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16404 0
+S
+#16407
+Hall of the Dead~
+As soon as you enter the room the foul smell of rotting flesh 
+overwhelms you.  You realize this is not a place where you should be.  
+There are many corpses laying on the ground in many different stages of decay.  
+You look down at your feet and find hundreds of maggots covered in blood 
+crawling on you.  They seem to be looking for fresh meat.  You hear a metallic 
+sound and look up in time to see an executioner's axe come crashing 
+down on your neck.
+~
+0 8 0
+D5
+~
+~
+0 -1 16400
+T
+temple~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 3001 0
+T
+terror~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16400 0
+T
+portals~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16402 0
+T
+death~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16403 0
+T
+relaxation~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16401 0
+T
+training~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16405 0
+T
+learning~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16404 0
+T
+rune~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16406 0
+T
+siervua~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16409 0
+S
+#16409
+#pShadow of a Whisper#n~
+Your soul seems to elevate within the embrace of the gentle 
+breeze that blows against your skin. Shadows dance on the 
+walls, as if puppeted by some unseen force, filling your mind 
+with a sense of someone occupying the room with you. Whispers 
+fill the room, those of children, and others who have occupied 
+the room before you, sharing the laughter and happiness which 
+call this room home. In the corner a single chair sits facing 
+the only window that adorns the walls, the sunlight gently 
+touching the fabric with its fingertips. Adorning the other 
+walls are portraits of all the archmages, who share the 
+friendship with Siervua, each staring down on you.
+~
+0 8 0
+D5
+~
+~
+0 -1 16400
+T
+terror~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16400 0
+T
+portals~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16402 0
+T
+death~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16403 0
+T
+relaxation~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16401 0
+T
+training~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16405 0
+T
+learning~
+A dark rift appears and $n steps through.~
+A dark rift appears and you step through it to your destination.~
+all~
+16384 16404 0
+S
+#0
+
+#RESETS
+M 0 16400 1 16401
+O 0 16415 0 16406
+M 0 16401 1 16405
+E 0 16400 0 14
+E 0 16401 0 15
+E 0 16402 0 8
+E 0 16403 0 7
+E 0 16404 0 10
+E 0 16405 0 5
+E 0 16406 0 12
+E 0 16407 0 13
+E 0 16408 0 18
+E 0 16409 0 6
+E 0 16410 0 1
+E 0 16411 0 2
+E 0 16412 0 9
+E 0 16413 0 3
+E 0 16414 0 4
+M 0 16405 1 16403
+M 0 16406 1 16403
+S
+
+#SPECIALS
+M 16400 spec_cast_adept
+M 16401 spec_cast_mage
+M 16405 spec_clan_yellow
+M 16406 spec_clan_yellow2
+S
+
+#$

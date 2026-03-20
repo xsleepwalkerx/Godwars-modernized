@@ -1,0 +1,230 @@
+#AREADATA
+Name        Cyan    Tremere Hq~
+Builders    Mystaria~
+VNUMs       16150 16160
+Security    1
+End
+
+
+
+#MOBILES
+#16150
+Ja'pha~
+Ja'pha~
+A form stands here, grinning at you.
+~
+Your body starts to tremble as the feeling of pure evil moves throughout the room, 
+seeming to take form. The form smiles to you with her fangs protruding  dripping 
+blood from them. You watch her lick her lips as she looks for her next prey... 
+could that be you?
+~
+64|8192 8|32|128|512|8192 0 S
+1500 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#16151
+Hellion~
+Hellion~
+A woman stands here, muttering arcane words.
+~
+Before you stands woman of unnatural beauty. She has long obsidian hair that flows to 
+her waist... she has dark mysterious eyes and a gorgeous smile. She is here to heal 
+you, with her many years of training.....
+~
+2|64 0 0 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#0
+
+
+#OBJECTS
+#16150
+Soft black velvet couch~
+A soft black velvet couch~
+#0Soft black velvet couch.~
+~
+12 0 0
+1 0 16 0 
+5 0 0
+E
+soft black velvet couch~
+You see a black velvet couch set in the corner.~
+#16151
+Matching black velvet loveseat~
+A matching black velvet loveseat~
+#0Matching black velvet loveseat.~
+~
+12 0 0
+1 0 16 0 
+5 0 0
+E
+loveseat~
+You see a black velvet loveseat set close to the fire.~
+#16152
+An overstuffed black velvet ottoman~
+an overstuffed black velvet ottoman~
+#0An overstuffed black velvet ottoman.~
+~
+12 0 0
+1 0 16 0 
+5 0 0
+E
+ottoman~
+You see an overstuffed black velvet ottoman set in a corner next to some books.~
+#16153
+picture~
+a picture~
+#r#bA picture of a vampire and a moon hangs on the wall.#n~
+~
+13 0 0
+0 0 0 0 
+5 0 0
+#16154
+large throne~
+a large throne~
+#0A Large throne a dull gray color fading into black sits here.~
+~
+12 0 0
+1 0 16 0 
+5 0 0
+E
+large throne~
+A large throne is here.~
+#16155
+jade medium throne~
+a jade throne~
+#gA Medium throne of jade sits here.~
+~
+12 0 0
+1 0 16 0 
+5 0 0
+E
+jade throne~
+A medium throne is set here.~
+#16156
+bone throne~
+a bony throne~
+#7A Medium sized throne made of bone sits here.~
+~
+12 0 0
+1 0 16 0 
+5 0 0
+E
+bone throne~
+A medium sized throne is set here.~
+#16157
+black satin gown~
+a #0black satin gown#n~
+#0Black satin gown.~
+~
+9 0 1|1024
+0 0 0 0 
+5 0 0
+#0
+
+
+#ROOMS
+#16150
+#RT#rr#Re#rm#re#Rr#re #RS#ra#Rn#rc#Rt#ru#Ra#rr#Ry~
+#rThis is a place of peace and comfort for all those who seek it.  
+Come and rest at your will. There's a massive fire place to the 
+north.  Hanging above it is a big picture of someone with great significance. 
+To the west is the portal room.
+~
+0 8|1024|16384 0
+D3
+~
+~
+0 -1 16151
+S
+#16151
+#pPaths #0of #rPassage~
+As you look around, there seem to be doorways stuck into 
+the wall, each one showing a different section of the world.  The 
+doorways flicker in the low light of the room, giving off an eerie glow.
+~
+0 8 0
+D0
+~
+~
+0 -1 16152
+D1
+~
+~
+0 -1 16150
+E
+door sign~
+There seems to be something written here...
+Temple, Staff, Sphinx, Hightower, and Draconia
+~
+T
+temple~
+$n slowly fades out of existance.~
+Your surroundigs blur and change.~
+all~
+16384 3001 0
+T
+staff~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 25008 0
+T
+sphinx~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2646 0
+T
+hightower~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 1312 0
+T
+draconia~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2201 0
+S
+#16152
+Forbidden throne~
+As you enter you can see the shadows move and 
+swirl about you as you enter this forbidden chamber, you feel the presence 
+of something watching you. Are those eyes staring at you from the shadows, or 
+are those just figments of your imagination?
+~
+0 8 0
+D2
+~
+~
+0 -1 16151
+S
+#0
+
+
+#RESETS
+O 1 16150 1 16150			A soft black velvet couch to Tremere Sanctuary
+O 1 16151 1 16150			A matching black velvet loveseat to Tremere Sanctuary
+O 1 16152 1 16150			an overstuffed black velvet ottoman to Tremere Sanctuary
+O 1 16153 1 16150			a picture to Tremere Sanctuary
+O 1 16154 1 16152			throne to throne room
+O 1 16155 1 16152			throne to throne room
+O 1 16156 1 16152			throne to throne room
+*
+M 1 16150 1 16152			guard to recall room
+*
+M 1 16151 1 16150			healer to safe room
+E 1 16157 100 12
+S
+
+
+#SPECIALS
+M  16151 spec_cast_adept			Shandrel
+M  16150 spec_clan_tremere			Ja'pha
+S
+
+
+#$

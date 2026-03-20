@@ -1,0 +1,208 @@
+#AREADATA
+Name        Lady    WW HQ~
+Builders    Mystaria~
+VNUMs       16500 16549
+Security    1
+End
+
+
+
+#MOBILES
+#16500
+ForestSpirit~
+#GF#go#Gr#ge#Gs#gt#GS#gp#Gi#gr#Gi#gt~
+#GF#go#Gr#ge#Gs#gt#GS#gp#Gi#gr#Gi#gt
+~
+#PThis God is a spirit that lives amongst us within this very Forest. 
+Some call it Gaia others God/Godess, yet no one is certain. 
+It's form changes upon the moon, sun, even it's surroundings. Once an 
+animal like form that can camouflaged to it's surroundings. Then at night 
+it'll become a walking translucent spirit that you can barely see except 
+under the moons rays. This spirit never speaks and just the sight of it leaves 
+you in awe. This spirit's apart of you as it is apart of all of us and all 
+life it's self. It gives and then can quickly take it away draining your energy 
+in order to create life making things grow or to heal ones wounds. 
+Sometimes, just sometimes, if you're chosen this spirit will bring you back to 
+life.#n
+~
+67 552 0 S
+499 0 0 0d0+0 0d0+0
+0 0
+0 0 0
+#16501
+Shadow Fang~
+Shadow Fang~
+The Great WereWolf Guardian, Shadow Fang, stands before you.
+~
+The Great WereWolf Guardian, Shadow Fang, stands before you, his silver claws glistening 
+with the blood of his last kill. He is loyal only the the Werewolves, and to Mother Gaia. 
+No one else may gain his loyalty.  No one else will get past his continual watch.
+~
+41029 4825770 0 S
+1500 0 0 0d0+0 0d0+0
+0 0
+0 0 1
+#0
+
+
+
+#OBJECTS
+#16500
+fountain~
+fountain~
+#PYou see an ever flowing fountain of Pink wine in the center of this Sanctuary.~
+~
+17 0 0
+30 30 2 0
+5 0 0
+#16501
+spring~
+spring~
+#CA Magical Spring flows before you.~
+~
+10 0 16385
+30 28 28 28
+5 0 0
+E
+spring~
+This magical stream heals Anyone who drinks from it. It regenerates all 
+wounds instantly. Yet no one has ever reached it, but you stand right before it. ~
+#16502
+mask of the Forest~
+mask of the Forest~
+Mask of the Forest.~
+~
+9 0 -32767
+0 0 0 11
+1 0 0
+#16503
+leggings of Gaia~
+leggings of Gaia~
+Leggings of Gaia.~
+~
+9 0 33
+0 0 0 57
+1 0 0
+#0
+
+
+
+#ROOMS
+#16500
+#gPaths #Gof #PDeparture#n~
+#gYou're standing in the middle of a beautiful Rain Forest. 
+Birds fly by peacefully whistling their happy tune. Animals scurry about, enjoying
+a beautiful day in the sun. While others hide in the trees or lower grounds, 
+camouflaged by the shadows and hidden brush, awaiting the night, to resume their 
+nocturnal behavior. As night begins to fall many colorful crickets hide amongst 
+beautiful glowing flowers, chirping their cheerful songs of joy to the end of 
+this peaceful day. Suddenly, something above catches you're eye. Woah, what do ya know. 
+It's a Siamese looking monkey hanging upside down from a massive tree. The monkey 
+throws an orange colored fruit at the base of the tree, right next to an ancient stone. 
+Almost as if he was trying to direct your attention to the engraved markings that adorn 
+this moss covered relic. #p{{#Ptype look stone to read discription#p}}#n
+     A large stone rests here.
+~
+0 8192 2
+E
+large stone~
+Temple, Staff, Sphinx, Draconia, Hightower.~
+D1
+~
+~
+0 -1 16501
+T
+draconia~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 2201 0
+T
+hightower~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 1312 0
+T
+sphinx~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 2646 0
+T
+staff~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 25008 0
+T
+temple~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 3001 0
+S
+#16501
+#0S#7a#0n#7c#0t#7u#0a#7r#0y~
+#0Located in the middle of this massive wolves den is an ornate fountain. How it 
+got there is uncertain. All around are nests of leaves and grass to rest on. The 
+high-ceilinged walls are made of quartz and pyrite crystal, shot through with rich 
+veins of gold, silver, and hints of copper, making them sparkle in even the dimmest 
+lighting. You could say the servants of Gaia live well.
+~
+0 1 3
+D0
+~
+~
+0 -1 16502
+D3
+~
+~
+0 -1 16500
+S
+#16502
+#LCelestial #GForest #Pof #CGaia~
+#LThis is a sacred place of Magic. To quiet for the likes of 
+those who've never been here. Many for told stories of spirits and 
+forest gods protect these forests. Anyone smart enough dares to trespass, 
+for those who've entered never again returned. Only animals, spirits, and gods 
+who live here witness it's secrets and beauty. Even the springs, that come from 
+the mountains afar to create this stream is magical. You witness, that all life 
+surrounding this water is very healthy and bigger than anything else you've ever seen.  
+Fairies play and dance amongst flowers you've never seen before. While tree spirits 
+make rattling sounds in the trees signaling your entrance.#n
+~
+0 25604 3
+D2
+~
+~
+0 -1 16501
+S
+#0
+
+
+
+#SPECIALS
+M 16500 spec_cast_adept Load to: #GF#go#Gr#ge#Gs#gt#GS#gp#Gi#gr#Gi#gt
+M 16501 spec_clan_ww Load to: Shadow Fang
+S
+
+
+
+#RESETS
+O 0 16500 0 16501
+M 0 16500 1 16502
+E 0 16501 0 17
+M 0 16501 1 16501
+E 0 16502 0 18
+E 0 16503 0 7
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

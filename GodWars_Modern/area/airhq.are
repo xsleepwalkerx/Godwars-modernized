@@ -1,0 +1,135 @@
+#AREADATA
+Name        Siervua    Air Mage Hq~
+Builders    Mystaria~
+VNUMs       16300 16320
+Security    1
+End
+
+
+
+#MOBILES
+#16300
+Brighid~
+Brighid~
+Brighid sits here, ready to aid in your travels.
+~
+Retired from the council, she spends her days aiding those who have chosen the 
+path of magick. Her silver hair falls down upon her purple robe. She smiles at 
+you warmly inviting you in.
+~
+2|64 8|32|512 0 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#0
+
+
+#ROOMS
+#16300
+#7Haven of #pMist#n~
+Surrounded by the walls of gentle mist, you step into another dimension away from 
+the chaotic state which exists beyond these gentle walls. A light fog rises up from 
+the ground, covering your tracks as you turn around glancing at your surroundings. 
+A small path leads west towards another area, where mages and elders alike go to 
+leave the sanctuary of the haven. Some marble steps lead to your south, towards 
+the large white doors. Sounds echo off the walls, leaving a sense of joy and happiness.
+~
+0 0 2
+D2
+~
+~
+0 -1 16301
+D3
+~
+~
+0 -1 16302
+S
+#16301
+#7Sanctuary of #pAir#n~
+Two white statues guard the entrance as you enter the marble room. An altar sits on 
+at the end of the room, watched over by a elderly healer. Banners of purple and silver 
+adorn the walls, as several apprentices and mages sit and chat all around you, sitting 
+upon the many benches that decorate the room. The healer invites you in closer.
+~
+0 8|1024|16384 0
+D0
+~
+~
+0 -1 16300
+S
+#16302
+#7Dimensional #pVortex#n~
+The mist flows in from the haven, as a steady line of mages and elders travel in between 
+the two dimensions. The sounds of laughter, and happiness are heard as they chat about 
+their travels, playfully comparing them to the next. Several porters surround the far 
+west of the room.
+~
+0 0 2
+D1
+~
+~
+0 -1 16300
+E
+sign~
+"Select a path to the dimension of your choice. You may choose from: Temple, Draconia, 
+Staff, Sphinx, and Hightower."~
+T
+temple~
+$n slowly fades out of existance.~
+Your surroundigs blur and change.~
+all~
+16384 3001 0
+T
+staff~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 25008 0
+T
+sphinx~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2646 0
+T
+hightower~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 1312 0
+T
+draconia~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2201 0
+S
+#16303
+#7The #pCouncil #7Chambers~
+Surround by statues of great elders, you feel as if you are being watched as you enter 
+the meeting place of the council. Hidden from the rest of the clan, all the major decisions 
+are made here. A table made of silver marble sits within the center of the circle, with a 
+number of seats around it, a total of five to be exact. One for each direction and the 
+archmage.  It is all very grandeur in its decorations.
+~
+0 0 2
+D5
+~
+~
+0 -1 16300
+S
+#0
+
+
+#RESETS
+*
+M 1 16300 1 16301			Healer to safe room
+S
+
+
+#SPECIALS
+M  16300 spec_cast_adept			Brighid
+S
+
+
+#$

@@ -1,0 +1,253 @@
+#AREADATA
+Name        ShaTain    HQ~
+Builders    Mistif~
+VNUMs       16604 16607
+Security    1
+End
+
+
+
+#MOBILES
+#16604
+Cerberus~
+Cerberus~
+A giant hellhound with three heads.
+~
+This is Cerberus, a demon's guardian. However, you wonder
+what was done to him for him to work here.... after all, this is
+not usually what Cerberus would defend against... Not THESE
+demons anyways.
+~
+65 552 0 S
+1500 0 0 0d0+0 0d0+0
+0 0
+0 0 1
+#16605
+Devil~
+Devil~
+A very dark red demon with a forked tail.
+~
+This appears to be a very powerful Devil. The horns
+on top of his head are honed to its sharpest, and the
+forked tail snakes out behind him, black at the tip, and
+almost appears to scorch the air as it wanders back and
+forth. The demon's feet are hooves, and appear quite
+strong. He has large, leathery black wings extended out
+behind him, as well as sharp claws extending from his
+fingers. He appears completely unwholesome.
+~
+65 552 0 S
+1501 0 0 0d0+0 0d0+0
+0 0
+0 0 1
+#16606
+Brandier~
+Brandier~
+A small sprite, hovering on translucent wings.
+~
+This is a rather small fellow, with dark blue eyes, and
+very thin wings which flap quick enough that you scarcely
+can see them move. He hovers here, a few feet off the ground,
+reading from a miniture book, filled with arcane runes. He
+appears to be a friendly fellow, at least.
+~
+67 8872 1000 S
+500 0 0 0d0+0 0d0+0
+0 0
+0 0 1
+#16607
+Pup~
+Pup~
+A small werewolf pup.
+~
+You see a cute little pup curled up on the carpet here,
+snoring softly as he dreams sweet dreams of growth,
+and running wild in the forest. You are sure to be
+careful not to disturb his sleep as you walk by.
+~
+65 128 0 S
+500 0 0 0d0+0 0d0+0
+0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#16604
+Throne~
+a blue marble throne~
+A blue marble throne, with a tall back~
+~
+12 0 0
+1 0 16 0
+999 0 0
+E
+throne~
+This marble throne is speckled with black obsedion,
+and is obviously meant to hold someone very important.
+~
+#0
+
+
+
+#ROOMS
+#16604
+ShaTain's Throne Room~
+You have enter the Throne Room of the Outcast. All over
+the walls are the depictions of his conquests. The west wall
+has the conquest over the Kindred, of which he is shown
+tearing out a Vampire's throat. On the east wall is the
+conquest over the Wyrm, of which he is shown standing
+on the corpse of a fellow demon, a blade rising from the
+other's chest. On the south wall, there is the conquest over
+himself, in which he is fighting a mirror image of himself.
+Finally, on the north wall, which his throne is against, it
+has a depiction of him fighting alongside, and helping,
+werewolves and holy mages.
+~
+0 25089 0
+D2
+~
+~
+0 -1 16605
+S
+#16605
+Clear Fields~
+These fields go on a very long ways. Down, there
+are stairs which apparently go down a long way...
+North is a small gathering of trees. To the south,
+there is a circle of stones. The field itself is rich with
+wild grasses and grains. It's completely picture
+perfect, except for one spot where the grass is pushed
+down. As you look closer, you realize that there is a
+small werewolf pup.
+~
+0 1 2
+D0
+~
+~
+0 -1 16606
+D2
+~
+~
+0 -1 16607
+D5
+~
+~
+0 -1 30000
+S
+#16606
+Circle of Trees~
+This clearing is surrounded by a huge circle
+of trees, the only exit is through a small opening
+in the south, where you can see a large field in
+the distance. The trees themselves are very
+large, and their canopy shades this whole area
+in darkness. At the center of the clearing, a small
+spirte flutters in the air while chanting arcane
+runes from a small book.
+~
+0 17413 3
+E
+trees~
+These trees are HUGE. You can barely see the top of them,
+and then the foliage blocks any view of the sky except
+for the random sunbeam that sneaks its way down. You
+are astounded by the beauty of these trees.
+~
+D2
+~
+~
+0 -1 16605
+S
+#16607
+Circle of Stones~
+This clearing is surrounded completely by dagger-like
+stones, each over 7 feet tall. There is a single opening to
+the north from which you can escape to. In the middle
+of the clearing there is a pedestal from which rests a book
+for you to read. The stones themselves appear to be pulsating
+a soft blue color. You wonder why this is.
+~
+0 24577 2
+E
+pedestal~
+On the pedestal are several places, including: temple, hightower, sphinx
+draconia, staff, timelord, and drow.
+~
+D0
+~
+~
+0 -1 16605
+T
+drow~
+The stones pulse and vibrate a blue color, and $n steps into a portal.~
+You step into the Stone's portal, and are gone.~
+all~
+16384 5270 0
+T
+timelord~
+The stones pulse and vibrate a blue color, and $n steps into a portal.~
+You step into the Stone's portal, and are gone.~
+all~
+16384 2549 0
+T
+draconia~
+The stones pulse and vibrate a blue color, and $n steps into a portal.~
+You step into the Stone's portal, and are gone.~
+all~
+16384 2201 0
+T
+hightower~
+The stones pulse and vibrate a blue color, and $n steps into a portal.~
+You step into the Stone's portal, and are gone.~
+all~
+16384 1312 0
+T
+sphinx~
+The stones pulse and vibrate a blue color, and $n steps into a portal.~
+You step into the Stone's portal, and are gone.~
+all~
+16384 2646 0
+T
+staff~
+The stones pulse and vibrate a blue color, and $n steps into a portal.~
+You step into the Stone's portal, and are gone.~
+all~
+16384 25008 0
+T
+temple~
+The stones pulse and vibrate a blue color, and $n steps into a portal.~
+You step into the Stone's portal, and are gone.~
+all~
+16384 3001 0
+S
+#0
+
+
+
+#SPECIALS
+M 16604 spec_clan_shatain Load to: Cerberus
+M 16605 spec_clan_shatain2 Load to: Devil
+M 16606 spec_cast_adept Load to: Brandier
+S
+
+
+
+#RESETS
+M 0 16604 1 16605
+M 0 16605 1 16605
+M 0 16606 1 16606
+M 0 16607 1 16605
+O 0 16604 0 16604
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

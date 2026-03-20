@@ -1,0 +1,1218 @@
+#AREADATA
+Name        Sivar    The Lost Citadel~
+Builders    Xentoth~
+VNUMs       20000 20042
+Security    1
+End
+
+
+#MOBILES
+#20000
+dead~
+Servant of Sargonnas~
+The Servant of Sargonnas stands waiting for his gods next command.
+~
+This might of been a man at one time.  Now it is a walking corpses.  Held together 
+only by the power of Sargonnas.
+~
+2|64 0 -1000 S
+1318 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#20001
+deathman~
+Apprentice Necromaner~
+The Apprentice Necromancer stands here, chanting magic.
+~
+He is dressed in beautiful black velvet robes.
+~
+2|4|64 8|32 -1000 S
+750 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#20002
+order~
+Knockbarrum Guard~
+A member of the Knockbarrum stands here.
+~
+The Knockbarrum are a force of pure evil.  Sworn to live and die for their ruler.  
+Few ever see a member, none see his face and live.
+~
+2|64 2|8|32|128|512|32768|65536 -1000 S
+800 0 0 10d30+2000 3d9+10
+0 0
+8 8 1
+#20003
+Za'uld~
+Za'uld~
+the Za'uld stands guard on the Citadel.
+~
+A chill runs the length of your body.  The Za'uld's stare burns into the core 
+of your body.  There is no compassion, no sorrow, only death.
+~
+32|64|8192 2|8|32|128|512|32768|65536|1048576|4194304 -1000 S
+2100 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#20004
+Za'uld~
+Za'uld~
+the Za'uld stands guard on the Citadel.
+~
+A chill runs the length of your body.  The Za'uld's stare burns into the core 
+of your body.  There is no compassion, no sorrow, only death.
+~
+2|32|64|8192 2|8|32|128|512|32768|65536|1048576|4194304 -1000 S
+2100 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#20005
+Shadow Fiend~
+Shadow Fiend~
+The Shadow Fiend stands guard on the plane of shadow in the Lost Citadel.
+~
+A force darker than the shadows, not only in body, but in soul.  
+You can barely make out the skeletal shape that forms the fiends body.
+~
+32|64|8192 2|8|32|64|128|512|8192|32768|65536|1048576|4194304 -1000 S
+2200 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#20006
+pure death~
+Lord of Death~
+the Lord of Death stands guard on the Citadel.
+~
+Death, pure and simple!
+~
+32|64 2|8|32|128|512|32768|65536|1048576|4194304 -1000 S
+9999 0 0 5d10+9999 2d10+9999
+0 0
+8 8 1
+#20007
+flux~
+Ripple of Shadows~
+you see a ripple in the shadows.
+~
+A creature made of the umbra itself.
+~
+4|32|64|8192 2|4|8|32|64|128|512|8192|32768|65536|524288|1048576|4194304 100 S
+1000 0 0 5d30+2000 2d10+100
+0 0
+8 8 0
+#20025
+Stahnk~
+Stahnk~
+glowing red eyes watch you from the shadows.
+~
+The stench of death is overwhelming.  A mass of rotten flesh and teeth stands before
+you.  It's glowing read eyes stare through your soul.  The size of a small dragon, 
+the Stahnk is a formidable foe.
+~
+64|8192 2|8|32|128|512|32768|65536|1048576|4194304 -1000 S
+2200 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#20026
+Stahnk~
+Stahnk~
+glowing red eyes watch you from the shadows.
+~
+The stench of death is overwhelming.  A mass of rotten flesh and teeth stands before
+you.  It's glowing read eyes stare through your soul.  The size of a small dragon, 
+the Stahnk is a formidable foe.
+~
+32|64|8192 2|8|32|64|128|512|8192|32768|65536|1048576|4194304 -1000 S
+2200 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#20027
+Za'uld~
+Za'uld~
+the Za'uld stands guard on the Citadel.
+~
+A chill runs the length of your body.  The Za'uld's stare burns into the core
+of your body.  There is no compassion, no sorrow, only death.
+~
+32|64|8192 2|8|32|64|128|512|32768|65536|1048576|4194304 -1000 S
+2100 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#0
+
+
+#OBJECTS
+#20001
+pill~
+small Blue Pill~
+A small blue pill.~
+~
+26 0 1
+25 28 28 28 
+1 0 0
+#20002
+spiked leather~
+spiked Leather~
+A suit of Spiked Leather armor.~
+~
+9 16|512 1|8
+0 0 0 0 
+10 0 0
+A
+18 5
+A
+1 2
+A
+17 -100
+#20003
+blood fountain~
+blood Fountain~
+A huge Blood Fountain.~
+~
+17 0 0
+10000 9999 13 0 
+999 0 0
+#20004
+dragon helm~
+dragon Helm~
+A Dragon Helmet.~
+~
+9 16|512 1|16
+0 0 0 0 
+5 0 0
+A
+18 5
+A
+23 10
+A
+17 -50
+E
+dragon helmet~
+Crafted of steel, with a dragon scale pattern etched into it.  Large Horns 
+protrude from the top.~
+#20005
+Claw~
+Claw~
+A large Claw lies here.~
+~
+5 1|16|32 1|8192|16384
+4 50 50 1
+1 0 0
+A
+24 -100
+A
+18 20
+A
+19 20
+A
+17 -100
+Q
+(null)~
+(null)~
+(null)~
+(null)~
+(null)~
+(null)~
+16384 0
+#20006
+Edged Claw~
+Edged Claw~
+A large Sharp Claw lies here.~
+~
+5 1|16|32 1|8192|16384
+4 50 50 0
+1 0 0
+A
+24 -100
+A
+18 30
+A
+19 30
+A
+17 -100
+Q
+(null)~
+(null)~
+(null)~
+(null)~
+(null)~
+(null)~
+16384 0
+#20007
+Throne~
+a Throne of Skulls~
+A massive Throne made a polished skulls sits here.~
+~
+12 512 0
+1 999 16 200
+9999 0 0
+#20008
+Chest~
+a Huge Oak Chest~
+A Huge Oak Chest rests here.~
+~
+15 32 0
+9999 1|2|4|8 20012 0
+9999 0 0
+#20009
+bag~
+a Bag~
+a Bag sits here.~
+~
+15 0 16385
+9999 1 0 0
+1 0 0
+#20010
+wand resist~
+a Wand of Resist~
+a Wand sits here.~
+~
+3 0 16385
+50 25 25 560 
+1 0 0
+#20011
+wand spellproof~
+a Wand of Spellproof~
+a Wand sits here.~
+~
+3 0 16385
+50 25 25 621 
+1 0 0
+#20012
+Skull Key~
+a Skull Key~
+A object crafted from bone lies here.~
+~
+18 32 1|16384
+0 0 0 0 
+1 0 0
+#0
+
+
+#ROOMS
+#20000
+The Precipice~
+You stand before the gates of the Lost Citadel.  The area has been decimated, 
+the walls of the citadel are blackened and charred.  The ground you stand on 
+extends out from the citadel half a dozen yards, then is swallowed up by mist.  
+All around you is the stench of death.
+~
+0 16384 5
+D0
+A massive iron gate blocks your way.~
+gate~
+2 -1 20001
+D5
+Rocky Path~
+~
+0 -1 20036
+E
+mist mists~
+The swirling vapors seem move and pulsate as if they were alive.  Out of 
+the corner of your eye you think you see movement.  A large shape, darker than 
+the mist, but when you focus, it is gone.~
+S
+#20001
+The Entrance Chamber~
+You stand within the gates of the Lost Citadel.  A dull light seems to emanate 
+from the very walls.  The citadel is crafted out of a beautiful black marble, 
+that has blood red veins running through it.  Massive pillars run the length of 
+the room.  As you look at them, their tops, as well as the ceiling are lost 
+in shadows.
+~
+0 8|16384 0
+D0
+Junction Room~
+~
+0 -1 20002
+D2
+A massive iron gate blocks your way.~
+gate~
+2 -1 20000
+S
+#20002
+Junction Room~
+This is the heart of the citadel.  Exits lead in almost all directions.  The 
+pillars continue into this room, from the Entrance Chamber.  You hear the sound of 
+running water coming from the room to the north.  To the east and west are 
+hallways.  A spiral staircase leads down to the citadels transporter room.
+~
+0 8|16384 0
+D0
+Temple of Sargonnas~
+~
+0 -1 20033
+D1
+Hallway~
+~
+0 -1 20004
+D2
+The Entrance Chamber~
+~
+0 -1 20001
+D3
+Hallway~
+~
+0 -1 20012
+D5
+Transporter Room~
+~
+0 -1 20003
+S
+#20003
+Transporter Room~
+You are standing in a large circular room.  A black mist hangs in the air.  You have the
+feeling that a powerful force is watching you!  As you look about, you catch blurry glimpses
+of distance locations.  A small orb floats in the air.
+~
+0 8|16384 0
+D4
+~
+~
+0 -1 20002
+E
+orb~
+The orb pulses with energy, and displays the names of the following 
+locations:
+Arachnos, Hightower, Draconia, Galaxy, Colony, Temple, Canyon, Mahntor, Staff, Sphinx, Drow, 
+Thalos, Ofcol, Darktemp, Doom, Gnomecastle, Atlantis, Quest.
+~
+T
+|arachnos*ilixrzel*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6Arachnos#n.~
+all~
+16384 6200 0
+T
+|hightower*rokrseyul*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at the #6Hightower#n.~
+all~
+16384 1312 0
+T
+|draconia*jlixezoi*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6Draconia#n.~
+all~
+16384 2201 0
+T
+|galaxy*kirigm*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6Galaxy#n.~
+all~
+16384 9301 0
+T
+|colony*xerezm*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6The Colony#n.~
+all~
+16384 8001 0
+T
+|temple*subpru*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6The Temple#n.~
+all~
+16384 3001 0
+T
+|canyon*xizmez*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6Elemental Canyon#n.~
+all~
+16384 9201 0
+T
+|mahntor*birzsel*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6Mahntor#n.~
+all~
+16384 2362 0
+T
+|staff*lsidd*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6Staff#n.~
+all~
+16384 25008 0
+T
+|sphinx*lprozg*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6Sphinx#n.~
+all~
+16384 2646 0
+T
+|drow*jley*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6Drow#n.~
+all~
+16384 5100 0
+T
+|thalos*srirel*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6Thalos#n.~
+all~
+16384 5300 0
+T
+|ofcol*edxer*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6Ofcol#n.~
+all~
+16384 5552 0
+T
+|darktemp*jilfsubp*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6The Darktemple#n.~
+all~
+16384 1813 0
+T
+|doom*jeeb*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6Doom#n.~
+all~
+16384 11000 0
+T
+|gnomecastle*kzebuxilsru*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6Gnome Castle#n.~
+all~
+16384 6601 0
+T
+|atlantis*isrizsol*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6Atlantis#n.~
+all~
+16384 8114 0
+T
+|quest*lauls*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6The Quest Machine#n.~
+all~
+16384 30001 0
+S
+#20004
+Hallway~
+The light that had once flowed from the walls is no more.  You stand in total darkness.
+~
+0 1|8|16384 0
+D0
+A large oak door.~
+door~
+1 -1 20005
+D1
+Hallway~
+~
+0 -1 20007
+D2
+A large oak door.~
+door~
+1 -1 20006
+D3
+Junction Room~
+~
+0 -1 20002
+S
+#20005
+Meeting Chamber~
+This is a large room.  At its center sits a large rectangular table.  There 
+is room to seat thirty people.  Along the walls are paintings of strange kingdoms, 
+some in fire and ruin, others thriving and prospering.
+~
+0 8|16384 0
+D2
+A large oak door.~
+door~
+1 -1 20004
+S
+#20006
+Map Room~
+This room has been neglected, and forgotten.  Dust has settled on everything. 
+The walls are lined with shelves full of maps, as well as on the table that stands 
+in the center of this room.  However upon closer examination you notice that all 
+the maps have decayed.  They crumble to dust upon touch.
+~
+0 8|16384 0
+D0
+A large oak door.~
+door~
+1 -1 20004
+S
+#20007
+Hallway~
+A dark hall.
+~
+0 1|8 0
+D0
+Hallway~
+~
+0 -1 20009
+D1
+A oak door.~
+door~
+1 -1 20008
+D3
+Hallway~
+~
+0 -1 20004
+D4
+Spiral Staircase~
+~
+0 -1 20027
+S
+#20008
+Guest Quarters~
+You are standing in a simple room.  A bed stands against the back wall.  There 
+is a dresser and chair against the southern wall.
+~
+0 8|512|16384 0
+D3
+A oak door.~
+door~
+1 -1 20007
+S
+#20009
+Hallway~
+This hall ends abruptly.  The upper level of the citadel has fallen in and 
+blocked your progress.
+~
+0 1|8|16384 0
+D1
+A oak door.~
+door~
+1 -1 20011
+D2
+Hallway~
+~
+0 -1 20007
+D3
+A oak door.~
+door~
+1 -1 20010
+S
+#20010
+Guest Quarters~
+This room has been ransacked.  The bed has been overturn, the dresser broken.  
+Two corpses lay here.
+~
+0 8|512|16384 0
+D1
+A oak door.~
+door~
+1 -1 20009
+S
+#20011
+Guest Quarters~
+Debris and rubble lay on the floor.  The ceiling has damage to it.  However 
+you can see nothing through the cracks and holes.  The bed is covered in dust 
+and rubble.  A dresser and chair sit against the southern wall.
+~
+0 8|512|16384 0
+D3
+A oak door.~
+door~
+1 -1 20009
+S
+#20012
+Hallway~
+The light that once flowed from the walls is no more.  You stand is total darkness.
+~
+0 1|8|16384 0
+D0
+A oak door.~
+door~
+1 -1 20014
+D1
+Junction Room~
+~
+0 -1 20002
+D2
+A oak door.~
+door~
+1 -1 20013
+D3
+Hallway~
+~
+0 -1 20015
+S
+#20013
+Guard Barracks~
+The walls are lined with bunk beds.  On the floor in front of each bed is a lock 
+box.  The room is a mess, the beds are unmade, the lock boxes open.
+~
+0 8|16384 0
+D0
+A oak door.~
+door~
+1 -1 20012
+E
+lock boxes~
+It is empty.~
+S
+#20014
+Dinning Hall~
+The smell of rotten food is overwhelming. It appears as if a battle 
+was fought here.  On some tables plates of food have been left to rot, others 
+tables have been over turned, leaving plates and their contents scattered on 
+the floor.  Corpses lay about, some still in their chairs, holding their silverware.
+Rats scurry about, nibbling on the rotten food and corpses.
+~
+0 8|16384 0
+D0
+A swinging door.~
+door~
+1 -1 20034
+D2
+A oak door.~
+door~
+1 -1 20012
+S
+#20015
+Hallway~
+A dark hall.
+~
+0 1|8|16384 0
+D0
+A oak door.~
+door~
+1 -1 20016
+D1
+Hallway~
+~
+0 -1 20012
+D3
+A thick metal door.~
+door~
+2 -1 20017
+S
+#20016
+Servant Quarters~
+This is a dank and musty room.  Cots are strewn about.  Straw and filth lay on the floor.
+~
+0 1|8|16384 0
+D2
+A oak door.~
+door~
+1 -1 20015
+S
+#20017
+Jail~
+A simple desk sits in the middle of the room.  Shackles hang along the walls.
+~
+0 8|16384 0
+D0
+A metal door.~
+door~
+2 -1 20018
+D1
+A thick metal door.~
+door~
+2 -1 20015
+D2
+A metal door.~
+door~
+2 -1 20020
+D3
+A metal door.~
+door~
+2 -1 20019
+D5
+A old wooden trap door.~
+trap door~
+2 -1 20021
+S
+#20018
+Cell~
+A small cot sits against the back wall.  Straw lies on the floor.
+~
+0 1|8|8192|16384 0
+D2
+A metal door.~
+door~
+2 -1 20017
+S
+#20019
+Cell~
+A small cot sits against the back wall.  Straw lies on the floor.
+~
+0 1|8|8192|16384 0
+D1
+A thick metal door.~
+door~
+2 -1 20017
+S
+#20020
+Cell~
+A small cot sits against the back wall.  Straw lies on the floor.
+~
+0 1|8|8192|16384 0
+D0
+A metal door.~
+door~
+2 -1 20017
+S
+#20021
+Torture Chamber~
+This room is caked with dried blood.  Body parts lay around on the floor. 
+Skeletons hang from the ceiling inside cages.  Various torture devices are 
+scattered about.  A sign hangs on the west wall.
+~
+0 8|16384 0
+D3
+A old moss covered door.~
+door~
+1 -1 20022
+D4
+A old wooden trap door.~
+trap door~
+2 -1 20017
+E
+sign~
+Beyond lays the catacombs.  Beware the undead!~
+S
+#20022
+Hallway~
+This hallway slopes downward sharply.  You have a hard time keeping your balance.
+A thick layer of slime covers this passageway.
+~
+0 1|4|8|16384 4
+D1
+A old moss covered door.~
+door~
+1 -1 20021
+D3
+Catacombs~
+~
+0 -1 20023
+S
+#20023
+Catacombs~
+Welcome to the catacombs, the home of the dead.
+~
+0 1|8|8192 0
+D0
+Catacombs~
+~
+0 -1 20024
+D2
+Catacombs~
+~
+0 -1 20026
+D3
+Catacombs~
+~
+0 -1 20025
+S
+#20024
+Catacombs~
+The smell of death is strong.
+~
+0 1|8|8192 0
+D2
+Catacombs~
+~
+0 -1 20023
+D3
+Catacombs~
+~
+0 -1 20025
+S
+#20025
+Catacombs~
+The smell of death is strong.
+~
+0 1|8|8192 0
+D1
+Catacombs~
+~
+0 -1 20023
+D2
+Catacombs~
+~
+0 -1 20024
+S
+#20026
+Catacombs~
+The smell of death is overwhelming.
+~
+0 1|8|8192 0
+D0
+Catacombs~
+~
+0 -1 20023
+D2
+Catacombs~
+~
+0 -1 20025
+S
+#20027
+Hallway~
+You are standing in a dark hall.
+~
+0 1|8|16384 0
+D1
+Trophy Room~
+~
+0 -1 20028
+D3
+The Library~
+~
+0 -1 20029
+D5
+Spiral staircase~
+~
+0 -1 20007
+S
+#20028
+Trophy Room~
+This room is filled with the spoils of war.  Anything that a warrior might deem 
+as a trophy can be stored here.
+~
+0 8|16384 0
+D3
+Hallway~
+~
+0 -1 20027
+S
+#20029
+The Library~
+Rows and rows of oak shelves, full of dusty books fill this room.  Several orbs 
+float near the ceiling casting light on the room.  A small table with ornate 
+chairs sits in the southwest corner of this room.  One shelf of books against 
+the north wall looks as if it is still being used.  It's the only one with no 
+dust on it.
+~
+0 8|16384 0
+D0
+A large oak shelf full of books.~
+shelf~
+2 -1 20030
+D1
+Hallway~
+~
+0 -1 20027
+E
+shelf~
+This shelf looks out of place amongst the other dust covered ones.~
+S
+#20030
+Necromancer's Laboratory~
+This room is lined with tables.  Bottles of every size and shape you can 
+imagine sit atop these tables.  Some contain liquids, others contain ...more 
+morbid items.  A corpse lies on the table in the center of the room. 
+Its chest has been laid open, exposing the organs beneath.  A heart 
+lays on a small table with an assortment of surgical tools.
+~
+0 8|16384 0
+D2
+A large oak shelf full of books.~
+shelf~
+2 -1 20029
+S
+#20031
+Entrance to Throne Room~
+This room is crafted from pure black marble.  A huge orb floats in the air, 
+casting light about the room.  Stairs lead up to a landing, where huge double 
+iron doors stand closed.  Paintings of aerial battles, with knights riding on 
+the backs of dragons, adorn the walls.
+~
+0 8|16384 0
+D0
+Huge double iron doors block your path.~
+double iron doors~
+2 -1 20032
+D5
+A blurry sprial staircase~
+~
+0 -1 20027
+S
+#20032
+Throne Room~
+The room is crafted of pure black marble.  A huge throne carved of bone 
+sits at the back wall.  Massive pillars run the length of the east and west walls.
+Paintings of dragons, some in combat hang on the walls in between the pillars. An 
+orb floats at the ceiling casting light about the room.  A slave girl is shackled 
+to the wall next to the throne.
+~
+0 8|1024|16384 0
+D2
+Huge double iron doors block your path.~
+double iron doors~
+2 -1 20031
+D3
+Transporter Room~
+~
+0 -1 20003
+T
+|edge*ujku*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6The Ethereal Edge#n.~
+all~
+16384 20042 0
+S
+#20033
+Temple of Sargonnas~
+Upon entering this room a sharp chill washes over your body.  The pillars 
+continue into this room, and come to meet along the far north wall.  The center 
+piece of the temple is a massive fountain, with a statue of the God Sargonnas at its center.
+His eyes glow bright red, he weilds a flaming scimitar in his hand.  The sound that you 
+thought was running water, is in fact blood, flowing up around the base of the 
+statue, and running into the fountain.  
+Blood also oozes from the statues leering mouth.  Behind the blood fountain, set up 
+on a dais is an ornate altar made out of black granite.  Lying upon the altar is 
+what is left of a corpse, which has been dissembled and mutilated.
+~
+0 8|1024|16384 0
+D2
+Junction Room~
+~
+0 -1 20002
+S
+#20034
+Kitchen~
+The scene of destruction follows into this room.  The stench of rotten food 
+and corpses grows.  The corpses of the cooks lay about, some impaled on their 
+own knifes.
+~
+0 8|16384 0
+D2
+A swinging door.~
+door~
+1 -1 20014
+S
+#20036
+The Rocky Path~
+You follow a rocky path down the side of the mountain.
+~
+0 16384 5
+D4
+The Precipice~
+~
+0 -1 20000
+D5
+Rocky Path~
+~
+0 -1 20037
+S
+#20037
+The Rocky Path~
+You follow a rocky path down the side of the mountain.
+~
+0 1 5
+D4
+Rocky Path~
+~
+0 -1 20036
+D5
+~
+~
+0 -1 20038
+S
+#20038
+The Steep Rocky Path~
+The ground is becoming more steep.  Gravel and rubble lay about, making your 
+footing treacherous.
+~
+0 8192 5
+D4
+Rocky Path~
+~
+0 -1 20037
+D5
+Cave Entrance~
+~
+0 -1 20039
+S
+#20039
+Cave Entrance~
+You stand at the entrance of large cave.  The path you followed down is gone.  
+The more of the mountain you see the less it looks like a mountain. Its almost like a gaint 
+hand scooped the hunk of rock the citadel sits on right out of the ground.
+~
+0 8|8192 5
+D0
+Inside Cave~
+~
+0 -1 20040
+S
+#20040
+Just Inside the Cave~
+The cave mouth opens into a huge inner chamber.  You get a whiff of sulfur in the air.
+It is also getting hotter.  Vapors rise out of the cave floor, reducing your vision. 
+You see large claw marks carved into the cave walls.
+~
+0 8|8192 0
+D0
+The Cave~
+~
+0 -1 20041
+D2
+Cave Entrance~
+~
+0 -1 20039
+S
+#20041
+The Cave~
+You stand in the heart of the cave.  Giant stalagmites reach upward from the ground.  
+Water drips from the stalactites hanging on the ceiling.  A nauseous vapor seeps 
+up through the cracks in the floor.  Theres a few shattered skeletons laying about.  
+Near the skeletons lies several giant scales.  You hear the sound of something breathing, echoing through the cave.
+~
+0 1|8|8192 0
+D2
+Just inside the cave~
+~
+0 -1 20040
+E
+skeleton~
+It looks as if the corpse was consumed by a great heat, and then ground into the cave floor.~
+E
+scale~
+You are not sure where such large scales could of come from.  Hope you don't run 
+into whatever creature left them behind.~
+S
+#20042
+The Ethereal Edge~
+You are standing in a swirling storm of mist.  You cannot see what is supporting 
+Your feet, yet it seems solid.  Through the torrent of chaos about you, you catch 
+glimpses of other places, and possibly other times.  You feel close to a power,
+something of great malevolence, and cunning.  Yet nothing revels its self 
+to you.
+~
+0 1|4|8|1024|2048|16384|32768 0
+T
+|temple*subpru*~
+$n is enveloped by swirling mist, and disappears.~
+#7You are hurled through the ethereal plane, and arrive at #6The Temple Square#n.~
+all~
+16384 3005 0
+S
+#0
+
+
+#RESETS
+D 1 20001 2 2			; The Entrance Chamber Lock South
+D 1 20000 0 2			; The Precipice Lock North
+D 1 20005 2 2			; Meeting Chamber Lock South
+D 1 20004 0 2			; Hallway Lock North
+D 1 20006 0 2			; Map Room Lock North
+D 1 20004 2 2			; Hallway Lock South
+D 1 20007 1 1			; Hallway Close East
+D 1 20008 3 1			; Guest Quarters Close West
+D 1 20009 3 1			; Hallway Close West
+D 1 20010 1 1			; Guest Quarters Close East
+D 1 20011 3 1			; Guest Quarters Close West
+D 1 20009 1 1			; Hallway Close East
+D 1 20012 2 1			; Hallway Close South
+D 1 20013 0 1			; Guard Barracks Close North
+D 1 20014 2 1			; Dinning Hall Close South
+D 1 20012 0 1			; Hallway Close North
+D 1 20016 2 1			; Servant Quarters Close South
+D 1 20015 0 1			; Hallway Close North
+D 1 20015 3 2			; Hallway Lock West
+D 1 20017 1 2			; Jail Lock East
+D 1 20017 0 2			; Jail Lock North
+D 1 20018 2 2			; Cell Lock South
+D 1 20019 1 2			; Cell Lock East
+D 1 20017 3 2			; Jail Lock West
+D 1 20020 0 2			; Cell Lock North
+D 1 20017 2 2			; Jail Lock South
+D 1 20017 5 2			; Jail Lock Down
+D 1 20021 4 2			; Torture Chamber Lock Up
+D 1 20021 3 2			; Torture Chamber Lock West
+D 1 20022 1 2			; Hallway Lock East
+R 1 20023 3			; Randomize Catacombs
+R 1 20024 3			; Randomize Catacombs
+R 1 20025 3			; Randomize Catacombs
+R 1 20026 3			; Randomize Catacombs
+D 1 20029 0 2			; The Library Lock North
+D 1 20030 2 2			; Necromancer's Laboratory Lock South
+D 1 20034 2 1			; Kitchen Close South
+D 1 20014 0 1			; Dinning Hall Close North
+D 1 20031 0 2			; Entrance to Throne Room Lock North
+D 1 20032 2 2			; Throne Room Lock South
+*
+M 1 20000 1 20033			Servant of Sargonnas to Temple of Sargonnas
+G 1 20001 100
+G 1 20001 100
+G 1 20001 100
+G 1 20001 100
+G 1 20001 100
+*
+M 1 20001 1 20033			Apprentice Necromaner to Temple of Sargonnas
+G 1 20001 100
+G 1 20001 100
+G 1 20001 100
+G 1 20001 100
+G 1 20001 100
+*
+M 1 20002 2 20001			Knockbarrum Guard to The Entrance Chamber
+E 1 20002 100 5
+E 1 20004 100 6
+*
+M 1 20002 2 20001			Knockbarrum Guard to The Entrance Chamber
+E 1 20002 100 5
+E 1 20004 100 6
+*
+M 1 20003 2 20041 		Za'uld to The Cave
+E 1 20005 3 16
+E 1 20006 3 17
+*
+M 1 20003 2 20040               Za'uld to Just Inside the Cave
+E 1 20005 3 16
+E 1 20006 3 17
+*
+M 1 20004 2 20023 		Za'uld to Catacombs
+E 1 20005 3 16
+E 1 20006 3 17
+*
+M 1 20004 2 20025               Za'uld to Catacombs
+E 1 20005 3 16
+E 1 20006 3 17
+*
+M 1 20027 1 20024               Za'uld to Catacombs
+E 1 20005 3 16
+E 1 20006 3 17
+*
+M 1 20005 2 20001 		Shadow Fiend to The Entrance Chamber
+E 1 20005 3 16
+E 1 20006 3 17
+*
+M 1 20007 8 20001 		Ripple to Entrance Chamber
+E 1 20005 3 16
+E 1 20006 3 17
+*
+M 1 20007 5 20023 		Ripple to Catacombs
+E 1 20005 3 16
+E 1 20006 3 17
+*
+M 1 20007 3 20024 		Ripple to Catacombs
+E 1 20005 3 16
+E 1 20006 3 17
+*
+M 1 20025 1 20002 		Stanhk to Junction Room
+*
+M 1 20026 1 20027 		Stanhk to Hallway
+*
+O 1 20003 100 20033			Blood Fountain to Temple of Sargonnas
+*
+O 1 20007 1 20032 		Throne to Throne Room
+*
+O 1 20008 1 20032 		Chest to Throne Room
+P 1 20009 1 20008			Bag into Chest
+P 1 20010 1 20008 		Wand to Chest
+P 1 20011 1 20008 		Wand to Chest
+P 1 20001 10 20008
+S
+
+
+#SPECIALS
+M  20000 spec_cast_adept			Servant of Sargonnas
+M  20001 spec_cast_undead			Apprentice Necromaner
+M  20002 spec_guard2			Knockbarrum Guard
+M  20003 spec_kavir_guardian
+M  20004 spec_clan_ventrue2
+M  20005 spec_clan_ventrue
+*M  20006 spec_kavir_guardian
+M  20025 spec_clan_ventrue3
+M  20026 spec_clan_ventrue3
+M  20027 spec_clan_ventrue2
+S
+
+
+#$

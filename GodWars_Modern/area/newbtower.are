@@ -1,0 +1,807 @@
+
+#AREADATA
+Name        Ravage  Tower of the weak~
+Builders    ~
+VNUMs       13000 13027
+Security    1
+End
+
+#MOBILES
+#13000
+Gremlin~
+A small gremlin~
+A small gremlin scurries about.
+~
+The small gremlin looks very stupid, running around not know what it's doing.
+~
+67 8388608 0 S
+19 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13001
+Troll~
+A small troll~
+A small hefty troll is here.
+~
+These trolls are extremly ugly. They stumble about eating whatever they can
+find.
+~
+71 8388608 0 S
+21 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13002
+Butler~
+A butler~
+A snooty butler is here.
+~
+The snooty butler sticks him nose up in the air as he sees you.
+~
+71 8388608 0 S
+24 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13003
+Dancer~
+A ghostly dancer~
+A ghostly dancer dances in circles here.
+~
+The pale dancer dances about gracefully not even noticing you.
+~
+67 0 0 S
+27 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13004
+bloody toy~
+A bloody toy~
+A bloody toy staggers about.
+~
+The bloody toy is holding a pair of scissors and is eyeing you evily.
+~
+67 0 0 S
+28 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13005
+stone gargoyle~
+A stone gargoyle~
+A stone gargoyle stares at you.
+~
+
+~
+67 0 0 S
+32 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13006
+evil washcloth~
+An evil washcloth~
+An evil washcloth zooms towards your head.
+~
+The evil bloodstaind washcloth flies about the room.
+~
+67 0 0 S
+35 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13007
+Bloody toy~
+A bloody toy~
+A bloody toy walks about.
+~
+The same bloody toys as seen in the recreation room stand before you, only
+these ones look more beaten up.
+~
+67 0 0 S
+36 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13008
+thick mist~
+A thick mist~
+A thick mist surrounds all.
+~
+The mist moves about, forming different shapes.
+~
+67 0 0 S
+38 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13009
+small imp~
+A small imp~
+A small imp comes out from its hole.
+~
+These small gruff looking creatures snort about wildly.
+~
+67 0 0 S
+41 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13010
+strange forms glowing~
+A strange glowing form~
+A strange glowing form sways back and forth.
+~
+These strange forms resemble somewhat like people, maybe former tenants of the
+tower, or maybe adventurers like you.
+~
+67 0 0 S
+44 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13011
+icicle~
+A large icicle~
+A large icicle hangs from the ceiling.
+~
+A large icicle chills the room. The coldness pierces through your skin.
+~
+67 0 0 S
+42 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13012
+box~
+A box~
+A rather large box sits here.
+~
+These boxes could contain anything from clothing to tables, one thing's for
+sure, the boxes dont want you to get what's inside.
+~
+67 0 0 S
+44 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13013
+shadow~
+A strange shadow~
+A strange shadow looms here.
+~
+These strange shadows remain still, following your every move.
+~
+67 0 0 S
+48 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13014
+evil book~
+An evil book~
+An evil book flies past your head.
+~
+This book doesn't seem to want to be read, they wobble then zoom out towards
+you.
+~
+67 0 0 S
+52 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13015
+skeleton~
+A skeleton~
+A skeleton hangs on the wall.
+~
+An old skeleton looks up to see who's next to befall the same fate as him.
+~
+67 0 0 S
+54 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13016
+skeleton~
+A skeleton~
+A skeleton hangs on the wall.
+~
+An old skeleton looks up to see who's next to befall the same fate as him.
+~
+67 0 0 S
+54 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13017
+skeleton~
+A skeleton~
+A skeleton hangs on the wall.
+~
+An old skeleton looks up to see who's next to befall the same fate as him.
+~
+67 0 0 S
+60 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#13018
+giant beast~
+A giant beast~
+A giant beast stands up from his throne.
+~
+The giant beast snarls at you. Blood drips from his mouth and he smiles an
+evil grin in your direction.
+~
+67 0 0 S
+64 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#0
+
+
+#ROOMS
+#13000
+Entrance to a giant tower~
+A narrow stoned pathway leads up to the giant wooden doors of the delapitated
+tower. Crabgrass pokes up everywhere in thick patches. Long deep green vines
+creep up and surround the tower. Screams of terror rise up from within, a
+chill runs through the air. An ancient sign is wedged in the ground.
+~
+130 0 3
+D0
+
+~
+~
+0 0 13001
+D2
+
+~
+~
+0 -1 13027
+E
+sign~
+><><><><><><>TOWER OF DEATH><><><><><><>
+      Warning! Enter if you dare!
+          Giant beast within!
+
+
+      Newbie Tower Copyright (C)
+   Ravage D'Selth productions 2000
+~
+S
+#13001
+The lobby~
+The interior of the tower is completely decorated and clean. The wooden floor
+is covered by a thick bushy red carpet. Lit torches line the walls, uncovering
+paintings of unkown faces. The hallway seems to go on forever.
+~
+130 8 0
+D0
+
+~
+~
+0 0 13002
+D2
+
+~
+~
+0 0 13000
+S
+#13002
+Main level~
+The long entrance hallway spits out into this giant room. Crystal chandeliers
+hang from the ceiling. The floor is covered by marble tiles. A huge staircase
+leads upwards. The statues seem to stare at you from their eternal resting
+places. This place is extremly opulent.
+~
+130 8 0
+D0
+
+~
+~
+0 0 13010
+D1
+
+~
+~
+0 0 13011
+D2
+
+~
+~
+0 0 13001
+D3
+
+~
+~
+0 0 13009
+D4
+
+~
+~
+0 0 13003
+S
+#13003
+2nd Floor~
+This place is almost exaclty like the main level, except this level has giant
+windows with velvet curtains. In the center of the room there is a white grand
+piano with ivory keys. There is also a giant grandfather clock on the northern
+wall. The staircase continues upwards into darkness.
+~
+130 8 0
+D0
+
+~
+~
+0 0 13012
+D1
+
+~
+~
+0 0 13014
+D2
+
+~
+~
+0 0 13015
+D3
+
+~
+~
+0 0 13013
+D4
+
+~
+~
+0 0 13004
+D5
+
+~
+~
+0 0 13002
+S
+#13004
+Third floor~
+Darkness abounds this room. No light penetrates the velvet curtains drawn over
+the windows. Some of the statues around the room are smashed, and claw marks
+are on the walls. Something must of passed through here and gone berserk.
+There air is quite misty here, sucking up any light you have. You see a
+staircase leading upwards toward a shut door.
+~
+130 9 0
+D0
+
+~
+~
+0 0 13018
+D1
+
+~
+~
+0 0 13016
+D2
+
+~
+~
+0 0 13017
+D3
+
+~
+~
+0 0 13019
+D4
+
+~
+~
+0 0 13005
+D5
+
+~
+~
+0 0 13003
+S
+#13005
+Fourth Floor~
+Indeed the rooms continue to get darker the higher up you go. This
+level doesn't even appear to have windows. It's much smaller than the previous
+levels. Instead of marble tiles, it's now wood floor with unlit torches that
+line the walls. There are many doors on this level, one of which is open,
+revealing a staircase heading upwards.
+~
+130 9 0
+D0
+
+~
+~
+0 0 13020
+D1
+
+~
+~
+0 0 13021
+D2
+
+~
+~
+0 0 13022
+D3
+
+~
+~
+0 0 13023
+D4
+
+~
+~
+0 0 13006
+D5
+
+~
+~
+0 0 13004
+S
+#13006
+Fifth Floor~
+This place is completly delapetated. Things are knocked over and scratch marks
+are everywhere. There are only three doors in this room, each one has faint
+light emmiting from beneath. Noises can be heard from each. Bloodmarks stain
+the wooden floor, as well as bones littering the ground. The stench here is
+unbearable!
+~
+130 9 0
+D0
+
+~
+~
+0 0 13007
+D1
+
+~
+~
+0 0 13026
+D2
+
+~
+~
+0 0 13024
+D3
+
+~
+~
+0 0 13025
+D5
+
+~
+~
+0 0 13005
+S
+#13007
+A small closet~
+The small cramped closet reeks of mothballs. Bloodstained clothes surround you
+from everyside. The door seems to have disapeared behind the clothes, the only
+exit you can see the cracks of a small movable panel on the ceiling.
+~
+130 9 0
+D2
+
+~
+~
+0 0 13006
+D4
+
+~
+~
+0 0 13008
+S
+#13008
+On the roof~
+Siting infront of you is a giant beast. He stands up and growls apon seeing
+you. Lightning flashes in the sky, it starts to rain. A cold chill passes
+through you. The ground is so far below, the chance of jumping and living is
+small.
+~
+130 1 3
+D5
+
+~
+~
+0 0 13007
+S
+#13009
+An old room~
+The opulence of the last room disappears the second you step into this room.
+The walls are half knocked over. The crapet is scraped and scratched so that
+pieces are missing. Glass lies on the floor. Little gremlins spring up from
+their hiding spots as you enter.
+~
+130 0 0
+D1
+
+~
+~
+0 0 13002
+S
+#13010
+The kitchen~
+Blood and guts are all over the place. A chewed up corpse lies in its own
+blood in the corner. Small trolls hear you enter and come out of the giant
+cold storage. They begin to snarls and grunt, grasping their clubs.
+~
+130 0 0
+D2
+
+~
+~
+0 0 13002
+S
+#13011
+The dining room~
+This room is exactly like the hall to the west. Not a scratch mark, nor a
+bloodstain can be seen. The room is completely clean. Siting around the giant
+table in the middle are ghostly looking butlers. They look over at you, then
+look back forward without changing their expresions.
+~
+130 0 0
+D3
+
+~
+~
+0 0 13002
+S
+#13012
+The ball room~
+Ghostly dancers dance in circles in the middle of the room. An eerie music
+plays out of nowhere. The room itself is empty, no furniture, no nothing. The
+marble floor is extremly cold compared to the other rooms. A shin deep mist
+covers the floor.
+~
+130 8 0
+D2
+
+~
+~
+0 0 13003
+S
+#13013
+The recreation room~
+This giant room is filled with many games and toys, all of which are scattered
+about the room. Tables are knocked over and blood is smeared everywhere. The
+floor is littered with little corpses. Out from behind topled over tables walk
+bloody toys. They laugh at you asking you to come and play.
+~
+130 8 0
+D1
+
+~
+~
+0 0 13003
+S
+#13014
+The balcony~
+The stone balcony overlooks a giant cliff. It's a
+long..............
+
+                  way..............
+
+                                   down!
+Giant stone gargoyles are pearched on the ballistraid. Their eyes seem to
+pierce into your soul, revealing your deepest secrets.
+~
+130 0 3
+D3
+
+~
+~
+0 0 13003
+S
+#13015
+A linen closet~
+At first this room does not appear to be a closet, as the size of the room.
+Towels and washcloths line the wall on shelves. At the far back of the room,
+the towels and washcloths are bloodstained. They almost seem to be alive. . .
+~
+130 9 0
+D0
+
+~
+~
+0 0 13003
+S
+#13016
+A small childs room~
+The soft sound of a music box begins to play as you enter this dark room. Toys
+are strewn everywhere. A little bed sits alone in the corner. The carpet here
+appears red. The smell of death and blood is strong here. The toys begin to
+move as you near.
+~
+130 9 0
+D3
+
+~
+~
+0 0 13004
+S
+#13017
+Guest Bedroom~
+A thick mist rises up from the ground as you enter. It surrounds all, and is
+as thick as peanut butter. The room appears to be a small bedroom. Complete
+with bookself, bed and coffee table. The room doesn't look to have been
+touched.
+~
+130 9 0
+D0
+
+~
+~
+0 0 13004
+S
+#13018
+A luxurious bathroom.~
+The bathroom consists of two sinks, a box beside the wall for the toilet and a
+huge bathtub. The floor is covered by greyish slate tiles and
+the walls are a pleasent green. It's too bad they're covered in blood. Small
+imps come out of a hole behind the toilet.
+~
+130 9 0
+D2
+
+~
+~
+0 0 13004
+S
+#13019
+The master bedroom~
+This giant master bedroom is completly torn apart. The bed and bedframe are
+destroyed. Tables are knocked over and shelves on the ground. Amidst the mess
+sits a large glowing form. The form sways back and forth and as it does it
+glows more brilliantly. Smaller forms come out from behind the larger one and
+begin to sway aswell.
+~
+130 9 0
+D1
+
+~
+~
+0 0 13004
+S
+#13020
+A Storage room~
+This room is completly frozen over. Your feet slip around as you try to stay
+up. Pieces of furniture do not even resemble what they truly are. They look
+like boulders under a thick thick sheet of ice. Enormous sharp icicles hang
+from the ceiling.
+~
+130 9 0
+D2
+
+~
+~
+0 0 13005
+S
+#13021
+A storage room~
+This room holds dozens of crates and boxes. Containing things as big as a desk
+to as little as a box of chocolates. The boxes on the eastern side of the room
+have topled over. The dust is terrible here, it makes it extremely hard to
+breath.
+~
+130 9 0
+D3
+
+~
+~
+0 0 13005
+S
+#13022
+An empty room~
+This room contains nothing. The room is completly bare and lonely. There are
+dark patches on the wall, almost shadows of the things that used to be here.
+These shadows seem to dance in front of your eyes.
+~
+130 9 0
+D0
+
+~
+~
+0 0 13005
+S
+#13023
+A lightened room.~
+This room is the only one on the level acctually lit up. A giant window lies
+in the western wall. It overlooks the vast country below. The room itself
+appears to be a cozy bedroom. Complete with fireplace and bookshelf. The books
+on the bookshelf seem to woble as you approach.
+~
+130 8 0
+D1
+
+~
+~
+0 0 13005
+S
+#13024
+The First Torture Chambre~
+What's a good tower without a torture chambre? This torture chambre has chain
+sackles and thumb pressers. Old skeletons hang on the wall, other are stuck in
+the thumb press. They begin to move as you near.
+~
+130 9 0
+D0
+
+~
+~
+0 0 13006
+S
+#13025
+The Second Torture Chambre~
+This room is blood stained. There are benches with straps, once used
+for holding down the victim, and little cages which contained mice and other
+small animals that would run up and down the victims back. There are also more
+chain sackles and whips lying on the ground. Skeletons begin to move as you
+approach.
+~
+130 9 0
+D1
+
+~
+~
+0 0 13006
+S
+#13026
+The Final Torture Chambre.~
+This room is swimming with blood, bones and old remains. A large pond of
+blood water is in the middle of the room. There are also two large wooden
+structures on which the hung victims, but the most digusting of them all was
+the area in which they draw and quarter the victim. The skeletons begin to
+move as you approach.
+~
+130 9 0
+D3
+
+~
+~
+0 0 13006
+S
+#13027
+A clearing in the woods.~
+You have emerged from the darkness of the forest.  Here, you stand
+in a clearing that suddenly changes from trees to a grassy field.
+To the north you see a giant tower like structure
+~
+130 4 2
+D0
+
+~
+~
+0 0 13000
+D2
+
+~
+~
+0 0 6102
+S
+#0
+
+
+#RESETS
+M 0 13000 5 13009  * A small gremlin -> An old room
+M 0 13001 5 13010  * A small troll -> The kitchen
+M 0 13002 5 13011  * A butler -> The dining room
+M 0 13003 5 13012  * A ghostly dancer -> The ball room
+M 0 13004 5 13013  * A bloody toy -> The recreation room
+M 0 13005 5 13014  * A stone gargoyle -> The balcony
+M 0 13006 5 13015  * An evil washcloth -> A linen closet
+M 0 13007 5 13016  * A bloody toy -> A small childs room
+M 0 13008 5 13017  * A thick mist -> Guest Bedroom
+M 0 13009 5 13018  * A small imp -> A luxurious bathroom.
+M 0 13010 5 13019  * A strange glowing form -> The master bedroom
+M 0 13011 5 13020  * A large icicle -> A Storage room
+M 0 13012 5 13021  * A box -> A storage room
+M 0 13013 5 13022  * A strange shadow -> An empty room
+M 0 13014 5 13023  * An evil book -> A lightened room.
+M 0 13015 5 13024  * A skeleton -> The First Torture Chambre
+M 0 13016 5 13025  * A skeleton -> The Second Torture Chambre
+M 0 13017 5 13026  * A skeleton -> The Final Torture Chambre.
+M 0 13018 1 13008  * A giant beast -> On the roof
+S
+
+
+#SHOPS
+0
+
+
+#SPECIALS
+S
+
+#$
+

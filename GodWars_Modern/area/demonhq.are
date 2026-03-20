@@ -1,0 +1,401 @@
+#AREADATA
+Name        Demon Hq~
+Builders    Chiana, Balrok~
+VNUMs       18150 18199
+Security    1
+End
+
+
+#MOBILES
+#18150
+healer~
+the healer~
+The healer stands here incanting some spells.
+~
+The healer looks at you.
+~
+2|64 8|32 0 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#18151
+centaur~
+A giant Centaur~
+A giant Centaur stands here, ready to attack.
+~
+A giant Centaur slaps you for your stupidity!
+~
+2|64|8192 2|8|32|128|512|8192|32768|65536|1048576 0 S
+6000 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#18152
+centaur~
+A giant Centaur~
+A giant Centaur stands here, ready to attack.
+~
+A giant Centaur glares at you.  Better step back!
+~
+2|64|8192 2|8|32|128|512|8192|32768|65536|1048576|64 0 S
+6000 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#18153
+centaur~
+A giant Centaur~
+A giant Centaur stands here, ready to attack.
+~
+A giant Centaur smacks you across the room!
+~
+2|64|8192 2|8|32|128|512|8192|32768|65536|1048576|16384 0 S
+6000 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#18154
+blob~
+the blob~
+The blob cowers here before you.
+~
+The blob oozes away from you.
+~
+2|64 128|8192 0 S
+1000 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#18155
+dummy~
+the dummy~
+A dummy is here for you to practice on.
+~
+The dummy is well worn, and soft.
+~
+2|64 128|8192 0 S
+1000 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#0
+
+#OBJECTS
+#18150
+baal~
+#0throne of Baal#n~
+#0The Throne of Baal sits here.#n~
+~
+12 0 0
+2 0 16 0
+5000 0 0
+#18151
+throne~
+#obrass throne#n~
+#oA brass throne fashioned for a Lord sits here.#n~
+~
+12 0 0
+2 0 16 0
+5000 0 0
+#18152
+throne~
+#obrass throne#n~
+#oA brass throne fashioned for a Lord sits here.#n~
+~
+12 0 0
+2 0 16 0
+5000 0 0
+#0
+
+#ROOMS
+#18150
+#0T#Rh#0e #RD#0a#Rr#0k#Re#0s#Rt #0P#Ra#0r#Rt #0o#Rf #0H#Re#0l#Rl~
+#0You have just entered the most ancient and evil place in all of hell.  
+The walls are covered with what looks to be frozen screaming faces of 
+every kind of being in the Realm. The floor is covered in a dark black 
+blood, seeming to swallow you up as you step into it.  In front of you 
+lies an EXTREMELY large throne, at least 15 feet high, of dark black
+demonsteel and bronze.  Two massive horns grow out of the top 
+corners and reach into the shadowed darkness above.  Surrounding the 
+outer rim of the room are thousands of bronze candles that look to be 
+burning a black and red flames.  To the right of the throne are several 
+other thrones similar in color and shape but smaller in size.  To the left 
+of the throne you notice a small bronze table with a darkened picture 
+on top.  As you look closer you see a huge, beautiful demon, more like 
+double the size of a normal demon.  Behind him is a face, a face that 
+chills your bones and boils your blood, an unfamiliar face.  The face 
+of Baal himself, till this moment you had no clue what he would have 
+looked like, you really never wanted to find out.  Below the picture you 
+see a bronze plaque which, in Demon tongue, reads "Here stands Balrok, 
+Lord of Hell, Child of Baal." left and right sides of this picture are other 
+pictures but only one other can be made out, the demon looks slightly 
+smaller then the one in the first picture but the name says it all..... Krel.  
+You try to picture the Baal in the big throne with Balrok, Krel, and Wrath 
+and countless others at his side and start to grin.  If they three were to 
+ever reappear you would fear, for all of the Realm would be at they're 
+feet, begging for them to take their souls.  And take their souls they would.
+~
+0 8 0
+D5
+~
+~
+0 -1 18151
+S
+#18151
+Demon Prince's Room~
+This room is under construction
+~
+0 8 0
+D5
+~
+~
+0 -1 18152
+S
+#18152
+#RGrand Meeting Room~
+#0Before you stands a very long table made to seat at least 50.  Here is where the
+Demonkind plot which way they're going to raise Hell today.  To the back of the
+room is a huge bookshelf full of war documents.  As you attempt to read them, in
+the demon tongue they title, 101 ways to cook a Mage, 101 ways to cook a Ninja,
+Vampire, Angel, and finally Werewolves.  You should come back later and check them
+out......
+	A charred piece of flesh hangs on the wall with something engraved on it.
+~
+0 8 0
+D0
+~
+~
+0 -1 18153
+D1
+~
+~
+0 -1 18155
+D2
+~
+~
+0 -1 18154
+D3
+~
+~
+0 -1 18156
+D5
+~
+~
+0 -1 18162
+E
+charred flesh piece credits~
+Your home has been crafted by the Lord and Master, Balrok, and coded by Chiana.~ 
+S
+#18153
+#RBaal's Piece of Hell~
+#0The floor is covered in a thick, black, blood-like liquid.  You hear what 
+seems to be a very sinister and loud laughter coming  from the shadows 
+but you can't make out if anyone is sitting there or if you’re starting to go 
+mad.  As you turn to go back the way you came you notice that the black 
+liquid that was once the floor has now formed an exit in every direction.  
+The ground trembles under your feet and feel a hot breath on the back of 
+your neck.  You spin around and see nothing, only blackness.
+If one were to fly above, perhaps one should look for somethinginteresting?
+~
+0 8 0
+D2
+~
+~
+0 -1 18152
+D4
+~
+~
+0 -1 19615
+D5
+~
+~
+0 -1 19626
+S
+#18154
+#RA Necromantic Prisoner~
+#0This tortured soul has been damned to use his spells to aid our kind.
+~
+0 8|16384 0
+D0
+~
+~
+0 -1 18152
+S
+#18155
+#rGates of Hell~
+#0A giant statue made of bronze stands in the center of the room you can 
+hear a very soft whisper coming from it.  
+	#0 A giant statue stands here awaiting your command.#n
+~
+0 8 0
+D3
+~
+~
+0 -1 18152
+E
+statue~
+You lean closer and the statue begins to speak.  "I am the Guard of the 
+Gates of Hell, what is your wish wyrm. You have the permission of the Gods and Goddesses
+to travel to the following locations: temple, staff, sphinx, draconia, and hightower."~
+T
+temple~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 3001 0
+T
+staff~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 25008 0
+T
+sphinx~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 2646 0
+T
+hightower~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 1312 0
+T
+draconia~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 2201 0
+S
+#18156
+#RA Hallway~
+#nIt is pitch black ...
+~
+0 1|8 0
+D0
+~
+~
+0 -1 18157
+D1
+~
+~
+0 -1 18152
+D2
+~
+~
+0 -1 18158
+D3
+~
+~
+0 -1 18159
+S
+#18157
+#RTrophy Room~
+#0As you enter your nose immediately picks up the scent of blood.
+You peer around your surroundings and notice not only is the room 
+completely covered in blood, but also stacks upon stacks of heads, 
+arms, legs, brains, entrails, and ooo look we even have trapped souls.  
+There are too many names to list of all of the victims in the path of 
+a demon. Oh well, they won't be missed. *evil laughter* 
+~
+0 8 0
+D2
+~
+~
+0 -1 18156
+S
+#18158
+#RInpart Training~
+#0Here is were you obtain your demon "powers."  If you type "inpart" 
+you'll notice a nice little list of things that help you kill people, 
+see through darkness, distort into an ugly killing machine etc.  If 
+you have enough DPS (Demon Points) then you can improve or give yourself
+a power simply by typing "inpart (your char name) (power name)." Simple, 
+easy, painless....  Well, for you at least.
+~
+0 8 0
+D0
+~
+~
+0 -1 18156
+S
+#18159
+#RA Hallway~
+#nIt is pitch black ...
+~
+0 1|8 0
+D0
+~
+~
+0 -1 18160
+D1
+~
+~
+0 -1 18156
+D2
+~
+~
+0 -1 18161
+S
+#18160
+#RContainment.~
+#0Here's some extra mobs for you to kill.
+~
+0 8 0
+D2
+~
+~
+0 -1 18159
+S
+#18161
+#RWeapons/Stance Training~
+#0Here is where you train your skills and become the cold-blooded killer 
+that you are. Against the wall lies a rack full of long swords, short 
+swords, axes, and all the pretty things that cause one pain and death.  
+I mean c’mon, it's only a blob and you’re a Demon.  How hard can it be 
+to defeat him?
+~
+0 8 0
+D0
+~
+~
+0 -1 18159
+S
+#18162
+#RTotal Darkness~
+#0Whoops, you slipped, now you die.
+~
+0 1|8|8192|32768 0
+S
+#0
+
+
+#RESETS
+*
+M 1 18150 1 18154			the healer to Healer's room
+*
+M 1 18151 1 18162			Guardian 1 to The Guardians Chamber
+*
+M 1 18152 1 18162			Guardian2 to The Guardians Chamber
+*
+M 1 18153 1 18162			Guardian 3 to The Guardians Chamber
+*
+M 1 18154 1 18161			blob to weapon training room
+*
+M 1 18155 20 18160			dummy to containment
+*
+M 1 18155 20 18160			dummy to containment
+*
+M 1 18155 20 18160			dummy to containment
+*
+O 1 18150 1 18150			throne to DL's room
+*
+O 1 18151 2 18150			throne to DL's room
+*
+O 1 18152 2 18150			throne to DL's room
+S
+
+#SPECIALS
+M  18150 spec_cast_adept                        the healer
+M  18151 spec_class_demon                       Guard1
+M  18152 spec_class_demon                       Guard2
+M  18153 spec_class_demon                       Guard3
+S
+
+#$

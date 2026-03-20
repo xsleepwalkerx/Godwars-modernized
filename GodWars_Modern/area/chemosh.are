@@ -1,0 +1,231 @@
+#AREADATA
+Name        Chemosh Hq~
+Builders    Veronica~
+VNUMs       16060 16099
+Security    1
+End
+
+
+
+#MOBILES
+#16060
+carnage~
+a Priest of Chemosh~
+The Priest of Chemosh is here, preparing sacrifices.
+~
+The priest of Chemosh smiles at you as he pulls out his dagger...
+You aren't sure if he means to help you... or make you the next sacrifice.
+~
+2|64 8|32|128|512|8192 -1000 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#16061
+Chemosh~
+Chemosh~
+Chemosh himself stands before you in all his radiant glory.
+~
+He beckons you to go out, and spread death and disease to all the lands.
+~
+4|64 2|8|32|128|512|8192|32768|65536|1048576 -1000 S
+1500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#16062
+chick~
+a virgin~
+The virgin girl is chained to the altar, awaiting her destiny.
+~
+She pleads for mercy, and begs you to set her free.
+~
+2|64 0 1000 S
+450 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#16063
+Abbot~
+the loyal follower of Chemosh~
+One of Chemosh's loyal subjects stands here to protect his God.
+~
+This abbot welcomes death, especially yours!
+~
+4|64 2|8|32|128|512|8192|32768|65536|1048576 -1000 S
+1500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#16064
+Junapruss~
+Junapruss~
+Loyal to the death, this young priest attacks all who oppose Chemosh.
+~
+A young priest in white robes.  He doesn't seem that impressive.
+~
+4|64 2|8|32|128|512|8192|32768|65536|1048576 -1000 S
+1500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#16060
+kimono~
+bloody robe~
+The bloodied robe of the Priest of Chemosh lies here.~
+~
+9 16|512 1|1024
+0 1 6 11
+5 0 0
+A
+14 15
+A
+18 5
+A
+19 5
+#16061
+Bt'leth~
+a dagger~
+This is the dagger used for the ritual sacrifices.~
+~
+5 16|512 1|8192
+0 1 6 11
+5 0 0
+#16062
+klingon~
+the mighty sword of Chemosh~
+The mighty sword of Chemosh~
+~
+5 4|16 1|8192
+0 1 6 1
+5 0 0
+A
+18 50
+A
+19 50
+#16063
+sorcery~
+a wand~
+a wand is here~
+~
+3 16 1|8192|16384
+60 10 10 17
+5 0 0
+#0
+
+
+#ROOMS
+#16060
+The Hall of Chemosh~
+Welcome to the hall of Chemosh!
+The wall is lined with ancient paintings that depict all sorts of death and
+mayhem.
+~
+0 8 0
+D0
+~
+~
+0 -1 16062
+D2
+~
+~
+0 -1 16061
+E
+painting~
+You can't believe how gruesome these paintings are!!! They show all forms of
+disease and decay...  ~
+S
+#16061
+The Gateway~
+A large gate opens before you... When you look through the gates, you see many
+places flashing before you.
+~
+0 0 1
+D0
+~
+~
+0 -1 16060
+E
+gates~
+You recognize a few of the places as they flash in the gateway.  You see a Temple,
+the Sphinx, a member of Staff, the HighTower, and Draconia
+~
+T
+temple~
+$n slowly fades out of existance.~
+Your surroundigs blur and change.~
+all~
+16384 3001 0
+T
+staff~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 25008 0
+T
+sphinx~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2646 0
+T
+hightower~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 1312 0
+T
+draconia~
+$n slowly fades out of existance.~
+Your surroundings blur and change.~
+all~
+16384 2201 0
+S
+#16062
+The altar of Chemosh~
+Here, live sacrifices are given to our great Lord of Death, Chemosh.
+~
+0 8|1024|16384 0
+D2
+~
+~
+0 -1 16060
+E
+altar~
+This bloody altar has fresh wood on it for a sacrifice.~
+S
+#0
+
+
+#RESETS
+*
+M 1 16060 1 16062			priest to altar
+E 1 16060 1 12
+E 1 16061 1 16
+*
+M 1 16062 2 16062			virgin to altar
+*
+M 1 16061 1 16060			Chemosh to The Hall of Chemosh
+E 1 16062 1 16
+E 1 16063 1 17
+*
+M 1 16063 1 16060
+E 1 16061 1 16
+*
+M 1 16064 1 16060
+E 1 16061 1 16
+S
+
+
+#SPECIALS
+M  16060 spec_cast_adept			a healer
+M  16061 spec_breath_any			Chemosh
+M  16063 spec_cast_cleric			Abbot
+M  16064 spec_clan_chemosh3			Junapruss
+S
+
+
+#SHOPS
+0
+
+
+#$

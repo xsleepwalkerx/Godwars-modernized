@@ -1,0 +1,347 @@
+#AREADATA
+Name        Vampire HQ~
+Builders    Chiana~
+VNUMs       18000 18049
+Security    1
+End
+
+
+#MOBILES
+#18000
+youth~
+the #7youth#n~
+A #7youth#n is bound to the walls.
+~
+This #7youth#n was obviously chosen for it's amazing beauty..  
+Fair of skin, with fiery #Rred#n hair and piercing #Ggreen#n 
+eyes, you wonder if it's soul shall find rest, or if this 
+gorgeous #7youth#n shall one day join your family as a #0Childe.#n
+~
+2|64 0 0 S
+1000 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#18001
+healer~
+the healer~
+A kind young Vampire stands here, chanting incantations.
+~
+The healer looks at you.
+~
+2|64 8|32|8192 0 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#18002
+Mekare~
+Mekare~
+Mekare glares at you, demanding you leave!
+~
+Mekare slaps you for getting so close to her.
+~
+2|64|8192 2|8|32|128|512|8192|32768|65536|64 -1000 S
+6000 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#18003
+Maharet~
+Maharet~
+Maharet stands quietly in the corner, waiting for an attack.
+~
+Maharet ignores you.
+~
+2|64|8192 2|8|32|128|512|8192|32768|65536|16384 0 S
+6000 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#18004
+Armand~
+Armand~
+Armand's sinister smile frightens you!
+~
+Armand knocks you across the room for coming so close to him.
+~
+2|64|8192 2|8|32|128|512|8192|32768|65536 -1000 S
+6000 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#0
+
+#Objects
+#18001
+fountain blood~
+a fountain of blood~
+#0A fountain of #Rblood#0 is gushing from the center of the #7crystal#0 table.#n~
+~
+17 0 0
+10000 9999 13 0 
+999 0 0
+#0
+
+
+#ROOMS
+#18000
+#RThe Founder's Cavern#n~
+#0Here is where the five great Founders of all #RVampires#0 go to meet,
+relax, and discuss the matters of their childer.  There are #4finely 
+stitched woven rugs #0on the walls, with pictures depicting a #Rvampire's 
+hunt#0, the capture of a #7victim#0, and the #7victim's#0 release from 
+this world of shadows. Attached to one of the weavings is a #7youth of 
+twenty winters#0, bound by #ysilk ropes#0 woven into #4rug#0 itself. #n
+~
+0 1|8 0
+D5
+~
+~
+0 -1 18001
+T
+|kill*~
+The youth shrieks '#RPlease master, dont kill me!#n'.~
+copy~
+all~
+1048576 0 18000
+S
+#18001
+#0The #rPrinces'#0 Chamber#n~
+#0Only those favoured of the #RFounders#0 may enter this chamber, those 
+deigned #rPrince#0 or #rPrincess#0.  In this dark cavern, one can often 
+hear the sweet cries of a helpless victim, as their life #Rblood#0 is 
+drained dry, until their precious heart slows its rythmic beating, and 
+eventually stops.  A sweet sound indeed.#n
+~
+0 1|8 0
+D5
+~
+~
+0 -1 18002
+S
+#18002
+#0Le Grand Chambre Des Vampires#n~
+#0This tremendous chamber is the meeting room of all #Rvampires#0 in 
+existence. A massive table dominates the room, made not of #0wood#0, 
+but of the finest #7crystal#0 imaginable, causing the #ycandlelight#0 
+to appear as #sdancing#n #sprisms#0 throughout the room.#n
+~
+0 1|8 0
+D0
+~
+~
+0 -1 18003
+D1
+~
+~
+0 -1 18005
+D2
+~
+~
+0 -1 18004
+D3
+~
+~
+0 -1 18006
+D5
+~
+~
+0 -1 18012
+T
+|blood*~
+#0The #7crystal#0 turns #Rred#0 as #Rblood#0 flows through it, and forms 
+a #Rblood fountain#0 in the center of it.#n~
+copy~
+all~
+1048608 18001 0
+S
+#18003
+#0The Crypts#n~
+#0This dank cave is littered with various coffins, dark crypts, and 
+deep holes uncerimoniously dug into the rich earth. Anyone who 
+stumbles into this cave...  would not return from it alive.
+   If one were to fly above it, perhaps one should look for somethinginteresting?
+~
+0 1|8 0
+D2
+~
+~
+0 -1 18002
+D4
+~
+~
+0 -1 19501
+D5
+~
+~
+0 -1 19626
+S
+#18004
+The Regeneration Room~
+This is where the vampires go to renew themselves.  There is a healer 
+here to aid those who do not yet have the skill to heal themselves.
+~
+0 1|8|1024|16384 0
+D0
+~
+~
+0 -1 18002
+S
+#18005
+The Portal Room~
+In the center of this room is a shining black orb.  It draws you to it, and 
+you hear in your mind "Wherever you wish to go, merely say the word, and I 
+will take you there.
+~
+0 1|8 0
+D3
+~
+~
+0 -1 18002
+E
+orb~
+The available destinations are: temple, hightower, draconia, sphinx, and staff.~
+T
+temple~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 3001 0
+T
+staff~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 25008 0
+T
+sphinx~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 2646 0
+T
+hightower~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 1312 0
+T
+draconia~
+A portal suddenly appears, and $n is sucked in!~
+A portal appears before you, and you are suddenly sucked in!~
+all~
+16384 2201 0
+S
+#18006
+The Hall of Training~
+This Dark Hall leads to the training areas.  To the north is the Advanced Training 
+Room, and to the South is where Vampires learn their Disciplines.
+~
+0 1|8 0
+D0
+~
+~
+0 -1 18007
+D1
+~
+~
+0 -1 18002
+D2
+~
+~
+0 -1 18008
+D3
+~
+~
+0 -1 18009
+S
+#18007
+The Advanced Training Room~
+Here is where the Vampires learn to use their Disciplines, Stances, and Weapons 
+together, to become formidable Warriors.
+~
+0 1|8 0
+D2
+~
+~
+0 -1 18006
+S
+#18008
+The Discipline Room~
+In this room, all Disciplines are taught and practiced.
+~
+0 8 0
+D0
+~
+~
+0 -1 18006
+S
+#18009
+The Hall of Training~
+This Dark Hall leads to the North and South Basic Training Areas.
+~
+0 1|8 0
+D0
+~
+~
+0 -1 18010
+D1
+~
+~
+0 -1 18006
+D2
+~
+~
+0 -1 18011
+S
+#18010
+The Northern Basic Fighting Arena~
+Here is where Vampires are trained in the arts of basic combat.  You can 
+see one new Childe testing out his stances.
+~
+0 1|8 0
+D2
+~
+~
+0 -1 18009
+S
+#18011
+The Southern Basic Fighting Arena~
+Here is where Vampires are trained in the arts of basic combat.  You can 
+see one new Childe testing out his weapons.
+~
+0 1|8 0
+D0
+~
+~
+0 -1 18009
+S
+#18012
+The Guardians Chamber~
+This is where the Guardians of the Vampires wait....  Should anyone attack 
+this Vampire Lair, they will soon regret it.
+~
+0 1|4|8|8192 0
+S
+#0
+
+
+#RESETS
+*
+M 1 18001 1 18004			the healer to The Regeneration Room
+*
+M 1 18002 1 18012			Mekare to The Guardians Chamber
+*
+M 1 18003 1 18012			Maharet to The Guardians Chamber
+*
+M 1 18004 1 18012			Armand to The Guardians Chamber
+*
+M 1 18000 1 18000			the #7youth#n to #RThe Founder's Cavern#n
+S
+
+
+#SPECIALS
+M  18001 spec_cast_adept			the healer
+M  18002 spec_class_vampire			Mekare
+M  18003 spec_class_vampire			Maharet
+M  18004 spec_class_vampire			Armand
+S
+
+
+#$

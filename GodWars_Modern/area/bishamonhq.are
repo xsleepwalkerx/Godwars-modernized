@@ -1,0 +1,124 @@
+#AREADATA
+Name        Ironclaw    Bishamon HQ~
+Builders    Mystaria~
+VNUMs       16850 16870
+Security    1
+End
+
+
+
+#MOBILES
+#16850
+Gregory~
+Gregory~
+A smiling figure stands before you.
+~
+A smiling figure stands before you.
+~
+2|64 8|32|512 0 S
+500 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+#16851
+Kaitlynne~
+Kaitlynne~
+The beautiful Kaitlynne stands before you, ready for battle.
+~
+
+~
+64|8192 8|32|128|512|8192 0 S
+800 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+#0
+
+
+#ROOMS
+#16850
+Ironclaw's Living Quarters~
+A calm breeze blows through the open window on the south wall. Under the window lies 
+a queen sized bed with red silk sheets. Next to it lies a dresser.  Along the north 
+wall lies several racks with various weapons.  You have entered the bed chambers of 
+the ninja goddess, Ironclaw.
+~
+0 8 0
+D3
+~
+~
+0 -1 16851
+S
+#16851
+The Blue Room~
+You have entered a room painted purely in blue. The walls, the floor, the ceiling,
+everything. Just merely standing in this room brightens your spirits and makes you
+smile.  You feel that you are safe here.
+~
+0 8|1024|16384 0
+D2
+~
+~
+0 -1 16852
+S
+#16852
+The Spiritual Airport~
+The wind blows in from the west and softly whispers in your ear:
+"Read the sign and follow your heart and you shall be be granted passage."
+~
+0 8 0
+D0
+~
+~
+0 -1 16851
+E
+sign~
+Those who follow the path of spirituality may choose the following destinations:
+Temple, Staff, Draconia, Sphynx, and Hightower.~
+T
+temple~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 3001 0
+T
+staff~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 25008 0
+T
+sphinx~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 2646 0
+T
+hightower~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 1312 0
+T
+draconia~
+$n slowly fades out of existence.~
+Your surroundings blur and change.~
+all~
+16384 2201 0
+S
+#0
+
+
+#RESETS
+*
+M 1 16850 1 16851			healer to blue room
+*
+M 1 16851 1 16852			guardian to porter room
+S
+
+
+#SPECIALS
+M  16850 spec_cast_adept			Gregory
+M 16851 spec_clan_bishamon			Kaitlynne
+S
+
+
+#$
