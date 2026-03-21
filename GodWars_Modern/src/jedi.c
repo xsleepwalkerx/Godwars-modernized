@@ -25,7 +25,11 @@
   * * *		United States, or England, and do not take credit for others work.
  *  */
 
+#if defined(macintosh)
+#include <types.h>
+#elif !defined(_WIN32)
 #include <sys/types.h>
+#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
