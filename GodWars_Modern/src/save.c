@@ -369,6 +369,14 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
 	fprintf( fp, "Glory        %d\n", ch->pcdata->glory );
 	fprintf( fp, "GloryTimer   %d\n", ch->pcdata->glory_timer );
 	fprintf( fp, "DeityFlags   %d\n", ch->pcdata->deity_flags );
+	/* Arena stats */
+	fprintf( fp, "ArenaWins    %d\n", ch->pcdata->arena_wins );
+	fprintf( fp, "ArenaLoss    %d\n", ch->pcdata->arena_losses );
+	fprintf( fp, "ArenaPts     %d\n", ch->pcdata->arena_pts );
+	/* Kingdom membership */
+	if ( ch->pcdata->kd_name[0] != '\0' )
+	    fprintf( fp, "KdName       %s~\n", ch->pcdata->kd_name );
+	fprintf( fp, "KdRank       %d\n", ch->pcdata->kd_rank );
 	fprintf( fp, "Wolf         %d\n", ch->pcdata->wolf );
 	fprintf( fp, "Rank         %d\n", ch->pcdata->rank );
 	fprintf( fp, "Regenerate   %d\n", ch->pcdata->regenerate );
@@ -1934,6 +1942,9 @@ void fread_char( CHAR_DATA *ch, FILE *fp )
 	    }
 
 	    KEY( "Atm",     	ch->pcdata->atm,	fread_number( fp ) );
+	    KEY( "ArenaWins",   ch->pcdata->arena_wins,    fread_number( fp ) );
+	    KEY( "ArenaLoss",   ch->pcdata->arena_losses,  fread_number( fp ) );
+	    KEY( "ArenaPts",    ch->pcdata->arena_pts,     fread_number( fp ) );
 
 	    if ( !str_cmp( word, "AttrMod"  ) )
 	    {
@@ -2234,6 +2245,18 @@ void fread_char( CHAR_DATA *ch, FILE *fp )
 	case 'I':
 	    KEY( "Immune",        ch->immune,		fread_number( fp ) );
 	    KEY( "Itemaffect",    ch->itemaffect,	fread_number( fp ) );
+	    break;
+
+	case 'K':
+	    if ( !str_cmp( word, "KdName" ) )
+	    {
+		char *tmp = fread_string( fp );
+		strncpy( ch->pcdata->kd_name, tmp, sizeof(ch->pcdata->kd_name)-1 );
+		free_string( tmp );
+		fMatch = TRUE;
+		break;
+	    }
+	    KEY( "KdRank",  ch->pcdata->kd_rank,  fread_number( fp ) );
 	    break;
 
 	case 'L':

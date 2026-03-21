@@ -1892,6 +1892,26 @@ struct auction_data
 #define ROOM_VNUM_HEAVEN    30001
 
 /*
+ * Arena system constants (arena.c).
+ */
+#define ARENA_NONE          0   /* not in arena                              */
+#define ARENA_QUEUED        1   /* waiting in the queue                      */
+#define ARENA_FIGHTING      2   /* actively in a match                       */
+#define ARENA_SPECTATING    3   /* watching as spectator                     */
+
+#define ARENA_VNUM_FIGHT    30050   /* fight room (must have ROOM_ARENA flag)*/
+#define ARENA_VNUM_LOBBY    30051   /* waiting lobby                         */
+#define ARENA_VNUM_SPEC     30052   /* spectator balcony                     */
+
+/*
+ * Kingdom system constants (kingdom.c).
+ */
+#define KD_RANK_NONE        0   /* not in a kingdom                          */
+#define KD_RANK_MEMBER      1   /* regular member                            */
+#define KD_RANK_WARLORD     2   /* officer / warlord                         */
+#define KD_RANK_KING        3   /* king / queen — sole leader                */
+
+/*
  * Worn/wear bit constants.
  */
 #define WEAR_STAKE          128
@@ -3549,6 +3569,19 @@ struct pc_data
     /* Alias system (alias.c) */
     char           *alias[MAX_ALIAS];
     char           *alias_sub[MAX_ALIAS];
+
+    /* Arena system (arena.c) */
+    int32_t         arena_state;            /* ARENA_* state constant        */
+    int32_t         arena_wins;             /* lifetime arena wins           */
+    int32_t         arena_losses;           /* lifetime arena losses         */
+    int32_t         arena_pts;             /* arena ranking points          */
+    int32_t         arena_timer;            /* challenge expiry countdown    */
+    char            arena_opponent[50];     /* name of current/pending foe   */
+
+    /* Kingdom system (kingdom.c) */
+    char            kd_name[50];           /* kingdom the player belongs to */
+    int32_t         kd_rank;               /* KD_RANK_* rank constant       */
+    char            kd_petition[50];       /* kingdom the player petitioned */
 };
 
 
@@ -5395,6 +5428,17 @@ extern void     auction_load         ( void );
 extern void     auction_save         ( void );
 extern void     auction_update       ( void );
 extern void     auction_deliver      ( CHAR_DATA *ch );
+
+/* Arena system (arena.c) */
+DECLARE_DO_FUN( do_arena             );
+extern bool     arena_check_death    ( CHAR_DATA *victim, CHAR_DATA *killer );
+extern void     arena_update         ( void );
+
+/* Kingdom system (kingdom.c) */
+DECLARE_DO_FUN( do_kingdom           );
+extern void     kingdom_load         ( void );
+extern void     kingdom_save         ( void );
+extern void     kingdom_check_kill   ( CHAR_DATA *killer, CHAR_DATA *victim );
 
 /* OLC extended (olc.c) */
 DECLARE_DO_FUN( do_mlist             );

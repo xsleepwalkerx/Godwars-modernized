@@ -469,6 +469,7 @@ void boot_db( void )
         load_leaderboard();
 	trivia_load( );  /* Load trivia question database */
 	auction_load( ); /* Load auction house lots */
+	kingdom_load( ); /* Load kingdom political data */
     }
 
     /* 

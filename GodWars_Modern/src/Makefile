@@ -48,7 +48,7 @@ O_FILES = \
 	trivia.o     auction.o  questmaster.o                             \
 	\
 	bard.o       amazon.o   jedi.o         golem.o      \
-	deity.o
+	deity.o      arena.o    kingdom.o
 
 # ---------------------------------------------------------------------------
 TARGET = merc

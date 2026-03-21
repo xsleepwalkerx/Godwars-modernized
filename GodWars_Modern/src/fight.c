@@ -1477,6 +1477,15 @@ if (dxp_info.dxp == 1)
 	demon_gain( ch, victim );
     	if (!IS_NPC(victim) && IS_NPC(ch)) victim->mdeath++;
 	if (IS_NPC(victim)) is_npc = TRUE;
+
+	/* Arena: intercept arena deaths before raw_kill. */
+	if ( !IS_NPC(victim) && arena_check_death( victim, ch ) )
+	    return;
+
+	/* Kingdom: award war reputation. */
+	if ( !IS_NPC(ch) && !IS_NPC(victim) )
+	    kingdom_check_kill( ch, victim );
+
 	raw_kill( victim, ch );
 
 	if ( IS_SET(ch->act, PLR_AUTOLOOT) )

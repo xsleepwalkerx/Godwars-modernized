@@ -1108,6 +1108,12 @@ LOG_NORMAL },*/
     /* Auction house */
     { "auction",        do_auction,     POS_SLEEPING,    0,  LOG_NORMAL },
 
+    /* Arena system */
+    { "arena",          do_arena,       POS_STANDING,    0,  LOG_NORMAL },
+
+    /* Kingdom political system */
+    { "kingdom",        do_kingdom,     POS_SLEEPING,    0,  LOG_NORMAL },
+
     /* OLC builder list commands */
     { "mlist",          do_mlist,       POS_DEAD,        7,  LOG_NORMAL },
     { "olist",          do_olist,       POS_DEAD,        7,  LOG_NORMAL },

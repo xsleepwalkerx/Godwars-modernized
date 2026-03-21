@@ -3084,6 +3084,7 @@ void update_handler( void )
 	trivia_update	( );
 	quest_update	( );
 	auction_update	( );
+	arena_update	( );
     }
 
     if ( --pulse_dtrap    <= 0)
