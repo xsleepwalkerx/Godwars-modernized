@@ -31,8 +31,8 @@ O_FILES = \
 	\
 	kav_wiz.o    kav_info.o                                          \
 	\
-	monk.o       monk2.o      monk3.o                                \
-	ninja.o      warlock.o    demon.o      fae.o        koe.o       \
+	monk.o       monk2.o      monk3.o      monk4.o                    \
+	ninja.o      ninjacomb.o  warlock.o    demon.o      fae.o        koe.o       \
 	werewolf.o   rituals.o                                           \
 	\
 	fun.o        home.o       bank.o       freeze.o     bonus.o     \
@@ -40,7 +40,7 @@ O_FILES = \
 	\
 	M2.o         util.o                                              \
 	\
-	disc.o       dragon.o     drow.o       elemental.o  flag.o      \
+	disc.o       vamp2.o      dragon.o     drow.o       elemental.o  flag.o      \
 	highland.o   mage.o       random.o     sorcerer.o   stance.o    \
 	trap.o       wwauspice.o  wwbreed.o    wwtribe.o    \
 	\

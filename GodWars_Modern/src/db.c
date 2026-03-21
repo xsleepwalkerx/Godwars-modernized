@@ -120,6 +120,9 @@ int			gsn_darkness;
 int			gsn_dark_poison;
 int			gsn_paradox;
 
+/* Ninja Hamashaka (ninjacomb.c) */
+int			gsn_tsunaki;
+
 /* Monk */
 int			gsn_thrustkick;
 int			gsn_spinkick;

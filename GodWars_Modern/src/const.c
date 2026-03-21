@@ -1488,4 +1488,12 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
          &gsn_circle,           SLOT( 0),         0,    24,
          "circling strike",     "!Circle!"
     },
+
+    /* Ninja Hamashaka technique (ninjacomb.c). */
+    {
+        "tsunaki",              99,
+        spell_null,             TAR_IGNORE,             POS_FIGHTING,
+        &gsn_tsunaki,           SLOT( 0),         0,    24,
+        "tsunaki strike",       "!Tsunaki!"
+    },
 };

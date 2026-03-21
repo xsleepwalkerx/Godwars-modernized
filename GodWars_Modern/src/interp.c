@@ -597,6 +597,11 @@ const	struct	cmd_type	cmd_table	[] =
     { "circle",         do_circle,      POS_FIGHTING,    3,  LOG_NORMAL },
     { "ningentra",      do_ningentra,   POS_STANDING,    3,  LOG_NORMAL },
     { "contort",        do_contort,     POS_SITTING,     3,  LOG_NORMAL },
+/*ninja Hamashaka combat arts (ninjacomb.c)*/
+    { "yashakin",       do_yashakin,    POS_STANDING,    3,  LOG_NORMAL },
+    { "tsunaki",        do_tsunaki,     POS_FIGHTING,    3,  LOG_NORMAL },
+    { "jusitori",       do_jusitori,    POS_FIGHTING,    3,  LOG_NORMAL },
+    { "jeritsu",        do_jeritsu,     POS_STANDING,    3,  LOG_NORMAL },
 //    { "gunaya",         do_gunaya,      POS_STANDING,    3,  LOG_NORMAL },
     { "claws",		do_claws,	POS_SITTING,	 3,  LOG_NORMAL	},
     { "hide", 		do_hide,	POS_STANDING,	 3,  LOG_NORMAL },
@@ -805,6 +810,22 @@ const	struct	cmd_type	cmd_table	[] =
     { "wyld",		do_wyld,	POS_DEAD,	 3,  LOG_NORMAL	},
     { "zombie",		do_zombie,	POS_STANDING,	 3,  LOG_NORMAL	},
     { "zuloform",	do_zuloform,	POS_FIGHTING,	 3,  LOG_NORMAL	},
+
+    /* Additional vampire discipline powers (vamp2.c — from GW-LOW). */
+    { "vtwist",         do_vtwist,         POS_STANDING,  3,  LOG_NORMAL },
+    { "veiltwist",      do_vtwist,         POS_STANDING,  3,  LOG_NORMAL },
+    { "bloodwater",     do_bloodwater,     POS_FIGHTING,  3,  LOG_NORMAL },
+    { "darknessofDeath",do_vampdarkness,   POS_STANDING,  3,  LOG_NORMAL },
+    { "vampdarkness",   do_vampdarkness,   POS_STANDING,  3,  LOG_NORMAL },
+    { "vanassassinate", do_vamp_assassinate,POS_STANDING, 3,  LOG_NORMAL },
+    { "flamehands",     do_flamehands,     POS_STANDING,  3,  LOG_NORMAL },
+    { "cauldron",       do_cauldron,       POS_FIGHTING,  3,  LOG_NORMAL },
+    { "shadowgaze",     do_shadowgaze,     POS_STANDING,  3,  LOG_NORMAL },
+    { "scales",         do_scales,         POS_STANDING,  3,  LOG_NORMAL },
+    { "bonemod",        do_bonemod,        POS_STANDING,  3,  LOG_NORMAL },
+
+    /* Monk armour crafting (monk4.c — from Planes-of-Hades). */
+    { "monkeq",         do_monkeq,         POS_STANDING,  3,  LOG_NORMAL },
 
     /*
      * Koe Powers by Sartre and Ktulu

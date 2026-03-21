@@ -874,6 +874,9 @@ void update_damcap( CHAR_DATA *ch, CHAR_DATA *victim )
              max_dam += 600;
         if ( ch->pcdata->powers[NPOWER_CHIKYU] >= 2)
              max_dam += 500;
+        /* Hamashaka training bonus */
+        if ( ch->pcdata->powers[NPOWER_HAMASHAKA] > 0 )
+             max_dam += (ch->pcdata->powers[NPOWER_HAMASHAKA] * 20);
         break;
 	case CLASS_ABOMINATION:
 	    if ( get_disc(ch,DISC_POTENCE) > 0)
@@ -1289,6 +1292,49 @@ void damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
 
 	if (IS_POLYAFF(ch, POLY_BAT)) {dt = TYPE_HIT + 10; agg_dam = TRUE;}
 	else if (IS_POLYAFF(ch, POLY_SERPENT)) {dt = gsn_tongue; agg_dam = TRUE;}
+
+	/* ----------------------------------------------------------------
+	 * Ninja Hamashaka combat-bit effects (ninjacomb.c):
+	 *
+	 * NBIT_SHIELD (yashakin) — 1-in-13 chance to reflect the full
+	 *   hit back at the attacker.  Cleared for that round via
+	 *   NBIT_ROUND so the reflection doesn't chain.
+	 *
+	 * NBIT_REDIRECT (jusitori) — the next hit received is doubled
+	 *   and immediately returned at the attacker.  The globe is then
+	 *   consumed (NBIT_REDIRECT cleared).
+	 * ---------------------------------------------------------------- */
+	if ( !IS_NPC(victim) && IS_CLASS(victim, CLASS_NINJA) && dam > 0 )
+	{
+	    if ( IS_SET(nbit(victim), NBIT_SHIELD) && number_range(1, 13) == 1 )
+	    {
+		act("&M$n's mental shield deflects the blow back at $N!&n",
+		    victim, NULL, ch, TO_ROOM);
+		act("&MYour mental shield deflects the blow back at $N!&n",
+		    victim, NULL, ch, TO_CHAR);
+		act("&M$n's mental shield deflects your blow back at you!&n",
+		    victim, NULL, ch, TO_VICT);
+		SET_BIT(nbit(victim), NBIT_ROUND);
+		if ( !IS_NPC(ch) ) ch->hit -= dam;
+		REMOVE_BIT(nbit(victim), NBIT_ROUND);
+		return;
+	    }
+	    if ( IS_SET(nbit(victim), NBIT_REDIRECT)
+	    &&   !IS_SET(nbit(victim), NBIT_ROUND) )
+	    {
+		REMOVE_BIT(nbit(victim), NBIT_REDIRECT);
+		SET_BIT(nbit(victim), NBIT_ROUND);
+		act("&Y$n's mental globe absorbs the blow and fires it back!&n",
+		    victim, NULL, ch, TO_ROOM);
+		act("&YYour mental globe absorbs the blow and fires it back!&n",
+		    victim, NULL, ch, TO_CHAR);
+		act("&Y$n's mental globe fires your blow back at you!&n",
+		    victim, NULL, ch, TO_VICT);
+		if ( !IS_NPC(ch) ) ch->hit -= (dam * 2);
+		REMOVE_BIT(nbit(victim), NBIT_ROUND);
+		return;
+	    }
+	}
 
 	dam_message( ch, victim, dam, dt );
 	if (victim == NULL || victim->position == POS_DEAD) return;

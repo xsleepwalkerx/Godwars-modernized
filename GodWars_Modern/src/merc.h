@@ -176,7 +176,7 @@ typedef void SPELL_FUN( int sn, int level, CHAR_DATA *ch, void *vo );
 #define CP_MAX      1   /* classpoints[1] = max class points */
 
 #define PARADOX_TICK        10
-#define MAX_SKILL          165
+#define MAX_SKILL          175
 #define MAX_ALIAS           25          /* alias.c — max player aliases */
 #define MAX_SPELL           62
 #define MAX_LEVEL           12
@@ -2445,6 +2445,8 @@ extern int gsn_track;
 extern int gsn_wattack;
 extern int gsn_web;
 extern int gsn_backfist;
+/* Ninja Hamashaka combat techniques (ninjacomb.c — Midnight Realities). */
+extern int gsn_tsunaki;
 
 /*
  * Stat indices.
@@ -2479,6 +2481,12 @@ extern int gsn_backfist;
  * Vampire affect bits (additional).
  */
 #define VAM_SONIC   16384
+/* Vicissitude body-modification bits (do_bonemod — from GW-LOW). */
+#define VAM_BONEHORNS   32768
+#define VAM_BONEWINGS   65536
+#define VAM_EXOSKELETON 131072
+#define VAM_BONETAIL    262144
+#define VAM_LIONHEAD    524288
 
 /*
  * POLY bits (additional).
@@ -2559,6 +2567,13 @@ extern int gsn_backfist;
 #define NEW_JAWLOCK     16  /* amazon: jaw-lock effect */
 #define NEW_SKIN        32  /* amazon: barkskin effect */
 #define NPOWER_NINGENNO 3
+/* Hamashaka: ninja combat-arts power index and bit-flags (Midnight Realities). */
+#define NPOWER_HAMASHAKA 4
+#define NPOWER_BITS      5   /* pcdata->powers[NPOWER_BITS] stores NBIT_* flags */
+#define NBIT_SHIELD      1   /* yashakin: mental energy shield */
+#define NBIT_REDIRECT    2   /* jusitori: damage-redirect globe  */
+#define NBIT_ROUND       4   /* internal: redirect-already-fired this round */
+#define nbit(ch)         ((ch)->pcdata->powers[NPOWER_BITS])
 
 /* Monk power index in powers[] */
 #define PMONK   20          /* index into ch->pcdata->powers[] for monk level */
@@ -5566,6 +5581,26 @@ extern void substitute_alias( DESCRIPTOR_DATA *d, char *argument );
 /* rand_obj.c */
 extern OBJ_DATA *rand_obj ( CHAR_DATA *ch, int mob_level );
 extern OBJ_DATA *rand_obj2( CHAR_DATA *ch, int mob_level, char *argument );
+
+/* ninjacomb.c — Hamashaka ninja combat arts (Midnight Realities). */
+DECLARE_DO_FUN( do_yashakin          );
+DECLARE_DO_FUN( do_tsunaki           );
+DECLARE_DO_FUN( do_jusitori          );
+DECLARE_DO_FUN( do_jeritsu           );
+
+/* vamp2.c — Additional vampire discipline powers (GW-LOW). */
+DECLARE_DO_FUN( do_vtwist            );
+DECLARE_DO_FUN( do_bloodwater        );
+DECLARE_DO_FUN( do_vampdarkness      );
+DECLARE_DO_FUN( do_vamp_assassinate  );
+DECLARE_DO_FUN( do_flamehands        );
+DECLARE_DO_FUN( do_cauldron          );
+DECLARE_DO_FUN( do_shadowgaze        );
+DECLARE_DO_FUN( do_scales            );
+DECLARE_DO_FUN( do_bonemod           );
+
+/* monk4.c — Monk equipment crafting (Planes-of-Hades). */
+DECLARE_DO_FUN( do_monkeq            );
 
 #undef CD
 #undef MID
